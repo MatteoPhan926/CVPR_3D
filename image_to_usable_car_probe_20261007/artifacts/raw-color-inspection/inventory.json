@@ -1,0 +1,30 @@
+{
+  "input": "/workspace/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+  "blender_version": "4.3.2",
+  "native_z_up_display_rotation": true,
+  "bounds_blender": [
+    [
+      -0.4942989945411682,
+      -0.5020213723182678,
+      -0.23362615704536438
+    ],
+    [
+      0.451809287071228,
+      0.4153299331665039,
+      0.33599933981895447
+    ]
+  ],
+  "objects": [
+    {
+      "name": "geometry_0",
+      "vertices": 53904,
+      "polygons": 107608,
+      "materials": [
+        "RawVertexColorDisplay"
+      ],
+      "color_attributes": [
+        "Color"
+      ]
+    }
+  ]
+}

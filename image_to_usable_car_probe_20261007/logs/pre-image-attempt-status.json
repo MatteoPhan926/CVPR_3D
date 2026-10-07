@@ -1,0 +1,39 @@
+{
+  "task_document_sha256": "cc2bac367810ab4f7c57419fab6633552613772026dd7394a4c8c6666ef49a1f",
+  "status": "blocked_only_on_original_image_file",
+  "generation_calls": 0,
+  "generation_retries": 0,
+  "processed_image_created": false,
+  "raw_car_glb_created": false,
+  "car_authoring_executed": false,
+  "substitute_asset_used": false,
+  "blocked_requirements": [
+    "Exact latest user photo bytes unavailable in execution workspace; inline image is visible only in conversation"
+  ],
+  "local_trellis2_status": "unsupported on observed host: no NVIDIA GPU; official minimum is 24 GB GPU memory",
+  "cpu_fallback": "Real TripoSR checkpoint loaded successfully on CPU: 419275628 parameters, 4.73 seconds initialization, approximately 3751 MiB process maximum RSS; no image inference.",
+  "assistance": [
+    "One independent agent checked official TripoSR CPU implementation and artifact requirements"
+  ],
+  "network_configuration": "All three configured hosts now reachable; checkpoint download and hosted service config/API-info requests succeeded.",
+  "dependency_build_attempts": 2,
+  "dependency_build_retry_reason": "CMake inherited unavailable clang++; explicit CC=/usr/bin/gcc and CXX=/usr/bin/g++ fixed the build without source edits.",
+  "acquired_artifacts": [
+    "TripoSR config.yaml at recorded revision",
+    "TripoSR model.ckpt verified against publisher LFS SHA-256",
+    "DINO config.json at recorded revision",
+    "U2Net ONNX verified against upstream checksum"
+  ],
+  "hosted_route": "Official TRELLIS.2 config and API info reachable; GPU admission/quota and generation remain untested.",
+  "checkpoint_acquisition_history": [
+    {
+      "observed_utc": "2026-10-06T23:54:00Z",
+      "result": "Model and DINO configurations downloaded; checkpoint CDN proxy CONNECT 403",
+      "evidence_note": "Summary of the earlier observed acquisition result; the current acquisition JSON now records the successful retry."
+    },
+    {
+      "observed_utc": "2026-10-07T04:41:55Z",
+      "result": "Checkpoint downloaded and verified; see logs/model-acquisition.json"
+    }
+  ]
+}

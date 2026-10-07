@@ -1,0 +1,28 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender/4.3/extensions').
+Info: Saved "car_authored.blend"
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+09:50:00 | INFO: Starting glTF 2.0 export
+09:50:00 | INFO: Extracting primitive: Body_fixed_generated_surface
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Door_added_edge_thickness
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Door_added_inner_lining
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Door_generated_outer_surface
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Body_added_recessed_jamb
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Cube
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Cube.001
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Cube.002
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Extracting primitive: Cube.003
+09:50:00 | INFO: Primitives created: 1
+09:50:00 | INFO: Finished glTF 2.0 export in 0.14911484718322754 s
+
+SAVED /workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.glb
+Blender 4.3.2
+
+Blender quit

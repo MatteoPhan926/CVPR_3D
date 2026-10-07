@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "phase": "raw",
+  "url": "http://127.0.0.1:8777/source/viewer/",
+  "raw_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+  "initial_state": {
+    "ready": true,
+    "mode": "raw",
+    "original": true,
+    "progress": 0,
+    "angleDegrees": 0,
+    "maxAngleDegrees": 60,
+    "playing": false,
+    "motionMode": null,
+    "motionReason": "No authored asset loaded",
+    "authoredStatus": {
+      "available": null,
+      "reason": "Not checked"
+    },
+    "measuredPivotAngleDegrees": null,
+    "animationDuration": 2,
+    "animations": [],
+    "urls": {
+      "raw": "/raw/car_raw.glb",
+      "authored": "/artifacts/car_authored.glb"
+    },
+    "cameraView": "hero",
+    "cameraPosition": [
+      1.2334156748023972,
+      0.6672087238352264,
+      -1.4765656435216188
+    ],
+    "cameraTarget": [
+      0.018972042261204556,
+      0.051186591386795065,
+      0.0018874743546163641
+    ],
+    "cameraBasis": {
+      "front": [
+        0,
+        0,
+        -1
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    "displayRotationsDegrees": {
+      "raw": [
+        -90,
+        0,
+        53.22183438249461
+      ],
+      "authored": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bounds": {
+      "min": [
+        -0.31160434548283406,
+        -0.2336260676383972,
+        -0.4140940223061642
+      ],
+      "max": [
+        0.34954843000524316,
+        0.3359992504119873,
+        0.41786897101539694
+      ]
+    },
+    "frames": 4,
+    "renderer": {
+      "threeRevision": "170",
+      "width": 1364,
+      "height": 660
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "raw_materials": [
+    {
+      "mesh": "geometry_0",
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "color": "ffffff",
+      "vertexColors": true,
+      "geometryColorAttribute": true,
+      "metalness": 1,
+      "roughness": 1,
+      "transparent": false,
+      "opacity": 1,
+      "alphaTest": 0,
+      "side": 0,
+      "textures": []
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "final_state": {
+    "ready": true,
+    "mode": "raw",
+    "original": true,
+    "progress": 0,
+    "angleDegrees": 0,
+    "maxAngleDegrees": 60,
+    "playing": false,
+    "motionMode": null,
+    "motionReason": "No authored asset loaded",
+    "authoredStatus": {
+      "available": null,
+      "reason": "Not checked"
+    },
+    "measuredPivotAngleDegrees": null,
+    "animationDuration": 2,
+    "animations": [],
+    "urls": {
+      "raw": "/raw/car_raw.glb",
+      "authored": "/artifacts/car_authored.glb"
+    },
+    "cameraView": "hero",
+    "cameraPosition": [
+      1.2334156748023972,
+      0.6672087238352264,
+      -1.4765656435216188
+    ],
+    "cameraTarget": [
+      0.018972042261204556,
+      0.051186591386795065,
+      0.0018874743546163641
+    ],
+    "cameraBasis": {
+      "front": [
+        0,
+        0,
+        -1
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    "displayRotationsDegrees": {
+      "raw": [
+        -90,
+        0,
+        53.22183438249461
+      ],
+      "authored": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bounds": {
+      "min": [
+        -0.31160434548283406,
+        -0.2336260676383972,
+        -0.4140940223061642
+      ],
+      "max": [
+        0.34954843000524316,
+        0.3359992504119873,
+        0.41786897101539694
+      ]
+    },
+    "frames": 30,
+    "renderer": {
+      "threeRevision": "170",
+      "width": 1364,
+      "height": 660
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "javascript_errors": [],
+  "external_requests": []
+}

@@ -1,0 +1,44 @@
+{
+  "input_sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+  "blender": "4.3.2",
+  "fps": 30,
+  "moving_meshes": [
+    "Door_added_edge_thickness",
+    "Door_added_inner_lining",
+    "Door_generated_outer_surface"
+  ],
+  "fixed_meshes": [
+    "Body_fixed_generated_surface",
+    "Body_added_recessed_jamb",
+    "Cabin_added_floor_proxy",
+    "Cabin_added_inner_wall_proxy",
+    "Cabin_added_seat_cushion_proxy",
+    "Cabin_added_seat_back_proxy"
+  ],
+  "poses": [
+    {
+      "name": "closed",
+      "frame": 1,
+      "expected_angle": 0,
+      "actual_angle": 0.0,
+      "fixed_transform_max_delta": 0.0
+    },
+    {
+      "name": "intermediate",
+      "frame": 31,
+      "expected_angle": 30,
+      "actual_angle": 30.000007665015225,
+      "fixed_transform_max_delta": 0.0
+    },
+    {
+      "name": "open",
+      "frame": 61,
+      "expected_angle": 60,
+      "actual_angle": 60.000001669652114,
+      "fixed_transform_max_delta": 0.0
+    }
+  ],
+  "return_to_closed_max_matrix_delta": 0.0,
+  "status": "passed",
+  "scope": "Saved-animation angle, static body, reversible pose and render checks; not collision certification or appearance acceptance."
+}

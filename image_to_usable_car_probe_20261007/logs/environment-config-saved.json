@@ -1,0 +1,8 @@
+{
+  "status": "saved",
+  "draft_id": "9a9e1390-e89c-4f99-be30-505b6d44e80a~cecfgdraft_6ac5872dfd0c819093a131a27c5a38f0",
+  "fields": ["install_script", "start_skill"],
+  "network_unchanged": true,
+  "publication": "not performed or verified",
+  "service_restart": "Probe viewer restarted with retained logfile after stale terminal stdout caused disconnected HTTP responses; HTTP asset hashes and full browser check passed after restart."
+}

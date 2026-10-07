@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-10-07T04:41:55.528833+00:00",
+  "artifacts": [
+    {
+      "repository": "stabilityai/TripoSR",
+      "revision": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+      "filename": "config.yaml",
+      "status": "downloaded",
+      "path": "/workspace/image_to_usable_car_probe_20261007/environment/huggingface-cache/hub/models--stabilityai--TripoSR/snapshots/5b521936b01fbe1890f6f9baed0254ab6351c04a/config.yaml",
+      "bytes": 987,
+      "sha256": "74ca708ce086bf68e97709ea6b3d91f14717921c04691e84043f0eb8fcc68e62"
+    },
+    {
+      "repository": "facebook/dino-vitb16",
+      "revision": "f205d5d8e640a89a2b8ef0369670dfc37cc07fc2",
+      "filename": "config.json",
+      "status": "downloaded",
+      "path": "/workspace/image_to_usable_car_probe_20261007/environment/huggingface-cache/hub/models--facebook--dino-vitb16/snapshots/f205d5d8e640a89a2b8ef0369670dfc37cc07fc2/config.json",
+      "bytes": 454,
+      "sha256": "b87c0270b97db085fd82cf114a761fd0f62ae7914fbd407c752a2260646b689c"
+    },
+    {
+      "repository": "stabilityai/TripoSR",
+      "revision": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+      "filename": "model.ckpt",
+      "status": "verified",
+      "path": "/workspace/image_to_usable_car_probe_20261007/environment/huggingface-cache/hub/models--stabilityai--TripoSR/snapshots/5b521936b01fbe1890f6f9baed0254ab6351c04a/model.ckpt",
+      "bytes": 1677246742,
+      "sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee"
+    }
+  ],
+  "status": "passed"
+}

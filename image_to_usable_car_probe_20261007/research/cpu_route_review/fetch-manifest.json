@@ -1,0 +1,134 @@
+{
+  "fetched_at_utc": "2026-10-06T23:44:52.317460+00:00",
+  "note": "Saved upstream source snapshots were fetched again at resolved immutable Git HEAD commits and compared byte-for-byte. No packages installed, weights downloaded, inference or export executed.",
+  "sources": [
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/run.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/run.py",
+      "bytes": 6292,
+      "sha256": "bc1c124b3439f8ceb00ebd441848487ae7650af71053a80b266ae5db15784282",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/run.py",
+      "pinned_source_sha256": "bc1c124b3439f8ceb00ebd441848487ae7650af71053a80b266ae5db15784282",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/requirements.txt",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/requirements.txt",
+      "bytes": 203,
+      "sha256": "741408247598c63e9f08cdb5f6fc753d78ac9185bb961cbe7ba8c5c0132aae48",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/requirements.txt",
+      "pinned_source_sha256": "741408247598c63e9f08cdb5f6fc753d78ac9185bb961cbe7ba8c5c0132aae48",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/README.md",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/README.md",
+      "bytes": 5419,
+      "sha256": "ed40f078c5e451c58eae716187e0128f0ce8575e467aab2440b4ed9c75e490b9",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/README.md",
+      "pinned_source_sha256": "ed40f078c5e451c58eae716187e0128f0ce8575e467aab2440b4ed9c75e490b9",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/models/isosurface.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/tsr__models__isosurface.py",
+      "bytes": 1926,
+      "sha256": "94c9a2ec27f8fe3c2fb57558ef28be253eb77074d2c171d49a41cf73d95d6f5e",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/models/isosurface.py",
+      "pinned_source_sha256": "94c9a2ec27f8fe3c2fb57558ef28be253eb77074d2c171d49a41cf73d95d6f5e",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/system.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/tsr__system.py",
+      "bytes": 6608,
+      "sha256": "7aec93e421394ad7c746b6d63a0189532b57b26af9a199fc75ac3bb7c993c94f",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/system.py",
+      "pinned_source_sha256": "7aec93e421394ad7c746b6d63a0189532b57b26af9a199fc75ac3bb7c993c94f",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/utils.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/tsr__utils.py",
+      "bytes": 15172,
+      "sha256": "d9d1a645fef7ea489615bff3471fd01a4941a2c0e138c5dff5daae619563279b",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/utils.py",
+      "pinned_source_sha256": "d9d1a645fef7ea489615bff3471fd01a4941a2c0e138c5dff5daae619563279b",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/bake_texture.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/TripoSR__bake_texture.py",
+      "bytes": 5374,
+      "sha256": "931d066c25d5943dc7b71469b63c308df3f37b8e7f6df558ee5e348d7936d5b7",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/bake_texture.py",
+      "pinned_source_sha256": "931d066c25d5943dc7b71469b63c308df3f37b8e7f6df558ee5e348d7936d5b7",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/README.md",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/torchmcubes__README.md",
+      "bytes": 3084,
+      "sha256": "f87ec84bba8add5b1d5164fcfb50fcffb17ce12a6a1c548dadebf30c2313da08",
+      "pinned_source": "https://raw.githubusercontent.com/tatsy/torchmcubes/879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff/README.md",
+      "pinned_source_sha256": "f87ec84bba8add5b1d5164fcfb50fcffb17ce12a6a1c548dadebf30c2313da08",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/setup.py",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/CMakeLists.txt",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/torchmcubes__CMakeLists.txt",
+      "bytes": 2854,
+      "sha256": "9ed71e9cc1e29ad7d7cc84ed55c23f955731af9efdf262597d92727d0c04ac86",
+      "pinned_source": "https://raw.githubusercontent.com/tatsy/torchmcubes/879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff/CMakeLists.txt",
+      "pinned_source_sha256": "9ed71e9cc1e29ad7d7cc84ed55c23f955731af9efdf262597d92727d0c04ac86",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/torchmcubes/__init__.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/torchmcubes____init__.py",
+      "bytes": 1599,
+      "sha256": "176adbf6fdb9ea014504e50d76c2c5c0ce0745626e285ea24de6a185ff32dac1",
+      "pinned_source": "https://raw.githubusercontent.com/tatsy/torchmcubes/879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff/torchmcubes/__init__.py",
+      "pinned_source_sha256": "176adbf6fdb9ea014504e50d76c2c5c0ce0745626e285ea24de6a185ff32dac1",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/models/tokenizers/image.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/TripoSR__image.py",
+      "bytes": 2116,
+      "sha256": "f6da23124dfabe6a1f8d0d27693d0cece6574de68be15487a77781b6a9d73195",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/models/tokenizers/image.py",
+      "pinned_source_sha256": "f6da23124dfabe6a1f8d0d27693d0cece6574de68be15487a77781b6a9d73195",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/tsr/models/nerf_renderer.py",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/TripoSR__nerf_renderer.py",
+      "bytes": 5673,
+      "sha256": "afe8c12c964078b2c6bb3922d2e30969aa59f7edbacb8cb73d2c3df839dc785f",
+      "pinned_source": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/107cefdc244c39106fa830359024f6a2f1c78871/tsr/models/nerf_renderer.py",
+      "pinned_source_sha256": "afe8c12c964078b2c6bb3922d2e30969aa59f7edbacb8cb73d2c3df839dc785f",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/pyproject.toml",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/torchmcubes__pyproject.toml",
+      "bytes": 1920,
+      "pinned_source": "https://raw.githubusercontent.com/tatsy/torchmcubes/879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff/pyproject.toml",
+      "pinned_source_sha256": "b9ba2149289b5018f17f146fa4b8aa070f524f4da6261d0402721f2acf208641",
+      "matches_saved_branch_snapshot": true
+    },
+    {
+      "source": "https://raw.githubusercontent.com/tatsy/torchmcubes/master/.github/workflows/build.yml",
+      "local": "/workspace/image_to_usable_car_probe_20261007/research/cpu_route_review/torchmcubes__cpu-ci.yml",
+      "bytes": 1554,
+      "pinned_source": "https://raw.githubusercontent.com/tatsy/torchmcubes/879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff/.github/workflows/build.yml",
+      "pinned_source_sha256": "0cb12c8d5c005b0eb9465f22f3decc330259456c3b9fb6a358f292e21a174d93",
+      "matches_saved_branch_snapshot": true
+    }
+  ]
+}

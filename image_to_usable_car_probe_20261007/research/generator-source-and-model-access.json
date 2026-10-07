@@ -1,0 +1,32 @@
+[
+  {
+    "name": "trellis2-app",
+    "url": "https://raw.githubusercontent.com/microsoft/TRELLIS.2/main/app.py",
+    "checked_at_utc": "2026-10-06T23:43:13.759716+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/microsoft/TRELLIS.2/main/app.py",
+    "bytes": 20749,
+    "sha256": "b87c4422630b6439e777b1ada1246a045cde77a2957fd82fbe7908bb2112d912"
+  },
+  {
+    "name": "trellis2-pipeline",
+    "url": "https://raw.githubusercontent.com/microsoft/TRELLIS.2/main/trellis2/pipelines/trellis2_image_to_3d.py",
+    "checked_at_utc": "2026-10-06T23:43:13.760585+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/microsoft/TRELLIS.2/main/trellis2/pipelines/trellis2_image_to_3d.py",
+    "bytes": 24143,
+    "sha256": "e2addfca672354284b23d1541a8f49228d5a727d49220fcb8512cca2cdd38ce9"
+  },
+  {
+    "name": "trellis2-model-config",
+    "url": "https://huggingface.co/microsoft/TRELLIS.2-4B/resolve/main/pipeline.json",
+    "checked_at_utc": "2026-10-06T23:43:13.761082+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "triposr-model-config",
+    "url": "https://huggingface.co/stabilityai/TripoSR/resolve/main/config.yaml",
+    "checked_at_utc": "2026-10-06T23:43:13.761475+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

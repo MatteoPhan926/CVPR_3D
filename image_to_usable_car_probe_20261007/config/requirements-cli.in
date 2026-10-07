@@ -1,0 +1,19 @@
+# CLI dependencies retain TripoSR's exact pins. Gradio is not used by run.py.
+# Additional pins below are local compatibility choices, not upstream guarantees.
+numpy==1.26.4
+omegaconf==2.3.0
+Pillow==10.1.0
+einops==0.7.0
+transformers==4.35.0
+trimesh==4.0.5
+rembg==2.0.57
+huggingface-hub==0.17.3
+imageio[ffmpeg]==2.34.2
+xatlas==0.0.9
+moderngl==5.10.0
+scikit-build-core>=1.0
+pybind11>=2.10
+cmake>=3.18
+ninja
+setuptools
+wheel

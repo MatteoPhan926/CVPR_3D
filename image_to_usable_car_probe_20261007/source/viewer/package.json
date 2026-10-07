@@ -1,0 +1,16 @@
+{
+  "name": "image-to-usable-car-viewer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --minify --sourcemap --outfile=dist/app.js --target=es2020"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2",
+    "gltf-validator": "2.0.0-dev.3.10"
+  }
+}

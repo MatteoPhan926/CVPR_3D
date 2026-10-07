@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-07T04:50:09.974284+00:00",
+  "processed_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86",
+  "proceed": true,
+  "review": "Inspected the actual 428x428 RGB output from the official Space. Car silhouette, grille, cabin, headlamps, fenders and wheels remain recognizable; grass/tree background largely removed. Rear edge is close to the left crop boundary and some dark foreground/shadow residue remains near wheels. Windshield reflections remain. Accept normal preprocessing without manual mask changes.",
+  "manual_changes": []
+}

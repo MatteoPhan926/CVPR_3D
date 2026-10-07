@@ -1,0 +1,59 @@
+{
+  "route": "TripoSR CPU",
+  "status": "passed",
+  "events": [
+    {
+      "stage": "awaiting_preprocessing_inspection",
+      "timestamp_utc": "2026-10-07T04:51:42.430416+00:00",
+      "processed_path": "/workspace/image_to_usable_car_probe_20261007/inputs/cpu_preprocessed.png",
+      "processed_sha256": "d8bfea522456e376988d98cbdfd8cdde7eb35e7454bd51ade8cf166b29fbdb06"
+    },
+    {
+      "stage": "inference_started",
+      "timestamp_utc": "2026-10-07T04:52:28.578980+00:00"
+    },
+    {
+      "stage": "inference_finished",
+      "timestamp_utc": "2026-10-07T04:52:41.218738+00:00",
+      "wall_seconds": 12.639757284996449,
+      "scene_code_shape": [
+        1,
+        3,
+        40,
+        64,
+        64
+      ]
+    },
+    {
+      "stage": "mesh_extraction_started",
+      "timestamp_utc": "2026-10-07T04:52:41.220403+00:00",
+      "resolution": 256,
+      "chunk_size": 4096
+    },
+    {
+      "stage": "passed",
+      "timestamp_utc": "2026-10-07T04:53:11.050554+00:00",
+      "vertices": 53904,
+      "faces": 107608,
+      "bounds": [
+        [
+          -0.4942989945411682,
+          -0.5020212531089783,
+          -0.23362606763839722
+        ],
+        [
+          0.451809287071228,
+          0.41532981395721436,
+          0.3359992504119873
+        ]
+      ],
+      "visual_kind": "vertex",
+      "raw_glb": "/workspace/image_to_usable_car_probe_20261007/raw/cpu-attempt001/raw_generated.glb",
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "extraction_seconds": 29.829973482999776,
+      "total_generation_seconds": 42.471553142997436,
+      "process_max_rss_mib": 3880.54296875
+    }
+  ],
+  "generation_calls": 1
+}

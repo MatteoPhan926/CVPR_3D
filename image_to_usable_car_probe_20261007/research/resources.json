@@ -1,0 +1,18 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "cpu_count": 5,
+  "nvidia_smi": null,
+  "nvcc": null,
+  "nvidia_device_nodes": [],
+  "dri_exists": false,
+  "memory_kb": {
+    "MemTotal": 34906040,
+    "MemAvailable": 34033436
+  },
+  "credential_presence": {
+    "HF_TOKEN": false,
+    "HUGGING_FACE_HUB_TOKEN": false,
+    "HUGGINGFACE_HUB_TOKEN": false
+  }
+}

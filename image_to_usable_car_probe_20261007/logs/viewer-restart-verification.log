@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "phase": "authored",
+  "url": "http://127.0.0.1:8777/source/viewer/",
+  "raw_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+  "initial_state": {
+    "ready": true,
+    "mode": "raw",
+    "original": true,
+    "progress": 0,
+    "angleDegrees": 0,
+    "maxAngleDegrees": 60,
+    "playing": false,
+    "motionMode": null,
+    "motionReason": "No authored asset loaded",
+    "authoredStatus": {
+      "available": null,
+      "reason": "Not checked"
+    },
+    "measuredPivotAngleDegrees": null,
+    "animationDuration": 2,
+    "clipOpeningRangeSeconds": [
+      0,
+      2
+    ],
+    "animations": [],
+    "urls": {
+      "raw": "/raw/car_raw.glb",
+      "authored": "/artifacts/car_authored.glb"
+    },
+    "cameraView": "hero",
+    "cameraPosition": [
+      1.2334156748023972,
+      0.6672087238352264,
+      -1.4765656435216188
+    ],
+    "cameraTarget": [
+      0.018972042261204556,
+      0.051186591386795065,
+      0.0018874743546163641
+    ],
+    "cameraBasis": {
+      "front": [
+        0,
+        0,
+        -1
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    "displayRotationsDegrees": {
+      "raw": [
+        -90,
+        0,
+        53.22183438249461
+      ],
+      "authored": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bounds": {
+      "min": [
+        -0.31160434548283406,
+        -0.2336260676383972,
+        -0.4140940223061642
+      ],
+      "max": [
+        0.34954843000524316,
+        0.3359992504119873,
+        0.41786897101539694
+      ]
+    },
+    "frames": 4,
+    "renderer": {
+      "threeRevision": "170",
+      "width": 1364,
+      "height": 660
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "authored_state": {
+    "ready": true,
+    "mode": "authored",
+    "original": false,
+    "progress": 0,
+    "angleDegrees": 0,
+    "maxAngleDegrees": 60,
+    "playing": false,
+    "motionMode": "exported-animation",
+    "motionReason": null,
+    "authoredStatus": {
+      "available": true,
+      "reason": null
+    },
+    "measuredPivotAngleDegrees": 0,
+    "animationDuration": 1.9999999999999998,
+    "clipOpeningRangeSeconds": [
+      0.03333333333333333,
+      2.033333333333333
+    ],
+    "animations": [
+      {
+        "name": "DoorOpenClose_0_60",
+        "duration": 4.0333333015441895,
+        "tracks": [
+          "DoorPivot.quaternion"
+        ]
+      }
+    ],
+    "urls": {
+      "raw": "/raw/car_raw.glb",
+      "authored": "/artifacts/car_authored.glb"
+    },
+    "cameraView": "hero",
+    "cameraPosition": [
+      1.2334156748023972,
+      0.6672087238352264,
+      -1.4765656435216188
+    ],
+    "cameraTarget": [
+      0.018972042261204556,
+      0.051186591386795065,
+      0.0018874743546163641
+    ],
+    "cameraBasis": {
+      "front": [
+        0,
+        0,
+        -1
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    "displayRotationsDegrees": {
+      "raw": [
+        -90,
+        0,
+        53.22183438249461
+      ],
+      "authored": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bounds": {
+      "min": [
+        -0.3116043508052826,
+        -0.23362606763839722,
+        -0.4140940308570862
+      ],
+      "max": [
+        0.34954843000524316,
+        0.3359992504119873,
+        0.417868971824646
+      ]
+    },
+    "frames": 30,
+    "renderer": {
+      "threeRevision": "170",
+      "width": 1364,
+      "height": 660
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "authored_sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+  "moving_nodes": [
+    "DoorPivot",
+    "Door_added_edge_thickness",
+    "Door_added_inner_lining",
+    "Door_generated_outer_surface"
+  ],
+  "fixed_nodes": [
+    "Body_fixed_generated_surface",
+    "Body_added_recessed_jamb",
+    "Cabin_added_floor_proxy",
+    "Cabin_added_inner_wall_proxy",
+    "Cabin_added_seat_cushion_proxy",
+    "Cabin_added_seat_back_proxy"
+  ],
+  "reset_max_matrix_delta": 0,
+  "comparison_camera": [
+    1.233415679048525,
+    0.6672087273389556,
+    -1.4765656558014053
+  ],
+  "browser": "151.0.7922.173",
+  "final_state": {
+    "ready": true,
+    "mode": "authored",
+    "original": false,
+    "progress": 0.5000500000000029,
+    "angleDegrees": 30.003000000000174,
+    "maxAngleDegrees": 60,
+    "playing": false,
+    "motionMode": "exported-animation",
+    "motionReason": null,
+    "authoredStatus": {
+      "available": true,
+      "reason": null
+    },
+    "measuredPivotAngleDegrees": 30.00300693970847,
+    "animationDuration": 1.9999999999999998,
+    "clipOpeningRangeSeconds": [
+      0.03333333333333333,
+      2.033333333333333
+    ],
+    "animations": [
+      {
+        "name": "DoorOpenClose_0_60",
+        "duration": 4.0333333015441895,
+        "tracks": [
+          "DoorPivot.quaternion"
+        ]
+      }
+    ],
+    "urls": {
+      "raw": "/raw/car_raw.glb",
+      "authored": "/artifacts/car_authored.glb"
+    },
+    "cameraView": "hero",
+    "cameraPosition": [
+      1.233415679048525,
+      0.6672087273389556,
+      -1.4765656558014053
+    ],
+    "cameraTarget": [
+      0.018972039599980284,
+      0.051186591386795044,
+      0.0018874704837799072
+    ],
+    "cameraBasis": {
+      "front": [
+        0,
+        0,
+        -1
+      ],
+      "side": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    },
+    "displayRotationsDegrees": {
+      "raw": [
+        -90,
+        0,
+        53.22183438249461
+      ],
+      "authored": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bounds": {
+      "min": [
+        -0.3116043508052826,
+        -0.23362606763839722,
+        -0.4140940308570862
+      ],
+      "max": [
+        0.34954843000524316,
+        0.3359992504119873,
+        0.417868971824646
+      ]
+    },
+    "frames": 106,
+    "renderer": {
+      "threeRevision": "170",
+      "width": 1364,
+      "height": 660
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "javascript_errors": [],
+  "external_requests": []
+}

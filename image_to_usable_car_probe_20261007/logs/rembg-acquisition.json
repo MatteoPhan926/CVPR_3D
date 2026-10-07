@@ -1,0 +1,8 @@
+{
+  "status": "verified",
+  "file": "/workspace/image_to_usable_car_probe_20261007/environment/rembg-cache/u2net.onnx",
+  "bytes": 175997641,
+  "upstream_md5": "60024c5c889badc19c04ad937298a77b",
+  "actual_md5": "60024c5c889badc19c04ad937298a77b",
+  "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491"
+}

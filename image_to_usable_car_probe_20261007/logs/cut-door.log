@@ -1,0 +1,14 @@
+{
+  "raw_triangles": 107608,
+  "fixed_triangles": 105133,
+  "door_triangles": 8379,
+  "door_vertices": 4574,
+  "boundary_edges": 781,
+  "raw_area": 1.7337055452479915,
+  "fixed_area": 1.614561373510602,
+  "door_area": 0.11914417173738942,
+  "area_partition_relative_error": 1.2807515413078394e-16,
+  "original_raw_hash_unchanged": true,
+  "closed_source_surface_preserved": true,
+  "note": "Partition area checks arithmetic preservation, not physical clearance or visual quality."
+}

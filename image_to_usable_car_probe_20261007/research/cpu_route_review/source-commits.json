@@ -1,0 +1,8 @@
+{
+  "observed_at_utc": "2026-10-06T23:45:58.910564+00:00",
+  "method": "git ls-remote PUBLIC_REPOSITORY HEAD using the existing configuration",
+  "commits": {
+    "TripoSR": "107cefdc244c39106fa830359024f6a2f1c78871",
+    "torchmcubes": "879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "raw_url": "/raw/car_raw.glb",
+  "authored_url": "/artifacts/car_authored.glb",
+  "title": "Image to Car",
+  "camera": {
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "front": [
+      0,
+      0,
+      -1
+    ],
+    "side": [
+      1,
+      0,
+      0
+    ]
+  },
+  "door": {
+    "pivot_node": "DoorPivot",
+    "max_angle_degrees": 60,
+    "animation_name": "DoorOpenClose_0_60",
+    "axis": null,
+    "sign": null,
+    "clip_open_range_seconds": [
+      0.03333333333333333,
+      2.033333333333333
+    ]
+  },
+  "note": "Explicit display-only raw native Z-up to authored glTF Y-up alignment: native front [.8009595898,.5987184108,0] maps to -Z, near side [.5987184108,-.8009595898,0] maps to +X. Authored identity assumes the declared standardized export. Neither raw GLB bytes nor vertex-color/material semantics are changed.",
+  "display_rotations_degrees": {
+    "raw": [
+      -90,
+      0,
+      53.22183438249461
+    ],
+    "authored": [
+      0,
+      0,
+      0
+    ]
+  }
+}

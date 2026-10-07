@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-10-06T23:48:56.947679+00:00",
+  "torch": "2.5.1+cpu",
+  "cuda_available": false,
+  "smoke_input": "synthetic 24-cubed sphere scalar field; NOT the user car or a generated candidate",
+  "marching_cubes_vertices": 1280,
+  "marching_cubes_faces": 2492,
+  "glb_bytes": 51324,
+  "glb_roundtrip_preserved_counts": true,
+  "glb_roundtrip_visual_kind": "vertex",
+  "model_inference_executed": false
+}

@@ -1,0 +1,62 @@
+{
+  "raw_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+  "frame": "+X camera-facing side, +Y front, +Z up; arbitrary generated units",
+  "rotation_native_to_car": [
+    [
+      0.5987184108349871,
+      -0.8009595898216262,
+      0.0
+    ],
+    [
+      0.8009595898216262,
+      0.5987184108349871,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "door_outline_yz": [
+    [
+      -0.195,
+      -0.075
+    ],
+    [
+      0.025,
+      -0.065
+    ],
+    [
+      0.02,
+      0.145
+    ],
+    [
+      -0.02,
+      0.242
+    ],
+    [
+      -0.187,
+      0.253
+    ]
+  ],
+  "near_side_min_x": 0.1,
+  "pivot": [
+    0.255,
+    -0.19,
+    0.085
+  ],
+  "axis_blender": [
+    0,
+    0,
+    -1
+  ],
+  "angle_range_degrees": [
+    0,
+    60
+  ],
+  "door_inward_thickness": 0.018,
+  "jamb_inward_depth": 0.042,
+  "selection_basis": "Approximate visible front cabin door, inferred from this raw mesh and input; contour not recovered as ground truth.",
+  "completion": "Offset opaque inner door skin, cut-edge strips, recessed jamb strips and simple dark cabin/seat proxies. Generated windows remain opaque. No global shape or color repair."
+}

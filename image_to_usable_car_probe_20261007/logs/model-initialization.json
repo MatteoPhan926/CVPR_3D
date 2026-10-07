@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-10-07T04:44:34.461036+00:00",
+  "checkpoint_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "checkpoint_revision": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+  "torch_version": "2.5.1+cpu",
+  "devices": [
+    "cpu"
+  ],
+  "parameter_count": 419275628,
+  "initialization_wall_seconds": 4.728696644997399,
+  "process_max_rss_mib": 3750.53515625,
+  "image_inference_executed": false
+}

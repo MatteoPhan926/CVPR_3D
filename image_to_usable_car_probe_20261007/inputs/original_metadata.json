@@ -1,0 +1,9 @@
+{
+  "source_path": "/workspace/image_to_usable_car_probe_20261007/inputs/extracted/images.jpg",
+  "preserved_path": "/workspace/image_to_usable_car_probe_20261007/inputs/original.jpg",
+  "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "width": 516,
+  "height": 387,
+  "mode": "RGB",
+  "format": "JPEG"
+}

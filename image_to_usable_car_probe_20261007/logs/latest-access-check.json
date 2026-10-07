@@ -1,0 +1,15 @@
+[
+  {
+    "url": "https://microsoft-trellis-2.hf.space/config",
+    "timestamp_utc": "2026-10-07T04:41:21.592038+00:00",
+    "status": 405,
+    "final_host": "microsoft-trellis-2.hf.space"
+  },
+  {
+    "url": "https://huggingface.co/stabilityai/TripoSR/resolve/5b521936b01fbe1890f6f9baed0254ab6351c04a/model.ckpt",
+    "timestamp_utc": "2026-10-07T04:41:21.592720+00:00",
+    "status": 200,
+    "final_host": "us.aws.cdn.hf.co",
+    "content_length": "1677246742"
+  }
+]

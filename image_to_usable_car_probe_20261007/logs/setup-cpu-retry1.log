@@ -1,0 +1,136 @@
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Requirement already satisfied: torch==2.5.1+cpu in ./environment/venv/lib/python3.12/site-packages (2.5.1+cpu)
+Requirement already satisfied: filelock in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (3.32.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (4.16.0)
+Requirement already satisfied: networkx in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (3.6.1)
+Requirement already satisfied: jinja2 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (3.1.6)
+Requirement already satisfied: fsspec in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (2026.7.0)
+Requirement already satisfied: setuptools in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (78.1.0)
+Requirement already satisfied: sympy==1.13.1 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.1+cpu) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./environment/venv/lib/python3.12/site-packages (from sympy==1.13.1->torch==2.5.1+cpu) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./environment/venv/lib/python3.12/site-packages (from jinja2->torch==2.5.1+cpu) (3.0.3)
+Requirement already satisfied: numpy==1.26.4 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 3)) (1.26.4)
+Requirement already satisfied: omegaconf==2.3.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4)) (2.3.0)
+Requirement already satisfied: Pillow==10.1.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 5)) (10.1.0)
+Requirement already satisfied: einops==0.7.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 6)) (0.7.0)
+Requirement already satisfied: transformers==4.35.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (4.35.0)
+Requirement already satisfied: trimesh==4.0.5 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 8)) (4.0.5)
+Requirement already satisfied: rembg==2.0.57 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (2.0.57)
+Requirement already satisfied: huggingface-hub==0.17.3 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10)) (0.17.3)
+Requirement already satisfied: imageio==2.34.2 in ./environment/venv/lib/python3.12/site-packages (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11)) (2.34.2)
+Requirement already satisfied: xatlas==0.0.9 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 12)) (0.0.9)
+Requirement already satisfied: moderngl==5.10.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 13)) (5.10.0)
+Requirement already satisfied: scikit-build-core>=1.0 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 14)) (1.1.1)
+Requirement already satisfied: pybind11>=2.10 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 15)) (3.1.0)
+Requirement already satisfied: cmake>=3.18 in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 16)) (4.4.4)
+Requirement already satisfied: ninja in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 17)) (1.13.2)
+Requirement already satisfied: setuptools in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 18)) (78.1.0)
+Requirement already satisfied: wheel in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 19)) (0.48.0)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in ./environment/venv/lib/python3.12/site-packages (from omegaconf==2.3.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4)) (4.9.3)
+Requirement already satisfied: PyYAML>=5.1.0 in ./environment/venv/lib/python3.12/site-packages (from omegaconf==2.3.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4)) (6.0.3)
+Requirement already satisfied: filelock in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (3.32.3)
+Requirement already satisfied: packaging>=20.0 in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (26.3)
+Requirement already satisfied: regex!=2019.12.17 in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (2026.9.29)
+Requirement already satisfied: requests in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (2.34.2)
+Requirement already satisfied: tokenizers<0.15,>=0.14 in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (0.14.1)
+Requirement already satisfied: safetensors>=0.3.1 in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (0.8.0)
+Requirement already satisfied: tqdm>=4.27 in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (4.70.1)
+Requirement already satisfied: jsonschema in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (4.26.0)
+Requirement already satisfied: onnxruntime in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (1.30.0)
+Requirement already satisfied: opencv-python-headless in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (4.11.0.86)
+Requirement already satisfied: pooch in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (1.9.0)
+Requirement already satisfied: pymatting in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (1.1.16)
+Requirement already satisfied: scikit-image in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (0.26.0)
+Requirement already satisfied: scipy in ./environment/venv/lib/python3.12/site-packages (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (1.17.1)
+Requirement already satisfied: fsspec in ./environment/venv/lib/python3.12/site-packages (from huggingface-hub==0.17.3->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10)) (2026.7.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in ./environment/venv/lib/python3.12/site-packages (from huggingface-hub==0.17.3->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10)) (4.16.0)
+Requirement already satisfied: glcontext<3,>=2.5.0 in ./environment/venv/lib/python3.12/site-packages (from moderngl==5.10.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 13)) (2.5.0)
+Requirement already satisfied: imageio-ffmpeg in ./environment/venv/lib/python3.12/site-packages (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11)) (0.6.0)
+Requirement already satisfied: psutil in ./environment/venv/lib/python3.12/site-packages (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11)) (7.2.2)
+Requirement already satisfied: pathspec>=0.12.0 in ./environment/venv/lib/python3.12/site-packages (from scikit-build-core>=1.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 14)) (1.1.1)
+Requirement already satisfied: attrs>=22.2.0 in ./environment/venv/lib/python3.12/site-packages (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./environment/venv/lib/python3.12/site-packages (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in ./environment/venv/lib/python3.12/site-packages (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in ./environment/venv/lib/python3.12/site-packages (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (2026.9.1)
+Requirement already satisfied: flatbuffers in ./environment/venv/lib/python3.12/site-packages (from onnxruntime->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (25.12.19)
+Requirement already satisfied: protobuf>=4.25.8 in ./environment/venv/lib/python3.12/site-packages (from onnxruntime->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (7.36.2)
+Requirement already satisfied: platformdirs>=2.5.0 in ./environment/venv/lib/python3.12/site-packages (from pooch->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (4.12.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./environment/venv/lib/python3.12/site-packages (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (3.5.2)
+Requirement already satisfied: idna<4,>=2.5 in ./environment/venv/lib/python3.12/site-packages (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in ./environment/venv/lib/python3.12/site-packages (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in ./environment/venv/lib/python3.12/site-packages (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (2026.7.22)
+Requirement already satisfied: numba>=0.60.0 in ./environment/venv/lib/python3.12/site-packages (from pymatting->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (0.68.0)
+Requirement already satisfied: networkx>=3.0 in ./environment/venv/lib/python3.12/site-packages (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (3.6.1)
+Requirement already satisfied: tifffile>=2022.8.12 in ./environment/venv/lib/python3.12/site-packages (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (2026.3.3)
+Requirement already satisfied: lazy-loader>=0.4 in ./environment/venv/lib/python3.12/site-packages (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (0.6)
+Requirement already satisfied: llvmlite<0.51,>=0.50.0dev0 in ./environment/venv/lib/python3.12/site-packages (from numba>=0.60.0->pymatting->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (0.50.0)
+Processing ./environment/dependencies/torchmcubes
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: torch==2.5.* in ./environment/venv/lib/python3.12/site-packages (from torchmcubes==0.1.0) (2.5.1+cpu)
+Requirement already satisfied: filelock in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.32.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (4.16.0)
+Requirement already satisfied: networkx in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.6.1)
+Requirement already satisfied: jinja2 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.1.6)
+Requirement already satisfied: fsspec in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (2026.7.0)
+Requirement already satisfied: setuptools in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (78.1.0)
+Requirement already satisfied: sympy==1.13.1 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./environment/venv/lib/python3.12/site-packages (from sympy==1.13.1->torch==2.5.*->torchmcubes==0.1.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./environment/venv/lib/python3.12/site-packages (from jinja2->torch==2.5.*->torchmcubes==0.1.0) (3.0.3)
+Building wheels for collected packages: torchmcubes
+  Building wheel for torchmcubes (pyproject.toml): started
+  Building wheel for torchmcubes (pyproject.toml): finished with status 'done'
+  Created wheel for torchmcubes: filename=torchmcubes-0.1.0-cp312-cp312-linux_x86_64.whl size=77803 sha256=33a9de734c56dd0603885677c3c3aa9bfbf8dbb8dda2ebdb2bf240c526cc7e55
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sbljfmgb/wheels/60/29/07/ec135887472e508e2f13792f7daf7fe85436c3c732c6ab4596
+Successfully built torchmcubes
+Installing collected packages: torchmcubes
+Successfully installed torchmcubes-0.1.0
+No broken requirements found.
+[0;93m2026-10-06 23:48:10.030232130 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+usage: run.py [-h] [--device DEVICE]
+              [--pretrained-model-name-or-path PRETRAINED_MODEL_NAME_OR_PATH]
+              [--chunk-size CHUNK_SIZE] [--mc-resolution MC_RESOLUTION]
+              [--no-remove-bg] [--foreground-ratio FOREGROUND_RATIO]
+              [--output-dir OUTPUT_DIR] [--model-save-format {obj,glb}]
+              [--bake-texture] [--texture-resolution TEXTURE_RESOLUTION]
+              [--render]
+              image [image ...]
+
+positional arguments:
+  image                 Path to input image(s).
+
+options:
+  -h, --help            show this help message and exit
+  --device DEVICE       Device to use. If no CUDA-compatible device is found,
+                        will fallback to 'cpu'. Default: 'cuda:0'
+  --pretrained-model-name-or-path PRETRAINED_MODEL_NAME_OR_PATH
+                        Path to the pretrained model. Could be either a
+                        huggingface model id is or a local path. Default:
+                        'stabilityai/TripoSR'
+  --chunk-size CHUNK_SIZE
+                        Evaluation chunk size for surface extraction and
+                        rendering. Smaller chunk size reduces VRAM usage but
+                        increases computation time. 0 for no chunking.
+                        Default: 8192
+  --mc-resolution MC_RESOLUTION
+                        Marching cubes grid resolution. Default: 256
+  --no-remove-bg        If specified, the background will NOT be automatically
+                        removed from the input image, and the input image
+                        should be an RGB image with gray background and
+                        properly-sized foreground. Default: false
+  --foreground-ratio FOREGROUND_RATIO
+                        Ratio of the foreground size to the image size. Only
+                        used when --no-remove-bg is not specified. Default:
+                        0.85
+  --output-dir OUTPUT_DIR
+                        Output directory to save the results. Default:
+                        'output/'
+  --model-save-format {obj,glb}
+                        Format to save the extracted mesh. Default: 'obj'
+  --bake-texture        Bake a texture atlas for the extracted mesh, instead
+                        of vertex colors
+  --texture-resolution TEXTURE_RESOLUTION
+                        Texture atlas resolution, only useful with --bake-
+                        texture. Default: 2048
+  --render              If specified, save a NeRF-rendered video. Default:
+                        false

@@ -1,0 +1,16 @@
+{
+  "source/viewer/": {
+    "status": 200,
+    "bytes": 2799
+  },
+  "raw/car_raw.glb": {
+    "status": 200,
+    "bytes": 2154784,
+    "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d"
+  },
+  "artifacts/car_authored.glb": {
+    "status": 200,
+    "bytes": 3539184,
+    "sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "selected CPU fallback before any generated candidate",
+  "chosen_route": "TripoSR CPU, official vertex-color GLB export",
+  "reason": "Official CPU code path is available on this host; TRELLIS.2 local execution requires an unavailable NVIDIA GPU. TripoSR does not promise TRELLIS.2 quality.",
+  "source_repository": "https://github.com/VAST-AI-Research/TripoSR",
+  "source_commit": "107cefdc244c39106fa830359024f6a2f1c78871",
+  "torchmcubes_commit": "879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff",
+  "pretrained_model": "stabilityai/TripoSR",
+  "model_revision": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+  "model_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "additional_hf_resource": "facebook/dino-vitb16/config.json",
+  "input_original": "inputs/original.jpg",
+  "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "chunk_size": 4096,
+  "marching_cubes_resolution": 256,
+  "preprocessing": {
+    "implementation": "upstream rembg default session, resize_foreground, alpha composite over gray",
+    "foreground_ratio": 0.85,
+    "background_rgb": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "review_before_inference": true,
+    "preserve": [
+      "original bytes",
+      "RGBA cutout",
+      "processed RGB input",
+      "model artifact hashes"
+    ],
+    "manual_mask_changes": "none executed; any changes must be recorded before generation"
+  },
+  "output_format": "glb",
+  "appearance_encoding": "vertex colors",
+  "bake_texture": false,
+  "render_nerf_video": false,
+  "seed": 42,
+  "maximum_inference_calls": 1,
+  "maximum_cpu_inference_wall_seconds": 1800,
+  "raw_output": "raw/attempt001/0/mesh.glb",
+  "generation_attempts_executed": 0,
+  "retries_executed": 0,
+  "paid_services": false,
+  "training": false,
+  "authoring_intent": "config/AUTHORING_INTENT.md",
+  "termination": "Retain raw output regardless of quality; stop at the budget or prerequisite blocker. Do not enter a speculative repair loop.",
+  "input_amendment": "User supplied a new inline grass photograph, replacing the earlier road photograph, before any generation. Original file bytes remain unavailable.",
+  "expected_model_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "preferred_route_now": "Execute this CPU configuration once",
+  "input_dimensions": [
+    516,
+    387
+  ],
+  "input": "User-supplied images.rar / images.jpg; latest grass photo",
+  "route_selection_utc": "2026-10-07T04:51:39.374932+00:00",
+  "route_selection_reason": "Official hosted TRELLIS.2 request rejected by ZeroGPU quota before inference produced a candidate; see raw/hosted-attempt001/attempt.json"
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-06T23:52:34.964029+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "cpu_count": 5,
+  "nvidia_smi": null,
+  "nvcc": null,
+  "nvidia_device_nodes": [],
+  "inference_executed": false,
+  "network": [
+    {
+      "url": "https://huggingface.co/api/spaces/microsoft/TRELLIS.2",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/spaces/microsoft/TRELLIS.2",
+      "bytes_read": 13757,
+      "sha256": "c8a72aefdbc2056d7a0ea1c42d4d7b3807c96843c58f639542fd34f8eb59c6cc"
+    },
+    {
+      "url": "https://huggingface.co/microsoft/TRELLIS.2-4B/resolve/main/pipeline.json",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/resolve-cache/models/microsoft/TRELLIS.2-4B/af44b45f2e35a493886929c6d786e563ec68364d/pipeline.json?%2Fmicrosoft%2FTRELLIS.2-4B%2Fresolve%2Fmain%2Fpipeline.json=&etag=%22f5ec14c7f71b3d7f2cb0221c5f568a6871dc5e90%22",
+      "bytes_read": 4186,
+      "sha256": "222c359ab1ed9bc6735a640a34f95d47f8681b9bc4aaa101bfb80274676253c6"
+    },
+    {
+      "url": "https://huggingface.co/stabilityai/TripoSR/resolve/main/config.yaml",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/resolve-cache/models/stabilityai/TripoSR/5b521936b01fbe1890f6f9baed0254ab6351c04a/config.yaml?%2Fstabilityai%2FTripoSR%2Fresolve%2Fmain%2Fconfig.yaml=&etag=%22fa3e59a701f02679bd1dca02fbaf97306174d291%22",
+      "bytes_read": 987,
+      "sha256": "74ca708ce086bf68e97709ea6b3d91f14717921c04691e84043f0eb8fcc68e62"
+    }
+  ],
+  "input": {
+    "status": "Original image bytes not supplied to this script; chat-visible image is not substituted."
+  }
+}

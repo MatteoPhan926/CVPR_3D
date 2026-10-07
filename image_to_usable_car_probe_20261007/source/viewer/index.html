@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10191e">
+  <title>Image to Car · Asset Inspection</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app">
+    <header class="topbar">
+      <div class="identity"><span class="mark" aria-hidden="true">C</span><div><p class="eyebrow">GENERATION / AUTHORING PROBE</p><h1>Image to Car</h1></div></div>
+      <div class="top-actions"><span id="modeBadge" class="badge">Raw generation</span><button id="originalButton" type="button" aria-pressed="false">View authored</button></div>
+    </header>
+    <section id="viewport" aria-label="Interactive generated car preview">
+      <div class="canvas-overlay">
+        <p class="eyebrow">INSPECT THE GENERATED ASSET</p>
+        <h2>Car asset<br>inspection.</h2>
+        <p id="modelHint">Drag to orbit · Scroll to zoom<br>Right-drag to pan</p>
+      </div>
+      <div id="loading" role="status"><span class="spinner" aria-hidden="true"></span><span id="loadingText">Opening the studio…</span></div>
+      <div id="error" role="alert" hidden></div>
+      <div class="view-tools" aria-label="Camera presets"><button data-view="hero" class="selected" type="button">Perspective</button><button data-view="side" type="button">Door side</button><button data-view="front" type="button">Front</button><button id="resetCamera" type="button" title="Reset camera">↺ <span>Reset view</span></button></div>
+    </section>
+    <section class="control-panel" aria-label="Door controls">
+      <div class="control-title"><span class="status-dot" aria-hidden="true"></span><div><p class="eyebrow" id="controlEyebrow">RAW GENERATION</p><h3 id="controlHeading">Static raw asset</h3></div></div>
+      <div class="slider-block"><div class="slider-labels"><label for="doorSlider">Opening</label><output id="angleValue" for="doorSlider">0° <span>/ 60°</span></output></div><input id="doorSlider" type="range" min="0" max="60" step="0.1" value="0" aria-label="Door opening angle in degrees"><div class="slider-endpoints"><button id="closedButton" type="button">Closed</button><span id="percentValue">0%</span><button id="openButton" type="button">Open</button></div></div>
+      <button id="playButton" class="play-button" type="button" aria-label="Play door animation"><span id="playIcon" aria-hidden="true">&#x25B6;&#xFE0E;</span><span id="playLabel">Play motion</span></button>
+    </section>
+    <footer><p>Raw and authored assets · Shared camera · Saved surface materials</p><a id="downloadLink" href="/raw/car_raw.glb" download>Download viewed GLB <span aria-hidden="true">↗</span></a></footer>
+  </main>
+  <script src="./dist/app.js"></script>
+</body>
+</html>

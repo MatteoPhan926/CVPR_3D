@@ -1,0 +1,48 @@
+{
+  "requested_utc": "2026-10-07T04:50:10.683660+00:00",
+  "configuration": {
+    "status": "predeclared candidate; no input or generation call made",
+    "route": "official public hosted microsoft/TRELLIS.2",
+    "reason": "Preferred original requested generator is now reachable; this avoids replacing it solely because the local machine lacks a GPU.",
+    "space_commit": "ebf60b20fc5a4607f90a1c11c0aab0ceeda5429d",
+    "gradio_version": "6.1.0",
+    "host": "microsoft-trellis-2.hf.space",
+    "input": "User-supplied images.rar / images.jpg; latest grass photo",
+    "preprocessing": "official /preprocess_image; save and inspect its returned image before generation",
+    "seed": 42,
+    "randomize_seed": false,
+    "resolution": "1024",
+    "sparse_structure": {
+      "guidance_strength": 7.5,
+      "guidance_rescale": 0.7,
+      "steps": 12,
+      "rescale_t": 5.0
+    },
+    "shape": {
+      "guidance_strength": 7.5,
+      "guidance_rescale": 0.5,
+      "steps": 12,
+      "rescale_t": 3.0
+    },
+    "texture": {
+      "guidance_strength": 1.0,
+      "guidance_rescale": 0.0,
+      "steps": 12,
+      "rescale_t": 3.0
+    },
+    "decimation_target": 300000,
+    "texture_size": 2048,
+    "max_generated_candidates_across_routes": 1,
+    "queue_and_execution_budget_seconds": 1200,
+    "free_service_only": true,
+    "actual_zero_gpu_quota_or_admission_verified": false,
+    "fallback": "Use the already documented CPU TripoSR route only if the hosted request is denied/unavailable before a candidate is generated; disclose the route change and any failed calls.",
+    "hosted_preprocessing_note": "The public Space implementation delegates background removal to another Gradio service before square-cropping and black alpha compositing; preserve and inspect its actual returned image. See the pinned Space app source.",
+    "input_original": "inputs/original.jpg",
+    "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+    "input_dimensions": [
+      516,
+      387
+    ]
+  }
+}

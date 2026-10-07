@@ -1,0 +1,300 @@
+Cloning into '/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR'...
+HEAD is now at 107cefd Update README.md
+Cloning into '/workspace/image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes'...
+HEAD is now at 879926d Merge pull request #34 from tatsy/claude/repository-issue-review-cjkn4k
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.5.1+cpu
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.5.1%2Bcpu-cp312-cp312-linux_x86_64.whl (174.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 174.6/174.6 MB 100.5 MB/s eta 0:00:00
+Collecting filelock (from torch==2.5.1+cpu)
+  Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.8.0 (from torch==2.5.1+cpu)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting networkx (from torch==2.5.1+cpu)
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch==2.5.1+cpu)
+  Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.5.1+cpu)
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting setuptools (from torch==2.5.1+cpu)
+  Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy==1.13.1 (from torch==2.5.1+cpu)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch==2.5.1+cpu)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.5.1+cpu)
+  Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 17.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 21.6 MB/s eta 0:00:00
+Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 22.2 MB/s eta 0:00:00
+Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 53.3 MB/s eta 0:00:00
+Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 setuptools-78.1.0 sympy-1.13.1 torch-2.5.1+cpu typing-extensions-4.16.0
+Collecting numpy==1.26.4 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 3))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting omegaconf==2.3.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4))
+  Downloading omegaconf-2.3.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting Pillow==10.1.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 5))
+  Downloading Pillow-10.1.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting einops==0.7.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 6))
+  Downloading einops-0.7.0-py3-none-any.whl.metadata (13 kB)
+Collecting transformers==4.35.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading transformers-4.35.0-py3-none-any.whl.metadata (123 kB)
+Collecting trimesh==4.0.5 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 8))
+  Downloading trimesh-4.0.5-py3-none-any.whl.metadata (18 kB)
+Collecting rembg==2.0.57 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading rembg-2.0.57-py3-none-any.whl.metadata (16 kB)
+Collecting huggingface-hub==0.17.3 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10))
+  Downloading huggingface_hub-0.17.3-py3-none-any.whl.metadata (13 kB)
+Collecting imageio==2.34.2 (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11))
+  Downloading imageio-2.34.2-py3-none-any.whl.metadata (4.9 kB)
+Collecting xatlas==0.0.9 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 12))
+  Downloading xatlas-0.0.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting moderngl==5.10.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 13))
+  Downloading moderngl-5.10.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.2 kB)
+Collecting scikit-build-core>=1.0 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 14))
+  Downloading scikit_build_core-1.1.1-py3-none-any.whl.metadata (19 kB)
+Collecting pybind11>=2.10 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 15))
+  Downloading pybind11-3.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting cmake>=3.18 (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 16))
+  Downloading cmake-4.4.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (7.0 kB)
+Collecting ninja (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 17))
+  Downloading ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.4 kB)
+Requirement already satisfied: setuptools in ./environment/venv/lib/python3.12/site-packages (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 18)) (78.1.0)
+Collecting wheel (from -r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 19))
+  Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting antlr4-python3-runtime==4.9.* (from omegaconf==2.3.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4))
+  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting PyYAML>=5.1.0 (from omegaconf==2.3.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 4))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Requirement already satisfied: filelock in ./environment/venv/lib/python3.12/site-packages (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7)) (3.32.3)
+Collecting packaging>=20.0 (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting regex!=2019.12.17 (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting requests (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tokenizers<0.15,>=0.14 (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading tokenizers-0.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting safetensors>=0.3.1 (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting tqdm>=4.27 (from transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting jsonschema (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting onnxruntime (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading onnxruntime-1.30.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Collecting opencv-python-headless (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+Collecting pooch (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading pooch-1.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting pymatting (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading pymatting-1.1.16-py3-none-any.whl.metadata (9.1 kB)
+Collecting scikit-image (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading scikit_image-0.26.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (15 kB)
+Collecting scipy (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Requirement already satisfied: fsspec in ./environment/venv/lib/python3.12/site-packages (from huggingface-hub==0.17.3->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10)) (2026.7.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in ./environment/venv/lib/python3.12/site-packages (from huggingface-hub==0.17.3->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 10)) (4.16.0)
+Collecting glcontext<3,>=2.5.0 (from moderngl==5.10.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 13))
+  Downloading glcontext-2.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.1 kB)
+Collecting imageio-ffmpeg (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11))
+  Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting psutil (from imageio[ffmpeg]==2.34.2->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 11))
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pathspec>=0.12.0 (from scikit-build-core>=1.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 14))
+  Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting attrs>=22.2.0 (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting flatbuffers (from onnxruntime->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting protobuf>=4.25.8 (from onnxruntime->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+INFO: pip is looking at multiple versions of opencv-python-headless to determine which version is compatible with other requirements. This could take a while.
+Collecting opencv-python-headless (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading opencv_python_headless-4.14.0.94-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python_headless-4.13.0.92-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python_headless-4.13.0.90-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python_headless-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting platformdirs>=2.5.0 (from pooch->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading platformdirs-4.12.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->transformers==4.35.0->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 7))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting numba>=0.60.0 (from pymatting->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading numba-0.68.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (2.8 kB)
+INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+Collecting scipy (from rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading scipy-1.18.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+  Downloading scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Requirement already satisfied: networkx>=3.0 in ./environment/venv/lib/python3.12/site-packages (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9)) (3.6.1)
+Collecting tifffile>=2022.8.12 (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading tifffile-2026.9.20-py3-none-any.whl.metadata (34 kB)
+Collecting lazy-loader>=0.4 (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading lazy_loader-0.6-py3-none-any.whl.metadata (6.0 kB)
+Collecting llvmlite<0.51,>=0.50.0dev0 (from numba>=0.60.0->pymatting->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading llvmlite-0.50.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+INFO: pip is looking at multiple versions of tifffile to determine which version is compatible with other requirements. This could take a while.
+Collecting tifffile>=2022.8.12 (from scikit-image->rembg==2.0.57->-r /workspace/image_to_usable_car_probe_20261007/config/requirements-cli.in (line 9))
+  Downloading tifffile-2026.9.15-py3-none-any.whl.metadata (33 kB)
+  Downloading tifffile-2026.9.9-py3-none-any.whl.metadata (33 kB)
+  Downloading tifffile-2026.8.23-py3-none-any.whl.metadata (34 kB)
+  Downloading tifffile-2026.8.16-py3-none-any.whl.metadata (34 kB)
+  Downloading tifffile-2026.7.31-py3-none-any.whl.metadata (33 kB)
+  Downloading tifffile-2026.7.14-py3-none-any.whl.metadata (33 kB)
+  Downloading tifffile-2026.6.1-py3-none-any.whl.metadata (33 kB)
+INFO: pip is still looking at multiple versions of tifffile to determine which version is compatible with other requirements. This could take a while.
+  Downloading tifffile-2026.5.15-py3-none-any.whl.metadata (32 kB)
+  Downloading tifffile-2026.5.2-py3-none-any.whl.metadata (32 kB)
+  Downloading tifffile-2026.4.11-py3-none-any.whl.metadata (31 kB)
+  Downloading tifffile-2026.3.3-py3-none-any.whl.metadata (31 kB)
+Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 15.8 MB/s eta 0:00:00
+Downloading omegaconf-2.3.0-py3-none-any.whl (79 kB)
+Downloading Pillow-10.1.0-cp312-cp312-manylinux_2_28_x86_64.whl (3.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 17.3 MB/s eta 0:00:00
+Downloading einops-0.7.0-py3-none-any.whl (44 kB)
+Downloading transformers-4.35.0-py3-none-any.whl (7.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 17.0 MB/s eta 0:00:00
+Downloading trimesh-4.0.5-py3-none-any.whl (688 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 688.5/688.5 kB 58.7 MB/s eta 0:00:00
+Downloading rembg-2.0.57-py3-none-any.whl (33 kB)
+Downloading huggingface_hub-0.17.3-py3-none-any.whl (295 kB)
+Downloading imageio-2.34.2-py3-none-any.whl (313 kB)
+Downloading xatlas-0.0.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (227 kB)
+Downloading moderngl-5.10.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (270 kB)
+Downloading scikit_build_core-1.1.1-py3-none-any.whl (293 kB)
+Downloading pybind11-3.1.0-py3-none-any.whl (319 kB)
+Downloading cmake-4.4.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (30.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 30.2/30.2 MB 20.7 MB/s eta 0:00:00
+Downloading ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (183 kB)
+Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+Downloading glcontext-2.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (51 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 85.4 MB/s eta 0:00:00
+Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 41.4 MB/s eta 0:00:00
+Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+Downloading tokenizers-0.14.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 15.4 MB/s eta 0:00:00
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 21.4 MB/s eta 0:00:00
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading onnxruntime-1.30.0-cp312-cp312-manylinux_2_28_x86_64.whl (23.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.6/23.6 MB 23.5 MB/s eta 0:00:00
+Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (50.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 MB 23.8 MB/s eta 0:00:00
+Downloading pooch-1.9.0-py3-none-any.whl (67 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading pymatting-1.1.16-py3-none-any.whl (56 kB)
+Downloading scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.2/35.2 MB 25.1 MB/s eta 0:00:00
+Downloading scikit_image-0.26.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (13.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.6/13.6 MB 16.6 MB/s eta 0:00:00
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading lazy_loader-0.6-py3-none-any.whl (8.8 kB)
+Downloading numba-0.68.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 17.6 MB/s eta 0:00:00
+Downloading platformdirs-4.12.3-py3-none-any.whl (32 kB)
+Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Downloading tifffile-2026.3.3-py3-none-any.whl (243 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading llvmlite-0.50.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (59.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.7/59.7 MB 26.2 MB/s eta 0:00:00
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (pyproject.toml): started
+  Building wheel for antlr4-python3-runtime (pyproject.toml): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144590 sha256=18b0e69f3c8169aafec20f56097286f1efa80a0f49120c67e728d4bedea3a24c
+  Stored in directory: /workspace/image_to_usable_car_probe_20261007/environment/pip-cache/wheels/1f/be/48/13754633f1d08d1fbfc60d5e80ae1e5d7329500477685286cd
+Successfully built antlr4-python3-runtime
+Installing collected packages: glcontext, flatbuffers, antlr4-python3-runtime, urllib3, tqdm, safetensors, rpds-py, regex, PyYAML, pybind11, psutil, protobuf, platformdirs, Pillow, pathspec, packaging, numpy, ninja, moderngl, llvmlite, imageio-ffmpeg, idna, einops, cmake, charset_normalizer, certifi, attrs, xatlas, wheel, trimesh, tifffile, scipy, scikit-build-core, requests, referencing, opencv-python-headless, onnxruntime, omegaconf, numba, lazy-loader, imageio, scikit-image, pymatting, pooch, jsonschema-specifications, huggingface-hub, tokenizers, jsonschema, transformers, rembg
+Successfully installed Pillow-10.1.0 PyYAML-6.0.3 antlr4-python3-runtime-4.9.3 attrs-26.1.0 certifi-2026.7.22 charset_normalizer-3.5.2 cmake-4.4.4 einops-0.7.0 flatbuffers-25.12.19 glcontext-2.5.0 huggingface-hub-0.17.3 idna-3.20 imageio-2.34.2 imageio-ffmpeg-0.6.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 lazy-loader-0.6 llvmlite-0.50.0 moderngl-5.10.0 ninja-1.13.2 numba-0.68.0 numpy-1.26.4 omegaconf-2.3.0 onnxruntime-1.30.0 opencv-python-headless-4.11.0.86 packaging-26.3 pathspec-1.1.1 platformdirs-4.12.3 pooch-1.9.0 protobuf-7.36.2 psutil-7.2.2 pybind11-3.1.0 pymatting-1.1.16 referencing-0.37.0 regex-2026.9.29 rembg-2.0.57 requests-2.34.2 rpds-py-2026.9.1 safetensors-0.8.0 scikit-build-core-1.1.1 scikit-image-0.26.0 scipy-1.17.1 tifffile-2026.3.3 tokenizers-0.14.1 tqdm-4.70.1 transformers-4.35.0 trimesh-4.0.5 urllib3-2.8.0 wheel-0.48.0 xatlas-0.0.9
+Processing ./environment/dependencies/torchmcubes
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: torch==2.5.* in ./environment/venv/lib/python3.12/site-packages (from torchmcubes==0.1.0) (2.5.1+cpu)
+Requirement already satisfied: filelock in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.32.3)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (4.16.0)
+Requirement already satisfied: networkx in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.6.1)
+Requirement already satisfied: jinja2 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (3.1.6)
+Requirement already satisfied: fsspec in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (2026.7.0)
+Requirement already satisfied: setuptools in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (78.1.0)
+Requirement already satisfied: sympy==1.13.1 in ./environment/venv/lib/python3.12/site-packages (from torch==2.5.*->torchmcubes==0.1.0) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./environment/venv/lib/python3.12/site-packages (from sympy==1.13.1->torch==2.5.*->torchmcubes==0.1.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./environment/venv/lib/python3.12/site-packages (from jinja2->torch==2.5.*->torchmcubes==0.1.0) (3.0.3)
+Building wheels for collected packages: torchmcubes
+  Building wheel for torchmcubes (pyproject.toml): started
+  Building wheel for torchmcubes (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Building wheel for torchmcubes (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [24 lines of output]
+      2026-10-06 23:46:43,464 - scikit_build_core - INFO - RUN: /workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/cmake/data/bin/cmake -E capabilities
+      2026-10-06 23:46:43,468 - scikit_build_core - INFO - CMake version: 4.4.4
+      *** scikit-build-core 1.1.1 using CMake 4.4.4 (wheel)
+      2026-10-06 23:46:43,469 - scikit_build_core - INFO - Implementation: cpython linux on x86_64
+      2026-10-06 23:46:43,470 - scikit_build_core - INFO - Build directory: /workspace/image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes/build
+      *** Configuring CMake...
+      2026-10-06 23:46:43,475 - scikit_build_core - INFO - RUN: /workspace/image_to_usable_car_probe_20261007/environment/venv/bin/ninja --version
+      2026-10-06 23:46:43,477 - scikit_build_core - INFO - Ninja version: 1.13.2
+      2026-10-06 23:46:43,530 - scikit_build_core - INFO - RUN: /workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/cmake/data/bin/cmake -S. -Bbuild -DCMAKE_BUILD_TYPE:STRING=Release -Cbuild/CMakeInit.txt -DCMAKE_INSTALL_PREFIX=/tmp/tmpyvhpjz1d/wheel/platlib -DCMAKE_MAKE_PROGRAM=/workspace/image_to_usable_car_probe_20261007/environment/venv/bin/ninja
+      loading initial cache file build/CMakeInit.txt
+      CMake Error at /workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:47 (message):
+        Could not find the compiler specified in the environment variable CXX:
+      
+        clang++.
+      
+      Call Stack (most recent call first):
+        CMakeLists.txt:2 (project)
+      
+      
+      CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+      -- Configuring incomplete, errors occurred!
+      
+      *** CMake configuration failed
+      FAILURE!!
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for torchmcubes
+Failed to build torchmcubes
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (torchmcubes)

@@ -1,0 +1,11 @@
+{
+  "trellis2_main_observed_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+  "files": {
+    "research/trellis2-readme.txt": "adc985d5a71fda0a5cb7287f58b6baa7de8db1568c4483ac210f3447b786552b",
+    "research/trellis2-app.txt": "b87c4422630b6439e777b1ada1246a045cde77a2957fd82fbe7908bb2112d912",
+    "research/trellis2-pipeline.txt": "e2addfca672354284b23d1541a8f49228d5a727d49220fcb8512cca2cdd38ce9",
+    "research/triposr-readme.txt": "ed40f078c5e451c58eae716187e0128f0ce8575e467aab2440b4ed9c75e490b9",
+    "research/stable-fast-3d-readme.txt": "830acf3c0c9776f2ccf8d3edc41c1e85972e993b38b65eee06e6663a91ebaa7b"
+  },
+  "note": "Primary-source snapshots fetched before any generation. The observed main tip is recorded; files were fetched from main."
+}

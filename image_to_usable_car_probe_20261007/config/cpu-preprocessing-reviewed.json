@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-07T04:52:22.940507+00:00",
+  "processed_sha256": "d8bfea522456e376988d98cbdfd8cdde7eb35e7454bd51ade8cf166b29fbdb06",
+  "proceed": true,
+  "review": "Inspected normal upstream rembg U2Net output fitted at foreground ratio 0.85 and composited over gray. Complete car silhouette, visible tires, bumpers, headlamps, cabin and recognizable grille retained. Background/reflections through windows remain ambiguous; no manual masking or image edits.",
+  "manual_changes": []
+}

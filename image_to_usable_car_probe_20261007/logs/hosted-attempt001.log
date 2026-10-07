@@ -1,0 +1,28 @@
+{"stage": "preprocessing_requested", "timestamp_utc": "2026-10-07T04:49:23.258953+00:00", "original_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"}
+{"stage": "awaiting_preprocessing_inspection", "timestamp_utc": "2026-10-07T04:49:25.674249+00:00", "processed_path": "/workspace/image_to_usable_car_probe_20261007/inputs/hosted_preprocessed.png", "processed_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86"}
+{"stage": "generation_requested", "timestamp_utc": "2026-10-07T04:50:10.683851+00:00", "seed": 42, "resolution": "1024"}
+{"stage": "failed", "timestamp_utc": "2026-10-07T04:50:11.414037+00:00", "error_type": "AppError", "message": "You have exceeded your ZeroGPU quota (120s requested vs. 180s left). Try again in 23:59:13. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"}
+Traceback (most recent call last):
+  File "/workspace/image_to_usable_car_probe_20261007/source/hosted_attempt.py", line 48, in <module>
+    result = client.predict(
+             ^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/remote-client/lib/python3.12/site-packages/gradio_client/client.py", line 498, in predict
+    ).result()
+      ^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/remote-client/lib/python3.12/site-packages/gradio_client/client.py", line 1479, in result
+    return super().result(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/remote-client/lib/python3.12/site-packages/gradio_client/client.py", line 1075, in _inner
+    predictions = _predict(*data, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/remote-client/lib/python3.12/site-packages/gradio_client/client.py", line 1195, in _predict
+    raise AppError(message=message, **result)
+gradio_client.exceptions.AppError: You have exceeded your ZeroGPU quota (120s requested vs. 180s left). Try again in 23:59:13. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens

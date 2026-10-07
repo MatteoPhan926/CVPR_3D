@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "997c9e73d054e105409d775d75af0dc09777a00c9a1126587b5683df9f441410",
+  "members": [
+    {
+      "member": "images.jpg",
+      "bytes": 39937,
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+      "path": "/workspace/image_to_usable_car_probe_20261007/inputs/extracted/images.jpg"
+    }
+  ]
+}

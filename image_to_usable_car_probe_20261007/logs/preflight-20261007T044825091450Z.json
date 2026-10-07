@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-07T04:48:25.091450+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "cpu_count": 5,
+  "nvidia_smi": null,
+  "nvcc": null,
+  "nvidia_device_nodes": [],
+  "inference_executed": false,
+  "network": [],
+  "input": {
+    "source_path": "/workspace/image_to_usable_car_probe_20261007/inputs/extracted/images.jpg",
+    "preserved_path": "/workspace/image_to_usable_car_probe_20261007/inputs/original.jpg",
+    "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+    "width": 516,
+    "height": 387,
+    "mode": "RGB",
+    "format": "JPEG"
+  }
+}
