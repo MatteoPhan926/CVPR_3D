@@ -2,7 +2,9 @@
 
 Cloud đã đọc lại được workspace gốc. Đây là gói bảo toàn artifact thực tế, gồm cả output chưa hoàn tất và log lỗi. Không chạy lại thí nghiệm để tạo lại bằng chứng.
 
-**Trạng thái tại commit dữ liệu ban đầu:** đã đóng gói; cần xem `EXTERNAL_VERIFICATION.json` ở commit xác minh tiếp theo để biết kết quả tải lại.
+**Đã xác minh bản sao ngoài cloud:** tải lại đủ năm ZIP và kiểm tra hash của 813 file. Cả ba latent đều được giữ. [Biên bản xác minh](EXTERNAL_VERIFICATION.json).
+
+Commit dữ liệu: `42dc0ea31f75e8783bf1f208b8fb83d523ab076c`. Xác minh này kiểm tra byte đã lưu, không phải chạy lại nghiên cứu.
 
 - [Báo cáo recovery và trạng thái từng công việc](RECOVERY_REPORT.md)
 - [Manifest mọi file](MANIFEST_SHA256.json)
@@ -16,11 +18,11 @@ Các ZIP dưới đây độc lập, không cần ghép nhị phân. Tải cả 
 
 | ZIP | Nội dung | Dung lượng |
 |---|---|---|
-| [01 — Generation](archives/01_research_generation.zip?raw=true) | Provenance, density grids, field/mesh variants và ảnh | 76.8 MB |
-| [02 — Controls và holdouts](archives/02_research_controls_and_holdouts.zip?raw=true) | Toàn bộ phần nghiên cứu còn lại; teapot/hamburger raw meshes và latents, refinement, authoring controls, review, logs | 55.6 MB |
-| [03 — Probe xe](archives/03_car_probe.zip?raw=true) | Raw/authored assets, Blender files, input, **latent xe gốc**, scripts và logs | 78.0 MB |
-| [04 — Source và metadata](archives/04_dependency_source_and_metadata.zip?raw=true) | Dependency source, environment mesh arrays, input attachments, cấu hình và provenance recovery | 34.8 MB |
-| [05 — Bentley](archives/05_bentley.zip?raw=true) | Asset, source, reports và bằng chứng lịch sử | 58.0 MB |
+| [01 — Generation](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/01_research_generation.zip) | Provenance, density grids, field/mesh variants và ảnh | 76.8 MB |
+| [02 — Controls và holdouts](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/02_research_controls_and_holdouts.zip) | Toàn bộ phần nghiên cứu còn lại; teapot/hamburger raw meshes và latents, refinement, authoring controls, review, logs | 55.6 MB |
+| [03 — Probe xe](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/03_car_probe.zip) | Raw/authored assets, Blender files, input, **latent xe gốc**, scripts và logs | 78.0 MB |
+| [04 — Source và metadata](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/04_dependency_source_and_metadata.zip) | Dependency source, environment mesh arrays, input attachments, cấu hình và provenance recovery | 34.8 MB |
+| [05 — Bentley](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/05_bentley.zip) | Asset, source, reports và bằng chứng lịch sử | 58.0 MB |
 
 808 file nguồn được giữ nguyên, cộng 5 file metadata recovery. Cả ba `scene_codes.pt` đều có trong gói. Các ZIP và từng file bên trong có SHA-256.
 
@@ -29,7 +31,7 @@ Các ZIP dưới đây độc lập, không cần ghép nhị phân. Tải cả 
 Dùng Python 3.11 trở lên, không cần cài package. Lấy commit dữ liệu đầy đủ từ receipt xác minh, rồi chạy:
 
 ```bash
-python3 download_and_verify.py --commit FULL_DATA_COMMIT_SHA --destination ./recovered-checkpoint-new
+python3 download_and_verify.py --commit 42dc0ea31f75e8783bf1f208b8fb83d523ab076c --destination ./recovered-checkpoint-new
 ```
 
 Script tải từ commit cố định, kiểm tra hash từng ZIP, giải nén an toàn vào thư mục mới và kiểm tra toàn bộ file. Nó từ chối thư mục đích đã tồn tại và không thực thi code nghiên cứu.

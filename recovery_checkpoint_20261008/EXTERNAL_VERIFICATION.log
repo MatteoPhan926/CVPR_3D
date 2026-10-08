@@ -1,0 +1,13 @@
+Downloaded CHECKPOINT.json
+Downloaded MANIFEST_SHA256.json
+Downloaded archives/01_research_generation.zip
+Downloaded archives/02_research_controls_and_holdouts.zip
+Downloaded archives/03_car_probe.zip
+Downloaded archives/04_dependency_source_and_metadata.zip
+Downloaded archives/05_bentley.zip
+{
+  "status": "EXTERNALLY_VERIFIED",
+  "data_commit": "42dc0ea31f75e8783bf1f208b8fb83d523ab076c",
+  "files_verified": 813,
+  "receipt": "/workspace/recovery-research-20261008-20261008T234315Z-2fnb55rf/external_readback/EXTERNAL_VERIFICATION.json"
+}

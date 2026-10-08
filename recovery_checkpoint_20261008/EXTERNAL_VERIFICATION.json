@@ -1,0 +1,209 @@
+{
+  "status": "EXTERNALLY_VERIFIED",
+  "checkpoint_id": "recovery-research-20261008-20261008T234315Z-2fnb55rf",
+  "data_commit": "42dc0ea31f75e8783bf1f208b8fb83d523ab076c",
+  "verified_at_utc": "2026-10-08T23:49:51.838805+00:00",
+  "method": "Fresh HTTPS downloads into a new directory; archive SHA256 and size; safe extraction; every payload file checked against global and per-archive manifests.",
+  "files_verified": 813,
+  "bytes_verified": 412158673,
+  "source_files_preserved": 808,
+  "source_errors": [],
+  "latents_verified": [
+    {
+      "path": "image_to_usable_car_probe_20261007/raw/cpu-attempt001/scene_codes.pt",
+      "bytes": 1967280,
+      "sha256": "a57eab70b278aaf888020cd916e3562985300026c9973399a1a81625cbf42b00"
+    },
+    {
+      "path": "research_decision_20261008/root_analysis/holdouts/hamburger/scene_codes.pt",
+      "bytes": 1967280,
+      "sha256": "4368164c10e789bbab771b68e3a63ac42ac56fb1f30258e73d50119e6bf08ad9"
+    },
+    {
+      "path": "research_decision_20261008/root_analysis/holdouts/teapot/scene_codes.pt",
+      "bytes": 1967280,
+      "sha256": "dee41aab2f83db0a9365f0711acbce23aefa2e089cd2a41b224b1a608bb988a9"
+    }
+  ],
+  "empty_directories_verified": [
+    "generated3d_authoring_clean_20261006/environment/blender-config",
+    "image_to_usable_car_probe_20261007/environment/blender-config",
+    "research_decision_20261008/evidence",
+    "research_decision_20261008/root_analysis/browser/results"
+  ],
+  "downloads": [
+    {
+      "path": "CHECKPOINT.json",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/CHECKPOINT.json",
+      "bytes": 2167,
+      "sha256": "c90cd3e5b32df3ec7aa7c6981a0bb9d2e6dbfd8c5eadf5ed8087559d6f90c3cb",
+      "http_status": 200
+    },
+    {
+      "path": "MANIFEST_SHA256.json",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/MANIFEST_SHA256.json",
+      "bytes": 180913,
+      "sha256": "a5915f6270d78bd85968824f0c83a1f79bbde502672f0791c670cd783b03a23e",
+      "http_status": 200
+    },
+    {
+      "path": "archives/01_research_generation.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/01_research_generation.zip",
+      "bytes": 76762708,
+      "sha256": "73dbef62d29ce60da045f1d92eddae00f0ef2c576c62ffb51b5247dc9daf024d",
+      "http_status": 200
+    },
+    {
+      "path": "archives/02_research_controls_and_holdouts.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/02_research_controls_and_holdouts.zip",
+      "bytes": 55555761,
+      "sha256": "21548b1eb8cc43a1d062dea5d9e494a96dadcc444b5bb29f99fbb30bcf59032b",
+      "http_status": 200
+    },
+    {
+      "path": "archives/03_car_probe.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/03_car_probe.zip",
+      "bytes": 77998874,
+      "sha256": "aec8ed831d6ae7875e188514e8f651ea421a3add6882d0ef04314fbd404b4a8f",
+      "http_status": 200
+    },
+    {
+      "path": "archives/04_dependency_source_and_metadata.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/04_dependency_source_and_metadata.zip",
+      "bytes": 34785124,
+      "sha256": "73facb6a44da464a8113462b76fe30e0e53b9dea3733f3d9b51c201f853ac2a2",
+      "http_status": 200
+    },
+    {
+      "path": "archives/05_bentley.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/archives/05_bentley.zip",
+      "bytes": 58048846,
+      "sha256": "7775fdbe77d6a451c91902d0dd849e72fea56d9c474bdd5e039229c13496351f",
+      "http_status": 200
+    }
+  ],
+  "experiments_run": false,
+  "source_files_modified": false,
+  "excluded_from_portable_backup": [
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/cache",
+      "reason": "ONNX runtime device/telemetry cache.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/.git",
+      "reason": "Dependency Git metadata; HEAD/status/diff separately recorded.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes/.git",
+      "reason": "Dependency Git metadata; HEAD/status/diff separately recorded.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes/build",
+      "reason": "Rebuildable compiled extension build directory.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/huggingface-cache",
+      "reason": "Downloaded upstream model weights/configuration cache. Pinned acquisition receipts retained in probe logs; no generated latent is excluded by this rule.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/pip-cache",
+      "reason": "Downloaded dependency cache.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/rembg-cache",
+      "reason": "Downloaded U2Net model weights; acquisition provenance remains in probe.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/remote-client",
+      "reason": "Replaceable remote-client Python environment; installed versions recorded separately.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/remote-huggingface-cache",
+      "reason": "Client harness cache, not experimental output.",
+      "source_present": true
+    },
+    {
+      "path": "image_to_usable_car_probe_20261007/environment/venv",
+      "reason": "Replaceable installed Python packages; installed versions recorded separately.",
+      "source_present": true
+    },
+    {
+      "path": "generated3d_authoring_clean_20261006/environment/chromium-cache",
+      "reason": "Replaceable browser runtime cache; onboarding-browser screenshots and reports ARE retained.",
+      "source_present": true
+    },
+    {
+      "path": "generated3d_authoring_clean_20261006/environment/npm-cache",
+      "reason": "Downloaded dependency cache.",
+      "source_present": true
+    },
+    {
+      "path": "generated3d_authoring_clean_20261006/environment/pip-cache",
+      "reason": "Downloaded dependency cache.",
+      "source_present": true
+    },
+    {
+      "path": "generated3d_authoring_clean_20261006/environment/venv",
+      "reason": "Replaceable installed Python packages; installed versions recorded separately.",
+      "source_present": true
+    },
+    {
+      "path": "generated3d_authoring_clean_20261006/source/project/preview/node_modules",
+      "reason": "Installed npm packages; lockfile and compiled browser bundle ARE retained.",
+      "source_present": true
+    }
+  ],
+  "unprotected_in_scope_files": [],
+  "limitations": "Downloaded upstream model weights and replaceable installed dependency caches are explicitly excluded. This verifies recovered bytes, not scientific correctness or current application readiness.",
+  "git_verification": {
+    "remote_ref_matches_data_commit": true,
+    "fresh_bare_fetch_commit": "42dc0ea31f75e8783bf1f208b8fb83d523ab076c",
+    "remote_tree_blob_matches": 99,
+    "method": "Fresh bare filtered fetch and Git object-hash comparison for every file in the recovery checkpoint; archives and all 813 payload files also downloaded independently by HTTPS."
+  },
+  "additional_small_file_readback": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/README.md",
+      "sha256": "7271a2d63509db125d8ed72366dd73148eefc838ef503e3635467be3e50d3d9a",
+      "bytes": 3111,
+      "http_status": 200
+    },
+    {
+      "path": "RECOVERY_REPORT.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/RECOVERY_REPORT.md",
+      "sha256": "a24c7010e6eba015ccffcb61a2105bf9c7b17ddbf2d073b6997a149325b5a2ed",
+      "bytes": 5335,
+      "http_status": 200
+    },
+    {
+      "path": "download_and_verify.py",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/download_and_verify.py",
+      "sha256": "4d7f519c8b5b0caf2a5f29580b1be7a5716ec13fd8361a877f22b8118fe66a10",
+      "bytes": 5476,
+      "http_status": 200
+    },
+    {
+      "path": "package_for_github.py",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/package_for_github.py",
+      "sha256": "668fffbbe61787be10cb4b92e4b1d784d2293030af51c9e8493a0d544af74990",
+      "bytes": 3898,
+      "http_status": 200
+    },
+    {
+      "path": "preserve.py",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/42dc0ea31f75e8783bf1f208b8fb83d523ab076c/recovery_checkpoint_20261008/preserve.py",
+      "sha256": "557220999b4ff0c9f4d0aad0615de99c2e6a24d70d5e6580c6ad6ae6110ae519",
+      "bytes": 8978,
+      "http_status": 200
+    }
+  ]
+}
