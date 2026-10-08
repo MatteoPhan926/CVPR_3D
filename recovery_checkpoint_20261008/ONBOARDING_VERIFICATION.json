@@ -1,0 +1,43 @@
+{
+  "status": "EXTERNALLY_VERIFIED",
+  "onboarding_data_commit": "a088fe24bf13c005bad153d545b9bfa084ef8baf",
+  "verified_at_utc": "2026-10-08T23:55:10.736931+00:00",
+  "remote_ref_verified": true,
+  "files": [
+    {
+      "path": "onboarding_after_recovery.json",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/a088fe24bf13c005bad153d545b9bfa084ef8baf/recovery_checkpoint_20261008/onboarding_after_recovery.json",
+      "sha256": "3a44b7b46bfe3c6ac49d4d953647fae58eb0d996f218b2fe51e95b361a41b77e",
+      "bytes": 42511,
+      "readback": "passed"
+    },
+    {
+      "path": "preflight_after_recovery.sh",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/a088fe24bf13c005bad153d545b9bfa084ef8baf/recovery_checkpoint_20261008/preflight_after_recovery.sh",
+      "sha256": "02670272e9f676b86deb4c0ab09d312dd5fd963dae5b7e0bcbd954572e887638",
+      "bytes": 3950,
+      "readback": "passed"
+    },
+    {
+      "path": "preflight_verification.log",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/a088fe24bf13c005bad153d545b9bfa084ef8baf/recovery_checkpoint_20261008/preflight_verification.log",
+      "sha256": "5aed5db9bb8415123855b629b4df769cf8fb0266aeedb1e6738f796c70c57652",
+      "bytes": 2350,
+      "readback": "passed"
+    }
+  ],
+  "prior_readback_failures": [
+    {
+      "stage": "initial onboarding readback batch",
+      "error": "HTTP Error 503: Service Unavailable; no receipt produced. Artifact checkpoint had already passed verification."
+    }
+  ],
+  "read_only_preflight_exit_code": 0,
+  "configuration_readback_exact": true,
+  "configuration_requires_publish": true,
+  "original_source_files_rechecked": 808,
+  "original_source_mismatches": [],
+  "artifact_data_commit": "42dc0ea31f75e8783bf1f208b8fb83d523ab076c",
+  "artifact_verification_commit": "8df00f1481b2e75741eb01e6c076315f9d60f6bb",
+  "experiments_rerun": false
+}
