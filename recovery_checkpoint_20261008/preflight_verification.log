@@ -1,0 +1,19 @@
+RECOVERY-ONLY PREFLIGHT: no setup/build/experiment will run.
+{"cwd": "/workspace"}
+{"path": "/workspace/research_decision_20261008", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/image_to_usable_car_probe_20261007", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/generated3d_authoring_clean_20261006", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/IMAGE_TO_USABLE_CAR_PROBE_20261007_evidence.zip", "state": "present", "type": "file", "file_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/CVPR_3D", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"read_only_git_command": ["rev-parse", "--verify", "HEAD^{commit}"], "returncode": 0, "stdout": "8df00f1481b2e75741eb01e6c076315f9d60f6bb\n", "stderr": ""}
+{"read_only_git_command": ["status", "--porcelain=v1", "--untracked-files=all"], "returncode": 0, "stdout": "", "stderr": ""}
+{"read_only_git_command": ["remote"], "returncode": 0, "stdout": "origin\n", "stderr": ""}
+LAST EXTERNALLY VERIFIED RECOVERY CHECKPOINT: research and supporting evidence, 813 payload files.
+Data commit: 42dc0ea31f75e8783bf1f208b8fb83d523ab076c
+Receipt commit: 8df00f1481b2e75741eb01e6c076315f9d60f6bb
+Receipt URL: https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/8df00f1481b2e75741eb01e6c076315f9d60f6bb/recovery_checkpoint_20261008/EXTERNAL_VERIFICATION.json
+All 401 research files and all three latents are covered at snapshot time; later changes need another checkpoint.
+Installed packages, downloaded model weights, credentials, VM state and live processes are excluded.
+Do not treat this preflight, saved configuration, a local archive, or a local commit as backup.
+NEXT: follow recovery-first start_skill; protect existing artifacts externally before any setup/build/re-run.
+Recovery status remains UNVERIFIED until external upload and independent read-back are checked.
