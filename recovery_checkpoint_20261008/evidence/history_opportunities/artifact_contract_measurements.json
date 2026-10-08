@@ -1,0 +1,892 @@
+{
+  "scope": "Fresh read-only measurements of on-disk exported GLBs on 2026-10-08. No source pipeline re-run, model inference, rendering or user trial.",
+  "limits": "Area conservation does not prove semantic ownership, correspondence, geometry identity, usable appearance or clearance. Added-area fraction describes authored surface amount, not workload or effect size.",
+  "assets": {
+    "bentley_input": {
+      "path": "/workspace/generated3d_authoring_clean_20261006/inputs/blue_train_bentley.glb",
+      "sha256": "a1156efc2aa8aca3c37eef570b1ca7c3d8cf3676a5f6e07e2d059154af2edd79",
+      "primitives": [
+        {
+          "node": "Object_13",
+          "triangles": 3210,
+          "vertices": 2829,
+          "world_rest_area": 2.125952085690838,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_15",
+          "triangles": 7810,
+          "vertices": 5714,
+          "world_rest_area": 11.937440418186467,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 1
+        },
+        {
+          "node": "Object_16",
+          "triangles": 700,
+          "vertices": 676,
+          "world_rest_area": 0.23850979329282365,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 2
+        },
+        {
+          "node": "Object_17",
+          "triangles": 6644,
+          "vertices": 5775,
+          "world_rest_area": 4.618566055036455,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_18",
+          "triangles": 35832,
+          "vertices": 33148,
+          "world_rest_area": 11.01739173269397,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 3
+        },
+        {
+          "node": "Object_19",
+          "triangles": 3830,
+          "vertices": 2934,
+          "world_rest_area": 12.232125850242815,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 4
+        },
+        {
+          "node": "Object_20",
+          "triangles": 5103,
+          "vertices": 4033,
+          "world_rest_area": 12.021228567219694,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 5
+        },
+        {
+          "node": "Object_21",
+          "triangles": 1712,
+          "vertices": 1668,
+          "world_rest_area": 2.1443455211098863,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 6
+        },
+        {
+          "node": "Object_22",
+          "triangles": 116,
+          "vertices": 125,
+          "world_rest_area": 0.36062519493739015,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 7
+        },
+        {
+          "node": "Object_24",
+          "triangles": 2970,
+          "vertices": 2576,
+          "world_rest_area": 2.058914925016058,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_26",
+          "triangles": 3210,
+          "vertices": 2827,
+          "world_rest_area": 2.1259518510255333,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_28",
+          "triangles": 2970,
+          "vertices": 2576,
+          "world_rest_area": 2.058914995003252,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        }
+      ],
+      "triangles": 74107,
+      "world_rest_area": 62.93996698945518,
+      "image_sha256": [
+        "f1223199f4284c0a078a2dc8a950301a65834ca3f8aeb501cdcdd983b8aa3cd1",
+        "7014bafe09bed5e755f3555a05ed2dc3bdb9a35c4a766a712db189e7fb5433b6",
+        "109f85d6d6b0c4ce810ce09916803a6906a3865e6d902dae243644c5a5530e87",
+        "43a3a64d4535663962b57c5e4b931ad80e195d8e6b4a95feadb8fc7de260cd77",
+        "207998cec2a16da2b4f5f7a777f72629aa682631a75ea59bd8b034d3db47409c",
+        "fbd6e67adca46821ba09f2984c93f5729796444843904615012efb486f2fc470",
+        "162c6c77b24cda8b05663131d85c8729a8a59a9381e9551d00071f456c7c0a6b",
+        "ed4dbff8e743c38e44eda4785c8f9837083bc4e545a1d660af73dcf27bce9553",
+        "158e0df90f2982d154559495c06ac01e4770a40030697c95d8bfa52fe50dfbf4",
+        "b79498fff821481adcf51f1e5a1a218c3e8d6cfeeb97d4310f6fc74b28b7a74b",
+        "cdcf4a2798760509738da216df20fca89be0486a06998482e69bc416da3b1d3a",
+        "ac0eb6b5317434e279287b373a5fe3eeb96633c995a01aeea76d632b29404589",
+        "f2f44bab9d8b2e31caa4ff3f336ad66b2b2c80ef41fe781e76ad434bf11cb1dd",
+        "5d14708b829bd666d11dbc5fb98d92562c656835b08a9de1883d0350ccc2ca1e",
+        "3a4f0be1171c9292a465e136c79c097e58a66ef5ae8a7cdcc6ce46bc1e5ae9cb",
+        "9d5e11fbf6eac690d66e1885457999b8a78a46869edce9cdbcddc88e5b7604c7",
+        "196effe588528081df37defbf7f94d6c034e5655cc10fd8d98cfaf709e05262c",
+        "ea5bf99d6113248c84a2ccdfb5dac2f73b34e48c4b138055184cc221e2611c1d",
+        "dbf1a0819d770f5990d9e7fd598331a26fc04a1a9ad1a58850355910b43feb5d",
+        "49e645d98c474f53bf99b7358f6694cfa7ef2fa05564dead652ec6e834cbdbc5",
+        "4864865aa178a7587423a25d3722b0d8862c9b158904d37d5eeb3dcd55462de8",
+        "62fee49222c87ce8b0e609b060324845ae9eab2581407b2734f9c78a1eca9f65",
+        "9ea9b1f9feff7b4c4900378e37f30598e8b322c38be1b1889752369835c589c7",
+        "629dc8d67afe2c085c6a3521506efdd1afa4c61f018a850cabe46b4817367636"
+      ],
+      "materials": [
+        {
+          "name": "Wheels",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        },
+        {
+          "name": "Body",
+          "normalTexture": {
+            "index": 3
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 4
+            },
+            "metallicRoughnessTexture": {
+              "index": 5
+            }
+          }
+        },
+        {
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 6
+          },
+          "name": "Glow",
+          "normalTexture": {
+            "index": 7
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 8
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 0.159606471657753
+          }
+        },
+        {
+          "name": "Details",
+          "normalTexture": {
+            "index": 9
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 10
+            },
+            "metallicRoughnessTexture": {
+              "index": 11
+            }
+          }
+        },
+        {
+          "name": "Bottom",
+          "normalTexture": {
+            "index": 12
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 13
+            },
+            "metallicRoughnessTexture": {
+              "index": 14
+            }
+          }
+        },
+        {
+          "name": "Interior",
+          "normalTexture": {
+            "index": 15
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 16
+            },
+            "metallicRoughnessTexture": {
+              "index": 17
+            }
+          }
+        },
+        {
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "name": "Glass",
+          "normalTexture": {
+            "index": 18
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 19
+            },
+            "metallicRoughnessTexture": {
+              "index": 20
+            }
+          }
+        },
+        {
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "name": "Grid",
+          "normalTexture": {
+            "index": 21
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 22
+            },
+            "metallicRoughnessTexture": {
+              "index": 23
+            }
+          }
+        }
+      ],
+      "animations": 0
+    },
+    "bentley_authored": {
+      "path": "/workspace/generated3d_authoring_clean_20261006/artifacts/bentley_authored.glb",
+      "sha256": "565f0d8ce70c1f6bf23ca370bb879e2d0a167b24d7381cae0bf75dff1b44ac14",
+      "primitives": [
+        {
+          "node": "Object_13",
+          "triangles": 3210,
+          "vertices": 2829,
+          "world_rest_area": 2.125952085690838,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_15",
+          "triangles": 8805,
+          "vertices": 6296,
+          "world_rest_area": 11.307249760818678,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 1
+        },
+        {
+          "node": "Object_16",
+          "triangles": 700,
+          "vertices": 676,
+          "world_rest_area": 0.23850979329282365,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 2
+        },
+        {
+          "node": "Object_17",
+          "triangles": 6644,
+          "vertices": 5775,
+          "world_rest_area": 4.618566055036455,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_18",
+          "triangles": 34895,
+          "vertices": 32056,
+          "world_rest_area": 10.75807783992381,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 3
+        },
+        {
+          "node": "Object_19",
+          "triangles": 3830,
+          "vertices": 2934,
+          "world_rest_area": 12.232125850242815,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 4
+        },
+        {
+          "node": "Object_20",
+          "triangles": 4959,
+          "vertices": 3750,
+          "world_rest_area": 11.219293797644845,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 5
+        },
+        {
+          "node": "Object_21",
+          "triangles": 1510,
+          "vertices": 1452,
+          "world_rest_area": 1.8199649319679794,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 6
+        },
+        {
+          "node": "Object_22",
+          "triangles": 116,
+          "vertices": 125,
+          "world_rest_area": 0.36062519493739015,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 7
+        },
+        {
+          "node": "Object_24",
+          "triangles": 2970,
+          "vertices": 2576,
+          "world_rest_area": 2.058914925016058,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_26",
+          "triangles": 3210,
+          "vertices": 2827,
+          "world_rest_area": 2.1259518510255333,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Object_28",
+          "triangles": 2970,
+          "vertices": 2576,
+          "world_rest_area": 2.058914995003252,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Door_Object_18",
+          "triangles": 1701,
+          "vertices": 1580,
+          "world_rest_area": 0.2593138900274896,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 3
+        },
+        {
+          "node": "Door_Object_20",
+          "triangles": 884,
+          "vertices": 829,
+          "world_rest_area": 0.8019347691572858,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 5
+        },
+        {
+          "node": "Door_Object_21",
+          "triangles": 202,
+          "vertices": 216,
+          "world_rest_area": 0.324380589141907,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 6
+        },
+        {
+          "node": "Door_Object_15",
+          "triangles": 275,
+          "vertices": 261,
+          "world_rest_area": 0.6301906603563386,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 1
+        }
+      ],
+      "triangles": 76881,
+      "world_rest_area": 62.9399669892835,
+      "image_sha256": [
+        "f1223199f4284c0a078a2dc8a950301a65834ca3f8aeb501cdcdd983b8aa3cd1",
+        "7014bafe09bed5e755f3555a05ed2dc3bdb9a35c4a766a712db189e7fb5433b6",
+        "109f85d6d6b0c4ce810ce09916803a6906a3865e6d902dae243644c5a5530e87",
+        "43a3a64d4535663962b57c5e4b931ad80e195d8e6b4a95feadb8fc7de260cd77",
+        "207998cec2a16da2b4f5f7a777f72629aa682631a75ea59bd8b034d3db47409c",
+        "fbd6e67adca46821ba09f2984c93f5729796444843904615012efb486f2fc470",
+        "162c6c77b24cda8b05663131d85c8729a8a59a9381e9551d00071f456c7c0a6b",
+        "ed4dbff8e743c38e44eda4785c8f9837083bc4e545a1d660af73dcf27bce9553",
+        "158e0df90f2982d154559495c06ac01e4770a40030697c95d8bfa52fe50dfbf4",
+        "b79498fff821481adcf51f1e5a1a218c3e8d6cfeeb97d4310f6fc74b28b7a74b",
+        "cdcf4a2798760509738da216df20fca89be0486a06998482e69bc416da3b1d3a",
+        "ac0eb6b5317434e279287b373a5fe3eeb96633c995a01aeea76d632b29404589",
+        "f2f44bab9d8b2e31caa4ff3f336ad66b2b2c80ef41fe781e76ad434bf11cb1dd",
+        "5d14708b829bd666d11dbc5fb98d92562c656835b08a9de1883d0350ccc2ca1e",
+        "3a4f0be1171c9292a465e136c79c097e58a66ef5ae8a7cdcc6ce46bc1e5ae9cb",
+        "9d5e11fbf6eac690d66e1885457999b8a78a46869edce9cdbcddc88e5b7604c7",
+        "196effe588528081df37defbf7f94d6c034e5655cc10fd8d98cfaf709e05262c",
+        "ea5bf99d6113248c84a2ccdfb5dac2f73b34e48c4b138055184cc221e2611c1d",
+        "dbf1a0819d770f5990d9e7fd598331a26fc04a1a9ad1a58850355910b43feb5d",
+        "49e645d98c474f53bf99b7358f6694cfa7ef2fa05564dead652ec6e834cbdbc5",
+        "4864865aa178a7587423a25d3722b0d8862c9b158904d37d5eeb3dcd55462de8",
+        "62fee49222c87ce8b0e609b060324845ae9eab2581407b2734f9c78a1eca9f65",
+        "9ea9b1f9feff7b4c4900378e37f30598e8b322c38be1b1889752369835c589c7",
+        "629dc8d67afe2c085c6a3521506efdd1afa4c61f018a850cabe46b4817367636"
+      ],
+      "materials": [
+        {
+          "name": "Wheels",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        },
+        {
+          "name": "Body",
+          "normalTexture": {
+            "index": 3
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 4
+            },
+            "metallicRoughnessTexture": {
+              "index": 5
+            }
+          }
+        },
+        {
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 6
+          },
+          "name": "Glow",
+          "normalTexture": {
+            "index": 7
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 8
+            },
+            "metallicFactor": 0,
+            "roughnessFactor": 0.159606471657753
+          }
+        },
+        {
+          "name": "Details",
+          "normalTexture": {
+            "index": 9
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 10
+            },
+            "metallicRoughnessTexture": {
+              "index": 11
+            }
+          }
+        },
+        {
+          "name": "Bottom",
+          "normalTexture": {
+            "index": 12
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 13
+            },
+            "metallicRoughnessTexture": {
+              "index": 14
+            }
+          }
+        },
+        {
+          "name": "Interior",
+          "normalTexture": {
+            "index": 15
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 16
+            },
+            "metallicRoughnessTexture": {
+              "index": 17
+            }
+          }
+        },
+        {
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "name": "Glass",
+          "normalTexture": {
+            "index": 18
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 19
+            },
+            "metallicRoughnessTexture": {
+              "index": 20
+            }
+          }
+        },
+        {
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "name": "Grid",
+          "normalTexture": {
+            "index": 21
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 22
+            },
+            "metallicRoughnessTexture": {
+              "index": 23
+            }
+          }
+        }
+      ],
+      "animations": 1
+    },
+    "car_raw": {
+      "path": "/workspace/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "primitives": [
+        {
+          "node": "geometry_0",
+          "triangles": 107608,
+          "vertices": 53904,
+          "world_rest_area": 1.7337055452479915,
+          "attributes": [
+            "POSITION",
+            "COLOR_0"
+          ],
+          "material": null
+        }
+      ],
+      "triangles": 107608,
+      "world_rest_area": 1.7337055452479915,
+      "image_sha256": [],
+      "materials": [],
+      "animations": 0
+    },
+    "car_authored": {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.glb",
+      "sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+      "primitives": [
+        {
+          "node": "Body_fixed_generated_surface",
+          "triangles": 105133,
+          "vertices": 53056,
+          "world_rest_area": 1.614561371758021,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "COLOR_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Door_added_edge_thickness",
+          "triangles": 1562,
+          "vertices": 2260,
+          "world_rest_area": 0.027537296207597883,
+          "attributes": [
+            "POSITION",
+            "NORMAL"
+          ],
+          "material": 1
+        },
+        {
+          "node": "Door_added_inner_lining",
+          "triangles": 8379,
+          "vertices": 24637,
+          "world_rest_area": 0.11914417201920666,
+          "attributes": [
+            "POSITION",
+            "NORMAL"
+          ],
+          "material": 2
+        },
+        {
+          "node": "Door_generated_outer_surface",
+          "triangles": 8379,
+          "vertices": 4574,
+          "world_rest_area": 0.11914417192032269,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "COLOR_0"
+          ],
+          "material": 0
+        },
+        {
+          "node": "Body_added_recessed_jamb",
+          "triangles": 1562,
+          "vertices": 2270,
+          "world_rest_area": 0.06425369340306938,
+          "attributes": [
+            "POSITION",
+            "NORMAL"
+          ],
+          "material": 1
+        },
+        {
+          "node": "Cabin_added_floor_proxy",
+          "triangles": 12,
+          "vertices": 24,
+          "world_rest_area": 0.08720000265836714,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 2
+        },
+        {
+          "node": "Cabin_added_inner_wall_proxy",
+          "triangles": 12,
+          "vertices": 24,
+          "world_rest_area": 0.08560000311732291,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 2
+        },
+        {
+          "node": "Cabin_added_seat_cushion_proxy",
+          "triangles": 12,
+          "vertices": 24,
+          "world_rest_area": 0.04020000123903156,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 3
+        },
+        {
+          "node": "Cabin_added_seat_back_proxy",
+          "triangles": 12,
+          "vertices": 24,
+          "world_rest_area": 0.06252000234603883,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0"
+          ],
+          "material": 3
+        }
+      ],
+      "triangles": 125063,
+      "world_rest_area": 2.220160714668978,
+      "image_sha256": [],
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "Generated_vertex_colors_explicit_material"
+        },
+        {
+          "doubleSided": true,
+          "name": "Added_jamb_and_edge",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.02500000037252903,
+              0.028999999165534973,
+              0.03099999949336052,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.800000011920929
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Added_dark_door_lining",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.017999999225139618,
+              0.020999999716877937,
+              0.023000000044703484,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.800000011920929
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Added_cabin_proxy",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.02800000086426735,
+              0.023000000044703484,
+              0.01899999938905239,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "animations": 1
+    }
+  },
+  "metrics": {
+    "bentley_material_definitions_identical": true,
+    "bentley_image_payloads_identical": true,
+    "bentley_texture_definitions_identical": true,
+    "bentley_untouched_geometry": [
+      {
+        "node": "Object_13",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_16",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_17",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_19",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_22",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_24",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_26",
+        "all_accessor_values_identical": true
+      },
+      {
+        "node": "Object_28",
+        "all_accessor_values_identical": true
+      }
+    ],
+    "bentley_total_area_difference": -1.716813358143554e-10,
+    "car_outer_area_relative_difference": -9.053715555040753e-10,
+    "car_moving_outer_area_fraction": 0.068722265004511,
+    "car_added_area_fraction": 0.2805869614502797,
+    "car_added_triangle_fraction": 0.1073433201992417,
+    "car_outer_triangle_increase": 5904
+  }
+}

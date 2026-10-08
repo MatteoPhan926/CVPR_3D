@@ -1,0 +1,41 @@
+{
+  "checkpoint_id": "recovery-research-20261008-20261008T234315Z-2fnb55rf",
+  "status": "LOCAL_ONLY",
+  "archive": {
+    "filename": "research_recovery_evidence.zip",
+    "bytes": 303147038,
+    "sha256": "e2e6633cd080236b2bf40e111b9b1eee136b28811eee45ffd100c992429373cd"
+  },
+  "parts": [
+    {
+      "filename": "research_recovery_evidence.zip.part001",
+      "bytes": 94371840,
+      "sha256": "baef29b12c243296f3ff404cc2dce366ca45d8ffffd05f6d9e505d2eaed10bb8"
+    },
+    {
+      "filename": "research_recovery_evidence.zip.part002",
+      "bytes": 94371840,
+      "sha256": "62eb34199d9651f21bdba9497a2e4c5828b83242aa70228fd2ecb55b76a6abe5"
+    },
+    {
+      "filename": "research_recovery_evidence.zip.part003",
+      "bytes": 94371840,
+      "sha256": "8439436a91de09056db9b80462cbde3a0340976e965c8842a1b0691f91585677"
+    },
+    {
+      "filename": "research_recovery_evidence.zip.part004",
+      "bytes": 20031518,
+      "sha256": "0b28d04ab3b7689bf1e45dcc0a5a7c0b5d8941f4b6c95cca01815051bd35ddb9"
+    }
+  ],
+  "source_file_count": 808,
+  "source_bytes": 411760021,
+  "payload_file_count": 813,
+  "latent_paths": [
+    "research_decision_20261008/root_analysis/holdouts/hamburger/scene_codes.pt",
+    "research_decision_20261008/root_analysis/holdouts/teapot/scene_codes.pt",
+    "image_to_usable_car_probe_20261007/raw/cpu-attempt001/scene_codes.pt"
+  ],
+  "errors": [],
+  "external_verification": "NOT_YET_DONE"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF/main/specification/2.0/Specification.adoc",
+    "file": "gltf_materials.adoc",
+    "bytes": 182749,
+    "sha256": "c305d1b0ea93c7eb101059db09ae4687c56fe5388c6655cd9bf83d44b2932664"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF/main/extensions/2.0/Khronos/KHR_materials_unlit/README.md",
+    "file": "unlit_README.md",
+    "bytes": 8837,
+    "sha256": "a07fc5833a2b93c6570dc6eda7baa794a2c0873c4453e9dd75815a6f3b0ef384"
+  }
+]

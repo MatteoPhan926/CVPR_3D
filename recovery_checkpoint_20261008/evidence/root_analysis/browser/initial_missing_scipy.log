@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/research_decision_20261008/root_analysis/browser/verify_exports.py", line 6, in <module>
+    from scipy.ndimage import binary_erosion
+ModuleNotFoundError: No module named 'scipy'

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "generation_calls": 1,
+  "inference_seconds": 18.378818971003057,
+  "extraction_seconds": 19.96630507899681,
+  "raw_sha256": "1cddedab568b5ab34e4537d946f9e750282f149325fd4d22f31dd28599f12984",
+  "latent_sha256": "4368164c10e789bbab771b68e3a63ac42ac56fb1f30258e73d50119e6bf08ad9",
+  "vertices": 55715,
+  "faces": 111172
+}

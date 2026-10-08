@@ -1,0 +1,178 @@
+{
+  "sidedness": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 2.4705206665538785e-08,
+      "RGB_RMSE_display_0_1": 9.84292453462229e-06,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0,
+      "mean_luma_a": 0.2721520352093665,
+      "mean_luma_b": 0.27215200603004686,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 3.4109494889544965e-08,
+      "RGB_RMSE_display_0_1": 1.1565583645326301e-05,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0,
+      "mean_luma_a": 0.34781050977663397,
+      "mean_luma_b": 0.347810475667139,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "raw_normals": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 0.0065636422490903705,
+      "RGB_RMSE_display_0_1": 0.010489794061313487,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.028632716895192915,
+      "mean_luma_a": 0.27215200603004686,
+      "mean_luma_b": 0.2741819715533133,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 0.006223982272158523,
+      "RGB_RMSE_display_0_1": 0.009725094847994008,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.020544489866921804,
+      "mean_luma_a": 0.347810475667139,
+      "mean_luma_b": 0.3493450049271165,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "prior_display_material": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 0.13833220955524514,
+      "RGB_RMSE_display_0_1": 0.14052549111168852,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.9996976082704138,
+      "mean_luma_a": 0.27215200603004686,
+      "mean_luma_b": 0.4106352790869993,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 0.14585411027940792,
+      "RGB_RMSE_display_0_1": 0.14803492537626395,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.9997390623640949,
+      "mean_luma_a": 0.347810475667139,
+      "mean_luma_b": 0.4939773345135219,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "flat_partition": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 1.0882643536169874e-05,
+      "RGB_RMSE_display_0_1": 0.00021350299383616163,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0,
+      "mean_luma_a": 0.27215200603004686,
+      "mean_luma_b": 0.27215171030872304,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 1.6440776536760653e-05,
+      "RGB_RMSE_display_0_1": 0.0002579237521601439,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0,
+      "mean_luma_a": 0.347810475667139,
+      "mean_luma_b": 0.3478122943171875,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "smooth_partition": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 0.0001204131772878365,
+      "RGB_RMSE_display_0_1": 0.001089678874971968,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.00011339689859482343,
+      "mean_luma_a": 0.2741819715533133,
+      "mean_luma_b": 0.27415790123093076,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 0.00020159848462884036,
+      "RGB_RMSE_display_0_1": 0.0015468364613769915,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0004435939810385318,
+      "mean_luma_a": 0.3493450049271165,
+      "mean_luma_b": 0.3493313546347128,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "closed_additions": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 0.00010633120948847932,
+      "RGB_RMSE_display_0_1": 0.0013303978773471941,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0003874394035323134,
+      "mean_luma_a": 0.27415790123093076,
+      "mean_luma_b": 0.2740609173920269,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 0.001550583528183823,
+      "RGB_RMSE_display_0_1": 0.0172388312304256,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.00958510915891102,
+      "mean_luma_a": 0.3493313546347128,
+      "mean_luma_b": 0.3478559628001849,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  },
+  "open_additions": {
+    "side": {
+      "common_opaque_pixels": 106690,
+      "RGB_MAE_display_0_1": 0.006026512582725471,
+      "RGB_RMSE_display_0_1": 0.02890918056155848,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.05069828475021089,
+      "mean_luma_a": 0.26220507880077704,
+      "mean_luma_b": 0.2621015150141789,
+      "silhouette_IoU": 0.9927584782708457,
+      "silhouette_xor_pixels": 789
+    },
+    "hero": {
+      "common_opaque_pixels": 114205,
+      "RGB_MAE_display_0_1": 0.00700657257488755,
+      "RGB_RMSE_display_0_1": 0.028579458826370616,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.0723873735825927,
+      "mean_luma_a": 0.330630629289779,
+      "mean_luma_b": 0.329965905555112,
+      "silhouette_IoU": 0.9869829652566301,
+      "silhouette_xor_pixels": 1526
+    }
+  },
+  "complete_closed_pipeline": {
+    "side": {
+      "common_opaque_pixels": 105823,
+      "RGB_MAE_display_0_1": 0.006528659676451967,
+      "RGB_RMSE_display_0_1": 0.010476901995480233,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.028235827750111034,
+      "mean_luma_a": 0.2721520352093665,
+      "mean_luma_b": 0.2740609173920269,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    },
+    "hero": {
+      "common_opaque_pixels": 114970,
+      "RGB_MAE_display_0_1": 0.007502872303715491,
+      "RGB_RMSE_display_0_1": 0.01939383081972357,
+      "fraction_common_pixels_max_channel_difference_over_0.03": 0.02875532747673306,
+      "mean_luma_a": 0.34781050977663397,
+      "mean_luma_b": 0.3478559628001849,
+      "silhouette_IoU": 1.0,
+      "silhouette_xor_pixels": 0
+    }
+  }
+}

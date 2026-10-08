@@ -1,0 +1,40 @@
+[0;93m2026-10-08 07:04:10.669133225 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/utils.py:376: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  right = F.normalize(torch.cross(lookat, up), dim=-1)
+{
+  "car": {
+    "original_vs_native_common_mask": 0.06439863376529746,
+    "refined_vs_native_common_mask": 0.057307231425467134,
+    "raw_vs_refined_common_mask": 0.013187442123465388,
+    "original_vs_native_full": 0.019231322531898815,
+    "refined_vs_native_full": 0.01741543412208557,
+    "relative_common_mask_MAE_improvement": 0.11011727928382975,
+    "relative_full_image_MAE_improvement": 0.09442348059012828,
+    "residual_reduction_factor": 408.49921415504474,
+    "minimum_silhouette_IoU": 0.9907120743034056
+  },
+  "teapot": {
+    "original_vs_native_common_mask": 0.04055222452317589,
+    "refined_vs_native_common_mask": 0.03779693913025188,
+    "raw_vs_refined_common_mask": 0.004785754570059087,
+    "original_vs_native_full": 0.01660944800823927,
+    "refined_vs_native_full": 0.01589824662854274,
+    "relative_common_mask_MAE_improvement": 0.06794412452883669,
+    "relative_full_image_MAE_improvement": 0.04281908582053606,
+    "residual_reduction_factor": 339.9360230602393,
+    "minimum_silhouette_IoU": 0.9915373765867419
+  },
+  "hamburger": {
+    "original_vs_native_common_mask": 0.0592236508679008,
+    "refined_vs_native_common_mask": 0.048340933758757434,
+    "raw_vs_refined_common_mask": 0.014695155923981991,
+    "original_vs_native_full": 0.01654695315907399,
+    "refined_vs_native_full": 0.014025984021524588,
+    "relative_common_mask_MAE_improvement": 0.1837562688159402,
+    "relative_full_image_MAE_improvement": 0.15235246714691741,
+    "residual_reduction_factor": 468.7513694171942,
+    "minimum_silhouette_IoU": 0.992550835514395
+  }
+}

@@ -1,0 +1,18 @@
+[0;93m2026-10-08 07:00:28.026648672 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{"stage": "refined", "case": "car", "valid_fraction": 1.0, "raw_residual_mean": 4.192977428436279, "refined_residual_mean": 0.01026434637606144, "displacement_mean": 0.0007342875238208932, "flips": 0, "elapsed_seconds": 2.4780389049847145}
+/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/utils.py:376: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  right = F.normalize(torch.cross(lookat, up), dim=-1)
+{"stage": "view", "case": "car", "azimuth": 0, "original_native_mae": 0.06508798152208328, "refined_native_mae": 0.05673319101333618, "raw_refined_mae": 0.014009046368300915, "elapsed_seconds": 6.679271258006338}
+{"stage": "view", "case": "car", "azimuth": 60, "original_native_mae": 0.07097284495830536, "refined_native_mae": 0.06352026760578156, "raw_refined_mae": 0.014031173661351204, "elapsed_seconds": 4.008660502004204}
+{"stage": "view", "case": "car", "azimuth": 120, "original_native_mae": 0.0558021180331707, "refined_native_mae": 0.05074333772063255, "raw_refined_mae": 0.011150732636451721, "elapsed_seconds": 3.934318429994164}
+{"stage": "refined", "case": "teapot", "valid_fraction": 1.0, "raw_residual_mean": 2.8946962356567383, "refined_residual_mean": 0.008515414781868458, "displacement_mean": 0.0005032157578213663, "flips": 0, "elapsed_seconds": 1.2592278119991533}
+{"stage": "view", "case": "teapot", "azimuth": 0, "original_native_mae": 0.04250796139240265, "refined_native_mae": 0.0390474833548069, "raw_refined_mae": 0.005685518495738506, "elapsed_seconds": 3.961753999989014}
+{"stage": "view", "case": "teapot", "azimuth": 60, "original_native_mae": 0.04268283396959305, "refined_native_mae": 0.039558373391628265, "raw_refined_mae": 0.0053158113732934, "elapsed_seconds": 4.395310591993621}
+{"stage": "view", "case": "teapot", "azimuth": 120, "original_native_mae": 0.036186616867780685, "refined_native_mae": 0.03461354225873947, "raw_refined_mae": 0.0032193928491324186, "elapsed_seconds": 3.896177291026106}
+{"stage": "refined", "case": "hamburger", "valid_fraction": 1.0, "raw_residual_mean": 6.25230073928833, "refined_residual_mean": 0.013338202610611916, "displacement_mean": 0.0008807698218706665, "flips": 0, "elapsed_seconds": 2.0596880319935735}
+{"stage": "view", "case": "hamburger", "azimuth": 0, "original_native_mae": 0.058188747614622116, "refined_native_mae": 0.047279778867959976, "raw_refined_mae": 0.014511615969240665, "elapsed_seconds": 4.018823087011697}
+{"stage": "view", "case": "hamburger", "azimuth": 60, "original_native_mae": 0.05997241288423538, "refined_native_mae": 0.048920292407274246, "raw_refined_mae": 0.014959018677473068, "elapsed_seconds": 4.04084456700366}
+{"stage": "view", "case": "hamburger", "azimuth": 120, "original_native_mae": 0.059504419565200806, "refined_native_mae": 0.0488160103559494, "raw_refined_mae": 0.014614722691476345, "elapsed_seconds": 4.047955089976313}
+{"stage": "done", "elapsed_seconds": 45.14071981498273}

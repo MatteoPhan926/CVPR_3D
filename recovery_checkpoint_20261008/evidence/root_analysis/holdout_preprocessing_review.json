@@ -1,0 +1,10 @@
+{
+  "teapot": {
+    "processed_sha256": "5f6a57a6b49695f5f98d0ca0b7a3637329a08fd8be24c84ca9f5c1f3e1c62c7f",
+    "review": "Visually inspected: intended full object retained and gray background; no manual mask or color edits. Teapot retains specular appearance; hamburger includes plate. Standard preprocessing is held fixed, not claimed optimal."
+  },
+  "hamburger": {
+    "processed_sha256": "1b27258db875911505959656e98fb057ec89195fe99eb88650f48b0d43b14b85",
+    "review": "Visually inspected: intended full object retained and gray background; no manual mask or color edits. Teapot retains specular appearance; hamburger includes plate. Standard preprocessing is held fixed, not claimed optimal."
+  }
+}

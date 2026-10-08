@@ -1,0 +1,51 @@
+{
+  "checkpoint_id": "recovery-research-20261008-20261008T234315Z-2fnb55rf",
+  "status": "PREPARED_LOCAL_AWAITING_EXTERNAL_VERIFICATION",
+  "base_commit": "6b99f54997c17e5d1f26bab89e1b2ecdaab2f838",
+  "branch": "recovery-research-20261008-20261008T234315Z-2fnb55rf",
+  "archives": [
+    {
+      "path": "archives/01_research_generation.zip",
+      "bytes": 76762708,
+      "sha256": "73dbef62d29ce60da045f1d92eddae00f0ef2c576c62ffb51b5247dc9daf024d",
+      "payload_files": 117,
+      "role": "01_research_generation"
+    },
+    {
+      "path": "archives/02_research_controls_and_holdouts.zip",
+      "bytes": 55555761,
+      "sha256": "21548b1eb8cc43a1d062dea5d9e494a96dadcc444b5bb29f99fbb30bcf59032b",
+      "payload_files": 284,
+      "role": "02_research_controls_and_holdouts"
+    },
+    {
+      "path": "archives/03_car_probe.zip",
+      "bytes": 77998874,
+      "sha256": "aec8ed831d6ae7875e188514e8f651ea421a3add6882d0ef04314fbd404b4a8f",
+      "payload_files": 240,
+      "role": "03_car_probe"
+    },
+    {
+      "path": "archives/04_dependency_source_and_metadata.zip",
+      "bytes": 34785124,
+      "sha256": "73facb6a44da464a8113462b76fe30e0e53b9dea3733f3d9b51c201f853ac2a2",
+      "payload_files": 85,
+      "role": "04_dependency_source_and_metadata"
+    },
+    {
+      "path": "archives/05_bentley.zip",
+      "bytes": 58048846,
+      "sha256": "7775fdbe77d6a451c91902d0dd849e72fea56d9c474bdd5e039229c13496351f",
+      "payload_files": 87,
+      "role": "05_bentley"
+    }
+  ],
+  "manifest": "MANIFEST_SHA256.json",
+  "source_file_count": 808,
+  "payload_file_count": 813,
+  "research_scope": "All files found under research_decision_20261008, without rerunning any experiment.",
+  "all_three_latents_included": true,
+  "excluded": "See source_manifest.json. Installed dependencies and upstream model caches omitted; generated mesh arrays and latents included.",
+  "last_known_external_checkpoint": "Old car probe at base_commit; this checkpoint still requires upload and read-back.",
+  "verification_receipt": "See EXTERNAL_VERIFICATION.json when published. This initial checkpoint status records packaging time and is not modified retroactively."
+}

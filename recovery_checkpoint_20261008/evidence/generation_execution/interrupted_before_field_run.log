@@ -1,0 +1,95 @@
+[0;93m2026-10-08 01:57:42.455069172 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+Traceback (most recent call last):
+  File "/workspace/research_decision_20261008/generation_execution/field_diagnostics.py", line 17, in <module>
+    from provenance_check import ROOT,OUT,load_field,summary
+  File "/workspace/research_decision_20261008/generation_execution/provenance_check.py", line 16, in <module>
+    from tsr.models.network_utils import NeRFMLP
+  File "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/models/network_utils.py", line 8, in <module>
+    from ..utils import BaseModule
+  File "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/utils.py", line 10, in <module>
+    import rembg
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/rembg/__init__.py", line 5, in <module>
+    from .bg import remove
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/rembg/bg.py", line 17, in <module>
+    from pymatting.alpha.estimate_alpha_cf import estimate_alpha_cf
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/pymatting/__init__.py", line 7, in <module>
+    from pymatting.alpha import *
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/pymatting/alpha/__init__.py", line 7, in <module>
+    from pymatting.alpha.estimate_alpha_sm import estimate_alpha_sm
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/pymatting/alpha/estimate_alpha_sm.py", line 487, in <module>
+    @njit("void(f4[:, :, ::1], f4[:, :, ::1], f4[:, ::1], f4[:, :, ::1], f4[:, :, ::1], f4[:, ::1], f4[:, :, ::1], f4[:, ::1], i8, i8, i8, f4, f4, f4)", cache=True, parallel=True, nogil=True)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/decorators.py", line 234, in wrapper
+    disp.compile(sig)
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/dispatcher.py", line 919, in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/dispatcher.py", line 80, in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/dispatcher.py", line 94, in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/dispatcher.py", line 107, in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler.py", line 739, in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler.py", line 439, in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler.py", line 505, in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler.py", line 473, in _compile_core
+    pm.run(self.state)
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler_machinery.py", line 356, in run
+    self._runPass(idx, pass_inst, state)
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler_machinery.py", line 311, in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/compiler_machinery.py", line 272, in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typed_passes.py", line 114, in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typed_passes.py", line 95, in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typeinfer.py", line 1075, in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typeinfer.py", line 160, in propagate
+    constraint(typeinfer)
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typeinfer.py", line 782, in __call__
+    sig = typeinfer.context.resolve_setitem(targetty, idxty, valty)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/typing/context.py", line 419, in resolve_setitem
+    sig = fnty.get_call_type(self, (target, index, value), {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/functions.py", line 309, in get_call_type
+    nolitargs = tuple([_unlit_non_poison(a) for a in args])
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/functions.py", line 237, in _unlit_non_poison
+    out = unliteral(ty)
+          ^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/misc.py", line 68, in unliteral
+    return lit_type.__unliteral__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/containers.py", line 257, in __unliteral__
+    return type(self)(dtype=unliteral(self.dtype), count=self.count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/abstract.py", line 67, in __call__
+    inst = type.__call__(cls, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/containers.py", line 237, in __init__
+    super(UniTuple, self).__init__(name)
+  File "/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/numba/core/types/abstract.py", line 93, in __init__
+    def __init__(self, name):
+
+KeyboardInterrupt

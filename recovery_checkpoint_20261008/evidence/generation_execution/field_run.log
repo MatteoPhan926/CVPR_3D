@@ -1,0 +1,18 @@
+[0;93m2026-10-08 01:58:28.296056143 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+{"stage": "grid_finished", "resolution": 256, "elapsed": 22.330746944004204}
+{"stage": "extraction_finished", "variant": "r256_t10", "elapsed": 23.16155448500649}
+{"stage": "extraction_finished", "variant": "r256_t25", "elapsed": 23.99814300700382}
+{"stage": "extraction_finished", "variant": "r256_t50", "elapsed": 24.844628432998434}
+{"stage": "grid_finished", "resolution": 128, "elapsed": 27.07715411299432}
+{"stage": "extraction_finished", "variant": "r128_t25", "elapsed": 27.232392970996443}
+/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/utils.py:376: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at ../aten/src/ATen/native/Cross.cpp:62.)
+  right = F.normalize(torch.cross(lookat, up), dim=-1)
+{"stage": "view_finished", "azimuth": 0, "elapsed": 33.63340435299324}
+{"stage": "view_finished", "azimuth": 60, "elapsed": 37.50234160400578}
+{"stage": "view_finished", "azimuth": 120, "elapsed": 41.29705145700427}
+{"stage": "view_finished", "azimuth": 180, "elapsed": 45.333697335998295}
+{"stage": "view_finished", "azimuth": 240, "elapsed": 49.22104167799989}
+{"stage": "view_finished", "azimuth": 300, "elapsed": 53.18355120100023}
+{"stage": "done", "elapsed": 53.381356932004564, "reproduction": {"vertices_exact": false, "faces_exact": false, "colors_exact": false, "max_vertex_abs_error": 0.7495642602443695}}

@@ -1,0 +1,121 @@
+{
+  "variants": [
+    [
+      "A_raw_flat_single",
+      "raw",
+      false,
+      "single",
+      false,
+      1
+    ],
+    [
+      "B_raw_flat_double",
+      "raw",
+      false,
+      "double",
+      false,
+      1
+    ],
+    [
+      "C_raw_smooth_double",
+      "raw",
+      true,
+      "double",
+      false,
+      1
+    ],
+    [
+      "D_prior_raw_display",
+      "raw",
+      false,
+      "historical",
+      false,
+      1
+    ],
+    [
+      "E_partition_flat",
+      "auth",
+      false,
+      null,
+      false,
+      1
+    ],
+    [
+      "F_partition_authored_normals",
+      "auth",
+      true,
+      null,
+      false,
+      1
+    ],
+    [
+      "G_full_authored_closed",
+      "auth",
+      true,
+      null,
+      true,
+      1
+    ],
+    [
+      "H_full_authored_open",
+      "auth",
+      true,
+      null,
+      true,
+      61
+    ],
+    [
+      "I_partition_open_no_additions",
+      "auth",
+      true,
+      null,
+      false,
+      61
+    ]
+  ],
+  "views": {
+    "side": [
+      [
+        2,
+        0,
+        0.08
+      ],
+      [
+        0,
+        0,
+        0.08
+      ],
+      1.12
+    ],
+    "hero": [
+      [
+        1.8,
+        1.7,
+        1.0
+      ],
+      [
+        0,
+        0,
+        0.03
+      ],
+      1.35
+    ]
+  },
+  "samples": 24,
+  "seed": 19,
+  "resolution": [
+    720,
+    480
+  ],
+  "principles": "Source hashes fixed; same aligned geometry/camera/lights; no regeneration; no aesthetics tuning.",
+  "comparisons": {
+    "A_vs_B": "sidedness only",
+    "B_vs_C": "flat versus interpolated raw normals",
+    "B_vs_D": "glTF defaults vs prior raw-display material",
+    "B_vs_E": "partition with flat normals, no additions",
+    "C_vs_F": "partition/split normals with smooth surfaces",
+    "F_vs_G": "added geometry, closed",
+    "I_vs_H": "added geometry, open"
+  },
+  "known_limit": "Single-sided control uses Cycles Backfacing-to-transparent shader, not browser renderer. Metrics describe pixels in these views, not utility or aesthetic acceptance."
+}

@@ -1,0 +1,1040 @@
+{
+  "inspection_date_utc": "2026-10-08",
+  "scope": [
+    "/workspace/generated3d_authoring_clean_20261006",
+    "/workspace/CVPR_3D",
+    "/workspace/image_to_usable_car_probe_20261007"
+  ],
+  "excluded_directory_names": [
+    ".git",
+    "__pycache__",
+    "blender-config",
+    "cache",
+    "huggingface-cache",
+    "node_modules",
+    "pip-cache",
+    "remote-client",
+    "remote-huggingface-cache",
+    "venv"
+  ],
+  "assets": [
+    {
+      "path": "/workspace/generated3d_authoring_clean_20261006/inputs/blue_train_bentley.glb",
+      "bytes": 25976404,
+      "sha256": "a1156efc2aa8aca3c37eef570b1ca7c3d8cf3676a5f6e07e2d059154af2edd79",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 12,
+        "node_count": 27,
+        "image_count": 24,
+        "material_count": 8,
+        "animation_count": 0,
+        "primitives": [
+          {
+            "mesh": "Wheel_FL.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2829,
+            "triangles": 3210
+          },
+          {
+            "mesh": "Body_Body_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 1,
+            "vertices": 5714,
+            "triangles": 7810
+          },
+          {
+            "mesh": "Body_Glow_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 676,
+            "triangles": 700
+          },
+          {
+            "mesh": "Body_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 5775,
+            "triangles": 6644
+          },
+          {
+            "mesh": "Body_Details_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 33148,
+            "triangles": 35832
+          },
+          {
+            "mesh": "Body_Bottom_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 4,
+            "vertices": 2934,
+            "triangles": 3830
+          },
+          {
+            "mesh": "Body_Interior_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 5,
+            "vertices": 4033,
+            "triangles": 5103
+          },
+          {
+            "mesh": "Body_Glass_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 6,
+            "vertices": 1668,
+            "triangles": 1712
+          },
+          {
+            "mesh": "Body_Grid_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 7,
+            "vertices": 125,
+            "triangles": 116
+          },
+          {
+            "mesh": "Wheel_BL.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2576,
+            "triangles": 2970
+          },
+          {
+            "mesh": "Wheel_FR.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2827,
+            "triangles": 3210
+          },
+          {
+            "mesh": "Wheel_BR.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2576,
+            "triangles": 2970
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/generated3d_authoring_clean_20261006/artifacts/bentley_authored.glb",
+      "bytes": 26059900,
+      "sha256": "565f0d8ce70c1f6bf23ca370bb879e2d0a167b24d7381cae0bf75dff1b44ac14",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 16,
+        "node_count": 32,
+        "image_count": 24,
+        "material_count": 8,
+        "animation_count": 1,
+        "primitives": [
+          {
+            "mesh": "Wheel_FL.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2829,
+            "triangles": 3210
+          },
+          {
+            "mesh": "Body_Body_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 1,
+            "vertices": 6296,
+            "triangles": 8805
+          },
+          {
+            "mesh": "Body_Glow_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 676,
+            "triangles": 700
+          },
+          {
+            "mesh": "Body_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 5775,
+            "triangles": 6644
+          },
+          {
+            "mesh": "Body_Details_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 32056,
+            "triangles": 34895
+          },
+          {
+            "mesh": "Body_Bottom_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 4,
+            "vertices": 2934,
+            "triangles": 3830
+          },
+          {
+            "mesh": "Body_Interior_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 5,
+            "vertices": 3750,
+            "triangles": 4959
+          },
+          {
+            "mesh": "Body_Glass_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 6,
+            "vertices": 1452,
+            "triangles": 1510
+          },
+          {
+            "mesh": "Body_Grid_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 7,
+            "vertices": 125,
+            "triangles": 116
+          },
+          {
+            "mesh": "Wheel_BL.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2576,
+            "triangles": 2970
+          },
+          {
+            "mesh": "Wheel_FR.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2827,
+            "triangles": 3210
+          },
+          {
+            "mesh": "Wheel_BR.001_Wheels_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 0,
+            "vertices": 2576,
+            "triangles": 2970
+          },
+          {
+            "mesh": "Door_Body_Details_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 1580,
+            "triangles": 1701
+          },
+          {
+            "mesh": "Door_Body_Interior_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 5,
+            "vertices": 829,
+            "triangles": 884
+          },
+          {
+            "mesh": "Door_Body_Glass_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 6,
+            "vertices": 216,
+            "triangles": 202
+          },
+          {
+            "mesh": "Door_Body_Body_0",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 1,
+            "vertices": 261,
+            "triangles": 275
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "bytes": 2154784,
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "https://github.com/mikedh/trimesh",
+        "mesh_count": 1,
+        "node_count": 2,
+        "image_count": 0,
+        "material_count": 0,
+        "animation_count": 0,
+        "primitives": [
+          {
+            "mesh": "geometry_0",
+            "attributes": [
+              "POSITION",
+              "COLOR_0"
+            ],
+            "material": null,
+            "vertices": 53904,
+            "triangles": 107608
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/car_authored.glb",
+      "bytes": 3539184,
+      "sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 9,
+        "node_count": 10,
+        "image_count": 0,
+        "material_count": 4,
+        "animation_count": 1,
+        "primitives": [
+          {
+            "mesh": "Body_fixed_generated_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 53056,
+            "triangles": 105133
+          },
+          {
+            "mesh": "Door_added_edge_thickness",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2260,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Door_added_inner_lining",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 2,
+            "vertices": 24637,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Door_generated_outer_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 4574,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Body_added_recessed_jamb",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2270,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Cube",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.001",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.002",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.003",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/car_authored.blend",
+      "bytes": 7972956,
+      "sha256": "6396976986a84b3ff76bf032ecf9716b559608bc8f49a360c062f29f5cdbe27c"
+    },
+    {
+      "path": "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/authoring-v1/car_authored.glb",
+      "bytes": 3539120,
+      "sha256": "cce4fd5c05c8f31724f5282096cb5b308ef42c3f1fe0aa6ddb586de13bd5b7a8",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 9,
+        "node_count": 10,
+        "image_count": 0,
+        "material_count": 4,
+        "animation_count": 1,
+        "primitives": [
+          {
+            "mesh": "Body_fixed_generated_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 53056,
+            "triangles": 105133
+          },
+          {
+            "mesh": "Door_added_edge_thickness",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2260,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Door_added_inner_lining",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 2,
+            "vertices": 24637,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Door_generated_outer_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 4574,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Body_added_recessed_jamb",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2270,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Cube",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.001",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.002",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.003",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "bytes": 2154784,
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "https://github.com/mikedh/trimesh",
+        "mesh_count": 1,
+        "node_count": 2,
+        "image_count": 0,
+        "material_count": 0,
+        "animation_count": 0,
+        "primitives": [
+          {
+            "mesh": "geometry_0",
+            "attributes": [
+              "POSITION",
+              "COLOR_0"
+            ],
+            "material": null,
+            "vertices": 53904,
+            "triangles": 107608
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/raw/cpu-attempt001/raw_generated.glb",
+      "bytes": 2154784,
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "https://github.com/mikedh/trimesh",
+        "mesh_count": 1,
+        "node_count": 2,
+        "image_count": 0,
+        "material_count": 0,
+        "animation_count": 0,
+        "primitives": [
+          {
+            "mesh": "geometry_0",
+            "attributes": [
+              "POSITION",
+              "COLOR_0"
+            ],
+            "material": null,
+            "vertices": 53904,
+            "triangles": 107608
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.glb",
+      "bytes": 3539184,
+      "sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 9,
+        "node_count": 10,
+        "image_count": 0,
+        "material_count": 4,
+        "animation_count": 1,
+        "primitives": [
+          {
+            "mesh": "Body_fixed_generated_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 53056,
+            "triangles": 105133
+          },
+          {
+            "mesh": "Door_added_edge_thickness",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2260,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Door_added_inner_lining",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 2,
+            "vertices": 24637,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Door_generated_outer_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 4574,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Body_added_recessed_jamb",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2270,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Cube",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.001",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.002",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.003",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/door_parts.npz",
+      "bytes": 1713553,
+      "sha256": "2eb58552f18ef8196ae58a0573c4473b7fb8893c5c9ebd94e1da5d70b31e6d72"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.blend",
+      "bytes": 7972956,
+      "sha256": "6396976986a84b3ff76bf032ecf9716b559608bc8f49a360c062f29f5cdbe27c"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/authored-inspection/reopened.blend",
+      "bytes": 10667756,
+      "sha256": "cd6a6cc9951054261033010be56d82850f69e2bc219d77177f0dab0175077acf"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/raw-inspection/inspection.blend",
+      "bytes": 6935912,
+      "sha256": "e5cb547057c1f87c2980fc685b867cc03bd65e5328830c3c696374a4eabe4979"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/raw-color-inspection/inspection.blend",
+      "bytes": 6960916,
+      "sha256": "a557c5b28aa8b41b067756c72f2d9d4947f2cbd67b1a92bd3eccb9ca13a2c11d"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/authoring-v1/car_authored.glb",
+      "bytes": 3539120,
+      "sha256": "cce4fd5c05c8f31724f5282096cb5b308ef42c3f1fe0aa6ddb586de13bd5b7a8",
+      "glb": {
+        "version": 2,
+        "declared_length_matches": true,
+        "generator": "Khronos glTF Blender I/O v4.3.47",
+        "mesh_count": 9,
+        "node_count": 10,
+        "image_count": 0,
+        "material_count": 4,
+        "animation_count": 1,
+        "primitives": [
+          {
+            "mesh": "Body_fixed_generated_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 53056,
+            "triangles": 105133
+          },
+          {
+            "mesh": "Door_added_edge_thickness",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2260,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Door_added_inner_lining",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 2,
+            "vertices": 24637,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Door_generated_outer_surface",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "COLOR_0"
+            ],
+            "material": 0,
+            "vertices": 4574,
+            "triangles": 8379
+          },
+          {
+            "mesh": "Body_added_recessed_jamb",
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "material": 1,
+            "vertices": 2270,
+            "triangles": 1562
+          },
+          {
+            "mesh": "Cube",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.001",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 2,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.002",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          },
+          {
+            "mesh": "Cube.003",
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "material": 3,
+            "vertices": 24,
+            "triangles": 12
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/authoring-v1/inspection/reopened.blend",
+      "bytes": 10667756,
+      "sha256": "0dec07b369f57413e4df0dc14fbaa0d1b026cdc38b98dd3be01b76cd3c05663f"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/car-frame/car_frame.blend",
+      "bytes": 6960916,
+      "sha256": "1bb9ecd9edfeb1f792b1b9cecceb05347b46de7d7d5bea12d5c44134f1bf2f03"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/environment/raw_native_mesh.npz",
+      "bytes": 1732280,
+      "sha256": "0a058e1e717b24362ff5d52ea2ebbc69d70ebc86eb7ef4bac797dcd837f433ad"
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/environment/canonical_raw_mesh.npz",
+      "bytes": 1402219,
+      "sha256": "6097bf03c24bdc74ef5903e93e003b677e4e93e8b08cebb8d45e8b53cb450a49"
+    }
+  ],
+  "identical_asset_groups": [
+    [
+      "/workspace/generated3d_authoring_clean_20261006/inputs/blue_train_bentley.glb"
+    ],
+    [
+      "/workspace/generated3d_authoring_clean_20261006/artifacts/bentley_authored.glb"
+    ],
+    [
+      "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "/workspace/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "/workspace/image_to_usable_car_probe_20261007/raw/cpu-attempt001/raw_generated.glb"
+    ],
+    [
+      "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/car_authored.glb",
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.glb"
+    ],
+    [
+      "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/car_authored.blend",
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.blend"
+    ],
+    [
+      "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/artifacts/authoring-v1/car_authored.glb",
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/authoring-v1/car_authored.glb"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/door_parts.npz"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/authored-inspection/reopened.blend"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/raw-inspection/inspection.blend"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/raw-color-inspection/inspection.blend"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/authoring-v1/inspection/reopened.blend"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/artifacts/car-frame/car_frame.blend"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/environment/raw_native_mesh.npz"
+    ],
+    [
+      "/workspace/image_to_usable_car_probe_20261007/environment/canonical_raw_mesh.npz"
+    ]
+  ],
+  "noncar_2d_dependency_examples": [
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/iso_house.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/poly_fox.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/police_woman.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/chair.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/robot.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/unicorn.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/teapot.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/hamburger.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/flamingo.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/marble.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/tiger_girl.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/horse.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/stripes.png",
+    "/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/examples/captured.jpeg"
+  ],
+  "git": {
+    "status": "",
+    "branches": "* image-to-usable-car-20261007             6b99f54 Publish image-to-car probe assets, viewer, and verified evidence\n  work                                     a04ddf5 Add verified Bentley authoring download package\n  remotes/origin/bentley-download-20261006 a04ddf5 Add verified Bentley authoring download package",
+    "history": "6b99f54997c17e5d1f26bab89e1b2ecdaab2f838 Publish image-to-car probe assets, viewer, and verified evidence\na04ddf538c72a3b34904845474395feccc31458a Add verified Bentley authoring download package",
+    "tracked_file_count": 178
+  },
+  "archives": [
+    {
+      "path": "/workspace/CVPR_3D/Bentley_authoring_session.zip",
+      "entries": 74,
+      "asset_entries": [
+        "generated3d_authoring_clean_20261006/inputs/blue_train_bentley.glb",
+        "generated3d_authoring_clean_20261006/artifacts/bentley_authored.glb",
+        "generated3d_authoring_clean_20261006/provenance/source.bundle"
+      ]
+    },
+    {
+      "path": "/workspace/CVPR_3D/image_to_usable_car_probe_20261007/IMAGE_TO_USABLE_CAR_PROBE_20261007_evidence.zip",
+      "entries": 170,
+      "asset_entries": [
+        "artifacts/authoring-v1/car_authored.glb",
+        "artifacts/car_authored.blend",
+        "artifacts/car_authored.glb",
+        "raw/car_raw.glb"
+      ]
+    }
+  ],
+  "limits": "Read-only local inventory; no remote query, downloads, inference, source execution or rendering. Asset classification based on paths, GLB metadata and known study provenance. Historical report outputs absent from inspected roots are not globally unavailable."
+}

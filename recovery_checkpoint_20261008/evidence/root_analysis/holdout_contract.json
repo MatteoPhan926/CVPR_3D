@@ -1,0 +1,20 @@
+{
+  "question": "Does a standard radiance-to-glTF transfer account for appearance loss beyond the audited car, without changing geometry or model inference?",
+  "experiment_identity": "Two new non-car static-export controls; not the separate active car or non-car revision experiment.",
+  "cases": ["teapot.png", "hamburger.png"],
+  "selection_before_outputs": "First a smooth glossy household object, then a layered food object from the pinned TripoSR official examples. Neither output has been viewed. No replacement or seed search.",
+  "model_source_commit": "107cefdc244c39106fa830359024f6a2f1c78871",
+  "model_revision": "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+  "model_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "seed": 42,
+  "threads": 2,
+  "chunk_size": 4096,
+  "marching_cubes_resolution": 256,
+  "density_threshold": 25,
+  "preprocessing": "Unmodified upstream remove_background/resize_foreground, foreground ratio0.85 and gray composite. Record existing RGBA behavior and double-alpha as a separate limitation; no mask correction or preprocessing ablation in these cases.",
+  "variants": ["Released vertex-color glTF defaults", "Unlit direct RGB", "Unlit sRGB-to-linear RGB", "Nonmetal PBR with sRGB-to-linear RGB"],
+  "primary_endpoint": "Numerical raster-to-decoder RGB transfer on matched visible surfaces and renderer output, not photographic reconstruction accuracy or artist acceptance.",
+  "secondary_endpoint": "Native field vs mesh views with matched cameras; object shape and appearance must be kept distinct.",
+  "success_interpretation": "A standard export fix generalizing to both holds would make implementation/representation-transfer a better explanation than generator paint failure, but is not by itself a novel research contribution.",
+  "stop": "At most one inference per case; retain every output; no repair, topology change, artist revision task, training or remote car generation. If signal disappears under standard conversion, do not promote a new method from this observation."
+}

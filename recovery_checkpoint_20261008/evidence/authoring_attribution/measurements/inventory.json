@@ -1,0 +1,242 @@
+{
+  "raw_sha256_before": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+  "blender_version": "4.3.2",
+  "raw_import": {
+    "vertices": 53904,
+    "triangles": 107608,
+    "smooth_polygons": 0,
+    "materials": [],
+    "color_attributes": [
+      [
+        "Color",
+        "CORNER",
+        "BYTE_COLOR"
+      ]
+    ],
+    "custom_normals": false
+  },
+  "authored_import": [
+    {
+      "name": "Body_fixed_generated_surface",
+      "vertices": 53056,
+      "polygons": 105133,
+      "smooth_polygons": 105132,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Generated_vertex_colors_explicit_material"
+      ]
+    },
+    {
+      "name": "Door_added_edge_thickness",
+      "vertices": 2260,
+      "polygons": 1562,
+      "smooth_polygons": 43,
+      "custom_normals": true,
+      "parent": "DoorPivot",
+      "materials": [
+        "Added_jamb_and_edge"
+      ]
+    },
+    {
+      "name": "Door_added_inner_lining",
+      "vertices": 24637,
+      "polygons": 8379,
+      "smooth_polygons": 362,
+      "custom_normals": true,
+      "parent": "DoorPivot",
+      "materials": [
+        "Added_dark_door_lining"
+      ]
+    },
+    {
+      "name": "Door_generated_outer_surface",
+      "vertices": 4574,
+      "polygons": 8379,
+      "smooth_polygons": 8379,
+      "custom_normals": true,
+      "parent": "DoorPivot",
+      "materials": [
+        "Generated_vertex_colors_explicit_material"
+      ]
+    },
+    {
+      "name": "Body_added_recessed_jamb",
+      "vertices": 2270,
+      "polygons": 1562,
+      "smooth_polygons": 41,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Added_jamb_and_edge"
+      ]
+    },
+    {
+      "name": "Cabin_added_floor_proxy",
+      "vertices": 24,
+      "polygons": 12,
+      "smooth_polygons": 0,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Added_dark_door_lining"
+      ]
+    },
+    {
+      "name": "Cabin_added_inner_wall_proxy",
+      "vertices": 24,
+      "polygons": 12,
+      "smooth_polygons": 0,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Added_dark_door_lining"
+      ]
+    },
+    {
+      "name": "Cabin_added_seat_cushion_proxy",
+      "vertices": 24,
+      "polygons": 12,
+      "smooth_polygons": 0,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Added_cabin_proxy"
+      ]
+    },
+    {
+      "name": "Cabin_added_seat_back_proxy",
+      "vertices": 24,
+      "polygons": 12,
+      "smooth_polygons": 0,
+      "custom_normals": true,
+      "parent": null,
+      "materials": [
+        "Added_cabin_proxy"
+      ]
+    }
+  ],
+  "authored_materials": {
+    "Generated_vertex_colors_explicit_material": {
+      "metallic": 1.0,
+      "roughness": 1.0,
+      "use_backface_culling": false
+    },
+    "Added_cabin_proxy": {
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "use_backface_culling": false
+    },
+    "Added_dark_door_lining": {
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "use_backface_culling": false
+    },
+    "Added_jamb_and_edge": {
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "use_backface_culling": false
+    }
+  },
+  "geometry": {
+    "raw_area": 1.7337055332686488,
+    "fixed_area": 1.6145613717580212,
+    "moving_generated_area": 0.1191441719203227,
+    "raw_bounds": [
+      [
+        -0.3116043508052826,
+        -0.417868971824646,
+        -0.23362606763839722
+      ],
+      [
+        0.3495483994483948,
+        0.4140940308570862,
+        0.3359992504119873
+      ]
+    ],
+    "moving_generated_bounds": [
+      [
+        0.10000000149011612,
+        -0.19499999284744263,
+        -0.07500000298023224
+      ],
+      [
+        0.30801624059677124,
+        0.02500000037252903,
+        0.2529999911785126
+      ]
+    ],
+    "door_fraction_source_area": 0.06872226547935954,
+    "closed_area_relative_error": 6.004304021733332e-09
+  },
+  "color_correspondences": {
+    "matched_vertices": 52885,
+    "max_abs_linear_RGBA_difference": 0.006882846355438232,
+    "median_abs_linear_RGBA_difference": 0.0
+  },
+  "selection_components": [
+    {
+      "triangles": 7264,
+      "area": 0.1019997194495276,
+      "bounds": [
+        [
+          0.10000000149011612,
+          -0.19499999284744263,
+          -0.07500000298023224
+        ],
+        [
+          0.30801624059677124,
+          0.02500000037252903,
+          0.2529999911785126
+        ]
+      ]
+    },
+    {
+      "triangles": 1115,
+      "area": 0.0171444524707951,
+      "bounds": [
+        [
+          0.10000000149011612,
+          -0.19499999284744263,
+          -0.07500000298023224
+        ],
+        [
+          0.24104826152324677,
+          -0.016741788014769554,
+          -0.05161476135253906
+        ]
+      ]
+    }
+  ],
+  "animation_samples": [
+    {
+      "frame": 1,
+      "angle_degrees": 0.0,
+      "max_outer_vertex_displacement": 0.0,
+      "fixed_matrix_max_delta": 0.0,
+      "all_mesh_matrix_max_delta": 0.0
+    },
+    {
+      "frame": 31,
+      "angle_degrees": 30.000007665015225,
+      "max_outer_vertex_displacement": 0.13529427574553865,
+      "fixed_matrix_max_delta": 0.0,
+      "all_mesh_matrix_max_delta": 0.5000001192092896
+    },
+    {
+      "frame": 61,
+      "angle_degrees": 60.000001669652114,
+      "max_outer_vertex_displacement": 0.26136841021759005,
+      "fixed_matrix_max_delta": 0.0,
+      "all_mesh_matrix_max_delta": 0.8660253286361694
+    },
+    {
+      "frame": 121,
+      "angle_degrees": 0.0,
+      "max_outer_vertex_displacement": 0.0,
+      "fixed_matrix_max_delta": 0.0,
+      "all_mesh_matrix_max_delta": 0.0
+    }
+  ],
+  "raw_sha256_after": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d"
+}

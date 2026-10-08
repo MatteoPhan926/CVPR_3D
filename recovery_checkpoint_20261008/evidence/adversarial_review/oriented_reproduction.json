@@ -1,0 +1,11 @@
+{
+  "scope": "Independent exact accessor/identity-transform comparison; no inference or mesh edits.",
+  "raw_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+  "reproduced_sha256": "b7415aebc176effb097812875790fe23085f792e24d48b50381ec0938726b864",
+  "vertices": 53904,
+  "triangles": 107608,
+  "exact_vertex_bijection": true,
+  "oriented_triangle_multisets_equal": true,
+  "max_duplicate_oriented_triangle_count_raw": 1,
+  "exact_corresponding_RGBA": true
+}

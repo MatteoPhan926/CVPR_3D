@@ -1,0 +1,45 @@
+[
+  {
+    "url": "https://github.com/VAST-AI-Research/TripoSR/issues/60",
+    "title": "Jagged edges when using high resolution marching cubes.",
+    "createdAt": "2024-03-18T15:16:19Z",
+    "author": {
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6714068?v=4",
+      "login": "thatname",
+      "id": "MDQ6VXNlcjY3MTQwNjg=",
+      "profileUrl": "https://github.com/thatname",
+      "name": "zephyr",
+      "__typename": "User"
+    },
+    "body": "I set marching cubes resolution to highest(320), there is significant jagged edges.\r\n\r\n![2024-03-18 222250](https://github.com/VAST-AI-Research/TripoSR/assets/6714068/42010b45-de31-42e5-88b7-3249a3dd12f1)\r\n\r\nThe model outputs density fields, I think using distance field will get better mesh quality?",
+    "bodyHTML": "<p dir=\"auto\">I set marching cubes resolution to highest(320), there is significant jagged edges.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/6714068/313714253-42010b45-de31-42e5-88b7-3249a3dd12f1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE0NDM0NjUsIm5iZiI6MTc5MTQ0MzE2NSwicGF0aCI6Ii82NzE0MDY4LzMxMzcxNDI1My00MjAxMGI0NS1kZTMxLTQyZTUtODhiNy0zMjQ5YTNkZDEyZjEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTAwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjEwMDhUMDcwNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDk3YzlkY2NhNGExODI0NWU4Y2Q3MDg0MDdjOWUxOGU3Mjg1OGU2YWI3ZmVhMDE1ZmM5NzQ5NzJhYjE1YTY3YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.JHIlXfqPLWGwzC2n9FSiT7AA2eztfUriqovvJG2fBkE\"><img src=\"https://private-user-images.githubusercontent.com/6714068/313714253-42010b45-de31-42e5-88b7-3249a3dd12f1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE0NDM0NjUsIm5iZiI6MTc5MTQ0MzE2NSwicGF0aCI6Ii82NzE0MDY4LzMxMzcxNDI1My00MjAxMGI0NS1kZTMxLTQyZTUtODhiNy0zMjQ5YTNkZDEyZjEucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTAwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjEwMDhUMDcwNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDk3YzlkY2NhNGExODI0NWU4Y2Q3MDg0MDdjOWUxOGU3Mjg1OGU2YWI3ZmVhMDE1ZmM5NzQ5NzJhYjE1YTY3YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.JHIlXfqPLWGwzC2n9FSiT7AA2eztfUriqovvJG2fBkE\" alt=\"2024-03-18 222250\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">The model outputs density fields, I think using distance field will get better mesh quality?</p>"
+  },
+  {
+    "author": {
+      "__typename": "User",
+      "login": "thatname",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6714068?v=4",
+      "profileUrl": "https://github.com/thatname",
+      "id": "MDQ6VXNlcjY3MTQwNjg=",
+      "name": "zephyr"
+    },
+    "url": "https://github.com/VAST-AI-Research/TripoSR/issues/60#issuecomment-2010321184",
+    "createdAt": "2024-03-20T18:28:36Z",
+    "body": "I've submitted a pull request #68 , It's doing fast block based marching cube to produce high resolution mesh, up to 1024^3.\r\nYou can use blender's mesh simplification to process the generated high resolution mesh, which can reduce the artifact largely, but still not completely. If you want more, change the resolution to 2048^3",
+    "bodyHTML": "<p dir=\"auto\">I've submitted a pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2198206305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/VAST-AI-Research/TripoSR/issues/68\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/VAST-AI-Research/TripoSR/pull/68/hovercard\" href=\"https://github.com/VAST-AI-Research/TripoSR/pull/68\">#68</a> , It's doing fast block based marching cube to produce high resolution mesh, up to 1024^3.<br>\nYou can use blender's mesh simplification to process the generated high resolution mesh, which can reduce the artifact largely, but still not completely. If you want more, change the resolution to 2048^3</p>"
+  },
+  {
+    "author": {
+      "__typename": "User",
+      "login": "sekkit",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/25851211?u=502c75be62fe709864fc707ffdc7299bf4e26ee9&v=4",
+      "profileUrl": "https://github.com/sekkit",
+      "id": "MDQ6VXNlcjI1ODUxMjEx",
+      "name": "sekkit"
+    },
+    "url": "https://github.com/VAST-AI-Research/TripoSR/issues/60#issuecomment-2295248951",
+    "createdAt": "2024-08-18T12:44:14Z",
+    "body": "> I've submitted a pull request #68 , It's doing fast block based marching cube to produce high resolution mesh, up to 1024^3. You can use blender's mesh simplification to process the generated high resolution mesh, which can reduce the artifact largely, but still not completely. If you want more, change the resolution to 2048^3\r\n\r\ncould u modify stable fast 3d's implementatoin of tripoSR? it uses MarchingTetraHedra",
+    "bodyHTML": "<blockquote>\n<p dir=\"auto\">I've submitted a pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2198206305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/VAST-AI-Research/TripoSR/issues/68\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/VAST-AI-Research/TripoSR/pull/68/hovercard\" href=\"https://github.com/VAST-AI-Research/TripoSR/pull/68\">#68</a> , It's doing fast block based marching cube to produce high resolution mesh, up to 1024^3. You can use blender's mesh simplification to process the generated high resolution mesh, which can reduce the artifact largely, but still not completely. If you want more, change the resolution to 2048^3</p>\n</blockquote>\n<p dir=\"auto\">could u modify stable fast 3d's implementatoin of tripoSR? it uses MarchingTetraHedra</p>"
+  }
+]

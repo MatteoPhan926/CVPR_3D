@@ -1,0 +1,9 @@
+[0;93m2026-10-08 07:06:12.712752515 [W:onnxruntime:Default, telemetry.cc:800 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+Traceback (most recent call last):
+  File "/workspace/research_decision_20261008/extraction_control/log_density_control.py", line 105, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/research_decision_20261008/extraction_control/log_density_control.py", line 17, in main
+    assert renderer.cfg.density_activation=='trunc_exp'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

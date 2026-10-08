@@ -1,0 +1,24 @@
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const scene=new THREE.Scene();scene.background=new THREE.Color(1,1,1);
+const renderer=new THREE.WebGLRenderer({antialias:false,preserveDrawingBuffer:true});renderer.setSize(320,320);renderer.setPixelRatio(1);
+renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;
+document.body.appendChild(renderer.domElement);
+const camera=new THREE.PerspectiveCamera(40,1,.01,10);camera.up.set(0,0,1);
+const hemi=new THREE.HemisphereLight(0xffffff,0x444444,1);scene.add(hemi);
+const key=new THREE.DirectionalLight(0xffffff,2);key.position.set(2,-3,4);scene.add(key);
+const pmrem=new THREE.PMREMGenerator(renderer);const room=new RoomEnvironment();const environment=pmrem.fromScene(room,.04);scene.environment=environment.texture;scene.environmentIntensity=.7;room.dispose();pmrem.dispose();
+const loader=new GLTFLoader();let model=null;const cache=new Map();
+const reference=new THREE.RawShaderMaterial({side:THREE.FrontSide,vertexShader:`precision highp float;uniform mat4 projectionMatrix;uniform mat4 modelViewMatrix;attribute vec3 position;attribute vec4 color;varying vec3 vColor;void main(){vColor=color.rgb;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`,fragmentShader:`precision highp float;varying vec3 vColor;void main(){gl_FragColor=vec4(vColor,1.);}`});
+const mask=new THREE.MeshBasicMaterial({color:0x000000,side:THREE.FrontSide});
+window.testAPI={async render(caseName,variant,azimuth,light=0,tone='none'){
+  if(model)scene.remove(model);
+  const file=['reference','mask'].includes(variant)?'raw':variant;const url=`../exports/${caseName}/${file}.glb`;
+  if(!cache.has(url))cache.set(url,await loader.loadAsync(url));
+  model=cache.get(url).scene.clone(true);model.traverse(o=>{if(o.isMesh){if(variant==='reference')o.material=reference;else if(variant==='mask')o.material=mask;}});scene.add(model);
+  let a=THREE.MathUtils.degToRad(azimuth),e=THREE.MathUtils.degToRad(20);camera.position.set(1.9*Math.cos(e)*Math.cos(a),1.9*Math.cos(e)*Math.sin(a),1.9*Math.sin(e));camera.lookAt(0,0,0);
+  key.position.set(...(light===0?[2,-3,4]:[-3,2,1]));key.intensity=light===0?2:4;
+  renderer.toneMapping=tone==='aces'?THREE.ACESFilmicToneMapping:THREE.NoToneMapping;renderer.toneMappingExposure=1;
+  renderer.render(scene,camera);return renderer.domElement.toDataURL('image/png');
+},ready:true};

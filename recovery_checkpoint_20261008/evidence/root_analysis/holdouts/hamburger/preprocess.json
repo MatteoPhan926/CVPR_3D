@@ -1,0 +1,10 @@
+{
+  "input": "hamburger.png",
+  "source_mode": "RGBA",
+  "source_size": [
+    614,
+    614
+  ],
+  "input_sha256": "2f16cb1f2bb932ae643cd4acc09bb6ecb51c84eca32dd5a7c71ea4980b40b51a",
+  "processed_sha256": "1b27258db875911505959656e98fb057ec89195fe99eb88650f48b0d43b14b85"
+}

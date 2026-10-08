@@ -1,0 +1,28 @@
+/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/workspace/image_to_usable_car_probe_20261007/environment/venv/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/workspace/image_to_usable_car_probe_20261007/environment/dependencies/TripoSR/tsr/system.py:69: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(weight_path, map_location="cpu")
+{
+  "purpose": "Independent replay of the audited exact processed input; no new GLB candidate, no extraction or selection.",
+  "forward_replays": 1,
+  "new_car_mesh_candidates": 0,
+  "torch": "2.5.1+cpu",
+  "threads": 4,
+  "seed": 42,
+  "weight_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "processed_sha256": "d8bfea522456e376988d98cbdfd8cdde7eb35e7454bd51ade8cf166b29fbdb06",
+  "saved_latent_sha256": "a57eab70b278aaf888020cd916e3562985300026c9973399a1a81625cbf42b00",
+  "shape": [
+    1,
+    3,
+    40,
+    64,
+    64
+  ],
+  "exact_tensor_equal": true,
+  "max_abs_error": 0.0,
+  "mean_abs_error": 0.0,
+  "forward_seconds": 15.300350645004073
+}

@@ -1,0 +1,98 @@
+{
+  "car": {
+    "raw_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+    "variants": {
+      "unlit_direct": {
+        "sha256": "34599da9a5c04d71e8e5f88a1b97aefc1326be55dd56cffd5cca3ffb98469e51",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": false,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "unlit_corrected": {
+        "sha256": "e061d9d622c5282437cd8dbc958955e46792bdac245400282b888acdcd026fc1",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": true,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "pbr_corrected": {
+        "sha256": "d40da87f3d2a8e3f90c66831e41efab59b7c9ab07e4d4565955279b07068f2ff",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": false,
+        "inverse_srgb": true,
+        "added_smooth_normals": true,
+        "double_sided": false
+      }
+    }
+  },
+  "teapot": {
+    "raw_sha256": "dea230ae9549e39368498a93839cde1c67289e7ea586aa5d60f057980b45b5c4",
+    "variants": {
+      "unlit_direct": {
+        "sha256": "4090c601e1fda6615a108035e55de0256e67abdbd3886ad620ab7fa0ef7521c6",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": false,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "unlit_corrected": {
+        "sha256": "700ddcbb106fe318664dac9497af9d67a78f516308e1349e340301e087561d80",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": true,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "pbr_corrected": {
+        "sha256": "f2a004f1bec2901de317fc10858c292bfb26c033e4544627c5303465cd4fcc15",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": false,
+        "inverse_srgb": true,
+        "added_smooth_normals": true,
+        "double_sided": false
+      }
+    }
+  },
+  "hamburger": {
+    "raw_sha256": "1cddedab568b5ab34e4537d946f9e750282f149325fd4d22f31dd28599f12984",
+    "variants": {
+      "unlit_direct": {
+        "sha256": "037dcb10113a496240ad20265ea59ef3e9952af4a9ed1464d07e08bcee7c202c",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": false,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "unlit_corrected": {
+        "sha256": "a4c384980a12d9e50bd751d7e9fbb09b5228918338ad3de8d1a1236c44008f19",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": true,
+        "inverse_srgb": true,
+        "added_smooth_normals": false,
+        "double_sided": false
+      },
+      "pbr_corrected": {
+        "sha256": "d9d49a9cf55cb396b098274b468e7da3955c7c4b9586439dfe6a2351ae93fb91",
+        "positions_exact": true,
+        "indices_exact": true,
+        "unlit": false,
+        "inverse_srgb": true,
+        "added_smooth_normals": true,
+        "double_sided": false
+      }
+    }
+  }
+}

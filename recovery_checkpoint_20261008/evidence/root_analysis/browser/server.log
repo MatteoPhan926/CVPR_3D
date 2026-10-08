@@ -1,0 +1,4 @@
+127.0.0.1 - - [08/Oct/2026 07:04:29] "GET /root_analysis/browser/ HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2026 07:04:29] "GET /root_analysis/browser/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Oct/2026 07:04:30] code 404, message File not found
+127.0.0.1 - - [08/Oct/2026 07:04:30] "GET /favicon.ico HTTP/1.1" 404 -

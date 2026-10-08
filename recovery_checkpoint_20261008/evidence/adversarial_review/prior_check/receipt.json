@@ -1,0 +1,21 @@
+[
+  {
+    "name": "graphics_gems_implicit_c",
+    "url": "https://raw.githubusercontent.com/erich666/GraphicsGems/master/gemsiv/implicit.c",
+    "status": 200,
+    "bytes": 25108,
+    "sha256": "28cd9be25385714685136239c8fefea49a788c076b9ff09b3310471cc2590d4c"
+  },
+  {
+    "name": "graphics_gems_polygonize_c",
+    "url": "https://raw.githubusercontent.com/erich666/GraphicsGems/master/gemsiv/polygonize.c",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "triposr_density_issues_html",
+    "url": "https://github.com/VAST-AI-Research/TripoSR/issues?q=is%3Aissue%20density",
+    "status": 200,
+    "bytes": 299051,
+    "sha256": "bc7f875131b540f572b3c18b71630039b43a11d5ba62def102a49e91609ac941"
+  }
+]

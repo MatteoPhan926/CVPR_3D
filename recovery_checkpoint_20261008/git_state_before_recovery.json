@@ -1,0 +1,158 @@
+[
+  {
+    "repository": "CVPR_3D",
+    "args": [
+      "rev-parse",
+      "--verify",
+      "HEAD^{commit}"
+    ],
+    "returncode": 0,
+    "stdout": "6b99f54997c17e5d1f26bab89e1b2ecdaab2f838\n",
+    "stderr": ""
+  },
+  {
+    "repository": "CVPR_3D",
+    "args": [
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "CVPR_3D",
+    "args": [
+      "diff",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "CVPR_3D",
+    "args": [
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "CVPR_3D",
+    "args": [
+      "show-ref"
+    ],
+    "returncode": 0,
+    "stdout": "6b99f54997c17e5d1f26bab89e1b2ecdaab2f838 refs/heads/image-to-usable-car-20261007\na04ddf538c72a3b34904845474395feccc31458a refs/heads/work\na04ddf538c72a3b34904845474395feccc31458a refs/remotes/origin/bentley-download-20261006\n",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR",
+    "args": [
+      "rev-parse",
+      "--verify",
+      "HEAD^{commit}"
+    ],
+    "returncode": 0,
+    "stdout": "107cefdc244c39106fa830359024f6a2f1c78871\n",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR",
+    "args": [
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "?? :memory:.ses\n",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR",
+    "args": [
+      "diff",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR",
+    "args": [
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/TripoSR",
+    "args": [
+      "show-ref"
+    ],
+    "returncode": 0,
+    "stdout": "107cefdc244c39106fa830359024f6a2f1c78871 refs/heads/main\n107cefdc244c39106fa830359024f6a2f1c78871 refs/remotes/origin/HEAD\ne82c7a2ecf89a00a9324312ce30ec38a1f304fe9 refs/remotes/origin/examples_revert\nd3bc889b1208f70f724ce4dbc03941aa9f992f77 refs/remotes/origin/gyc/glb-export\n107cefdc244c39106fa830359024f6a2f1c78871 refs/remotes/origin/main\n",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes",
+    "args": [
+      "rev-parse",
+      "--verify",
+      "HEAD^{commit}"
+    ],
+    "returncode": 0,
+    "stdout": "879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff\n",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes",
+    "args": [
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes",
+    "args": [
+      "diff",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes",
+    "args": [
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "repository": "image_to_usable_car_probe_20261007/environment/dependencies/torchmcubes",
+    "args": [
+      "show-ref"
+    ],
+    "returncode": 0,
+    "stdout": "879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff refs/heads/master\n879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff refs/remotes/origin/HEAD\n879926d0ef58e6ce0ac2630fdecb5e53af7ed3ff refs/remotes/origin/master\n",
+    "stderr": ""
+  }
+]
