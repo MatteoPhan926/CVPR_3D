@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-09T09:05:50.016763+00:00",
+  "operation": "official HfApi(token=get_token()).whoami, read-only",
+  "purpose": "Differentiate a manually constructed urllib request issue from current authentication/access failure. No generation request.",
+  "token_resolves": true,
+  "token_source_matches_injected_environment": true,
+  "credential_values_recorded": false,
+  "http_status": 401,
+  "error_class": "HfHubHTTPError",
+  "authenticated_identity_returned": false,
+  "provider_error": "Invalid username or password."
+}

@@ -1,0 +1,373 @@
+Try H3 Max Director
+Log-in
+Sign-up
+Contact Sales
+Log-in
+Sign-up
+Loading model
+fal-ai
+/
+trellis-2
+fal-ai
+/
+trellis-2
+Schema
+LLMs
+Loading
+API documentation
+…
+Trellis 2 Image to 3D API Docs | fal
+fal-ai
+/
+trellis-2
+, details and endpoints
+Sandbox
+Open in Sandbox
+Generate 3D models from your images using Trellis 2. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai
+/
+trellis-2
+Generate 3D models from your images using Trellis 2. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+Inference
+Commercial use
+Schema
+LLMs
+Playground
+API
+Sandbox
+Open in Sandbox
+Loading
+API documentation
+…
+Table of contents
+JavaScript / Node.js
+1. Calling the API
+Install the client
+Setup your API Key
+Submit a request
+2. Authentication
+API Key
+3. Queue
+Submit a request
+Fetch request status
+Get the result
+4. Files
+Data URI (base64)
+Hosted files (URL)
+Uploading files
+5. Schema
+Input
+Output
+Other
+About
+Generate
+1. Calling the API
+#
+Install the client
+#
+The client provides a convenient way to interact with the model API.
+npm
+yarn
+pnpm
+bun
+npm install --save @fal-ai/client
+Migrate to @fal-ai/client
+The
+@fal-ai/serverless-client
+package has been deprecated in favor of
+@fal-ai/client
+. Install the new package and update your imports — see
+client setup
+.
+Setup your API Key
+#
+Set
+FAL_KEY
+as an environment variable in your runtime.
+export FAL_KEY="YOUR_API_KEY"
+Submit a request
+#
+The client API handles the API submit protocol. It will handle the request status updates and return the result when the request is completed.
+import { fal } from "@fal-ai/client";
+
+const result = await fal.subscribe("fal-ai/trellis-2", {
+  input: {
+    image_url: "https://v3b.fal.media/files/b/0a86b60d/xkpao5B0uxmH0tmJm0HVL_2fe35ce1-fe44-475b-b582-6846a149537c.png"
+  },
+  logs: true,
+  onQueueUpdate: (update) => {
+    if (update.status === "IN_PROGRESS") {
+      update.logs.map((log) => log.message).forEach(console.log);
+    }
+  },
+});
+console.log(result.data);
+console.log(result.requestId);
+2. Authentication
+#
+The API uses an API Key for authentication. It is recommended you set the
+FAL_KEY
+environment variable in your runtime when possible.
+API Key
+#
+In an environment where you cannot set environment variables, you can configure the API key manually on the client.
+import { fal } from "@fal-ai/client";
+
+fal.config({
+  credentials: "YOUR_FAL_KEY"
+});
+Protect your API Key
+When running code on the client-side (e.g. in a browser, mobile app or GUI applications), make sure to not expose your
+FAL_KEY
+. Instead,
+use a server-side proxy
+to make requests to the API. For more information, check out our
+server-side integration guide
+.
+3. Queue
+#
+Long-running requests
+For long-running requests, such as
+training
+jobs or models with slower inference times, it is recommended to check the
+Queue
+status and rely on
+Webhooks
+instead of blocking while waiting for the result.
+Submit a request
+#
+The client API provides a convenient way to submit requests to the model.
+import { fal } from "@fal-ai/client";
+
+const { request_id } = await fal.queue.submit("fal-ai/trellis-2", {
+  input: {
+    image_url: "https://v3b.fal.media/files/b/0a86b60d/xkpao5B0uxmH0tmJm0HVL_2fe35ce1-fe44-475b-b582-6846a149537c.png"
+  },
+  webhookUrl: "https://optional.webhook.url/for/results",
+});
+Fetch request status
+#
+You can fetch the status of a request to check if it is completed or still in progress.
+import { fal } from "@fal-ai/client";
+
+const status = await fal.queue.status("fal-ai/trellis-2", {
+  requestId: "764cabcf-b745-4b3e-ae38-1200304cf45b",
+  logs: true,
+});
+Get the result
+#
+Once the request is completed, you can fetch the result. See the
+Output Schema
+for the expected result format.
+import { fal } from "@fal-ai/client";
+
+const result = await fal.queue.result("fal-ai/trellis-2", {
+  requestId: "764cabcf-b745-4b3e-ae38-1200304cf45b"
+});
+console.log(result.data);
+console.log(result.requestId);
+4. Files
+#
+Some attributes in the API accept file URLs as input. Whenever that's the case you can pass your own URL or a Base64 data URI.
+Data URI (base64)
+#
+You can pass a Base64 data URI as a file input. The API will handle the file decoding for you. Keep in mind that for large files, this alternative although convenient can impact the request performance.
+Hosted files (URL)
+#
+You can also pass your own URLs as long as they are publicly accessible. Be aware that some hosts might block cross-site requests, rate-limit, or consider the request as a bot.
+Uploading files
+#
+We provide a convenient file storage that allows you to upload files and use them in your requests. You can upload files using the client API and use the returned URL in your requests.
+import { fal } from "@fal-ai/client";
+
+const file = new File(["Hello, World!"], "hello.txt", { type: "text/plain" });
+const url = await fal.storage.upload(file);
+Auto uploads
+The client will auto-upload the file for you if you pass a binary object (e.g.
+File
+,
+Data
+).
+Read more about file handling in our
+file upload guide
+.
+5. Schema
+#
+Input
+#
+seed
+integer
+Random seed for reproducibility
+resolution
+ResolutionEnum
+Output resolution; higher is slower but more detailed Default value:
+"1024"
+Possible enum values:
+512, 1024, 1536
+ss_guidance_strength
+float
+How closely the initial 3D structure follows the input image. Higher values produce more faithful but potentially noisier results. Default value:
+7.5
+ss_guidance_rescale
+float
+Dampens artifacts from high guidance in stage 1. Lower values allow stronger guidance effects, higher values stabilize the output. Default value:
+0.7
+ss_guidance_interval_start
+float
+Fraction of the denoising process at which classifier-free guidance starts for stage 1 (sparse structure). Guidance is only applied between interval_start and interval_end; outside this window the model runs unguided. Lower values apply guidance earlier. Default value:
+0.6
+ss_guidance_interval_end
+float
+Fraction of the denoising process at which classifier-free guidance ends for stage 1 (sparse structure). Must be >= ss_guidance_interval_start. Default value:
+1
+ss_sampling_steps
+integer
+Number of denoising steps for the initial structure. More steps = slower but potentially higher quality. Default value:
+12
+ss_rescale_t
+float
+Controls noise schedule sharpness for structure generation. Higher values produce sharper transitions. Default value:
+5
+shape_slat_guidance_strength
+float
+How closely the detailed geometry follows the input image. Higher values add more detail but may introduce noise. Default value:
+7.5
+shape_slat_guidance_rescale
+float
+Dampens artifacts from high guidance in the shape stage. Increase if you see noisy geometry. Default value:
+0.5
+shape_slat_guidance_interval_start
+float
+Fraction of the denoising process at which classifier-free guidance starts for stage 2 (shape refinement). Guidance is only applied between interval_start and interval_end. Default value:
+0.6
+shape_slat_guidance_interval_end
+float
+Fraction of the denoising process at which classifier-free guidance ends for stage 2 (shape refinement). Must be >= shape_slat_guidance_interval_start. Default value:
+1
+shape_slat_sampling_steps
+integer
+Number of denoising steps for shape refinement. More steps = slower but potentially smoother geometry. Default value:
+12
+shape_slat_rescale_t
+float
+Controls noise schedule sharpness for shape refinement. Higher values produce sharper geometric details. Default value:
+3
+tex_slat_guidance_strength
+float
+How closely the texture follows the input image colors. Higher values produce more vivid but potentially oversaturated textures. Default value:
+1
+tex_slat_guidance_rescale
+float
+Dampens artifacts from high guidance in the texture stage. Increase if textures look noisy or have color banding.
+tex_slat_guidance_interval_start
+float
+Fraction of the denoising process at which classifier-free guidance starts for stage 3 (texture). Guidance is only applied between interval_start and interval_end. Default value:
+0.6
+tex_slat_guidance_interval_end
+float
+Fraction of the denoising process at which classifier-free guidance ends for stage 3 (texture). Must be >= tex_slat_guidance_interval_start. Default value:
+0.9
+tex_slat_sampling_steps
+integer
+Number of denoising steps for texture generation. More steps = slower but potentially cleaner textures. Default value:
+12
+tex_slat_rescale_t
+float
+Controls noise schedule sharpness for texture generation. Higher values produce sharper texture details. Default value:
+3
+decimation_target
+integer
+Target number of vertices in the final mesh. Lower values produce smaller files but less detail. 500k is good for most uses, reduce to 20k-50k for web/mobile. Default value:
+500000
+texture_size
+TextureSizeEnum
+Resolution of the texture image baked onto the mesh. Higher values capture finer surface details but produce larger files. Default value:
+"2048"
+Possible enum values:
+1024, 2048, 4096
+remesh
+boolean
+Rebuild the mesh topology for cleaner triangles. Slower but usually produces better results for downstream use (animation, 3D printing, etc). Default value:
+true
+remesh_band
+float
+Controls how far remeshing can move vertices from the original surface. Higher values allow more smoothing but may lose fine details. Default value:
+1
+remesh_project
+float
+How much to project remeshed vertices back onto the original surface. 0 = no projection (smoother), 1 = full projection (preserves detail).
+uv_unwrap_angle_threshold_deg
+float
+Maximum angle (in degrees) between adjacent face normals allowed within a single UV chart. Lower values produce more charts with less distortion; higher values produce fewer, larger charts with potentially more stretching. Default value:
+90
+uv_unwrap_refine_iterations
+integer
+Number of local refinement passes during UV chart computation. Higher values produce cleaner chart boundaries at the cost of additional UV-unwrap time.
+uv_unwrap_global_iterations
+integer
+Number of global clustering passes during UV chart computation. More passes produce more balanced charts. Default value:
+1
+uv_unwrap_smooth_strength
+float
+Smoothing strength applied to UV chart boundaries. Higher values reduce visible seams but may introduce UV distortion. Default value:
+1
+image_url
+string
+* required
+URL of the input image to convert to 3D
+{
+  "resolution": 1024,
+  "ss_guidance_strength": 7.5,
+  "ss_guidance_rescale": 0.7,
+  "ss_guidance_interval_start": 0.6,
+  "ss_guidance_interval_end": 1,
+  "ss_sampling_steps": 12,
+  "ss_rescale_t": 5,
+  "shape_slat_guidance_strength": 7.5,
+  "shape_slat_guidance_rescale": 0.5,
+  "shape_slat_guidance_interval_start": 0.6,
+  "shape_slat_guidance_interval_end": 1,
+  "shape_slat_sampling_steps": 12,
+  "shape_slat_rescale_t": 3,
+  "tex_slat_guidance_strength": 1,
+  "tex_slat_guidance_interval_start": 0.6,
+  "tex_slat_guidance_interval_end": 0.9,
+  "tex_slat_sampling_steps": 12,
+  "tex_slat_rescale_t": 3,
+  "decimation_target": 500000,
+  "texture_size": 2048,
+  "remesh": true,
+  "remesh_band": 1,
+  "uv_unwrap_angle_threshold_deg": 90,
+  "uv_unwrap_global_iterations": 1,
+  "uv_unwrap_smooth_strength": 1,
+  "image_url": "https://v3b.fal.media/files/b/0a86b60d/xkpao5B0uxmH0tmJm0HVL_2fe35ce1-fe44-475b-b582-6846a149537c.png"
+}
+Output
+#
+model_glb
+File
+* required
+Generated 3D GLB file
+{
+  "model_glb": {
+    "url": "https://v3b.fal.media/files/b/0a86b61d/DNmTkiWHUQ8k-rG6aussB_trellis2_68d6300f70f34d23b69a912b5fe60487.glb"
+  }
+}
+Other types
+#
+File
+#
+url
+string
+* required
+The URL where the file can be downloaded from.
+content_type
+string
+The mime type of the file.
+file_name
+string
+The name of the file. It will be auto-generated if not provided.
+file_size
+integer
+The size of the file in bytes.

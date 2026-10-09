@@ -1,0 +1,1782 @@
+Image to 3D API | Meshy Docs
+Docs
+Search docs...
+K
+Open Developer Platform
+Open Web App
+meshy-5
+retires Oct 10, 2026.
+lowpoly
+retires Oct 30, 2026.
+Please switch models before these dates to avoid request errors.
+Copy page
+Image to 3D API
+Image to 3D API is a feature that allows you to integrate Meshy's Image to 3D capabilities into your own application. In this section, you'll find all the information
+you need to get started with this API.
+POST
+/openapi/v1/image-to-3d
+Create an Image to 3D Task
+This endpoint allows you to create a new Image to 3D task. Refer to
+The Image to 3D Task Object
+to see which
+properties are included with Image to 3D task object.
+Parameters
+Only one of
+input_task_id
+or
+image_url
+is
+required
+. If both are provided,
+input_task_id
+takes priority.
+Name
+input_task_id
+Type
+string
+Required
+Description
+The ID of a completed image-generation task whose output should be used as the input image. This task must be one of the following tasks: Text to Image or Image to Image. In addition, it must have been run via the API, have a status of
+SUCCEEDED
+, and produce exactly one image.
+Name
+image_url
+Type
+string
+Required
+Description
+Provide an image for Meshy to use in model creation. We currently support
+.jpg
+,
+.jpeg
+, and
+.png
+formats.
+There are two ways to provide the image:
+Publicly accessible URL
+: A URL that is accessible from the public internet.
+Data URI
+: A base64-encoded data URI of the image. Example of a data URI:
+data:image/jpeg;base64,<your base64-encoded image data>
+.
+Name
+model_type
+Type
+string
+default
+standard
+Description
+Specify the type of 3D mesh generation.
+Available values:
+standard
+: Regular high-detail 3D mesh generation.
+smart-topology
+: Choose a Smart Topology model with
+ai_model
+(
+meshy-t2
+).
+lowpoly
+(deprecated, retiring on
+October 30, 2026
+): Generates low-poly mesh optimized for cleaner polygons. We recommend Meshy T2 instead:
+smart-topology
+with
+meshy-t2
+.
+When
+smart-topology
+is selected,
+topology
+,
+should_remesh
+, and
+save_pre_remeshed_model
+are ignored.
+lowpoly
+will be retired on
+October 30, 2026
+. After that date, requests with
+model_type: "lowpoly"
+will return an error. We recommend switching to Meshy T2 (
+model_type: "smart-topology"
+with
+ai_model: "meshy-t2"
+). When
+lowpoly
+is selected,
+ai_model
+,
+topology
+,
+target_polycount
+,
+should_remesh
+, and
+save_pre_remeshed_model
+are ignored.
+Name
+ai_model
+Type
+string
+default
+latest
+Description
+ID of the model to use. The available values depend on
+model_type
+.
+Standard generation (
+model_type: standard
+):
+meshy-6-lite
+,
+meshy-6
+,
+meshy-7.1
+,
+latest
+(Meshy 7.1)
+meshy-7
+(deprecated): use
+meshy-7.1
+instead.
+Smart Topology generation (
+model_type: smart-topology
+):
+meshy-t2
+(default): the Smart Topology model — cleaner topology, natively separated parts, triangle output, and a face count you can set with
+target_polycount
+.
+Name
+geometry_resolution
+Type
+string
+default
+standard
+Description
+Geometry generation pass.
+2k
+runs the Ultra pass at 2048³;
+4k
+runs it at 4096³ for the
+finest surface detail.
+Available values:
+standard
+,
+2k
+,
+4k
+Requires
+meshy-7.1
+or
+latest
+.
+Name
+ultra_mode
+Type
+boolean
+⚠
+deprecated
+default
+false
+Description
+Use
+geometry_resolution
+instead.
+ultra_mode: true
+is equivalent to
+geometry_resolution: "2k"
+.
+Name
+should_texture
+Type
+boolean
+default
+true
+Description
+Determines if textures are generated. Setting it to
+false
+skips the texture phase, providing a mesh without textures.
+Applies only when
+should_texture
+= true
+Name
+enable_pbr
+Type
+boolean
+default
+false
+Description
+Generate PBR Maps (metallic, roughness, normal) in addition to the base color. An emission map is also included when
+ai_model
+is
+meshy-6
+, except at
+texture_resolution: 8k
+.
+meshy-6-lite
+,
+meshy-7.1
+and
+latest
+do not produce an emission map.
+Name
+texture_resolution
+Type
+string
+default
+2k
+Description
+Base color texture resolution. One of
+2k
+(2048×2048),
+4k
+(4096×4096), or
+8k
+(8192×8192). Higher resolutions capture more surface detail.
+4k
+and
+8k
+are not available with
+ai_model
+meshy-6-lite
+. At
+8k
+, no emission map is produced.
+Name
+hd_texture
+Type
+boolean
+⚠
+deprecated
+default
+false
+Description
+Use
+texture_resolution
+instead — equivalent to
+texture_resolution: "4k"
+. When both are set,
+texture_resolution
+takes precedence.
+Name
+texture_prompt
+Type
+string
+Description
+Provide a text prompt to guide the texturing process. Maximum 800 characters.
+Name
+texture_image_url
+Type
+string
+Description
+Provide a 2d image to guide the texturing process. We currently support
+.jpg
+,
+.jpeg
+, and
+.png
+formats.
+There are two ways to provide the image:
+Publicly accessible URL
+: A URL that is accessible from the public internet
+Data URI
+: A base64-encoded data URI of the image. Example of a data URI:
+data:image/jpeg;base64,<your base64-encoded image data>
+Image texturing may not work optimally if there are substantial geometry differences between the original asset and uploaded image. Only one of
+texture_image_url
+or
+texture_prompt
+may be used to guide the texturing process. If both parameters are provided, then
+texture_prompt
+will be used to texture the model by default. Texturing via either text or image will cost 10 credits per task.
+Name
+should_remesh
+Type
+boolean
+default
+false (Meshy 6 and Meshy 7 models), true (others)
+Description
+Controls whether to enable the remesh phase. For the highest-quality model, we recommend setting
+should_remesh
+to
+false
+.
+Applies only when
+should_remesh
+= true
+Name
+topology
+Type
+string
+default
+triangle
+Description
+Specify the topology of the generated model.
+Available values:
+quad
+: Generate a quad-dominant mesh.
+triangle
+: Generate a decimated triangle mesh.
+Name
+decimation_mode
+Type
+integer
+Description
+Enable adaptive decimation by setting a polycount level. When set,
+target_polycount
+is ignored.
+Available values:
+1
+: Adaptive — ultra polycount.
+2
+: Adaptive — high polycount.
+3
+: Adaptive — medium polycount.
+4
+: Adaptive — low polycount.
+Name
+save_pre_remeshed_model
+Type
+boolean
+default
+false
+Description
+When set to
+true
+, Meshy also stores an extra GLB file before the remesh phase completes.
+Name
+target_polycount
+Type
+integer
+Description
+Target number of polygons (faces) in the output. The actual count may deviate from the target depending on the geometry.
+target_polycount
+takes effect in two independent cases:
+Remesh
+— with
+should_remesh: true
+on a
+standard
+model. The mesh is remeshed (decimated) to approximately this count. Range 100 to 300,000, default 30,000. If
+decimation_mode
+is set, it takes priority and
+target_polycount
+is ignored.
+Smart Topology
+— with
+model_type: smart-topology
+and
+ai_model: meshy-t2
+. The model is generated directly at this face count; no remesh runs and
+should_remesh
+is not required. Range 100 to 15,000, default 4,000.
+Name
+symmetry_mode
+Type
+string
+⚠
+deprecated
+default
+auto
+Description
+Deprecated. This parameter no longer affects output.
+The
+symmetry_mode
+field controls symmetry behavior during the model generation process.
+The valid values are:
+off
+: Disables symmetry.
+auto
+: Automatically determines and applies symmetry based on input geometry.
+on
+: Enforces symmetry during generation.
+Name
+pose_mode
+Type
+string
+default
+""
+Description
+Specify the pose mode for the generated model.
+Available values:
+a-pose
+: Generate the model in an A pose.
+t-pose
+: Generate the model in a T pose.
+""
+(empty string): No specific pose applied.
+Name
+is_a_t_pose
+Type
+boolean
+⚠
+deprecated
+default
+false
+Description
+Use
+pose_mode
+instead. Whether to generate the model in an A/T pose.
+Name
+image_enhancement
+Type
+boolean
+default
+true
+Description
+Optimizes the input image for better results. Set to
+false
+to preserve the exact appearance of the input image without any style processing.
+Only supported when
+ai_model
+is
+meshy-6
+,
+meshy-7.1
+, or
+latest
+.
+Name
+remove_lighting
+Type
+boolean
+default
+true
+Description
+Removes highlights and shadows from the base color texture, producing a cleaner result that works better under custom lighting setups.
+Only supported when
+ai_model
+is
+meshy-6
+.
+Name
+moderation
+Type
+boolean
+default
+false
+Description
+When set to
+true
+, the input content will automatically be screened for potentially harmful content. If harmful content is detected, the task will not proceed to generation.
+The content from the
+image_url
+,
+texture_image_url
+, and
+texture_prompt
+inputs will be screened.
+Name
+target_formats
+Type
+string[]
+Description
+Specifies which 3D file formats to include in the output. Only the requested formats will be generated and returned, which can reduce task completion time. When omitted, all supported formats are included.
+Available values:
+glb
+,
+obj
+,
+fbx
+,
+stl
+,
+usdz
+,
+3mf
+When omitted, all formats except
+3mf
+are generated.
+3mf
+is only included when explicitly specified.
+Name
+auto_size
+Type
+boolean
+default
+false
+Description
+When set to
+true
+, the service uses AI vision to automatically estimate the real-world height of the object and resize the model accordingly. The origin will default to
+bottom
+unless
+origin_at
+is explicitly set.
+Name
+alpha_thumbnail
+Type
+boolean
+default
+false
+Description
+When set to
+true
+, the task additionally renders a transparent-background (RGBA) version of the preview and returns it as
+alpha_thumbnail_url
+on the GET response. The existing
+thumbnail_url
+field is unchanged.
+Name
+multi_view_thumbnails
+Type
+boolean
+default
+false
+Description
+When set to
+true
+, the task additionally renders four cardinal-view thumbnails (front, right, back, left) and returns them under
+thumbnail_urls
+on the GET response. The existing
+thumbnail_url
+field is unchanged and continues to point at the front view, so existing clients are unaffected.
+Adds approximately 3 seconds to task latency.
+Applies only when
+auto_size
+= true
+Name
+origin_at
+Type
+string
+default
+bottom
+Description
+Position of the origin when
+auto_size
+is enabled.
+Available values:
+bottom
+,
+center
+.
+Returns
+The
+result
+property of the response contains the task
+id
+of the newly created Image to 3D task.
+Failure Modes
+Name
+400 - Bad Request
+Description
+The request was unacceptable. Common causes:
+Missing parameter
+: Either
+image_url
+or
+input_task_id
+must be provided.
+Invalid input task
+: The
+input_task_id
+must refer to a
+SUCCEEDED
+Text to Image or Image to Image task that produces exactly one image.
+Invalid image format
+: The provided
+image_url
+is not a supported format (.jpg, .jpeg, .png).
+Unreachable URL
+: The
+image_url
+could not be downloaded (404 or timeout).
+Invalid Data URI
+: The base64 string is malformed.
+Invalid parameter combination
+:
+enable_pbr
+is only supported when
+should_texture
+is true.
+Unsupported model for low poly
+:
+ai_model: "meshy-6-lite"
+does not support
+model_type: "lowpoly"
+.
+Unsupported model for Ultra
+:
+geometry_resolution
+requires
+meshy-7.1
+or
+latest
+.
+Name
+401 - Unauthorized
+Description
+Authentication failed. Please check your API key.
+Name
+402 - Payment Required
+Description
+Insufficient credits to perform this task.
+Name
+429 - Too Many Requests
+Description
+You have exceeded your rate limit.
+Request
+cURL
+JavaScript
+Python
+POST
+/openapi/v1/image-to-3d
+# Simple request with required params
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d
+\
+-X
+POST
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+\
+-H
+'Content-Type: application/json'
+\
+-d
+'{
+"image_url": "<your publicly accessible image url or base64-encoded data URI>"
+}'
+# With Ultra 4K geometry, remesh, PBR, and A-pose
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d
+\
+-X
+POST
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+\
+-H
+'Content-Type: application/json'
+\
+-d
+'{
+"image_url": "<your publicly accessible image url or base64-encoded data URI>",
+"ai_model": "meshy-7.1",
+"geometry_resolution": "4k",
+"enable_pbr": true,
+"should_remesh": true,
+"target_polycount": 100000,
+"should_texture": true,
+"pose_mode": "a-pose",
+"target_formats": ["glb"]
+}'
+Copy
+Copied!
+Response
+{
+"result"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+}
+Copy
+Copied!
+GET
+/openapi/v1/image-to-3d/:id
+Retrieve an Image to 3D Task
+This endpoint allows you to retrieve an Image to 3D task given a valid task
+id
+.
+Refer to
+The Image to 3D Task Object
+to see which
+properties are included with Image to 3D task object.
+Parameters
+Name
+id
+Type
+path
+Description
+Unique identifier for the Image to 3D task to retrieve.
+Returns
+The response contains the Image to 3D task object. Check
+The Image to 3D Task Object
+section for details.
+Request
+cURL
+JavaScript
+Python
+GET
+/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+Copy
+Copied!
+Response
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"type"
+:
+"image-to-3d"
+,
+"model_urls"
+:
+{
+"glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.glb?Expires=***"
+,
+"fbx"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.fbx?Expires=***"
+,
+"obj"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.obj?Expires=***"
+,
+"usdz"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.usdz?Expires=***"
+,
+"stl"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.stl?Expires=***"
+,
+"pre_remeshed_glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/pre_remeshed_model.glb?Expires=***"
+}
+,
+"thumbnail_url"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview.png?Expires=***"
+,
+"thumbnail_urls"
+:
+{
+"front"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_front.png?Expires=***"
+,
+"right"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_right.png?Expires=***"
+,
+"back"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_back.png?Expires=***"
+,
+"left"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_left.png?Expires=***"
+}
+,
+"texture_prompt"
+:
+""
+,
+"progress"
+:
+100
+,
+"started_at"
+:
+1692771667037
+,
+"created_at"
+:
+1692771650657
+,
+"expires_at"
+:
+1692771679037
+,
+"finished_at"
+:
+1692771669037
+,
+"status"
+:
+"SUCCEEDED"
+,
+"texture_urls"
+:
+[
+{
+"base_color"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0.png?Expires=***"
+,
+"metallic"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_metallic.png?Expires=XXX"
+,
+"normal"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_normal.png?Expires=XXX"
+,
+"roughness"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_roughness.png?Expires=XXX"
+,
+"emission"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_emission.png?Expires=XXX"
+}
+]
+,
+"preceding_tasks"
+:
+0
+,
+"task_error"
+:
+{
+"message"
+:
+""
+}
+,
+"consumed_credits"
+:
+30
+}
+Copy
+Copied!
+DELETE
+/openapi/v1/image-to-3d/:id
+Delete an Image to 3D Task
+This endpoint permanently deletes an Image to 3D task, including all associated models and data. This action is irreversible.
+Path Parameters
+Name
+id
+Type
+path
+Description
+The ID of the Image to 3D task to delete.
+Task Status
+A task that is still
+PENDING
+is deleted and the credits consumed at
+create-time are refunded.
+A task that is already
+IN_PROGRESS
+cannot be deleted: the request is
+rejected with
+409 Conflict
+and the task keeps running. Credits for a task
+the worker has already started are not refundable, so deleting it mid-run
+would cost you the credits and the result both. Wait for it to reach
+SUCCEEDED
+,
+FAILED
+or
+CANCELED
+, then delete it.
+A task in a terminal state (
+SUCCEEDED
+,
+FAILED
+or
+CANCELED
+) is deleted
+without a refund.
+Returns
+Returns
+200 OK
+on success, or
+409 Conflict
+when the task is
+IN_PROGRESS
+.
+Request
+cURL
+JavaScript
+Python
+DELETE
+/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578
+curl
+--request
+DELETE
+\
+--url
+https://api.meshy.ai/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+Copy
+Copied!
+Response
+// 200 OK on success, with an empty body.
+//
+// 409 Conflict when the task is IN_PROGRESS — the task is left running:
+{
+"message"
+:
+"Task is IN_PROGRESS and cannot be deleted. Credits for a task the worker has already started are not refundable; wait for it to reach SUCCEEDED, FAILED or CANCELED, then delete it."
+}
+Copy
+Copied!
+GET
+/openapi/v1/image-to-3d
+List Image to 3D Tasks
+This endpoint allows you to retrieve a list of Image to 3D tasks.
+Parameters
+Optional attributes
+Name
+page_num
+Type
+integer
+Description
+Page number for pagination. Starts and defaults to
+1
+.
+Name
+page_size
+Type
+integer
+Description
+Page size limit. Defaults to
+10
+items. Maximum allowed is
+100
+items.
+Name
+sort_by
+Type
+string
+Description
+Field to sort by. Available values:
++created_at
+: Sort by creation time in ascending order.
+-created_at
+: Sort by creation time in descending order.
+Returns
+Returns a paginated list of
+The Image to 3D Task Objects
+.
+Request
+cURL
+JavaScript
+Python
+GET
+/openapi/v1/image-to-3d
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d?page_size=
+10
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+Copy
+Copied!
+Response
+[
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"type"
+:
+"image-to-3d"
+,
+"model_urls"
+:
+{
+"glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.glb?Expires=***"
+,
+"fbx"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.fbx?Expires=***"
+,
+"obj"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.obj?Expires=***"
+,
+"usdz"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.usdz?Expires=***"
+,
+"pre_remeshed_glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/pre_remeshed_model.glb?Expires=***"
+}
+,
+"thumbnail_url"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview.png?Expires=***"
+,
+"thumbnail_urls"
+:
+{
+"front"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_front.png?Expires=***"
+,
+"right"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_right.png?Expires=***"
+,
+"back"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_back.png?Expires=***"
+,
+"left"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_left.png?Expires=***"
+}
+,
+"texture_prompt"
+:
+""
+,
+"progress"
+:
+100
+,
+"started_at"
+:
+1692771667037
+,
+"created_at"
+:
+1692771650657
+,
+"expires_at"
+:
+1692771679037
+,
+"finished_at"
+:
+1692771669037
+,
+"status"
+:
+"SUCCEEDED"
+,
+"texture_urls"
+:
+[
+{
+"base_color"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0.png?Expires=***"
+,
+"metallic"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_metallic.png?Expires=XXX"
+,
+"normal"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_normal.png?Expires=XXX"
+,
+"roughness"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_roughness.png?Expires=XXX"
+,
+"emission"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_emission.png?Expires=XXX"
+}
+]
+,
+"preceding_tasks"
+:
+0
+,
+"task_error"
+:
+{
+"message"
+:
+""
+}
+,
+"consumed_credits"
+:
+30
+}
+]
+Copy
+Copied!
+GET
+/openapi/v1/image-to-3d/:id/stream
+Stream an Image to 3D Task
+This endpoint streams real-time updates for an Image to 3D task using Server-Sent Events (SSE).
+Parameters
+Name
+id
+Type
+path
+Description
+Unique identifier for the Image to 3D task to stream.
+Returns
+Returns a stream of
+The Image to 3D Task Objects
+as Server-Sent Events.
+For
+PENDING
+or
+IN_PROGRESS
+tasks, the response stream will only include necessary
+progress
+and
+status
+fields.
+Request
+cURL
+JavaScript
+Python
+GET
+/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578/stream
+curl
+-N
+https://api.meshy.ai/openapi/v1/image-to-3d/018a210d-8ba4-705c-b111-1f1776f7f578/stream
+\
+-H
+"Authorization: Bearer ${YOUR_API_KEY}"
+Copy
+Copied!
+Response Stream
+// Error event example
+event
+:
+error
+data
+:
+{
+"status_code"
+:
+404
+,
+"message"
+:
+"Task not found"
+}
+// Message event examples illustrate task progress.
+// For PENDING or IN_PROGRESS tasks, the response stream will not include all fields.
+event
+:
+message
+data
+:
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"progress"
+:
+0
+,
+"status"
+:
+"PENDING"
+}
+event
+:
+message
+data
+:
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"type"
+:
+"image-to-3d"
+,
+"model_urls"
+: {
+"glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.glb?Expires=***"
+,
+"fbx"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.fbx?Expires=***"
+,
+"obj"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.obj?Expires=***"
+,
+"usdz"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.usdz?Expires=***"
+,
+"stl"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.stl?Expires=***"
+,
+"pre_remeshed_glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/pre_remeshed_model.glb?Expires=***"
+}
+,
+"thumbnail_url"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview.png?Expires=***"
+,
+"thumbnail_urls"
+: {
+"front"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_front.png?Expires=***"
+,
+"right"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_right.png?Expires=***"
+,
+"back"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_back.png?Expires=***"
+,
+"left"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_left.png?Expires=***"
+}
+,
+"texture_prompt"
+:
+""
+,
+"progress"
+:
+100
+,
+"started_at"
+:
+1692771667037
+,
+"created_at"
+:
+1692771650657
+,
+"expires_at"
+:
+1692771679037
+,
+"finished_at"
+:
+1692771669037
+,
+"status"
+:
+"SUCCEEDED"
+,
+"texture_urls"
+: [
+{
+"base_color"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0.png?Expires=***"
+,
+"metallic"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_metallic.png?Expires=XXX"
+,
+"normal"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_normal.png?Expires=XXX"
+,
+"roughness"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_roughness.png?Expires=XXX"
+,
+"emission"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_emission.png?Expires=XXX"
+}
+]
+,
+"preceding_tasks"
+:
+0
+,
+"task_error"
+: {
+"message"
+:
+""
+}
+,
+"consumed_credits"
+:
+30
+}
+Copy
+Copied!
+The Image to 3D Task Object
+The Image to 3D Task object is a work unit that Meshy keeps track of to generate a 3D model from an
+image
+input.
+The object has the following properties:
+Properties
+Name
+id
+Type
+string
+Description
+Unique identifier for the task. While we use a k-sortable UUID for task ids as the
+implementation detail, you should
+not
+make any assumptions about the format of the id.
+Name
+type
+Type
+string
+Description
+Type of the Image to 3D task. The value is
+image-to-3d
+.
+Name
+model_urls
+Type
+object
+Description
+Downloadable URL to the textured 3D model file generated by Meshy. The property for a format will be omitted if the format is not generated instead of returning an empty string.
+Name
+glb
+Type
+string
+Description
+Downloadable URL to the GLB file.
+Name
+fbx
+Type
+string
+Description
+Downloadable URL to the FBX file.
+Name
+obj
+Type
+string
+Description
+Downloadable URL to the OBJ file.
+Name
+usdz
+Type
+string
+Description
+Downloadable URL to the USDZ file.
+Name
+mtl
+Type
+string
+Description
+Downloadable URL to the MTL file, returned alongside OBJ exports when textures are present.
+Name
+stl
+Type
+string
+Description
+Downloadable URL to the STL file.
+Name
+3mf
+Type
+string
+Description
+Downloadable URL to the 3MF file. Only present when
+3mf
+was requested via
+target_formats
+.
+Name
+pre_remeshed_glb
+Type
+string
+Description
+Downloadable URL to the original GLB output before remeshing.
+Available only when the task was created with both
+should_remesh: true
+and
+save_pre_remeshed_model: true
+.
+Name
+thumbnail_url
+Type
+string
+Description
+Downloadable URL to the thumbnail image of the model file. Equivalent to
+thumbnail_urls.front
+when present, kept for backwards compatibility.
+Name
+alpha_thumbnail_url
+Type
+string
+Description
+Downloadable URL to a transparent-background (RGBA) version of
+thumbnail_url
+. Only present when the task was created with
+alpha_thumbnail: true
+and the transparent preview was successfully rendered; otherwise this field is omitted.
+Name
+thumbnail_urls
+Type
+object
+Description
+Downloadable URLs for four cardinal-view thumbnails of the generated 3D model. Each value is a signed URL to a 512×512 PNG rendered with the same materials and lighting as
+thumbnail_url
+. Useful for previewing the model from multiple angles in batch pipelines without downloading the GLB.
+Only present when the task was created with
+multi_view_thumbnails: true
+and has reached
+SUCCEEDED
+. Older tasks and tasks created without the opt-in will not include this field.
+Name
+front
+Type
+string
+Description
+Front view, 0° rotation around the vertical axis (matches
+thumbnail_url
+).
+Name
+right
+Type
+string
+Description
+Right view, 90° rotation.
+Name
+back
+Type
+string
+Description
+Back view, 180° rotation.
+Name
+left
+Type
+string
+Description
+Left view, 270° rotation.
+Name
+texture_prompt
+Type
+string
+Description
+The text prompt that was used to guide the texturing process.
+Name
+texture_image_url
+Type
+string
+Description
+Downloadable URL to the texture image that was used to guide the texturing process.
+Name
+ultra_mode
+Type
+boolean
+⚠
+deprecated
+Description
+Deprecated; read
+geometry_resolution
+instead.
+Name
+geometry_resolution
+Type
+string
+Description
+The Ultra tier the task ran (
+2k
+or
+4k
+); omitted for
+standard
+.
+Name
+progress
+Type
+integer
+Description
+Progress of the task. If the task is not started yet, this property will be
+0
+. Once the task has succeeded, this will become
+100
+.
+Name
+started_at
+Type
+timestamp
+Description
+Timestamp of when the task was started, in milliseconds. If the task is not started yet, this property will be
+0
+.
+A timestamp represents the number of milliseconds elapsed since January 1, 1970 UTC, following
+the
+RFC 3339
+standard.
+For example, Friday, September 1, 2023 12:00:00 PM GMT is represented as
+1693569600000
+. This applies
+to
+all
+timestamps in Meshy API.
+Name
+created_at
+Type
+timestamp
+Description
+Timestamp of when the task was created, in milliseconds.
+Name
+expires_at
+Type
+timestamp
+Description
+Timestamp of when the task result expires, in milliseconds.
+Name
+finished_at
+Type
+timestamp
+Description
+Timestamp of when the task was finished, in milliseconds. If the task is not finished yet, this property will be
+0
+.
+Name
+status
+Type
+string
+Description
+Status of the task. Possible values are one of
+PENDING
+,
+IN_PROGRESS
+,
+SUCCEEDED
+,
+FAILED
+,
+CANCELED
+.
+Name
+texture_urls
+Type
+array
+Description
+An array of texture URL objects that are generated from the task. Normally this only contains
+one
+texture URL object. Each texture URL has the following properties:
+Name
+base_color
+Type
+string
+Description
+Downloadable URL to the base color map image.
+Name
+metallic
+Type
+string
+Description
+Downloadable URL to the metallic map image.
+If the task is created with
+enable_pbr: false
+, this property will be omitted.
+Name
+normal
+Type
+string
+Description
+Downloadable URL to the normal map image.
+If the task is created with
+enable_pbr: false
+, this property will be omitted.
+Name
+roughness
+Type
+string
+Description
+Downloadable URL to the roughness map image.
+If the task is created with
+enable_pbr: false
+, this property will be omitted.
+Name
+emission
+Type
+string
+Description
+Downloadable URL to the emission map image.
+If the task is created with
+enable_pbr: false
+, or
+ai_model
+is
+meshy-6-lite
+,
+meshy-7.1
+, or
+latest
+, this property will be omitted.
+Name
+preceding_tasks
+Type
+integer
+Description
+The count of preceding tasks.
+The value of this field is meaningful only if the task status is
+PENDING
+.
+Name
+task_error
+Type
+object
+Description
+Error details for failed tasks. See
+Errors
+for the full
+task_error
+object reference.
+Name
+consumed_credits
+Type
+integer
+Description
+The number of credits consumed by this task. Present when the task status is
+PENDING
+,
+IN_PROGRESS
+, or
+SUCCEEDED
+. Returns
+0
+for
+FAILED
+tasks (credits are refunded on failure).
+Example Image to 3D Task Object
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"type"
+:
+"image-to-3d"
+,
+"model_urls"
+:
+{
+"glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.glb?Expires=***"
+,
+"fbx"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.fbx?Expires=***"
+,
+"obj"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.obj?Expires=***"
+,
+"usdz"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.usdz?Expires=***"
+,
+"stl"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.stl?Expires=***"
+,
+"pre_remeshed_glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/pre_remeshed_model.glb?Expires=***"
+}
+,
+"thumbnail_url"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview.png?Expires=***"
+,
+"thumbnail_urls"
+:
+{
+"front"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_front.png?Expires=***"
+,
+"right"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_right.png?Expires=***"
+,
+"back"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_back.png?Expires=***"
+,
+"left"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview_left.png?Expires=***"
+}
+,
+"texture_prompt"
+:
+""
+,
+"texture_image_url"
+:
+""
+,
+"progress"
+:
+100
+,
+"started_at"
+:
+1692771667037
+,
+"created_at"
+:
+1692771650657
+,
+"expires_at"
+:
+1692771679037
+,
+"finished_at"
+:
+1692771669037
+,
+"status"
+:
+"SUCCEEDED"
+,
+"texture_urls"
+:
+[
+{
+"base_color"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0.png?Expires=***"
+,
+"metallic"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_metallic.png?Expires=XXX"
+,
+"normal"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_normal.png?Expires=XXX"
+,
+"roughness"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_roughness.png?Expires=XXX"
+,
+"emission"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/texture_0_emission.png?Expires=XXX"
+}
+]
+,
+"preceding_tasks"
+:
+0
+,
+"task_error"
+:
+{
+"message"
+:
+""
+}
+,
+"consumed_credits"
+:
+30
+}
+Copy
+Copied!

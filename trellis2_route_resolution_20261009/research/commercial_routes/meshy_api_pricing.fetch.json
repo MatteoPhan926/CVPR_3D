@@ -1,0 +1,11 @@
+{
+  "name": "meshy_api_pricing",
+  "url": "https://docs.meshy.ai/en/api/pricing",
+  "fetched_at_utc": "2026-10-09T09:05:32.052307+00:00",
+  "final_url": "https://docs.meshy.ai/en/api/pricing",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/meshy_api_pricing.html",
+  "sha256": "20914b92fd4ade3fdb45c0158f7b2b8af3c071b028969a9ea9e6fab75e06d687",
+  "bytes": 200558
+}

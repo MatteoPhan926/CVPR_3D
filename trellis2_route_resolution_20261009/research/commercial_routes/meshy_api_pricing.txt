@@ -1,0 +1,254 @@
+Pricing | Meshy Docs
+Docs
+Search docs...
+K
+Open Developer Platform
+Open Web App
+meshy-5
+retires Oct 10, 2026.
+lowpoly
+retires Oct 30, 2026.
+Please switch models before these dates to avoid request errors.
+Copy page
+Pricing
+Credit-based pricing for the Meshy API.
+The Meshy API uses a prepaid credit system. Purchase API credits from your
+subscription settings
+before making API requests. For volume pricing or custom contracts,
+contact our sales team
+.
+Credit Calculator
+Select an API and configure its options to estimate the credit cost of a single request. The pricing tables below provide the full breakdown.
+API endpoint
+Text to 3D (Preview)
+Image to 3D
+Multi Image to 3D
+Text to 3D (Refine)
+Retexture
+Text to Image
+Image to Image
+Rigging
+Animation
+Text to Motion
+Remesh
+UV Unwrap
+Convert
+Resize
+Analyze Printability
+Multi-Color Print
+Repair Printability
+Auto Split
+Keychain
+Fridge Magnet
+Figure
+Vinyl Figure
+Brick Figure
+Fidget Pixel
+Keycap
+Lamp
+Collapsible Fidget
+AI model
+latest (meshy-7.1)
+meshy-7.1
+meshy-6
+meshy-6-lite
+meshy-t2
+Geometry resolution
+Standard
+2K · Ultra (+5 credits)
+4K · Ultra (+5 credits)
+Texture resolution
+2K
+4K
+8K
+None · mesh only
+View API reference
+→
+Estimated cost
+30
+credits
+per request
+Mesh generation
+20
+Texture generation
+10
+API Pricing
+Prices are listed in credits per request unless otherwise noted. A dash (—) indicates that the option is not supported.
+3D Generation
+The prices below include the selected texture option. Add the Ultra geometry surcharge when applicable.
+API
+Configuration
+meshy-7.1
+(
+latest
+)
+meshy-6
+meshy-6-lite
+meshy-t2
+Text to 3D (Preview)
+Mesh only
+20
+20
+5
+5
+Image to 3D
+Mesh only
+20
+20
+5
+5
+Mesh with 2K textures
+30
+30
+15
+15
+Mesh with 4K textures
+30
+30
+—
+15
+Mesh with 8K textures
+35
+35
+—
+20
+Multi-Image to 3D
+Mesh only
+20
+20
+5
+—
+Mesh with 2K textures
+30
+30
+15
+—
+Mesh with 4K textures
+30
+30
+—
+—
+Mesh with 8K textures
+35
+35
+—
+—
+Ultra geometry surcharge
+geometry_resolution: "2k"
+or
+"4k"
++5
+—
+—
+—
+Legacy models:
+meshy-7
+uses
+meshy-7.1
+pricing;
+model_type: "lowpoly"
+uses
+meshy-6
+pricing until it is retired on October 30, 2026.
+Texturing
+Text to 3D Preview and Refine are separate requests and are billed separately. The Refine prices below cover texture generation only.
+API
+Texture resolution
+Credits per request
+Text to 3D (Refine)
+2K / 4K
+10
+8K
+15
+Retexture
+2K / 4K
+10
+8K
+15
+Image Generation
+API
+nano-banana
+nano-banana-2
+nano-banana-pro
+GPT Image models
+Text to Image
+3
+6
+9
+9
+Image to Image
+3
+6
+9
+12
+Rigging and Animation
+API
+Configuration
+Credits
+Auto-Rigging
+Automatic rigging
+5 per request
+Animation
+Up to 10 actions per request
+3 per action
+Text to Motion
+prime
+mode
+10 per request
+swift
+mode
+3 per request
+Post-processing
+API
+Credits per request
+Remesh
+5
+UV Unwrap
+5
+Convert
+1
+Resize
+1
+3D Printing
+API
+Credits per request
+Analyze Printability
+Free
+Multi-Color
+10
+Repair Printability
+10
+Auto Split
+10
+Creative Lab
+For APIs with separate Prototype and Build stages, each stage is billed separately. Prices are listed in credits per request.
+API
+Prototype
+Build
+Keychain
+6
+30
+Fridge Magnet
+6
+30
+Figure
+6
+30
+Vinyl Figure
+6
+30
+Brick Figure
+6
+30
+Fidget Pixel
+6
+30
+Keycap
+12
+50
+Lamp
+30
+6
+Collapsible Fidget
+—
+6 (single-stage generation)

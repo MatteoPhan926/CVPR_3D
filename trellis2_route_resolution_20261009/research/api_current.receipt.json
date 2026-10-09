@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-09T09:05:50.803539+00:00",
+  "url": "https://microsoft-trellis-2.hf.space/gradio_api/info",
+  "status": 200,
+  "sha256": "f5f50dbe6f7932ef9c633df4ce0dde4af26b1e9982866b33dd5dc5f5d2abdc54",
+  "bytes": 14118,
+  "authenticated": false,
+  "note": "Read-only public service metadata; not GPU admission."
+}

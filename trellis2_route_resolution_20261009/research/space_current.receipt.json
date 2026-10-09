@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-09T09:05:50.463500+00:00",
+  "url": "https://huggingface.co/api/spaces/microsoft/TRELLIS.2",
+  "status": 200,
+  "sha256": "dfef0af6e64d6e59af949ad3719adad76e6bb7dd93b545956e105705ebd9965e",
+  "bytes": 13757,
+  "authenticated": false,
+  "note": "Read-only public service metadata; not GPU admission."
+}

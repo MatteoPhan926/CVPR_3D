@@ -1,0 +1,275 @@
+{
+  "name": "01_recovered_access_research",
+  "utc": "2026-10-09T10:16:29.328230+00:00",
+  "archive": "01_recovered_access_research.zip",
+  "archive_bytes": 809947,
+  "archive_sha256": "9bfb4b470109ad93bd71b50f95e871fcdb3c444992fc1d27af5f766c0cc9e021",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "bytes": 1592,
+      "sha256": "ae1ef3653f551477ff62a9571623937930133d95d7320333ee79cfdd0774782a"
+    },
+    {
+      "path": "config/INHERITED_AUTHORING_INTENT.md",
+      "bytes": 2678,
+      "sha256": "f33203ba0849b46407d3d124025b685ea5c1606e0b92c905f319666e35788aa3"
+    },
+    {
+      "path": "config/PREVIOUS_GENERATION_PLAN.json",
+      "bytes": 4414,
+      "sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
+    },
+    {
+      "path": "inputs/original.jpg",
+      "bytes": 39937,
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"
+    },
+    {
+      "path": "inputs/previous_official_preprocessed.png",
+      "bytes": 142468,
+      "sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86"
+    },
+    {
+      "path": "research/access_policy/fetch_public.py",
+      "bytes": 2154,
+      "sha256": "be10444afb08534442a7571317702b53c45ba7629b4be27ceb3c2469e0ea29ae"
+    },
+    {
+      "path": "research/access_policy/space_api_doc.error.txt",
+      "bytes": 52280,
+      "sha256": "01469147d0776d9e16a277e7500928acda8588d63c7fc02609a78b0ec867ed65"
+    },
+    {
+      "path": "research/access_policy/space_api_doc.receipt.json",
+      "bytes": 475,
+      "sha256": "1d57a1625f1b22e33c9c3f698ff88df155f7cdedf1e6a08ed34ab889038ea938"
+    },
+    {
+      "path": "research/access_policy/space_app_current.receipt.json",
+      "bytes": 2047,
+      "sha256": "9102b4a742b38f1c5ec71b4bb5a0f662bb3554cfecc9af2b99dcd7d92465641a"
+    },
+    {
+      "path": "research/access_policy/space_app_current.txt",
+      "bytes": 23014,
+      "sha256": "97edffac5d1c78992643551cc2d7daab6d9b3d7c0f049ddb5d9640ad11cfd4c3"
+    },
+    {
+      "path": "research/access_policy/space_meta.json",
+      "bytes": 13757,
+      "sha256": "dfef0af6e64d6e59af949ad3719adad76e6bb7dd93b545956e105705ebd9965e"
+    },
+    {
+      "path": "research/access_policy/space_meta.receipt.json",
+      "bytes": 1755,
+      "sha256": "a65d86cfe08a6f254dd54a44d0356f0bc9cabe3b1a5d7fc3bc7ef83fedccf6c5"
+    },
+    {
+      "path": "research/access_policy/space_readme.receipt.json",
+      "bytes": 2045,
+      "sha256": "3b93e6639872d48f23db2a31973379d5654d74b266fed9aab304e3618d405769"
+    },
+    {
+      "path": "research/access_policy/space_readme.txt",
+      "bytes": 321,
+      "sha256": "0ed5edcd10ffd27a88b35a94af3d5064069dcbcbe38dfbab83021018c5850c87"
+    },
+    {
+      "path": "research/access_policy/space_requirements.receipt.json",
+      "bytes": 2087,
+      "sha256": "43352859fc897e2b6a0e555ec35f895b184c74d9952fcc7d80f4a239aa8c1e83"
+    },
+    {
+      "path": "research/access_policy/space_requirements.txt",
+      "bytes": 1201,
+      "sha256": "f39775d7f4ae2081f73c3882cccbae0caeffb63c220f511f6a1a20fe20b91f38"
+    },
+    {
+      "path": "research/access_policy/spaces_pypi.json",
+      "bytes": 239840,
+      "sha256": "11daa920a00c94d9b91794f43fc2f37e8b57d4f8125d4a697fc9c61037958a9e"
+    },
+    {
+      "path": "research/access_policy/spaces_pypi.receipt.json",
+      "bytes": 3509,
+      "sha256": "c4f2b7dd6bf9e5e2f97177a567ec1f6eb7c7732576833eaf61ad1bc7be937755"
+    },
+    {
+      "path": "research/access_policy/tokens_doc.receipt.json",
+      "bytes": 1493,
+      "sha256": "e2dd8f36476b557ff34ed94f65f2f2602cfecd5708d2bc35ac193093d771f4bc"
+    },
+    {
+      "path": "research/access_policy/tokens_doc.txt",
+      "bytes": 221384,
+      "sha256": "722973c9632464c01a48e04827d53261944755ecb0008c31547b8e12f30ca9df"
+    },
+    {
+      "path": "research/access_policy/zerogpu_doc.receipt.json",
+      "bytes": 1493,
+      "sha256": "a260b67796e97408d0b6a36e0988c8840e1a9e408a0a1302b0c2abd36fe8b187"
+    },
+    {
+      "path": "research/access_policy/zerogpu_doc.txt",
+      "bytes": 218223,
+      "sha256": "44c848fa668aa2882abef3c0ed6182cd338ca0e326bcf9e4f6dadca540b560c3"
+    },
+    {
+      "path": "research/access_policy/zerogpu_doc_raw.receipt.json",
+      "bytes": 1781,
+      "sha256": "6234f5f82dc6bfb7a585e37a211c1b68648ac95c791f93123ef8439df7a0fea4"
+    },
+    {
+      "path": "research/access_policy/zerogpu_doc_raw.txt",
+      "bytes": 8312,
+      "sha256": "b140373f03b0ca24368fe04b1b9366de6a886fd2cb85466264dd542d4d415d64"
+    },
+    {
+      "path": "research/api_current.json",
+      "bytes": 14118,
+      "sha256": "f5f50dbe6f7932ef9c633df4ce0dde4af26b1e9982866b33dd5dc5f5d2abdc54"
+    },
+    {
+      "path": "research/api_current.receipt.json",
+      "bytes": 320,
+      "sha256": "03820451b93650cea9f965ab033add5302decbf3606fbc39f37fb981fc8383a2"
+    },
+    {
+      "path": "research/auth_official_client.json",
+      "bytes": 530,
+      "sha256": "3cce0819b486aec92791585cbbb51729e112898b912c6e51c9d733c1a3e834d7"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2.fetch.json",
+      "bytes": 467,
+      "sha256": "a76c9d7235d79c388848fc4fc31e8a4fcfbd2153b7c4737bec7848d3ad3923fb"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2.html",
+      "bytes": 436067,
+      "sha256": "b324f6ca6cc41812e829e09c090ac65c953c35d4fd7fea3f2a9cf3f67fbdc4f7"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2.txt",
+      "bytes": 1903,
+      "sha256": "a6da42586f66c751e2ebbb9bc8dd07414bd9cf83fa01e1304213e809a11ea094"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2_api.fetch.json",
+      "bytes": 483,
+      "sha256": "0d88916a2975d64746dc7d8fa78c2a17905506bfd80183daaf3c4404c1d4e8da"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2_api.html",
+      "bytes": 400187,
+      "sha256": "89433e97212d218bbd1aab63df0ec8eca41b1e2ec2d7e9defb0b107401fb53fa"
+    },
+    {
+      "path": "research/commercial_routes/fal_trellis2_api.txt",
+      "bytes": 11667,
+      "sha256": "2c241eb8f2100f8b79e3238f50068fa4d1d9635157dd5011f581c43139f18ebe"
+    },
+    {
+      "path": "research/commercial_routes/meshy_api_pricing.fetch.json",
+      "bytes": 473,
+      "sha256": "b62f5b6bec47803f95627c168af5b0fefeebb4be61c6e9216b31ddb7ab79d952"
+    },
+    {
+      "path": "research/commercial_routes/meshy_api_pricing.html",
+      "bytes": 200558,
+      "sha256": "20914b92fd4ade3fdb45c0158f7b2b8af3c071b028969a9ea9e6fab75e06d687"
+    },
+    {
+      "path": "research/commercial_routes/meshy_api_pricing.txt",
+      "bytes": 3230,
+      "sha256": "42278ea0001f10fb3e4bca7f42cefc75cbca7250b9c7af78f659e0f7d8bd0c33"
+    },
+    {
+      "path": "research/commercial_routes/meshy_image_to_3d.fetch.json",
+      "bytes": 481,
+      "sha256": "31ddbd14446975670fdc6c1350c5ab1769dbdd141bf5c4e904fc972f8882b8ae"
+    },
+    {
+      "path": "research/commercial_routes/meshy_image_to_3d.html",
+      "bytes": 627328,
+      "sha256": "3a9bfc8551388c093ca364718f53f3df18a51a6b17077db563984775d964e52e"
+    },
+    {
+      "path": "research/commercial_routes/meshy_image_to_3d.txt",
+      "bytes": 31304,
+      "sha256": "4d00960ebd315df3416dd817bde930a12a58824338a2c17cd4d13a2e29b9109b"
+    },
+    {
+      "path": "research/commercial_routes/meshy_pricing.fetch.json",
+      "bytes": 450,
+      "sha256": "7bc7904074f465de4c2030493a5313adddba2244ee1ade5d3c1c86dc59ebdbdd"
+    },
+    {
+      "path": "research/commercial_routes/meshy_pricing.html",
+      "bytes": 1241163,
+      "sha256": "451aea9d940ead247103a24ae1cafe30a2f6c6a53e687890d59eb81597d14cea"
+    },
+    {
+      "path": "research/commercial_routes/meshy_pricing.txt",
+      "bytes": 6671,
+      "sha256": "f3704d6e7274d0b2ea560267f840d29f95d8cd18407bc34c265b1b1272bd122f"
+    },
+    {
+      "path": "research/commercial_routes/tripo_api_pricing.fetch.json",
+      "bytes": 468,
+      "sha256": "a4de1c78247a1127eaa2eefdd43f01ba49b0d7f79d91fa2b240857b13d8efb75"
+    },
+    {
+      "path": "research/commercial_routes/tripo_api_pricing.html",
+      "bytes": 689,
+      "sha256": "915ccc4550c075499665e309e04120a005421e6130b3a4c8a615430e47b64757"
+    },
+    {
+      "path": "research/commercial_routes/tripo_api_pricing.txt",
+      "bytes": 21,
+      "sha256": "16c3b04c4e56a2b7eddd0f73d618f5221a0ce2ecab16b2e1a92c904872e5e653"
+    },
+    {
+      "path": "research/commercial_routes/tripo_docs.fetch.json",
+      "bytes": 448,
+      "sha256": "00e066aca128a593b36960a2c291d35b9a612a3ff5c7817611fdda94094ab1c4"
+    },
+    {
+      "path": "research/commercial_routes/tripo_docs.html",
+      "bytes": 689,
+      "sha256": "915ccc4550c075499665e309e04120a005421e6130b3a4c8a615430e47b64757"
+    },
+    {
+      "path": "research/commercial_routes/tripo_docs.txt",
+      "bytes": 21,
+      "sha256": "16c3b04c4e56a2b7eddd0f73d618f5221a0ce2ecab16b2e1a92c904872e5e653"
+    },
+    {
+      "path": "research/initial_runtime_access.json",
+      "bytes": 683,
+      "sha256": "53ce6d8f702feba3717a1d133e61bba86823da8d4dd4e9231e70801e320ce193"
+    },
+    {
+      "path": "research/space_current.json",
+      "bytes": 13757,
+      "sha256": "dfef0af6e64d6e59af949ad3719adad76e6bb7dd93b545956e105705ebd9965e"
+    },
+    {
+      "path": "research/space_current.receipt.json",
+      "bytes": 321,
+      "sha256": "748b11bc8efd4e532262f5d09af7f4447791114ef8a014cd853cc5623b5e8c8d"
+    },
+    {
+      "path": "source/checkpoint.py",
+      "bytes": 4171,
+      "sha256": "714d611340e4072e073fc9049704cb45f0e314aaeca0d06d68030749f08fd25a"
+    }
+  ],
+  "excluded": [
+    "Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)",
+    "External installed environments/model weights",
+    "Server-held unexposed latent state"
+  ],
+  "original_evidence": "Original probe and prior research remain unchanged and separately checkpointed."
+}

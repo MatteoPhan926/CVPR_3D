@@ -1,0 +1,13 @@
+{
+  "name": "space_api_doc",
+  "url": "https://huggingface.co/docs/hub/spaces-api",
+  "requested_at_utc": "2026-10-09T09:05:38.091379+00:00",
+  "method": "GET",
+  "authentication": "none; urllib explicit User-Agent only",
+  "status": 404,
+  "error": "HTTP Error 404: Not Found",
+  "size": 52280,
+  "sha256": "01469147d0776d9e16a277e7500928acda8588d63c7fc02609a78b0ec867ed65",
+  "snapshot": "space_api_doc.error.txt",
+  "finished_at_utc": "2026-10-09T09:05:38.618440+00:00"
+}

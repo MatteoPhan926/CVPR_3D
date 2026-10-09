@@ -1,0 +1,21 @@
+{
+  "credential_variable_presence": {
+    "HF_TOKEN": true,
+    "HUGGING_FACE_HUB_TOKEN": false,
+    "HUGGINGFACEHUB_API_TOKEN": false,
+    "FAL_KEY": false,
+    "REPLICATE_API_TOKEN": false,
+    "MESHY_API_KEY": false,
+    "TRIPO_API_KEY": false,
+    "RUNPOD_API_KEY": false
+  },
+  "nvidia_devices": [],
+  "nvidia_smi": null,
+  "hf_default_token_resolves": true,
+  "hf_auth_probe": {
+    "http_status": 401,
+    "authenticated_identity_returned": false,
+    "body_omitted": true
+  },
+  "observation": "Current instance; first official read-only whoami-v2 returned HTTP401. This does not distinguish a token/account problem from proxy propagation and is not a generation attempt."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "fal_trellis2",
+  "url": "https://fal.ai/models/fal-ai/trellis-2",
+  "fetched_at_utc": "2026-10-09T09:05:32.043764+00:00",
+  "final_url": "https://fal.ai/models/fal-ai/trellis-2",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/fal_trellis2.html",
+  "sha256": "b324f6ca6cc41812e829e09c090ac65c953c35d4fd7fea3f2a9cf3f67fbdc4f7",
+  "bytes": 436067
+}

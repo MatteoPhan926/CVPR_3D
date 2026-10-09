@@ -1,0 +1,117 @@
+Try H3 Max Director
+Log-in
+Sign-up
+Contact Sales
+Log-in
+Sign-up
+Loading model
+fal-ai
+/
+trellis-2
+fal-ai
+/
+trellis-2
+Schema
+LLMs
+Input
+Result
+Input
+Form
+Prompt
+*
+Additional Settings
+More
+Customize your input with more control.
+Reset
+Sign in to run
+Result
+Idle
+Preview
+JSON
+What would you like to do next?
+Download
+Trellis 2 (Image to 3D) API on fal
+fal-ai
+/
+trellis-2
+, details and endpoints
+Sandbox
+Open in Sandbox
+Generate 3D models from your images using Trellis 2. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai
+/
+trellis-2
+Generate 3D models from your images using Trellis 2. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+Inference
+Commercial use
+Schema
+LLMs
+Playground
+API
+Sandbox
+Open in Sandbox
+Input
+Result
+Input
+Form
+Prompt
+*
+Additional Settings
+More
+Customize your input with more control.
+Reset
+Sign in to run
+Result
+Idle
+Preview
+JSON
+What would you like to do next?
+Download
+Input
+Result
+Input
+Form
+Prompt
+*
+Additional Settings
+More
+Customize your input with more control.
+Reset
+Sign in to run
+Result
+Idle
+Preview
+JSON
+What would you like to do next?
+Download
+Input
+Result
+Input
+Form
+Image Url
+*
+Add Image
+Hint:
+Drag and drop
+image files
+from your computer,
+images
+from web pages, paste from clipboard (Ctrl/Cmd+V), or provide a URL.
+Accepted file types: jpg, jpeg, png, webp, gif, avif, heic, heif
+Additional Settings
+More
+Customize your input with more control.
+Your request will cost 0.25 $ for 512p resolution, 0.3 $ for 1024p resolution and 0.35 $ for 1536p resolution.
+Reset
+Sign in to run
+Result
+Idle
+Preview
+JSON
+What would you like to do next?
+{
+  "model_glb": {
+    "url": "https://v3b.fal.media/files/b/0a86b61d/DNmTkiWHUQ8k-rG6aussB_trellis2_68d6300f70f34d23b69a912b5fe60487.glb"
+  }
+}
+Your request will cost 0.25 $ for 512p resolution, 0.3 $ for 1024p resolution and 0.35 $ for 1536p resolution.

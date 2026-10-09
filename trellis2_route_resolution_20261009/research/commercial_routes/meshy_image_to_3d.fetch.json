@@ -1,0 +1,11 @@
+{
+  "name": "meshy_image_to_3d",
+  "url": "https://docs.meshy.ai/en/api/image-to-3d",
+  "fetched_at_utc": "2026-10-09T09:05:32.044354+00:00",
+  "final_url": "https://docs.meshy.ai/en/api/image-to-3d",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/meshy_image_to_3d.html",
+  "sha256": "3a9bfc8551388c093ca364718f53f3df18a51a6b17077db563984775d964e52e",
+  "bytes": 627328
+}

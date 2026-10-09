@@ -1,0 +1,11 @@
+{
+  "name": "tripo_docs",
+  "url": "https://platform.tripo3d.ai/docs",
+  "fetched_at_utc": "2026-10-09T09:05:32.045390+00:00",
+  "final_url": "https://platform.tripo3d.ai/docs",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/tripo_docs.html",
+  "sha256": "915ccc4550c075499665e309e04120a005421e6130b3a4c8a615430e47b64757",
+  "bytes": 689
+}
