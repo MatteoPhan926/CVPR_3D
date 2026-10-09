@@ -8,7 +8,14 @@
     "resolution": null,
     "seed": null,
     "export_settings": null,
-    "exact_input_linkage": "Reported project context; not independently established"
+    "exact_input_linkage": "User confirms dark Citroen probe reference; original-vs-background-removed upload unknown, no upload hash",
+    "reported_route": "User confirms direct Hugging Face TRELLIS.2 after login",
+    "reported_resolutions_across_two_runs": [
+      512,
+      1536
+    ],
+    "resolution_to_file_mapping": "unknown",
+    "excluded_provenance": "Earlier UI screenshot was failed run with Randomize Seed; its seed and decimation must not be assigned to these outputs"
   },
   {
     "label": "B",
@@ -19,6 +26,13 @@
     "resolution": null,
     "seed": null,
     "export_settings": null,
-    "exact_input_linkage": "Reported project context; not independently established"
+    "exact_input_linkage": "User confirms dark Citroen probe reference; original-vs-background-removed upload unknown, no upload hash",
+    "reported_route": "User confirms direct Hugging Face TRELLIS.2 after login",
+    "reported_resolutions_across_two_runs": [
+      512,
+      1536
+    ],
+    "resolution_to_file_mapping": "unknown",
+    "excluded_provenance": "Earlier UI screenshot was failed run with Randomize Seed; its seed and decimation must not be assigned to these outputs"
   }
 ]

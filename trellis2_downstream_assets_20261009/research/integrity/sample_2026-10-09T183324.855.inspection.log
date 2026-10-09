@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "/workspace/CVPR_3D/trellis2_route_resolution_20261009/source/inspect_glb.py",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183324.855.glb",
+    "--output",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183324.855.inspection.json"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"sha256\": \"945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a\",\n  \"primitives\": [\n    {\n      \"mesh\": 0,\n      \"primitive\": 0,\n      \"vertices\": 178694,\n      \"mode\": 4,\n      \"triangles\": 276585,\n      \"attribute_accessors\": {\n        \"POSITION\": 1,\n        \"TEXCOORD_0\": 2,\n        \"NORMAL\": 3\n      },\n      \"material\": 0,\n      \"has_uv0\": true,\n      \"has_normals\": true\n    }\n  ],\n  \"materials\": [\n    {\n      \"pbrMetallicRoughness\": {\n        \"baseColorTexture\": {\n          \"index\": 0\n        },\n        \"baseColorFactor\": [\n          1.0,\n          1.0,\n          1.0,\n          1.0\n        ],\n        \"roughnessFactor\": 1.0,\n        \"metallicFactor\": 1.0,\n        \"metallicRoughnessTexture\": {\n          \"index\": 1\n        }\n      },\n      \"alphaMode\": \"OPAQUE\",\n      \"doubleSided\": false\n    }\n  ],\n  \"extensions_required\": [\n    \"EXT_texture_webp\"\n  ],\n  \"images\": [\n    {\n      \"index\": 0,\n      \"mime_type\": \"image/webp\",\n      \"embedded\": true,\n      \"has_uri\": false,\n      \"bytes\": 963620\n    },\n    {\n      \"index\": 1,\n      \"mime_type\": \"image/webp\",\n      \"embedded\": true,\n      \"has_uri\": false,\n      \"bytes\": 294544\n    }\n  ]\n}\n",
+  "stderr": ""
+}

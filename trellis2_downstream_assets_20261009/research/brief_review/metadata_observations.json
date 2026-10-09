@@ -1,0 +1,157 @@
+{
+  "method": "Read GLB JSON chunk and hash original bytes using Python standard library; no import, render, or modification. No generation settings identified in the inspected JSON.",
+  "assets": [
+    {
+      "label": "A",
+      "path": "inputs/sample_2026-10-09T183055.354.glb",
+      "sha256": "36c45359ff5fb8b8df0a421f1102598554b9070bc86f0a5e28eee82da3585daa",
+      "bytes": 10060500,
+      "asset": {
+        "version": "2.0",
+        "generator": "https://github.com/mikedh/trimesh"
+      },
+      "top_level_keys": [
+        "scene",
+        "scenes",
+        "asset",
+        "accessors",
+        "meshes",
+        "images",
+        "textures",
+        "materials",
+        "nodes",
+        "extensionsUsed",
+        "extensionsRequired",
+        "buffers",
+        "bufferViews"
+      ],
+      "top_level_extras": null,
+      "extensions_used": [
+        "EXT_texture_webp"
+      ],
+      "extensions_required": [
+        "EXT_texture_webp"
+      ],
+      "mesh_primitives": [
+        {
+          "attributes": [
+            "POSITION",
+            "TEXCOORD_0",
+            "NORMAL"
+          ],
+          "material": 0,
+          "mode": 4
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughnessFactor": 1.0,
+            "metallicFactor": 1.0,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": false
+        }
+      ],
+      "images": [
+        {
+          "bufferView": 2,
+          "mimeType": "image/webp"
+        },
+        {
+          "bufferView": 3,
+          "mimeType": "image/webp"
+        }
+      ],
+      "animation_count": 0
+    },
+    {
+      "label": "B",
+      "path": "inputs/sample_2026-10-09T183324.855.glb",
+      "sha256": "945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a",
+      "bytes": 10297284,
+      "asset": {
+        "version": "2.0",
+        "generator": "https://github.com/mikedh/trimesh"
+      },
+      "top_level_keys": [
+        "scene",
+        "scenes",
+        "asset",
+        "accessors",
+        "meshes",
+        "images",
+        "textures",
+        "materials",
+        "nodes",
+        "extensionsUsed",
+        "extensionsRequired",
+        "buffers",
+        "bufferViews"
+      ],
+      "top_level_extras": null,
+      "extensions_used": [
+        "EXT_texture_webp"
+      ],
+      "extensions_required": [
+        "EXT_texture_webp"
+      ],
+      "mesh_primitives": [
+        {
+          "attributes": [
+            "POSITION",
+            "TEXCOORD_0",
+            "NORMAL"
+          ],
+          "material": 0,
+          "mode": 4
+        }
+      ],
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "roughnessFactor": 1.0,
+            "metallicFactor": 1.0,
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": false
+        }
+      ],
+      "images": [
+        {
+          "bufferView": 2,
+          "mimeType": "image/webp"
+        },
+        {
+          "bufferView": 3,
+          "mimeType": "image/webp"
+        }
+      ],
+      "animation_count": 0
+    }
+  ]
+}

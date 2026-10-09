@@ -1,0 +1,102 @@
+{
+  "uri": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183324.855.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-09T16:50:41.162Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 4,
+    "messages": [
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/POSITION"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/indices"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh",
+    "extensionsUsed": [
+      "EXT_texture_webp"
+    ],
+    "extensionsRequired": [
+      "EXT_texture_webp"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 10295392
+      },
+      {
+        "pointer": "/images/0",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 2048,
+          "height": 2048,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/1",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 2048,
+          "height": 2048,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 1,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": true,
+    "hasDefaultScene": true,
+    "drawCallCount": 1,
+    "totalVertexCount": 178694,
+    "totalTriangleCount": 276585,
+    "maxUVs": 1,
+    "maxInfluences": 0,
+    "maxAttributes": 3
+  },
+  "evidence": {
+    "input": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183324.855.glb",
+    "sha256": "945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a",
+    "validator_version": "2.0.0-dev.3.10",
+    "no_external_resources": true,
+    "scope": "GLB container/schema validation only; not model provenance, appearance or task success"
+  }
+}

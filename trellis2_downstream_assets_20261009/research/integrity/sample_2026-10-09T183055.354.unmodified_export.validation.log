@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "/workspace/CVPR_3D/trellis2_route_resolution_20261009/source/validate_glb.cjs",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.glb",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.validation.json"
+  ],
+  "returncode": 0,
+  "stdout": "{\"errors\":0,\"warnings\":0,\"infos\":0,\"hints\":0}\n",
+  "stderr": ""
+}

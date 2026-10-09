@@ -1,0 +1,18 @@
+{
+  "command": [
+    "blender",
+    "-b",
+    "-t",
+    "1",
+    "--python",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/blender_import_diagnostics.py",
+    "--",
+    "--input",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.glb",
+    "--output",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.reimport.json"
+  ],
+  "returncode": 0,
+  "stdout": "Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender/4.3/extensions').\n16:53:02 | INFO: Data are loaded, start creating Blender stuff\n16:53:02 | INFO: Blender create Mesh node geometry_0\n16:53:03 | INFO: glTF import finished in 0.70s\nIMPORT_DIAGNOSTICS {\"status\": \"import_passed\", \"seconds\": 1.352117489000193, \"images\": [{\"name\": \"Image_0\", \"size\": [2048, 2048], \"channels\": 4, \"has_data\": true, \"colorspace\": \"sRGB\", \"file_format\": \"WEBP\", \"packed\": true}, {\"name\": \"Image_1\", \"size\": [2048, 2048], \"channels\": 4, \"has_data\": true, \"colorspace\": \"Non-Color\", \"file_format\": \"WEBP\", \"packed\": true}]}\nBlender 4.3.2\n\nBlender quit\n",
+  "stderr": ""
+}

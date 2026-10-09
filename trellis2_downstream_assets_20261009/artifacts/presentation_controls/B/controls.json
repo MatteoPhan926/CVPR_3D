@@ -1,0 +1,22 @@
+{
+  "label": "B",
+  "source": "Native imported blend; overrides in transient copy only",
+  "native_material_edit": false,
+  "controls": [
+    "unlit base color via emission, still AgX display transform",
+    "uniform clay override under same lights"
+  ],
+  "side_projection": {
+    "center": [
+      -0.0025464296340942383,
+      -0.0009569227695465088,
+      0.00014016032218933105
+    ],
+    "ortho_scale": 1.4174940586090088,
+    "width": 900,
+    "height": 600,
+    "screen_x": "world +X",
+    "screen_up": "world +Z"
+  },
+  "scope": "Discriminates geometry/texture/shading appearance; not an optimized material repair or objective fidelity measure"
+}

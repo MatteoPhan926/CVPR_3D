@@ -1,0 +1,167 @@
+{
+  "original": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183055.354.glb",
+  "export": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.glb",
+  "original_sha256": "36c45359ff5fb8b8df0a421f1102598554b9070bc86f0a5e28eee82da3585daa",
+  "export_sha256": "b7716226169e6987fcbe7f0a3e6f423b6cecf47c8c087f3be202564bd48f005f",
+  "triangle_count_original": 291603,
+  "triangle_count_export": 291603,
+  "vertex_count_original": 183392,
+  "vertex_count_export": 183665,
+  "direct_ordered_oriented_triangle_positions_identical": true,
+  "oriented_triangle_position_multiset_identical": true,
+  "comparison_method": "Expand indexed attributes to ordered face corners. Identical ordered positions are a stronger result than multiset equality; no tolerance, nearest match, or welding used.",
+  "attribute_comparison": {
+    "POSITION": {
+      "all_face_corners_exactly_equal": true,
+      "max_absolute_component_difference": 0.0,
+      "face_corners_any_component_changed": 0,
+      "original_face_corner_sha256": "e3a91fd6bf495893c745eda348a08f17601c6fa5ebbf9af7952eb06636b44071",
+      "export_face_corner_sha256": "e3a91fd6bf495893c745eda348a08f17601c6fa5ebbf9af7952eb06636b44071"
+    },
+    "TEXCOORD_0": {
+      "all_face_corners_exactly_equal": true,
+      "max_absolute_component_difference": 0.0,
+      "face_corners_any_component_changed": 0,
+      "original_face_corner_sha256": "140f82c0d6ceda6215d5cffdc391f23fe8aed4086ed01ea3acdd4e2a9c506263",
+      "export_face_corner_sha256": "140f82c0d6ceda6215d5cffdc391f23fe8aed4086ed01ea3acdd4e2a9c506263"
+    },
+    "NORMAL": {
+      "all_face_corners_exactly_equal": false,
+      "max_absolute_component_difference": 0.6308374404907227,
+      "face_corners_any_component_changed": 874809,
+      "original_face_corner_sha256": "f4d76a564700fbc56bdecbd825c8e5326fa7c08bc6d0e64f6b07037070bf7ac9",
+      "export_face_corner_sha256": "5efb84be2846517dfcaf5147536211a1f973b391b623bca719fc895415cd637b",
+      "angle_degrees_quantiles": {
+        "0": 1.1099057401270736e-05,
+        "1": 0.00032780701094775627,
+        "10": 0.0010665231582326197,
+        "50": 0.002565366623050472,
+        "90": 0.004897293564173886,
+        "99": 0.01814399421631871,
+        "100": 46.826473438826035
+      },
+      "angle_thresholds": {
+        "0.01": {
+          "corners": 26371,
+          "faces_any_corner": 22084,
+          "fraction_total_geometric_area_faces_any_corner": 0.12545064506016773
+        },
+        "0.1": {
+          "corners": 33,
+          "faces_any_corner": 33,
+          "fraction_total_geometric_area_faces_any_corner": 2.4988078166510596e-05
+        },
+        "1": {
+          "corners": 1,
+          "faces_any_corner": 1,
+          "fraction_total_geometric_area_faces_any_corner": 0.0
+        },
+        "5": {
+          "corners": 1,
+          "faces_any_corner": 1,
+          "fraction_total_geometric_area_faces_any_corner": 0.0
+        },
+        "10": {
+          "corners": 1,
+          "faces_any_corner": 1,
+          "fraction_total_geometric_area_faces_any_corner": 0.0
+        },
+        "30": {
+          "corners": 1,
+          "faces_any_corner": 1,
+          "fraction_total_geometric_area_faces_any_corner": 0.0
+        }
+      },
+      "maximum_angle_corner": {
+        "face_index": 40452,
+        "corner_index": 2,
+        "position": [
+          -0.19449234008789062,
+          0.09822845458984375,
+          0.1807403564453125
+        ],
+        "source_normal": [
+          -0.6308374404907227,
+          0.6842102408409119,
+          0.36592423915863037
+        ],
+        "export_normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "face_area": 0.0
+      }
+    }
+  },
+  "texture_comparison": [
+    {
+      "image_index": 0,
+      "original_mime": "image/webp",
+      "export_mime": "image/webp",
+      "original_mode": "RGBA",
+      "export_mode": "RGBA",
+      "encoded_bytes_identical": true,
+      "decoded_rgba_pixels_identical": true,
+      "original_encoded_sha256": "0d55b593c3a2c9635429ed65548d178cdd54994071668ac81c83fce8ee4e9331",
+      "export_encoded_sha256": "0d55b593c3a2c9635429ed65548d178cdd54994071668ac81c83fce8ee4e9331",
+      "max_decoded_pixel_component_difference": 0
+    },
+    {
+      "image_index": 1,
+      "original_mime": "image/webp",
+      "export_mime": "image/webp",
+      "original_mode": "RGB",
+      "export_mode": "RGB",
+      "encoded_bytes_identical": true,
+      "decoded_rgba_pixels_identical": true,
+      "original_encoded_sha256": "8ba73c1813e42f7af493a0c65427ac91acaedb538a4aeebf98cfb456491acd4b",
+      "export_encoded_sha256": "8ba73c1813e42f7af493a0c65427ac91acaedb538a4aeebf98cfb456491acd4b",
+      "max_decoded_pixel_component_difference": 0
+    }
+  ],
+  "effective_material_values_identical": true,
+  "effective_material_original": {
+    "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "metallicFactor": 1.0,
+    "roughnessFactor": 1.0,
+    "alphaMode": "OPAQUE",
+    "doubleSided": false,
+    "baseColorTexture": {
+      "index": 0
+    },
+    "metallicRoughnessTexture": {
+      "index": 1
+    }
+  },
+  "effective_material_export": {
+    "baseColorFactor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "metallicFactor": 1,
+    "roughnessFactor": 1,
+    "alphaMode": "OPAQUE",
+    "doubleSided": false,
+    "baseColorTexture": {
+      "index": 0
+    },
+    "metallicRoughnessTexture": {
+      "index": 1
+    }
+  },
+  "extensions_required_original": [
+    "EXT_texture_webp"
+  ],
+  "extensions_required_export": [
+    "EXT_texture_webp"
+  ],
+  "scope": "Same input and unmodified Blender export control. Establishes recorded preservation/drift only; no visual equivalence, semantic authoring success, or generation provenance inferred."
+}

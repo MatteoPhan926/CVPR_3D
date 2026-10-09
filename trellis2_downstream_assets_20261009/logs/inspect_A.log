@@ -1,0 +1,29 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender/4.3/extensions').
+16:51:11 | INFO: Data are loaded, start creating Blender stuff
+16:51:11 | INFO: Blender create Mesh node geometry_0
+16:51:12 | INFO: glTF import finished in 0.51s
+Blender 4.3.2
+Fra:1 Mem:46.20M (Peak 46.20M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | geometry_0
+Fra:1 Mem:85.79M (Peak 92.47M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:85.78M (Peak 92.47M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0
+Fra:1 Mem:85.78M (Peak 92.47M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1
+Fra:1 Mem:117.57M (Peak 181.80M) | Time:00:00.18 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Failed to denoise, build has no OpenImageDenoise support
+Fra:1 Mem:117.57M (Peak 181.80M) | Time:00:00.19 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:117.57M (Peak 181.80M) | Time:00:00.19 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:117.57M (Peak 181.80M) | Time:00:00.19 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:117.66M (Peak 181.80M) | Time:00:00.19 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:117.66M (Peak 181.80M) | Time:00:00.19 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Failed to denoise, build has no OpenImageDenoise support
+Traceback (most recent call last):
+  File "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/source/inspect_render.py", line 41, in <module>
+    bpy.ops.render.render(write_still=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+RuntimeError: Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Error: Failed to denoise, build has no OpenImageDenoise support
+Error: Failed to denoise, build has no OpenImageDenoise support
+
+Blender quit

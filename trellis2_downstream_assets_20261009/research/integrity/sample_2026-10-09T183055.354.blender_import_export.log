@@ -1,0 +1,20 @@
+{
+  "command": [
+    "blender",
+    "-b",
+    "-t",
+    "1",
+    "--python",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/blender_import_diagnostics.py",
+    "--",
+    "--input",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183055.354.glb",
+    "--output",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.blender_import_export.json",
+    "--export",
+    "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/research/integrity/sample_2026-10-09T183055.354.unmodified_export.glb"
+  ],
+  "returncode": 0,
+  "stdout": "Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender/4.3/extensions').\n16:52:34 | INFO: Data are loaded, start creating Blender stuff\n16:52:34 | INFO: Blender create Mesh node geometry_0\n16:52:36 | INFO: glTF import finished in 1.51s\nERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so\n16:52:36 | INFO: Starting glTF 2.0 export\n16:52:36 | INFO: Extracting primitive: geometry_0\n16:52:37 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.\n16:52:37 | INFO: Primitives created: 1\n16:52:37 | INFO: Finished glTF 2.0 export in 1.3362748622894287 s\n\nIMPORT_DIAGNOSTICS {\"status\": \"import_passed\", \"seconds\": 2.4263288469992403, \"images\": [{\"name\": \"Image_0\", \"size\": [2048, 2048], \"channels\": 4, \"has_data\": true, \"colorspace\": \"sRGB\", \"file_format\": \"WEBP\", \"packed\": true}, {\"name\": \"Image_1\", \"size\": [2048, 2048], \"channels\": 4, \"has_data\": true, \"colorspace\": \"Non-Color\", \"file_format\": \"WEBP\", \"packed\": true}]}\nBlender 4.3.2\n\nBlender quit\n",
+  "stderr": ""
+}

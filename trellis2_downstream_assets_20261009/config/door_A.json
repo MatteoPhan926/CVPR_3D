@@ -1,0 +1,13 @@
+{
+  "asset_label": "A",
+  "coordinate_frame": "Blender import Z up, front +X, camera-facing side -Y",
+  "selection": "Convex XZ door silhouette extruded through near-side surface; visual manual specification after side render",
+  "polygon_xz": [[-0.070, -0.112], [0.148, -0.112], [0.151, 0.018], [0.115, 0.098], [0.077, 0.137], [-0.052, 0.136]],
+  "side_y_max": -0.100,
+  "hinge_xyz": [-0.061, -0.153, 0.0],
+  "opening_z_rotation_sign": -1,
+  "hinge_status": "Plausible rear hinge for this vehicle and outward rotation; not recovered hidden mechanical ground truth",
+  "additions": "0.006 inward Y lining/edge thickness; 0.022 aperture jamb; labelled proxy cabin floor, seat and dashboard",
+  "units": "Native normalized asset units, not metric physical dimensions",
+  "scope": "One bounded conventional preparation; no resolution/seed comparison or artist-time claim"
+}

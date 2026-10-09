@@ -1,0 +1,101 @@
+{
+  "input": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183055.354.glb",
+  "bytes": 10060500,
+  "sha256": "36c45359ff5fb8b8df0a421f1102598554b9070bc86f0a5e28eee82da3585daa",
+  "container_version": 2,
+  "asset_metadata": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  "chunks": [
+    {
+      "type": "0x4e4f534a",
+      "bytes": 1908
+    },
+    {
+      "type": "0x4e4942",
+      "bytes": 10058564
+    }
+  ],
+  "extensions_used": [
+    "EXT_texture_webp"
+  ],
+  "extensions_required": [
+    "EXT_texture_webp"
+  ],
+  "meshes": 1,
+  "nodes": 2,
+  "primitives": [
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "vertices": 183392,
+      "mode": 4,
+      "triangles": 291603,
+      "attribute_accessors": {
+        "POSITION": 1,
+        "TEXCOORD_0": 2,
+        "NORMAL": 3
+      },
+      "material": 0,
+      "has_uv0": true,
+      "has_normals": true
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "roughnessFactor": 1.0,
+        "metallicFactor": 1.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "textures": [
+    {
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "mime_type": "image/webp",
+      "embedded": true,
+      "has_uri": false,
+      "bytes": 670284
+    },
+    {
+      "index": 1,
+      "mime_type": "image/webp",
+      "embedded": true,
+      "has_uri": false,
+      "bytes": 20500
+    }
+  ],
+  "animation_count": 0,
+  "scope": "Observed container/material structure only; no attribution to user car, model revision, visual quality or authoring success."
+}

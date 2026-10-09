@@ -1,0 +1,312 @@
+{
+  "input": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/inputs/sample_2026-10-09T183324.855.glb",
+  "sha256": "945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a",
+  "scope": "Diagnostic only. No geometric edits; exact weld is a measured topology view, not a repair. No provenance or controlled comparison inference.",
+  "nodes": [
+    {
+      "name": "world",
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "geometry_0",
+      "mesh": 0
+    }
+  ],
+  "bounds_min": [
+    -0.21388980746269226,
+    -0.17109528183937073,
+    -0.498160719871521
+  ],
+  "bounds_max": [
+    0.20879694819450378,
+    0.1713756024837494,
+    0.500074565410614
+  ],
+  "extents": [
+    0.42268675565719604,
+    0.3424708843231201,
+    0.998235285282135
+  ],
+  "surface_area": 2.520087178702363,
+  "area_quantiles": {
+    "0": 0.0,
+    "1": 5.944816851959127e-07,
+    "10": 2.582140193008637e-06,
+    "50": 8.386835282096964e-06,
+    "90": 1.6457914832342068e-05,
+    "99": 2.534776517852693e-05,
+    "100": 5.7825949531243146e-05
+  },
+  "zero_area_triangles": 1,
+  "triangles_area_le_1e-12": 1,
+  "normal_length_quantiles": {
+    "0": 0.9999999496902229,
+    "1": 0.9999999651939447,
+    "10": 0.9999999750649006,
+    "50": 1.000000000222487,
+    "90": 1.0000000246770273,
+    "99": 1.0000000346454823,
+    "100": 1.0000000506162423
+  },
+  "faces_average_vertex_normal_opposes_geometric_normal": 55,
+  "area_fraction_average_vertex_normal_opposes_geometric_normal": 1.1014243287703797e-05,
+  "uv": {
+    "min": [
+      0.0,
+      0.0
+    ],
+    "max": [
+      0.9995678663253784,
+      0.9995644688606262
+    ],
+    "vertices_outside_unit_square": 0,
+    "zero_uv_area_triangles": 44,
+    "geometric_area_fraction_zero_uv_area": 1.4690051517708883e-06,
+    "sum_absolute_triangle_uv_area": 0.6062850073054386,
+    "positive_uv_orientation_faces": 148122,
+    "negative_uv_orientation_faces": 128419,
+    "note": "Sum of triangle UV areas is not an overlap-free atlas occupancy metric."
+  },
+  "native_index_topology": {
+    "vertices": 178694,
+    "edges": 453680,
+    "faces": 276585,
+    "components_with_faces": 3905,
+    "unused_vertices": 0,
+    "boundary_edges": 77605,
+    "nonmanifold_edges_more_than_two_faces": 0,
+    "two_face_edges_same_direction": 0,
+    "edge_incidence_max": 2,
+    "euler_characteristic": 1599,
+    "duplicate_unoriented_faces": 0,
+    "largest_component_face_fraction": 0.0610192165157185,
+    "largest_component_area_fraction": 0.08013930107241189,
+    "component_face_counts_top20": [
+      16877,
+      11766,
+      9197,
+      6154,
+      5932,
+      5805,
+      5671,
+      5016,
+      4462,
+      4456,
+      4419,
+      3738,
+      3633,
+      3108,
+      2793,
+      2762,
+      2609,
+      2589,
+      2524,
+      2514
+    ]
+  },
+  "exact_position_weld_topology": {
+    "vertices": 138118,
+    "edges": 414841,
+    "faces": 276585,
+    "components_with_faces": 3,
+    "unused_vertices": 0,
+    "boundary_edges": 1,
+    "nonmanifold_edges_more_than_two_faces": 37,
+    "two_face_edges_same_direction": 0,
+    "edge_incidence_max": 4,
+    "euler_characteristic": -138,
+    "duplicate_unoriented_faces": 11,
+    "largest_component_face_fraction": 0.9971654283493321,
+    "largest_component_area_fraction": 0.9990681429163161,
+    "component_face_counts_top20": [
+      275801,
+      442,
+      342
+    ],
+    "components_top20": [
+      {
+        "component": 0,
+        "faces": 275801,
+        "area": 2.517738817613388,
+        "bounds_min": [
+          -0.21388980746269226,
+          -0.17109528183937073,
+          -0.498160719871521
+        ],
+        "bounds_max": [
+          0.20879694819450378,
+          0.1713756024837494,
+          0.500074565410614
+        ],
+        "extents": [
+          0.42268675565719604,
+          0.3424708843231201,
+          0.998235285282135
+        ]
+      },
+      {
+        "component": 1,
+        "faces": 442,
+        "area": 0.001351753190133073,
+        "bounds_min": [
+          -0.18967165052890778,
+          0.06284135580062866,
+          0.08279936760663986
+        ],
+        "bounds_max": [
+          -0.1673840880393982,
+          0.08461681008338928,
+          0.09919504821300507
+        ],
+        "extents": [
+          0.022287562489509583,
+          0.02177545428276062,
+          0.016395680606365204
+        ]
+      },
+      {
+        "component": 2,
+        "faces": 342,
+        "area": 0.000996607898771319,
+        "bounds_min": [
+          -0.1883164644241333,
+          0.06415773183107376,
+          0.08442032337188721
+        ],
+        "bounds_max": [
+          -0.16870196163654327,
+          0.0833652913570404,
+          0.09787474572658539
+        ],
+        "extents": [
+          0.019614502787590027,
+          0.019207559525966644,
+          0.013454422354698181
+        ]
+      }
+    ]
+  },
+  "images": [
+    {
+      "index": 0,
+      "role": "baseColor",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "encoded_sha256": "a0cc3ae7893da4c05d35d34037e4b43ba0fd4ebb6c4e111dd5f33837c66e33bf",
+      "decoded_pixel_sha256": "d4a10eeb56bc0ad50a3798cc34d1275e4d10fcd0fd0a23544cec9270bf6daa31",
+      "channels": {
+        "R": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 5.0,
+            "10": 11.0,
+            "50": 29.0,
+            "90": 136.0,
+            "99": 212.0,
+            "100": 255.0
+          },
+          "mean": 50.692676067352295,
+          "standard_deviation": 51.89195052289206
+        },
+        "G": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 8.0,
+            "10": 14.0,
+            "50": 33.0,
+            "90": 142.0,
+            "99": 218.0,
+            "100": 255.0
+          },
+          "mean": 55.18021869659424,
+          "standard_deviation": 52.92164892465187
+        },
+        "B": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 7.0,
+            "10": 13.0,
+            "50": 35.0,
+            "90": 145.0,
+            "99": 224.0,
+            "100": 255.0
+          },
+          "mean": 56.70398235321045,
+          "standard_deviation": 54.42494006848388
+        },
+        "A": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 254.0,
+            "10": 254.0,
+            "50": 255.0,
+            "90": 255.0,
+            "99": 255.0,
+            "100": 255.0
+          },
+          "mean": 254.65185713768005,
+          "standard_deviation": 0.5916028347888069
+        }
+      },
+      "note": "Image-wide stats include atlas padding; channel values are untransformed 8-bit decoded bytes."
+    },
+    {
+      "index": 1,
+      "role": "metallicRoughness (G roughness, B metallic)",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "encoded_sha256": "429309c4d3513273b55a88c0c6a56e04c31aab8c59b46caa1395d7eb3a615f6f",
+      "decoded_pixel_sha256": "f03618d2ff43408c14cb8e5cd3759b65e37dd028cb518bc74591f98e30a7c328",
+      "channels": {
+        "R": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 0.0,
+            "10": 0.0,
+            "50": 0.0,
+            "90": 3.0,
+            "99": 15.0,
+            "100": 54.0
+          },
+          "mean": 1.0781373977661133,
+          "standard_deviation": 2.8369016190475858
+        },
+        "G": {
+          "quantiles": {
+            "0": 34.0,
+            "1": 66.0,
+            "10": 86.0,
+            "50": 180.0,
+            "90": 231.0,
+            "99": 234.0,
+            "100": 252.0
+          },
+          "mean": 166.06893658638,
+          "standard_deviation": 59.52272293538402
+        },
+        "B": {
+          "quantiles": {
+            "0": 0.0,
+            "1": 3.0,
+            "10": 15.0,
+            "50": 37.0,
+            "90": 109.0,
+            "99": 153.0,
+            "100": 193.0
+          },
+          "mean": 49.09156394004822,
+          "standard_deviation": 37.2139378283139
+        }
+      },
+      "note": "Image-wide stats include atlas padding; channel values are untransformed 8-bit decoded bytes."
+    }
+  ]
+}
