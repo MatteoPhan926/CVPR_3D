@@ -1,5 +1,14 @@
 # Download index
 
+**Final payload: EXTERNALLY_VERIFIED — 173 files.**
+
+- [Download the complete current-phase ZIP](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c7adefe9f4176859867bc711172447f6871e1d87/trellis2_route_resolution_20261009/checkpoints/03_final_delivery.zip), 14,281,548 bytes.
+- Immutable data commit: `c7adefe9f4176859867bc711172447f6871e1d87`.
+- ZIP SHA-256: `f57248e2c1b95c94555dbc0dd3fbb07ef571f509eb599d5ae151b532013c5c22`.
+- [Manifest](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c7adefe9f4176859867bc711172447f6871e1d87/trellis2_route_resolution_20261009/checkpoints/03_final_delivery.manifest.json), [external download/member verification](checkpoints/03_final_delivery.verification.json), [independent Git-object read-back](checkpoints/03_final_delivery.git_verification.json).
+
+The archive and every payload member were downloaded, safely extracted into a new directory and hashed. A separate fresh bare Git fetch confirmed the commit and exact archive blob. Later receipt files and this updated index are stored separately from the immutable payload, avoiding a self-referential archive. No new phase result remains local-only at final receipt publication. Zero image-upload counts refer to generation-provider operations; authorized GitHub backup transfers include the preserved input.
+
 Branch: [trellis2-route-resolution-20261009](https://github.com/MatteoPhan926/CVPR_3D/tree/trellis2-route-resolution-20261009/trellis2_route_resolution_20261009).
 
 Final payload is `checkpoints/03_final_delivery.zip`, with its adjacent manifest and later verification receipt. Receipts are stored outside their own archives; they name immutable data commits and URLs. This index is updated after external read-back.

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-09T15:25:51.106990+00:00",
+  "checkpoint_commit": "c7adefe9f4176859867bc711172447f6871e1d87",
+  "verified": true,
+  "archive_sha256": "f57248e2c1b95c94555dbc0dd3fbb07ef571f509eb599d5ae151b532013c5c22",
+  "method": "Fresh independent bare Git repo; depth1 blob-filtered fetch; commit object inspected; archive blob read and compared byte-for-byte; no checkout/worktree.",
+  "temporary_verification_repository": "/tmp/route-git-readback-_e3dyn3m"
+}
