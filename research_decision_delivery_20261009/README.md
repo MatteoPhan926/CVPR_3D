@@ -2,6 +2,10 @@
 
 **Đã có output nghiên cứu và bản tổng hợp quyết định. Chưa có method CVPR/ICCV được chứng minh.**
 
+**[Tải gói báo cáo + handoff + bằng chứng chọn lọc — ZIP 4,35 MB](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/RESEARCH_DECISION_OUTPUT_20261009.zip)**
+
+[Biên bản tải lại và kiểm chứng](DELIVERY_VERIFICATION.json) · [Các link artifact lớn](DOWNLOADS.md)
+
 Quyết định: **đổi trọng tâm sang đo giá trị của một thao tác downstream cụ thể; chưa đầu tư một method mới.** Giữ các kiểm tra và cải thiện kỹ thuật đã đo được. Không tiếp tục biến việc sửa chiếc xe thành chiến dịch tìm novelty.
 
 - [Báo cáo nghiên cứu đầy đủ](RESEARCH_DECISION.md)

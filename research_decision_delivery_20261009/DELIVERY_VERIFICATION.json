@@ -1,0 +1,71 @@
+{
+  "status": "EXTERNALLY_VERIFIED",
+  "date_timezone": "Asia/Bangkok",
+  "verified_at_utc": "2026-10-09T00:10:39.763901+00:00",
+  "data_commit": "c344c863aab527bececa307b29547e96597a0725",
+  "branch": "research-decision-handoff-20261009",
+  "remote_ref_matches": true,
+  "archive_sha256": "764eec7ccd424fbe7c6f731e5236f65e5362cd85ebac142145cd9d6f3ab44933",
+  "archive_bytes": 4351865,
+  "payload_files_verified": 52,
+  "manifest_verified": true,
+  "downloads": [
+    {
+      "path": "DELIVERY_PACKAGE.json",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/DELIVERY_PACKAGE.json",
+      "bytes": 518,
+      "sha256": "15f78afbaaa3f868cba455d51dbd0829f4ba2455eb8464481408a5e4e3dca847",
+      "readback": "passed"
+    },
+    {
+      "path": "DELIVERY_MANIFEST.json",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/DELIVERY_MANIFEST.json",
+      "bytes": 9785,
+      "sha256": "c3f20bd6d38db652cafdb6cd0d01676cb596c6c630063d509f8354018bf708e5",
+      "readback": "passed"
+    },
+    {
+      "path": "RESEARCH_DECISION_OUTPUT_20261009.zip",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/RESEARCH_DECISION_OUTPUT_20261009.zip",
+      "bytes": 4351865,
+      "sha256": "764eec7ccd424fbe7c6f731e5236f65e5362cd85ebac142145cd9d6f3ab44933",
+      "readback": "passed"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/README.md",
+      "bytes": 4608,
+      "sha256": "9c3cfe4473e417e5af8838cf8a0456a9176142605cc6605a9c467e6cb05f4975",
+      "readback": "passed"
+    },
+    {
+      "path": "RESEARCH_DECISION.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/RESEARCH_DECISION.md",
+      "bytes": 13545,
+      "sha256": "f253c473a3f0a45b5bd2edb19d137eedfb593638229473bc5c8aa71619029ced",
+      "readback": "passed"
+    },
+    {
+      "path": "SECRETARY_HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/SECRETARY_HANDOFF.md",
+      "bytes": 8066,
+      "sha256": "b402b010356ea4bd6abd21c8df828c3b19c5a6cfe499670e946304887072a131",
+      "readback": "passed"
+    },
+    {
+      "path": "REVIEWS.md",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/REVIEWS.md",
+      "bytes": 3917,
+      "sha256": "ddf913f2f5ff1f35ebed31f519ab2217c8b633c2a25ada2bdfb467943f512ef5",
+      "readback": "passed"
+    }
+  ],
+  "failed_attempts": [],
+  "verification_method": "Fresh HTTPS downloads, comparison with committed bytes, full ZIP membership/size/hash checks, extraction into a new directory and every payload SHA256 checked. Report and secretary handoff additionally read back individually.",
+  "new_experiments": 0,
+  "secretary_delivery": "SECRETARY_HANDOFF.md on GitHub as requested; no external account messaged.",
+  "full_artifact_checkpoint": "5c72b2bf61b00af67ace1ebd11bbda03d3015095",
+  "full_artifact_coverage": "Five previously verified ZIPs, 813 payload files including all three latents. Compact delivery contains selected evidence plus final synthesis, not a duplicate of every large artifact.",
+  "remaining_unprotected_deliverable_files": [],
+  "limits": "Publication/readback verifies bytes and delivery. It does not turn failed experiments into passes or establish a CVPR/ICCV contribution."
+}

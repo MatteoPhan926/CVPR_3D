@@ -75,3 +75,9 @@ Protect each new milestone externally before expensive continuation. Commit/push
 
 Restore into a new directory, never over current files. Original diagnostic scripts often write into their own directories; do not execute them against frozen evidence as a “recovery check.” If later authorized, use new versioned output paths. Installed environments, upstream weight downloads, credentials and VM state were explicitly excluded from portable artifact backup; generated latent/mesh/array evidence was retained. Report any new missing files rather than regenerating them silently.
 
+
+## Publication receipt
+
+Immutable delivery data commit: `c344c863aab527bececa307b29547e96597a0725`.
+
+[Download compact output ZIP](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/c344c863aab527bececa307b29547e96597a0725/research_decision_delivery_20261009/RESEARCH_DECISION_OUTPUT_20261009.zip). SHA-256: `764eec7ccd424fbe7c6f731e5236f65e5362cd85ebac142145cd9d6f3ab44933`. All 52 payload files and the manifest were verified after fresh download. [DELIVERY_VERIFICATION.json](DELIVERY_VERIFICATION.json) records that read-back; full artifacts remain separately indexed in [DOWNLOADS.md](DOWNLOADS.md).
