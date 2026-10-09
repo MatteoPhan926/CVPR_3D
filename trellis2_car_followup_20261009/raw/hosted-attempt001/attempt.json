@@ -1,7 +1,7 @@
 {
   "phase": "trellis2_car_followup_20261009",
   "started_utc": "2026-10-09T05:19:55.767763+00:00",
-  "status": "awaiting_generation_checkpoint_verified.json",
+  "status": "failed",
   "events": [
     {
       "stage": "awaiting_initial_checkpoint_verified.json",
@@ -49,9 +49,24 @@
         "processed_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86",
         "plan_sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
       }
+    },
+    {
+      "stage": "call_started",
+      "utc": "2026-10-09T05:21:10.417271+00:00",
+      "api": "/image_to_3d",
+      "budget_seconds": 1200
+    },
+    {
+      "stage": "failed",
+      "utc": "2026-10-09T05:21:11.308907+00:00",
+      "failure_stage": "generation",
+      "classification": "service_admission_blocked",
+      "error_type": "AppError",
+      "message": "You have exceeded your ZeroGPU quota (120s requested vs. 176s left). Try again in 0:55:19. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+      "elapsed_total_seconds": 75.54114201099947
     }
   ],
-  "generation_requests": 0,
+  "generation_requests": 1,
   "export_requests": 0,
   "successful_generation_returns": 0,
   "downloaded_glbs": 0

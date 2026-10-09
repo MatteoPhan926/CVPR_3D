@@ -1,0 +1,175 @@
+{
+  "name": "04_admission_blocked",
+  "utc": "2026-10-09T05:21:43.707771+00:00",
+  "archive": "04_admission_blocked.zip",
+  "archive_bytes": 386760,
+  "archive_sha256": "b4132fceb6e3706f225970f48165b0be4ee7e6a894cb2faa87d91af7e6707004",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "bytes": 1730,
+      "sha256": "65479925187bf0c647fce782c42865264e5d65b292d06cf30e264de3198933b7"
+    },
+    {
+      "path": "config/HISTORICAL_HOSTED_PLAN.json",
+      "bytes": 1860,
+      "sha256": "93bcd6a8d7d0277c4c91ad089c1ce987b0f4462808686f579a69d22973fe1aa7"
+    },
+    {
+      "path": "config/INHERITED_AUTHORING_INTENT.md",
+      "bytes": 2678,
+      "sha256": "f33203ba0849b46407d3d124025b685ea5c1606e0b92c905f319666e35788aa3"
+    },
+    {
+      "path": "config/generation_checkpoint_verified.json",
+      "bytes": 1079,
+      "sha256": "ffa0c4d272fe7fbd3041301e808b935e6469afbde9ca1c6a8a0bdafadf4ad9c5"
+    },
+    {
+      "path": "config/generation_plan.json",
+      "bytes": 4414,
+      "sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
+    },
+    {
+      "path": "config/initial_checkpoint_verified.json",
+      "bytes": 997,
+      "sha256": "d711202943ba2d6050a5a8279a15c0fa983491431807d77c11eafe2061cdcada"
+    },
+    {
+      "path": "config/phase_identity.json",
+      "bytes": 696,
+      "sha256": "76246efa879055e4f0fec52d02b6e0ac34782244451d7d3ca2a0d0819e093cf4"
+    },
+    {
+      "path": "config/preprocessing_review.json",
+      "bytes": 841,
+      "sha256": "16af314fe6f6e1c2717daaafae561ac5a8375ed489038a2fc0350d66dea71701"
+    },
+    {
+      "path": "inputs/hosted_preprocessed.png",
+      "bytes": 142468,
+      "sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86"
+    },
+    {
+      "path": "inputs/original.jpg",
+      "bytes": 39937,
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"
+    },
+    {
+      "path": "logs/hosted-attempt001-after-import-fix.log",
+      "bytes": 4130,
+      "sha256": "1d017720f8884d9fb2712de514c50dbb426cdd06e7bf2795fe11859511ae3d76"
+    },
+    {
+      "path": "logs/hosted-attempt001.log",
+      "bytes": 211,
+      "sha256": "90a38dabfd8e3b560c07b8b058755cfa935a5b826127d2da9a8036611bae9b84"
+    },
+    {
+      "path": "raw/hosted-attempt001/attempt.json",
+      "bytes": 2455,
+      "sha256": "b3157ddd5e56ff3808ea414233271dc79b17c53e1f074c072672d681825e40ea"
+    },
+    {
+      "path": "raw/hosted-attempt001/downloads/d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86/image.png",
+      "bytes": 142468,
+      "sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86"
+    },
+    {
+      "path": "raw/hosted-attempt001/failure_traceback.txt",
+      "bytes": 2306,
+      "sha256": "08e6db25e0ffb4ec40ccb0908a67738919839077f17f907ba310f45a3ac56e8f"
+    },
+    {
+      "path": "raw/hosted-attempt001/generation_requested.json",
+      "bytes": 4686,
+      "sha256": "6f9ace61adf68be4fe868be6c90ba625797a15807e13093abf4bd42edd964d66"
+    },
+    {
+      "path": "raw/hosted-attempt001/preprocessing_return.json",
+      "bytes": 348,
+      "sha256": "2287f4b695dba5ec510f802c26e99d87e06ba409aa238b777528fb28a804ceb9"
+    },
+    {
+      "path": "research/CLIENT_REVIEW.md",
+      "bytes": 700,
+      "sha256": "b06340103685299461230d58588fc001fa86f81b4857eaa2d4dc0c797bec3109"
+    },
+    {
+      "path": "research/HISTORICAL_HOSTED_ATTEMPT.json",
+      "bytes": 1176,
+      "sha256": "981981de721d2398461f1d5a6b457e3cf338fc48674ca230ae7c1ef362865078"
+    },
+    {
+      "path": "research/HISTORICAL_HOSTED_CLIENT.py",
+      "bytes": 4183,
+      "sha256": "52a7d9ced93fc576b7a1072cd46ff1ebe369e431e33c5e6294300a267df0f9ea"
+    },
+    {
+      "path": "research/client_startup_correction.json",
+      "bytes": 719,
+      "sha256": "cc979c0fe952a6f7f1915a1a36aafa5d2c46eb3a4d97f7c0cd15105167b4df79"
+    },
+    {
+      "path": "research/current_access_receipts.json",
+      "bytes": 1462,
+      "sha256": "521d8cac6184ab7f036585507b75e104bec6203a34033c4ded039601b53c046d"
+    },
+    {
+      "path": "research/model_live.json",
+      "bytes": 4304,
+      "sha256": "c05291dd79b38fe7439971f963c6207e8ffa4e0e854599bdbcb05c3ea35e0a5c"
+    },
+    {
+      "path": "research/official_readme.md",
+      "bytes": 16212,
+      "sha256": "adc985d5a71fda0a5cb7287f58b6baa7de8db1568c4483ac210f3447b786552b"
+    },
+    {
+      "path": "research/runtime_readiness.json",
+      "bytes": 509,
+      "sha256": "e2fff3e521e5048aafeb46fb85582e64087aadaa9984c4984a3a71cdb8f63519"
+    },
+    {
+      "path": "research/space_api.json",
+      "bytes": 14118,
+      "sha256": "f5f50dbe6f7932ef9c633df4ce0dde4af26b1e9982866b33dd5dc5f5d2abdc54"
+    },
+    {
+      "path": "research/space_app_pinned.py",
+      "bytes": 23014,
+      "sha256": "97edffac5d1c78992643551cc2d7daab6d9b3d7c0f049ddb5d9640ad11cfd4c3"
+    },
+    {
+      "path": "research/space_app_receipt.json",
+      "bytes": 276,
+      "sha256": "13c47733ab5e34856b1c4b8e83db783a3f9357575eb2cca8311a9eb404935e34"
+    },
+    {
+      "path": "research/space_config.json",
+      "bytes": 88394,
+      "sha256": "784450c322bfbdf22a3cf57844b1bc494551b783fbf5966f0b84c6c57815a335"
+    },
+    {
+      "path": "research/space_live.json",
+      "bytes": 13757,
+      "sha256": "679e9b39051ddb74eaf1dae638035e903e4f29523e2654f820a543ceae8bb4c4"
+    },
+    {
+      "path": "source/checkpoint.py",
+      "bytes": 4171,
+      "sha256": "714d611340e4072e073fc9049704cb45f0e314aaeca0d06d68030749f08fd25a"
+    },
+    {
+      "path": "source/hosted_followup.py",
+      "bytes": 7483,
+      "sha256": "b85df00415d1d71381fe094b883152d9aa6edef22d256b0b8e7d92085aa8dc5c"
+    }
+  ],
+  "excluded": [
+    "Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)",
+    "External installed environments/model weights",
+    "Server-held unexposed latent state"
+  ],
+  "original_evidence": "Original probe and prior research remain unchanged and separately checkpointed."
+}

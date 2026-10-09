@@ -1,0 +1,14 @@
+{
+  "externally_verified": true,
+  "checkpoint_commit": "5f0c51b9dbb884e9ca1e3504ef00c459965c1b39",
+  "utc": "2026-10-09T05:20:41.663322+00:00",
+  "archive_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/5f0c51b9dbb884e9ca1e3504ef00c459965c1b39/trellis2_car_followup_20261009/checkpoints/03_preprocessing.zip",
+  "manifest_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/5f0c51b9dbb884e9ca1e3504ef00c459965c1b39/trellis2_car_followup_20261009/checkpoints/03_preprocessing.manifest.json",
+  "archive_sha256": "3b89d8d25a64d3cd4dfacb98a68e3add0de77a4ed0bfe903dcbc45c458117bf0",
+  "verified_payload_files": 29,
+  "fresh_download_directory": "/tmp/trellis-readback-onak5mwm",
+  "verification": "Fresh immutable HTTPS downloads; archive and every member SHA-256; safe extraction and reread.",
+  "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "processed_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86",
+  "plan_sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
+}
