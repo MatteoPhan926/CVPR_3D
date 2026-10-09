@@ -1,0 +1,22 @@
+{
+  "status": "saved",
+  "requires_publish": true,
+  "draft_id": "9a9e1390-e89c-4f99-be30-505b6d44e80a~cecfgdraft_6ac87a58b93c8190bc52d28b115f6e9f",
+  "start_skill_exact_readback_match": true,
+  "secret_names_declared": [
+    "HF_TOKEN"
+  ],
+  "required_secret": "HF_TOKEN",
+  "https_destinations": [
+    "huggingface.co",
+    "microsoft-trellis-2.hf.space"
+  ],
+  "install_script_changed": false,
+  "network_policy": {
+    "type": "unrestricted"
+  },
+  "credentials_supplied": false,
+  "authenticated_execution_validated": false,
+  "publication_verified": false,
+  "note": "Secret binding declaration and startup draft persistence only; no credential value, runtime injection, GPU allocation or fresh-task restore has been established."
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://huggingface.co/api/spaces/microsoft/TRELLIS.2",
+  "utc": "2026-10-09T05:24:44.429305+00:00",
+  "http_status": 200,
+  "sha256": "679e9b39051ddb74eaf1dae638035e903e4f29523e2654f820a543ceae8bb4c4",
+  "space_revision": "ebf60b20fc5a4607f90a1c11c0aab0ceeda5429d",
+  "runtime": {
+    "stage": "RUNNING",
+    "hardware": {
+      "current": "zero-a10g",
+      "requested": "zero-a10g"
+    },
+    "gcTimeout": 172800,
+    "replicas": {
+      "current": 1,
+      "requested": "auto"
+    },
+    "devMode": false,
+    "domains": [
+      {
+        "domain": "microsoft-trellis-2.hf.space",
+        "stage": "READY"
+      }
+    ],
+    "sha": "ebf60b20fc5a4607f90a1c11c0aab0ceeda5429d",
+    "pySpacesVersion": "0.50.2"
+  },
+  "note": "Read-only service metadata after the rejected request. RUNNING is not GPU admission or inference success."
+}

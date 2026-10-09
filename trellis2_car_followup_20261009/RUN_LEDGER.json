@@ -1,0 +1,52 @@
+{
+  "phase": "trellis2_car_followup_20261009",
+  "scope": "Same original image and authoring intent; official TRELLIS.2 only",
+  "outcome": "blocked_at_service_admission_no_candidate",
+  "original_input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "processed_input_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86",
+  "frozen_plan_sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13",
+  "local_startup_failures": 1,
+  "hosted_sessions_started": 1,
+  "preprocessing_successes": 1,
+  "generation_requests": 1,
+  "successful_generation_returns": 0,
+  "export_requests": 0,
+  "downloaded_glbs": 0,
+  "generation_request_to_rejection_seconds": 0.891636,
+  "elapsed_including_checkpoint_waits_seconds": 75.54114201099947,
+  "elapsed_is_not_inference_runtime": true,
+  "exact_service_error": "You have exceeded your ZeroGPU quota (120s requested vs. 176s left). Try again in 0:55:19. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens",
+  "new_preview_exists": false,
+  "new_glb_files": [],
+  "server_inference_telemetry_available": false,
+  "source_revision_observed_after_attempt": "ebf60b20fc5a4607f90a1c11c0aab0ceeda5429d",
+  "stages": [
+    {
+      "stage": "initial local launcher",
+      "status": "failed_before_client_creation_then_corrected",
+      "evidence": "logs/hosted-attempt001.log"
+    },
+    {
+      "stage": "official preprocessing",
+      "status": "completed_and_visually_reviewed",
+      "evidence": "config/preprocessing_review.json"
+    },
+    {
+      "stage": "generation request",
+      "status": "rejected_service_reported_quota",
+      "evidence": "raw/hosted-attempt001/attempt.json"
+    },
+    {
+      "stage": "GPU export",
+      "status": "unrun"
+    },
+    {
+      "stage": "asset preparation, materials, motion, visual-use evaluation",
+      "status": "unrun_no_asset"
+    },
+    {
+      "stage": "separate non-car revision study",
+      "status": "unstarted"
+    }
+  ]
+}

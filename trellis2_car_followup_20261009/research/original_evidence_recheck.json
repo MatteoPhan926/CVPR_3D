@@ -1,0 +1,29 @@
+{
+  "scope": "Four critical original artifacts rehashed, not a claim of a fresh complete 813-file verification. Full earlier external recovery remains separately verified.",
+  "files": [
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/inputs/original.jpg",
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+      "expected_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+      "matches": true
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/raw/car_raw.glb",
+      "sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "expected_sha256": "5bd4ab3776084c5586201abd0d3be36416b3331cb28295d8d066ac7ac7beac3d",
+      "matches": true
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/raw/cpu-attempt001/scene_codes.pt",
+      "sha256": "a57eab70b278aaf888020cd916e3562985300026c9973399a1a81625cbf42b00",
+      "expected_sha256": "a57eab70b278aaf888020cd916e3562985300026c9973399a1a81625cbf42b00",
+      "matches": true
+    },
+    {
+      "path": "/workspace/image_to_usable_car_probe_20261007/artifacts/car_authored.glb",
+      "sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+      "expected_sha256": "a94dd03d1c425832c2879c242ac7dd1f571c05c308ea27fceccbfe30285853a6",
+      "matches": true
+    }
+  ]
+}
