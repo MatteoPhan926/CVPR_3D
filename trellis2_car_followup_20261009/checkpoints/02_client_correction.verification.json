@@ -7,7 +7,5 @@
   "archive_sha256": "fa287ea775888d5ffc84812ea2c895c515c65534e5bb5745a642f9c4a6b02a30",
   "verified_payload_files": 22,
   "fresh_download_directory": "/tmp/trellis-readback-cosnlopn",
-  "verification": "Fresh immutable HTTPS downloads; archive and every member SHA-256; safe extraction and reread.",
-  "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
-  "plan_sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
+  "verification": "Fresh immutable HTTPS downloads; archive and every member SHA-256; safe extraction and reread."
 }
