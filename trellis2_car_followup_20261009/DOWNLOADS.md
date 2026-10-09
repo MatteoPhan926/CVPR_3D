@@ -1,5 +1,13 @@
 # Downloads and external checkpoints
 
+**Final payload: EXTERNALLY_VERIFIED, 42 files.**
+
+- [Download complete current-phase handoff ZIP](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/8e1dd9ad78fa97ca89c7f27db48e8cc7fa9b5df6/trellis2_car_followup_20261009/checkpoints/05_final_delivery.zip) — 406,744 bytes.
+- Immutable data commit: `8e1dd9ad78fa97ca89c7f27db48e8cc7fa9b5df6`.
+- SHA-256: `e4167eda3846b046d54a9b1a236886f066e31cceef2e8faf876e56758b9a09f1`.
+- [Manifest](https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/8e1dd9ad78fa97ca89c7f27db48e8cc7fa9b5df6/trellis2_car_followup_20261009/checkpoints/05_final_delivery.manifest.json), [HTTPS read-back receipt](checkpoints/05_final_delivery.verification.json), [independent Git-object check](checkpoints/05_final_delivery.git_verification.json).
+- All 42 payload files were downloaded, safely extracted into a fresh directory and checked against their SHA-256 values. No local result is omitted from this phase's payload. Final verification receipts and this updated index are stored separately in the subsequent receipt commit to avoid a self-referential archive.
+
 Repository branch: [trellis2-car-followup-20261009](https://github.com/MatteoPhan926/CVPR_3D/tree/trellis2-car-followup-20261009/trellis2_car_followup_20261009).
 
 For the complete handoff, use `checkpoints/05_final_delivery.zip` and its adjacent manifest and verification receipt. The receipt names its immutable data commit and download URL; a ZIP does not contain its own later verification receipt. All earlier archives and receipts remain separately retained in Git. Download verification means a fresh external HTTPS download, whole-archive hash, every member hash, safe extraction into a new directory and reread.

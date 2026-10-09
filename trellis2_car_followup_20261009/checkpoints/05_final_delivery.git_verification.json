@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-09T05:28:51.518312+00:00",
+  "checkpoint_commit": "8e1dd9ad78fa97ca89c7f27db48e8cc7fa9b5df6",
+  "verified": true,
+  "method": "Independent fresh bare Git repository; depth-1 blob-filtered fetch; commit object inspected; archive blob fetched and compared byte-for-byte. No checkout or worktree.",
+  "archive_sha256": "e4167eda3846b046d54a9b1a236886f066e31cceef2e8faf876e56758b9a09f1",
+  "temporary_verification_repository": "/tmp/trellis-git-readback-d942zkfm",
+  "git_object_archive_path": "trellis2_car_followup_20261009/checkpoints/05_final_delivery.zip"
+}
