@@ -1,0 +1,33 @@
+{
+  "output": "/workspace/CVPR_3D/research_decision_delivery_20261009/DERIVED_SUMMARY.json",
+  "activation": "exp",
+  "cases": {
+    "car": {
+      "MAE": {
+        "raw_geometry_raw_rgb": 0.06439863376529746,
+        "raw_geometry_refined_rgb": 0.0581607220164237,
+        "refined_geometry_raw_rgb": 0.06466422857351484,
+        "refined_geometry_refined_rgb": 0.057307231425467134
+      },
+      "relative_reduction": 0.11011727928382975
+    },
+    "teapot": {
+      "MAE": {
+        "raw_geometry_raw_rgb": 0.04055222452317589,
+        "raw_geometry_refined_rgb": 0.03833470612257685,
+        "refined_geometry_raw_rgb": 0.04019370219113532,
+        "refined_geometry_refined_rgb": 0.03779693913025188
+      },
+      "relative_reduction": 0.06794412452883669
+    },
+    "hamburger": {
+      "MAE": {
+        "raw_geometry_raw_rgb": 0.0592236508679008,
+        "raw_geometry_refined_rgb": 0.049747463487746675,
+        "refined_geometry_raw_rgb": 0.058243740623837914,
+        "refined_geometry_refined_rgb": 0.048340933758757434
+      },
+      "relative_reduction": 0.1837562688159402
+    }
+  }
+}

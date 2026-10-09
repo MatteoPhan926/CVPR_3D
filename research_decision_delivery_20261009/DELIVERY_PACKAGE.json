@@ -1,0 +1,10 @@
+{
+  "status_at_creation": "LOCAL_PACKAGED_AWAITING_EXTERNAL_READBACK",
+  "archive": "RESEARCH_DECISION_OUTPUT_20261009.zip",
+  "bytes": 4351865,
+  "sha256": "764eec7ccd424fbe7c6f731e5236f65e5362cd85ebac142145cd9d6f3ab44933",
+  "payload_file_count": 52,
+  "manifest_sha256": "c3f20bd6d38db652cafdb6cd0d01676cb596c6c630063d509f8354018bf708e5",
+  "external_verification": "See DELIVERY_VERIFICATION.json in the published branch after read-back.",
+  "baseline_recovery_commit": "5c72b2bf61b00af67ace1ebd11bbda03d3015095"
+}

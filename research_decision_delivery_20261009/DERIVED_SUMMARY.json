@@ -1,0 +1,166 @@
+{
+  "created_at_utc": "2026-10-09T00:03:54.821112+00:00",
+  "operation": "Arithmetic and assertions over retained JSON/config only",
+  "new_encoder_calls": 0,
+  "new_field_queries": 0,
+  "new_renders": 0,
+  "extraction_cases": {
+    "car": {
+      "vertices": 53904,
+      "faces": 107608,
+      "native_field_MAE": {
+        "raw_geometry_raw_rgb": 0.06439863376529746,
+        "raw_geometry_refined_rgb": 0.0581607220164237,
+        "refined_geometry_raw_rgb": 0.06466422857351484,
+        "refined_geometry_refined_rgb": 0.057307231425467134
+      },
+      "joint_relative_MAE_reduction": 0.11011727928382975,
+      "rgb_only_fraction_of_joint_reduction": 0.8796443143321935,
+      "crossed_control_limit": "Sensitivity comparison, not additive causal attribution; refined RGB still sampled at refined positions.",
+      "original_density_residual_mean": 4.192977428436279,
+      "refined_density_residual_mean": 0.01026434637606144,
+      "mean_displacement_model_units": 0.0007342875238208932,
+      "mean_displacement_fraction_cell": 0.107611102628924,
+      "refinement_queries_and_rgb_seconds": 0.6260086029942613,
+      "refinement_and_export_seconds": 2.032844806992216,
+      "minimum_mesh_to_mesh_silhouette_IoU": 0.9907120743034056,
+      "full_image_relative_MAE_reduction": 0.09442348059012828,
+      "negative_original_refined_normal_dot_count": 0,
+      "faces_array_exact": true
+    },
+    "teapot": {
+      "vertices": 40336,
+      "faces": 80544,
+      "native_field_MAE": {
+        "raw_geometry_raw_rgb": 0.04055222452317589,
+        "raw_geometry_refined_rgb": 0.03833470612257685,
+        "refined_geometry_raw_rgb": 0.04019370219113532,
+        "refined_geometry_refined_rgb": 0.03779693913025188
+      },
+      "joint_relative_MAE_reduction": 0.06794412452883669,
+      "rgb_only_fraction_of_joint_reduction": 0.8048234880836539,
+      "crossed_control_limit": "Sensitivity comparison, not additive causal attribution; refined RGB still sampled at refined positions.",
+      "original_density_residual_mean": 2.8946962356567383,
+      "refined_density_residual_mean": 0.008515414781868458,
+      "mean_displacement_model_units": 0.0005032157578213663,
+      "mean_displacement_fraction_cell": 0.07374713692209679,
+      "refinement_queries_and_rgb_seconds": 0.48851302699767984,
+      "refinement_and_export_seconds": 0.9227618889999576,
+      "minimum_mesh_to_mesh_silhouette_IoU": 0.9915373765867419,
+      "full_image_relative_MAE_reduction": 0.04281908582053606,
+      "negative_original_refined_normal_dot_count": 0,
+      "faces_array_exact": true
+    },
+    "hamburger": {
+      "vertices": 55715,
+      "faces": 111172,
+      "native_field_MAE": {
+        "raw_geometry_raw_rgb": 0.0592236508679008,
+        "raw_geometry_refined_rgb": 0.049747463487746675,
+        "refined_geometry_raw_rgb": 0.058243740623837914,
+        "refined_geometry_refined_rgb": 0.048340933758757434
+      },
+      "joint_relative_MAE_reduction": 0.1837562688159402,
+      "rgb_only_fraction_of_joint_reduction": 0.870755647244794,
+      "crossed_control_limit": "Sensitivity comparison, not additive causal attribution; refined RGB still sampled at refined positions.",
+      "original_density_residual_mean": 6.25230073928833,
+      "refined_density_residual_mean": 0.013338202610611916,
+      "mean_displacement_model_units": 0.0008807698218706665,
+      "mean_displacement_fraction_cell": 0.12907833596380458,
+      "refinement_queries_and_rgb_seconds": 0.919519405986648,
+      "refinement_and_export_seconds": 1.5929372279788367,
+      "minimum_mesh_to_mesh_silhouette_IoU": 0.992550835514395,
+      "full_image_relative_MAE_reduction": 0.15235246714691741,
+      "negative_original_refined_normal_dot_count": 0,
+      "faces_array_exact": true
+    }
+  },
+  "authoring": {
+    "prior_display_material": {
+      "side": {
+        "RGB_MAE": 0.13833220955524514,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 1.5088453143412188
+      },
+      "hero": {
+        "RGB_MAE": 0.14585411027940792,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 1.4202485809722052
+      }
+    },
+    "flat_partition": {
+      "side": {
+        "RGB_MAE": 1.0882643536169874e-05,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 0.9999989133964944
+      },
+      "hero": {
+        "RGB_MAE": 1.6440776536760653e-05,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 1.0000052288535732
+      }
+    },
+    "smooth_partition": {
+      "side": {
+        "RGB_MAE": 0.0001204131772878365,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 0.9999122104117707
+      },
+      "hero": {
+        "RGB_MAE": 0.00020159848462884036,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 0.9999609260409876
+      }
+    },
+    "complete_closed_pipeline": {
+      "side": {
+        "RGB_MAE": 0.006528659676451967,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 1.007014028688751
+      },
+      "hero": {
+        "RGB_MAE": 0.007502872303715491,
+        "silhouette_IoU": 1.0,
+        "display_luma_ratio": 1.0001306832952808
+      }
+    }
+  },
+  "lower_selection_area_fraction": 0.14389669550244605,
+  "checkpoint_density_activation": "exp",
+  "saved_forward_replay": {
+    "purpose": "Independent replay of the audited exact processed input; no new GLB candidate, no extraction or selection.",
+    "forward_replays": 1,
+    "new_car_mesh_candidates": 0,
+    "torch": "2.5.1+cpu",
+    "threads": 4,
+    "seed": 42,
+    "weight_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+    "processed_sha256": "d8bfea522456e376988d98cbdfd8cdde7eb35e7454bd51ade8cf166b29fbdb06",
+    "saved_latent_sha256": "a57eab70b278aaf888020cd916e3562985300026c9973399a1a81625cbf42b00",
+    "shape": [
+      1,
+      3,
+      40,
+      64,
+      64
+    ],
+    "exact_tensor_equal": true,
+    "max_abs_error": 0.0,
+    "mean_abs_error": 0.0,
+    "forward_seconds": 15.300350645004073
+  },
+  "metric_limits": [
+    "Three already explored objects, three 160x160 views each for extraction, one model; views are not independent objects.",
+    "Common mask is intersection of original/refined raster masks, not ground-truth support.",
+    "Native-field reference is internal; no geometry truth or artist acceptance measured.",
+    "Signed mesh integral values on non-watertight meshes are not physical volume."
+  ],
+  "input_sha256": {
+    "extraction_control/verification_and_aggregate.json": "049f4986b9ac35c117ebfcd4e685f9447bc1ac07db0697b086e82ffea75905cb",
+    "extraction_control/results.json": "c1e1a9ccfae09572cefd874d877eab3f30a87ab632e59f46d9d13a39027f12dd",
+    "authoring_attribution/measurements/pixel_metrics.json": "5b9deb3dbaf53549578edae3bdcae64e2dad3ef5a58ae2a2dcb049188ef4e9c5",
+    "authoring_attribution/measurements/selection_components.json": "d8caacd94b24c355a703790227f43ff0128e51d7eb5e4088ecfd638821bf95c0",
+    "root_analysis/saved_forward_reproduction.json": "e59580085ee335e8791e91b20f0bf8744f9cdbd8b6ef836fc539abd620475cbc",
+    "checkpoint_configuration/checkpoint_config.yaml": "74ca708ce086bf68e97709ea6b3d91f14717921c04691e84043f0eb8fcc68e62"
+  }
+}

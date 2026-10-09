@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Bangkok",
+  "runs": [
+    {
+      "id": "audited_car_hosted",
+      "status": "BLOCKED_NO_OUTPUT",
+      "interpretation": "TRELLIS.2 hosted request hit quota before any candidate.",
+      "evidence": "Original probe hosted attempt in archive 03"
+    },
+    {
+      "id": "audited_car_cpu",
+      "status": "COMPLETED_HISTORICAL",
+      "interpretation": "One TripoSR CPU car candidate; informative partial authoring result, not CGI acceptance.",
+      "evidence": "Archive 03"
+    },
+    {
+      "id": "saved_forward_replay",
+      "status": "COMPLETED",
+      "interpretation": "One replay of retained processed car image; exact latent equality; no new mesh candidate.",
+      "evidence": "evidence/root_analysis/saved_forward_reproduction.json"
+    },
+    {
+      "id": "decoder_and_mesh_reproduction",
+      "status": "COMPLETED",
+      "interpretation": "Raw RGB/geometry consistent with saved latent; oriented triangle multiset checked.",
+      "evidence": "evidence/generation_execution/provenance_results.json"
+    },
+    {
+      "id": "authoring_attribution",
+      "status": "COMPLETED",
+      "interpretation": "Matched material/normal/partition controls; no semantic door label or artist study.",
+      "evidence": "evidence/authoring_attribution/measurements/pixel_metrics.json"
+    },
+    {
+      "id": "historical_contract_audit",
+      "status": "COMPLETED",
+      "interpretation": "Fresh file checks; historical chair execution record is not a fresh reproduction.",
+      "evidence": "evidence/history_opportunities/artifact_contract_measurements.json"
+    },
+    {
+      "id": "teapot_generation",
+      "status": "COMPLETED",
+      "interpretation": "One new non-car inference, fixed predeclared export control.",
+      "evidence": "evidence/root_analysis/holdouts/teapot/execution.json"
+    },
+    {
+      "id": "hamburger_generation",
+      "status": "COMPLETED",
+      "interpretation": "One new non-car inference, fixed predeclared export control.",
+      "evidence": "evidence/root_analysis/holdouts/hamburger/execution.json"
+    },
+    {
+      "id": "export_variant_creation",
+      "status": "COMPLETED_GEOMETRY_CHECKS_ONLY",
+      "interpretation": "Corrected/unlit/PBR files created; positions/indices preserved.",
+      "evidence": "evidence/root_analysis/exports/validation.json"
+    },
+    {
+      "id": "browser_export_validation",
+      "status": "FAILED",
+      "interpretation": "Readiness timeout after earlier missing-SciPy failure; no viewer-level pass.",
+      "evidence": "evidence/root_analysis/browser/verification.log"
+    },
+    {
+      "id": "edge_refinement",
+      "status": "COMPLETED",
+      "interpretation": "Three explored objects; ordinary bisection and refreshed RGB; internal native-field endpoint.",
+      "evidence": "evidence/extraction_control/results.json"
+    },
+    {
+      "id": "geometry_rgb_crossed_controls",
+      "status": "COMPLETED",
+      "interpretation": "Render-only sensitivity controls; no extra encoder or field queries in this stage.",
+      "evidence": "evidence/extraction_control/verification_and_aggregate.json"
+    },
+    {
+      "id": "log_density_comparator",
+      "status": "FAILED_BEFORE_COMPARISON",
+      "interpretation": "Wrong assertion requires trunc_exp; actual pinned config uses exp.",
+      "evidence": "evidence/extraction_control/log_density_run.log"
+    },
+    {
+      "id": "texture_bake_baseline",
+      "status": "NOT_RUN",
+      "interpretation": "Eligible released comparator; no result claimed.",
+      "evidence": "RESEARCH_DECISION.md"
+    },
+    {
+      "id": "artist_utility_or_time_saving",
+      "status": "NOT_MEASURED",
+      "interpretation": "No real-artist acceptance, human labor saving, or useful-workflow outcome has been demonstrated.",
+      "evidence": "RESEARCH_DECISION.md"
+    },
+    {
+      "id": "separate_car_experiment",
+      "status": "IDENTITY_AND_STATUS_UNKNOWN",
+      "interpretation": "Generator/contract/workspace/branch/run ID remain unknown. Do not duplicate or relabel.",
+      "evidence": "SECRETARY_HANDOFF.md"
+    },
+    {
+      "id": "proposed_noncar_revision",
+      "status": "PROPOSED_ONLY",
+      "interpretation": "No verified launch/asset/model/workspace; distinct from static-export controls.",
+      "evidence": "SECRETARY_HANDOFF.md"
+    },
+    {
+      "id": "next_downstream_pilot",
+      "status": "PROPOSED_NOT_STARTED",
+      "interpretation": "Task contract and competent baseline comparison first; no new experiment from this handoff.",
+      "evidence": "RESEARCH_DECISION.md"
+    },
+    {
+      "id": "recovery_checkpoint",
+      "status": "EXTERNALLY_VERIFIED",
+      "interpretation": "813 payload files downloaded and checked; three latents included.",
+      "evidence": "FULL_EVIDENCE.json"
+    },
+    {
+      "id": "final_synthesis",
+      "status": "DOCUMENTATION_AND_ARITHMETIC_ONLY",
+      "interpretation": "Two read-only reviews; actual config copied; derived arithmetic asserted against stored aggregates. Zero new model calls/renders.",
+      "evidence": "DERIVED_SUMMARY.json"
+    }
+  ],
+  "scientific_decision": "REFRAME_NO_CURRENT_METHOD_COMMITMENT",
+  "delivery_status": "See DELIVERY_VERIFICATION.json after publication."
+}

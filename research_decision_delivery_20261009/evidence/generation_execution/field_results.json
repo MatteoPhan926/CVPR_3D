@@ -1,0 +1,406 @@
+{
+  "encoder_inference_calls": 0,
+  "threads": 2,
+  "fixed_cameras": {
+    "azimuths": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300
+    ],
+    "elevation": 20,
+    "distance": 1.9,
+    "fovy": 40,
+    "pixels": 160
+  },
+  "meshes": {
+    "r256_t10": {
+      "vertices": 52928,
+      "faces": 105660,
+      "area": 1.7196364569353442,
+      "signed_volume": 0.10306219277104425,
+      "body_count": 3,
+      "euler_number": -86,
+      "watertight": false,
+      "bounds": [
+        [
+          -0.4977478086948395,
+          -0.5059810876846313,
+          -0.2348334789276123
+        ],
+        [
+          0.45341360569000244,
+          0.4186314344406128,
+          0.33726251125335693
+        ]
+      ],
+      "component_faces_desc": [
+        105644,
+        8,
+        8
+      ],
+      "density_at_vertices": {
+        "min": 0.10556460171937943,
+        "q01": 0.8516360825300217,
+        "q10": 3.5528566360473635,
+        "median": 8.4396333694458,
+        "q90": 9.964960765838624,
+        "q99": 11.952472181320182,
+        "max": 48.76340103149414,
+        "mean": 7.628723621368408
+      }
+    },
+    "r256_t25": {
+      "vertices": 53904,
+      "faces": 107608,
+      "area": 1.7337055452479913,
+      "signed_volume": 0.09788003017771492,
+      "body_count": 5,
+      "euler_number": -100,
+      "watertight": false,
+      "bounds": [
+        [
+          -0.4942989945411682,
+          -0.5020212531089783,
+          -0.23362606763839722
+        ],
+        [
+          0.451809287071228,
+          0.41532981395721436,
+          0.3359992504119873
+        ]
+      ],
+      "component_faces_desc": [
+        107524,
+        44,
+        24,
+        8,
+        8
+      ],
+      "density_at_vertices": {
+        "min": 0.2782958149909973,
+        "q01": 4.997207055091858,
+        "q10": 13.856116771697998,
+        "median": 22.96976661682129,
+        "q90": 25.14766025543213,
+        "q99": 30.655730075836196,
+        "max": 80.9109115600586,
+        "mean": 21.286745071411133
+      }
+    },
+    "r256_t50": {
+      "vertices": 54921,
+      "faces": 109656,
+      "area": 1.7604221637619801,
+      "signed_volume": 0.09274838029282984,
+      "body_count": 14,
+      "euler_number": -65,
+      "watertight": false,
+      "bounds": [
+        [
+          -0.492881715297699,
+          -0.4999372661113739,
+          -0.23161381483078003
+        ],
+        [
+          0.449135422706604,
+          0.4097301959991455,
+          0.33394837379455566
+        ]
+      ],
+      "component_faces_desc": [
+        109188,
+        232,
+        68,
+        40,
+        24,
+        16,
+        16,
+        16,
+        16,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "density_at_vertices": {
+        "min": 1.0763473510742188,
+        "q01": 17.750616455078124,
+        "q10": 34.3182373046875,
+        "median": 47.38469314575195,
+        "q90": 50.62324142456055,
+        "q99": 61.068724822998206,
+        "max": 137.56919860839844,
+        "mean": 44.96615219116211
+      }
+    },
+    "r128_t25": {
+      "vertices": 12746,
+      "faces": 25380,
+      "area": 1.6883305166818954,
+      "signed_volume": 0.1000318766842904,
+      "body_count": 3,
+      "euler_number": -47,
+      "watertight": false,
+      "bounds": [
+        [
+          -0.4977951645851135,
+          -0.5045150518417358,
+          -0.2378941774368286
+        ],
+        [
+          0.45275330543518066,
+          0.41385316848754883,
+          0.33484792709350586
+        ]
+      ],
+      "component_faces_desc": [
+        25364,
+        8,
+        8
+      ],
+      "density_at_vertices": {
+        "min": 0.08947229385375977,
+        "q01": 0.28862756192684175,
+        "q10": 2.81055223941803,
+        "median": 18.2359619140625,
+        "q90": 25.061177253723145,
+        "q99": 38.40288925170897,
+        "max": 113.38430786132812,
+        "mean": 16.519515991210938
+      }
+    }
+  },
+  "comparisons": {
+    "az000": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.06745161861181259,
+      "mesh_mask_pixels": 5734,
+      "native_mean_rgb_on_mesh_mask": [
+        0.29633790254592896,
+        0.337342768907547,
+        0.38480058312416077
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.30966916680336,
+        0.34569743275642395,
+        0.39333322644233704
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.5712628960609436,
+        0.6031490564346313,
+        0.6403825879096985
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9811772758384668,
+        "flat_rgb_MAE_intersection": 0.05479162186384201,
+        "depth_MAE_intersection": 0.005536166951060295
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.980990582490408,
+        "flat_rgb_MAE_intersection": 0.03243304789066315,
+        "depth_MAE_intersection": 0.005347063299268484
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9873898773536016,
+        "flat_rgb_MAE_intersection": 0.04876839369535446,
+        "depth_MAE_intersection": 0.0033320935908704996
+      }
+    },
+    "az060": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.07348640263080597,
+      "mesh_mask_pixels": 5290,
+      "native_mean_rgb_on_mesh_mask": [
+        0.31874188780784607,
+        0.354503333568573,
+        0.3984847664833069
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.32934871315956116,
+        0.35960739850997925,
+        0.4043083190917969
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.5925403237342834,
+        0.618221640586853,
+        0.6525683403015137
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9823584029712163,
+        "flat_rgb_MAE_intersection": 0.05921221524477005,
+        "depth_MAE_intersection": 0.00592606607824564
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.9790170132325142,
+        "flat_rgb_MAE_intersection": 0.03535640239715576,
+        "depth_MAE_intersection": 0.005884771700948477
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9880194683639086,
+        "flat_rgb_MAE_intersection": 0.05483473092317581,
+        "depth_MAE_intersection": 0.003686813870444894
+      }
+    },
+    "az120": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.059293679893016815,
+      "mesh_mask_pixels": 4521,
+      "native_mean_rgb_on_mesh_mask": [
+        0.29369843006134033,
+        0.31303590536117554,
+        0.33359187841415405
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.2884046137332916,
+        0.30470114946365356,
+        0.3238855004310608
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.556617796421051,
+        0.5716546773910522,
+        0.5872144103050232
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9798439531859557,
+        "flat_rgb_MAE_intersection": 0.05385122820734978,
+        "depth_MAE_intersection": 0.005990204401314259
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.97788099977881,
+        "flat_rgb_MAE_intersection": 0.02607172727584839,
+        "depth_MAE_intersection": 0.005863776430487633
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9828036569438398,
+        "flat_rgb_MAE_intersection": 0.053048256784677505,
+        "depth_MAE_intersection": 0.0037940065376460552
+      }
+    },
+    "az180": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.05086134746670723,
+      "mesh_mask_pixels": 4314,
+      "native_mean_rgb_on_mesh_mask": [
+        0.23880383372306824,
+        0.2538837194442749,
+        0.2666443884372711
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.22355006635189056,
+        0.23752544820308685,
+        0.2498304545879364
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.4937603771686554,
+        0.5088962316513062,
+        0.5195109844207764
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9755766621438263,
+        "flat_rgb_MAE_intersection": 0.04280177876353264,
+        "depth_MAE_intersection": 0.007408054079860449
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.9789058878071395,
+        "flat_rgb_MAE_intersection": 0.02430887147784233,
+        "depth_MAE_intersection": 0.007659310474991798
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9811149032992036,
+        "flat_rgb_MAE_intersection": 0.039667122066020966,
+        "depth_MAE_intersection": 0.0036494096275418997
+      }
+    },
+    "az240": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.04931623488664627,
+      "mesh_mask_pixels": 4366,
+      "native_mean_rgb_on_mesh_mask": [
+        0.21280072629451752,
+        0.23124994337558746,
+        0.24590077996253967
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.19586621224880219,
+        0.21468710899353027,
+        0.22776441276073456
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.4657072126865387,
+        0.4871656596660614,
+        0.49829885363578796
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9780465949820788,
+        "flat_rgb_MAE_intersection": 0.04191608354449272,
+        "depth_MAE_intersection": 0.007623224053531885
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.9786990380210719,
+        "flat_rgb_MAE_intersection": 0.02227954939007759,
+        "depth_MAE_intersection": 0.007569161243736744
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9831081081081081,
+        "flat_rgb_MAE_intersection": 0.03496139124035835,
+        "depth_MAE_intersection": 0.0038150406908243895
+      }
+    },
+    "az300": {
+      "flat_vs_native_MAE_on_mesh_mask": 0.061186302453279495,
+      "mesh_mask_pixels": 4986,
+      "native_mean_rgb_on_mesh_mask": [
+        0.24011066555976868,
+        0.27180910110473633,
+        0.30093082785606384
+      ],
+      "mesh_mean_rgb_on_mask": [
+        0.24452683329582214,
+        0.27422720193862915,
+        0.30086758732795715
+      ],
+      "linear_vertex_to_srgb_mean_rgb_on_mask": [
+        0.5075588822364807,
+        0.5373066067695618,
+        0.5592747330665588
+      ],
+      "r256_t10": {
+        "silhouette_IoU_vs_original": 0.9786064769381747,
+        "flat_rgb_MAE_intersection": 0.04889020323753357,
+        "depth_MAE_intersection": 0.006395273841917515
+      },
+      "r256_t50": {
+        "silhouette_IoU_vs_original": 0.9805455274769355,
+        "flat_rgb_MAE_intersection": 0.027087830007076263,
+        "depth_MAE_intersection": 0.0064004939049482346
+      },
+      "r128_t25": {
+        "silhouette_IoU_vs_original": 0.9881023200475907,
+        "flat_rgb_MAE_intersection": 0.04318804293870926,
+        "depth_MAE_intersection": 0.0036352702882140875
+      }
+    }
+  },
+  "elapsed_seconds": 53.381356932004564,
+  "reproduction_array_order_only": {
+    "vertices_exact": false,
+    "faces_exact": false,
+    "colors_exact": false,
+    "max_vertex_abs_error": 0.7495642602443695
+  },
+  "reproduction_order_invariant": {
+    "vertex_nearest_distance": {
+      "min": 0.0,
+      "q01": 0.0,
+      "q10": 0.0,
+      "median": 0.0,
+      "q90": 0.0,
+      "q99": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "bijective_nearest_vertex_mapping": true,
+    "triangle_sets_equal_under_mapping": true,
+    "corresponding_rgb_exact_fraction": 1.0
+  },
+  "component_count_note": "Face adjacency counts computed directly without split/submesh hole repair. Counts corrected after initial run; meshes never modified."
+}
