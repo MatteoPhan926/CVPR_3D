@@ -1,0 +1,17 @@
+{
+  "proceed": true,
+  "reviewer": "root, visual inspection of original.jpg and actual returned PNG",
+  "processed_sha256": "d0fdf0cc4d37250ee692f2373459679e2e792f1f9a5e4a2dc67bc8db59771e86",
+  "size": [
+    428,
+    428
+  ],
+  "mode": "RGB",
+  "historical_processed_exact_bytes": true,
+  "observations": [
+    "Foreground car retained; grass/trees removed and black background.",
+    "Front cabin door, upright cabin, grille, lamps, fenders, bumper and visible wheels retained.",
+    "Extreme left body and right bumper touch image borders; zero-padding crop is a potential generation-input confound."
+  ],
+  "decision": "Proceed with official preprocessing and identical historical processed input; no crop, padding or image substitution. If a defect is obtained, tight crop remains an alternative explanation, not an established cause."
+}
