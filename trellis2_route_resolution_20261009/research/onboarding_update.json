@@ -1,0 +1,17 @@
+{
+  "status": "saved",
+  "draft_id": "9a9e1390-e89c-4f99-be30-505b6d44e80a~cecfgdraft_6ac905a62ed88190899ebb09c4fa203d",
+  "requires_publish": true,
+  "start_skill_exact_readback_match": true,
+  "changed_fields": [
+    "start_skill"
+  ],
+  "install_script_changed": false,
+  "secret_bindings_changed": false,
+  "secret_names": [
+    "HF_TOKEN"
+  ],
+  "publication_verified": false,
+  "auth_problem_fixed": false,
+  "note": "Current route instructions and verified checkpoint paths saved/read back; no credentials changed, no runtime authentication fixed, no paid permission granted, no future restore tested."
+}

@@ -1,0 +1,13 @@
+{
+  "input_sha256": "a8b528d7715ada8dfa5c7dd0ac63abe47c682752db86bfbf4625f516cc443b2a",
+  "raw_vertices": 384665,
+  "raw_triangles": 479123,
+  "normals_below_1e_minus_6": 18,
+  "nonfinite_normals": 0,
+  "triangles_with_repeated_vertex_indices": 0,
+  "exact_zero_area_triangles": 57,
+  "triangles_with_double_area_at_most_1e_minus_15": 57,
+  "imported_polygons": 479103,
+  "triangle_polygon_count_difference": 20,
+  "interpretation": "Read-only numeric diagnostics of one public example. Count agreement alone does not prove which faces the importer changed. No repair, export, render, car-quality or general model conclusion."
+}

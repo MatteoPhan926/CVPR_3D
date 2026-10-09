@@ -1,0 +1,62 @@
+{
+  "phase": "trellis2_route_resolution_20261009",
+  "previous_phase_commit": "abf0cb8fb1375b92affdc26e8cdacc66f508e499",
+  "new_user_car_generation_requests": 0,
+  "new_user_image_upload_requests": 0,
+  "paid_requests": 0,
+  "new_user_car_generated_previews": 0,
+  "new_user_car_glbs": 0,
+  "public_documentation_sample_glbs_downloaded": 1,
+  "public_sample_fresh_generation_observed": false,
+  "original_image_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "latest_auth_check_local": "2026-10-09T22:16:22.719154+07:00",
+  "latest_auth_status": 401,
+  "hf_token_present": true,
+  "fal_key_present": false,
+  "local_nvidia_devices": [],
+  "sample_sha256": "a8b528d7715ada8dfa5c7dd0ac63abe47c682752db86bfbf4625f516cc443b2a",
+  "sample_validator_errors": 18,
+  "sample_import_status": "import_passed",
+  "raw_sample_triangles": 479123,
+  "sample_imported_polygons": 479103,
+  "sample_exact_zero_area_triangles": 57,
+  "sample_near_zero_normals": 18,
+  "stages": [
+    {
+      "name": "current auth/resource reinspection",
+      "status": "completed_authentication_failed"
+    },
+    {
+      "name": "official access/source investigation",
+      "status": "completed_conditional_explanation_not_remote_root_cause"
+    },
+    {
+      "name": "commercial documentation comparison",
+      "status": "completed_not_quality_comparison"
+    },
+    {
+      "name": "fal request preparation",
+      "status": "completed_offline_schema_validation_not_submitted"
+    },
+    {
+      "name": "public GLB validator",
+      "status": "failed_18_normal_errors"
+    },
+    {
+      "name": "public GLB Blender import",
+      "status": "passed_loading_only_20_fewer_faces"
+    },
+    {
+      "name": "user-car acquisition",
+      "status": "blocked_auth_or_paid_access_dependency"
+    },
+    {
+      "name": "user-car authoring/visual acceptance",
+      "status": "unrun_no_candidate"
+    },
+    {
+      "name": "non-car revision study",
+      "status": "unstarted"
+    }
+  ]
+}
