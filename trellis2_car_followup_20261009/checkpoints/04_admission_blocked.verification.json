@@ -1,0 +1,11 @@
+{
+  "externally_verified": true,
+  "checkpoint_commit": "99f39acd85b975eca3ec71dc879b4d398c55821c",
+  "utc": "2026-10-09T05:22:09.502745+00:00",
+  "archive_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/99f39acd85b975eca3ec71dc879b4d398c55821c/trellis2_car_followup_20261009/checkpoints/04_admission_blocked.zip",
+  "manifest_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/99f39acd85b975eca3ec71dc879b4d398c55821c/trellis2_car_followup_20261009/checkpoints/04_admission_blocked.manifest.json",
+  "archive_sha256": "b4132fceb6e3706f225970f48165b0be4ee7e6a894cb2faa87d91af7e6707004",
+  "verified_payload_files": 32,
+  "fresh_download_directory": "/tmp/trellis-readback-cyab_u5o",
+  "verification": "Fresh immutable HTTPS downloads; archive and every member SHA-256; safe extraction and reread."
+}
