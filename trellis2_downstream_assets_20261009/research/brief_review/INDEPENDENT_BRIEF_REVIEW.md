@@ -1,6 +1,6 @@
 # Independent brief review: available outputs to meaningful artist use
 
-Date: 2026-10-09. This review inspected the brief, historical reports/handoffs, source scripts and the JSON chunks of both newly supplied GLBs. It did **not** render, alter, import or author either supplied asset. Visual observations must come from the parent investigator's separate inspection. Earlier reviewers' visual conclusions below are attributed historical evidence, not a fresh independent visual judgment.
+Date: 2026-10-09. This review inspected the brief, historical reports/handoffs, source scripts and the JSON chunks of both newly supplied GLBs. It did **not** render, alter, import or author either supplied asset. Earlier reviewers' visual conclusions below are attributed historical evidence, not a fresh independent visual judgment. A later parent-requested inspection of the parent's saved A renders and original reference is recorded separately in `HINGE_REGION_REVIEW.md`; it does not retroactively turn the historical review into a new rendering experiment.
 
 ## Finding
 

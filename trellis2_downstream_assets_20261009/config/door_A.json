@@ -2,7 +2,7 @@
   "asset_label": "A",
   "coordinate_frame": "Blender import Z up, front +X, camera-facing side -Y",
   "selection": "Convex XZ door silhouette extruded through near-side surface; visual manual specification after side render",
-  "polygon_xz": [[-0.070, -0.112], [0.148, -0.112], [0.151, 0.018], [0.115, 0.098], [0.077, 0.137], [-0.052, 0.136]],
+  "polygon_xz": [[-0.070, -0.100], [0.148, -0.100], [0.151, 0.018], [0.115, 0.098], [0.077, 0.137], [-0.052, 0.136]],
   "side_y_max": -0.100,
   "hinge_xyz": [-0.061, -0.153, 0.0],
   "opening_z_rotation_sign": -1,

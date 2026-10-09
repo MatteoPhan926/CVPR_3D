@@ -76,6 +76,7 @@ bpy.data.objects.remove(obj,do_unlink=True)
 if mesh.users==0:bpy.data.meshes.remove(mesh)
 hinge=bpy.data.objects.new('FrontDoor_Control',None);scene.collection.objects.link(hinge)
 hinge.location=cfg['hinge_xyz'];hinge.empty_display_type='ARROWS';hinge.empty_display_size=.07
+bpy.context.view_layer.update()
 def parent_keep(o,p):
     matrix=o.matrix_world.copy();o.parent=p;o.matrix_world=matrix
 parent_keep(panel,hinge)
@@ -122,7 +123,8 @@ def strips(name,edgepairs,offset,mat):
     m=bpy.data.meshes.new(name);m.from_pydata(verts,[],faces);m.materials.append(mat);m.update()
     o=bpy.data.objects.new(name,m);scene.collection.objects.link(o);return o
 edge=strips('ADDED door edge thickness',boundary_edges,np.array([0,.006,0]),edgemat);parent_keep(edge,hinge)
-jamb=strips('ADDED fixed aperture jamb',boundary_edges,np.array([0,.022,0]),edgemat)
+cut_edges=np.array([e for e in boundary_edges if any(np.max(np.abs(unique[e]@n-c))<2e-6 for n,c in planes)],dtype=np.int32).reshape(-1,2)
+jamb=strips('ADDED fixed aperture jamb',cut_edges,np.array([0,.022,0]),edgemat)
 def box(name,location,scale,mat,bevel=.003):
     bpy.ops.mesh.primitive_cube_add(size=1,location=location);o=bpy.context.object;o.name=name;o.scale=scale
     bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.data.materials.append(mat)
