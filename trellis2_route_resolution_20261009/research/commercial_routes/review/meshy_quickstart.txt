@@ -1,0 +1,485 @@
+Quickstart | Meshy Docs
+Docs
+Search docs...
+K
+Cookbook
+Blog
+Open Developer Platform
+Open Web App
+Overview
+Webapp
+API
+Plugins
+3D Printing
+API
+Getting Started
+Quickstart
+1. Get your API key
+2. Make your first Image-to-3D request
+3. Check task status
+4. Download your model
+Explore common workflows
+Next steps
+Developer Platform
+Authentication
+Errors
+Pricing
+Rate Limits
+Asset Retention
+Webhooks
+AI Integration
+Changelog
+API Endpoints
+Text to 3D
+v2
+Image to 3D
+Multi Image to 3D
+Remesh
+Convert
+Resize
+UV Unwrap
+Rigging
+Animation
+Text to Motion
+new
+Retexture
+Text to Image
+Image to Image
+Multi-Color Print
+Analyze Printability
+Repair Printability
+Auto Split
+new
+Balance
+Usage
+Creative Lab APIs
+Keychain
+Fridge Magnet
+Figure
+Vinyl Figure
+Brick Figure
+Lamp
+Keycap
+Collapsible Fidget
+Fidget Pixel
+Open Web App
+meshy-5
+retires Oct 10, 2026.
+lowpoly
+retires Oct 30, 2026.
+Please switch models before these dates to avoid request errors.
+Docs
+›
+API
+›
+Quickstart
+Copy page
+Quickstart
+Start by creating your API key
+Every request in this guide needs one. Creating a key takes seconds.
+Create your API key
+Four steps to your first 3D model, using the Meshy REST API.
+Using an AI coding assistant?
+See our
+AI Integration
+page — install the Meshy MCP server for tool-calling access from Claude Code, Cursor, Windsurf, and other MCP-compatible tools, or point a plain chat agent at
+llms.txt
+.
+1
+Get your API key
+Create an API key
+from the
+API Keys
+page in the
+Developer Platform
+— you won't be able to view it again after this screen, so store it somewhere safe. Every request authenticates with a
+Bearer
+token in the
+Authorization
+header — see
+Authentication
+.
+Creating and managing API keys requires a
+paid
+plan.
+Free
+accounts get a dedicated, built-in key for testing in the Playground, but can't create or manage keys of their own.
+Security tip:
+avoid pasting your key directly into scripts — store it as an environment variable instead:
+export MESHY_API_KEY="msy_..."
+.
+2
+Make your first Image-to-3D request
+Export your key, then create your first task with
+Image to 3D
+. Working from a text prompt or multiple photos instead? See
+Text to 3D
+or
+Multi-Image to 3D
+.
+Export your key
+export
+MESHY_API_KEY
+=
+"<your-api-key>"
+Copy
+Copied!
+Run this in your terminal (Terminal on macOS, Command Prompt or PowerShell on Windows) — not in a browser.
+Every example below uses this photo — swap in your own
+image_url
+to try something else.
+Sample input
+Copy image URL
+Request
+cURL
+JavaScript
+Python
+POST
+/openapi/v1/image-to-3d
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d
+\
+-X
+POST
+\
+-H
+"Authorization: Bearer ${MESHY_API_KEY}"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"image_url": "https://docs.meshy.ai/images/api/quick-start/source-photo.webp"
+}'
+Copy
+Copied!
+3
+Check task status
+Requests return a task ID immediately. Poll the same endpoint until
+status
+is
+SUCCEEDED
+— replace
+<task_id>
+below with the ID returned in step 2.
+Request
+cURL
+JavaScript
+Python
+GET
+/openapi/v1/image-to-3d/:id
+curl
+https://api.meshy.ai/openapi/v1/image-to-3d/
+<
+task_i
+d
+>
+\
+-H
+"Authorization: Bearer ${MESHY_API_KEY}"
+Copy
+Copied!
+Response — SUCCEEDED
+{
+"id"
+:
+"018a210d-8ba4-705c-b111-1f1776f7f578"
+,
+"status"
+:
+"SUCCEEDED"
+,
+"progress"
+:
+100
+,
+"model_urls"
+:
+{
+"glb"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.glb?Expires=***"
+,
+"fbx"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/model.fbx?Expires=***"
+}
+,
+"thumbnail_url"
+:
+"https://assets.meshy.ai/***/tasks/018a210d-8ba4-705c-b111-1f1776f7f578/output/preview.png?Expires=***"
+,
+"task_error"
+:
+{
+"message"
+:
+""
+}
+}
+Copy
+Copied!
+Polling not your style? Use
+SSE streaming
+or a
+webhook
+to get notified the moment a task finishes.
+4
+Download your model
+Grab the model from
+model_urls
+in the response above. Each format (GLB, FBX, OBJ, USDZ, STL) is a signed, time-limited URL — or skip the command line and paste the URL directly into your browser's address bar to download it.
+Download
+cURL
+JavaScript
+Python
+model_urls.glb
+curl
+-L
+"<model_urls.glb from the response above>"
+-o
+model.glb
+Copy
+Copied!
+Your result
+Files are retained for 3 days on non-Enterprise plans — see
+Asset Retention
+.
+Put it all together
+Prefer one script that does the whole thing — create, poll, download?
+Full script
+JavaScript
+Python
+import
+axios
+from
+'axios'
+;
+import
+fs
+from
+'fs'
+;
+const
+headers
+=
+{ Authorization
+:
+`Bearer
+${
+process
+.
+env
+.
+MESHY_API_KEY
+}
+`
+};
+const
+imageUrl
+=
+'https://docs.meshy.ai/images/api/quick-start/source-photo.webp'
+;
+// 1. Create the task
+const
+{ data:
+created
+}
+=
+await
+axios
+.post
+(
+'https://api.meshy.ai/openapi/v1/image-to-3d'
+,
+{ image_url
+:
+imageUrl }
+,
+{ headers }
+,
+);
+const
+taskId
+=
+created
+.result;
+// 2. Poll until it finishes
+let
+task;
+while
+(
+true
+) {
+const
+{
+data
+,
+headers:
+resHeaders
+}
+=
+await
+axios
+.get
+(
+`https://api.meshy.ai/openapi/v1/image-to-3d/
+${
+taskId
+}
+`
+,
+{ headers });
+task
+=
+data;
+if
+(
+task
+.status
+===
+'SUCCEEDED'
+||
+task
+.status
+===
+'FAILED'
+)
+break
+;
+const
+waitSeconds
+=
+Number
+(resHeaders[
+'retry-after'
+])
+||
+5
+;
+await
+new
+Promise
+((resolve)
+=>
+setTimeout
+(resolve
+,
+waitSeconds
+*
+1000
+));
+}
+// 3. Download the result (only if the task succeeded)
+if
+(
+task
+.status
+!==
+'SUCCEEDED'
+) {
+throw
+new
+Error
+(
+`Task
+${
+task
+.status
+}
+:
+${
+task
+.
+task_error
+?.message
+||
+'unknown error'
+}
+`
+);
+}
+const
+{ data:
+model
+}
+=
+await
+axios
+.get
+(
+task
+.
+model_urls
+.glb
+,
+{ responseType
+:
+'arraybuffer'
+});
+fs
+.writeFileSync
+(
+'model.glb'
+,
+model);
+console
+.log
+(
+'Saved model.glb'
+);
+Copy
+Copied!
+Explore common workflows
+Game-ready character
+Rig a humanoid mesh with a skeleton so it's ready to animate in Unity or Unreal.
+Learn more →
+Lowpoly asset
+Set
+model_type
+to
+smart-topology
+on Image to 3D for a clean, game-ready mesh.
+Learn more →
+3D print model
+Convert a finished model into a multi-color 3MF file, ready to slice and print.
+Learn more →
+Next steps
+Prefer a UI? Open the
+Developer Platform
+— run requests in the Playground, track usage and request logs, and manage webhooks.
+Browse the full
+API reference
+for every endpoint.
+Learn from working examples: follow step-by-step recipes in the
+Cookbook
+and read tutorials and build stories on the
+Developer Blog
+.
+Check
+Pricing
+,
+Rate Limits
+, and
+Errors
+before you go to production.
+Watch the
+Changelog
+for updates and bug fixes.
+Have feedback or facing issues? Join our
+Discord
+community — we'd love to hear from you!
+Previous
+API
+Next
+Developer Platform
+©
+2026
+Meshy LLC. All rights reserved.
+Join our Discord server
+Follow us on Twitter
+Subscribe on YouTube
+Follow us on Instagram
+Follow us on TikTok
+Follow us on LinkedIn

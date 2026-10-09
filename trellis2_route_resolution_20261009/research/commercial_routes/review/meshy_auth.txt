@@ -1,0 +1,161 @@
+Authentication | Meshy Docs
+Docs
+Search docs...
+K
+Cookbook
+Blog
+Open Developer Platform
+Open Web App
+Overview
+Webapp
+API
+Plugins
+3D Printing
+API
+Getting Started
+Quickstart
+Developer Platform
+Authentication
+API Keys
+Security
+Errors
+Pricing
+Rate Limits
+Asset Retention
+Webhooks
+AI Integration
+Changelog
+API Endpoints
+Text to 3D
+v2
+Image to 3D
+Multi Image to 3D
+Remesh
+Convert
+Resize
+UV Unwrap
+Rigging
+Animation
+Text to Motion
+new
+Retexture
+Text to Image
+Image to Image
+Multi-Color Print
+Analyze Printability
+Repair Printability
+Auto Split
+new
+Balance
+Usage
+Creative Lab APIs
+Keychain
+Fridge Magnet
+Figure
+Vinyl Figure
+Brick Figure
+Lamp
+Keycap
+Collapsible Fidget
+Fidget Pixel
+Open Web App
+meshy-5
+retires Oct 10, 2026.
+lowpoly
+retires Oct 30, 2026.
+Please switch models before these dates to avoid request errors.
+Docs
+›
+API
+›
+Authentication
+Copy page
+Authentication
+Using the Meshy API requires authentication. This guide will show you how to create an account and API keys.
+API Keys
+Creating a Meshy Account
+Meshy API requires you to have a Meshy account to create and manage API keys. If a request is made to the API without an API key, the API will respond with an invalid credentials error.
+You can create a Meshy account by visiting the
+Meshy official website
+and sign up.
+Creating API Keys
+Once you have created a Meshy account, you can create API keys on the
+API Keys page
+in the
+Developer Platform
+.
+You can create multiple API keys for different purposes. For example, you can create one API key for your iOS app and another for your web app. The usage of each API key is tracked separately, and you can revoke them at any time.
+You can also set a monthly credit limit on any key, capping how much it can spend regardless of your account's overall usage — useful for bounding a key you hand off to a contractor or a specific environment.
+To create an API key, click on the
+Create API Key
+button on the API page, and then enter a name for your API key.
+Once you have created an API key, you will be shown the API key value. You can copy the API key value and store it in a secure location.
+You will not be able to see this API key value again.
+Using API Keys
+Once you have created an API key, you can use it to authenticate your requests to
+the Meshy API. You can pass your API key to the API in the
+Authorization
+header,
+an example header is shown below.
+{
+"Authorization"
+:
+"Bearer msy_sOmEbOgUsApIkEyFoReXaMpLe1234567890"
+}
+Copy
+Copied!
+The
+Bearer
+prefix in the header value is mandatory to interact with the Meshy API programatically.
+You can learn more about it at
+IETF RFC 6750
+Security
+We take security very seriously at Meshy, and we work hard to ensure that Meshy API is secure. We hope your data and your users' data is safe with us.
+Here are some high-level guidelines to help you keep your data and requests safe when using Meshy API, but please also make sure to follow the guidelines
+practiced at your team or workplace.
+Transport Layer Security
+While your data is encrypted at rest once it's stored in Meshy, Meshy API uses and enforces
+TLS
+,
+to encrypt data in transit. It means that all requests to and from Meshy API are sent over HTTPS, and any request made over HTTP will get an
+301 Moved Permanently
+status code. Although not recommended,
+in some cases, if you have to talk to HTTP, you need to explicity tell your HTTP client to follow HTTP to HTTPS redirections. Here are some examples:
+Follow HTTP to HTTPS redirections
+cURL
+Python
+JavaScript
+# use `-L` to follow HTTP to HTTPS redirections
+curl
+-L
+-X
+'POST'
+\
+https://api.meshy.ai/openapi/v1/text-to-texture
+Copy
+Copied!
+API Key Safety
+Please note that even Meshy team members cannot view or recover revoked API keys for you!
+Once minted, API keys are
+not
+visible in the dashboard anymore, so please download and keep it safe and securely since anyone who obtains it can use
+it to talk to Meshy API on your behalf. If you believe your API key has been compromised, you can revoke it at any time from the dashboard,
+once revoked, it will no longer be valid.
+Security Disclosure
+If you believe you've discovered a security issue in Meshy API, please
+get in touch
+with us. We appreciate your responsible disclosure
+and will make every effort to acknowledge your contributions.
+Previous
+Developer Platform
+Next
+Errors
+©
+2026
+Meshy LLC. All rights reserved.
+Join our Discord server
+Follow us on Twitter
+Subscribe on YouTube
+Follow us on Instagram
+Follow us on TikTok
+Follow us on LinkedIn

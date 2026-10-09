@@ -1,0 +1,10 @@
+{
+  "url": "https://fal.ai/docs/documentation/quickstart.md",
+  "final_url": "https://fal.ai/docs/documentation/quickstart.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "bytes": 12378,
+  "sha256": "bbcc5e86586eabe7939e2ae1085ad5e370fe8ba12143a0b8a353653daf2cf9d3",
+  "fetched_at_utc": "2026-10-09T10:18:44.882435+00:00",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/review/fal_quickstart.md"
+}

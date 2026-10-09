@@ -1,0 +1,10 @@
+{
+  "url": "https://fal.ai/api/openapi/queue/openapi.json?endpoint_id=fal-ai/trellis-2",
+  "final_url": "https://fal.ai/api/openapi/queue/openapi.json?endpoint_id=fal-ai/trellis-2",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 12481,
+  "sha256": "ea2b765fceeadc060fcd6175cc73f60f821d54c85653b51121348261be020111",
+  "fetched_at_utc": "2026-10-09T10:17:58.541030+00:00",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/review/fal_schema.json"
+}

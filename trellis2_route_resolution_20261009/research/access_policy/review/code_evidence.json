@@ -1,0 +1,17 @@
+{
+  "duration_multiplier_and_post": {
+    "file": "spaces_0_50_2_source/spaces/zero/client.py",
+    "first_line": 124,
+    "text": "    zerogpu_config = config.get_config()\n    gpu_size = gpu_size if gpu_size is not None else default_gpu_size()\n    duration_seconds = duration.seconds if duration is not None else DEFAULT_SCHEDULE_DURATION\n    if gpu_size != 'xlarge':\n        duration_seconds *= zerogpu_config['duration_factor']\n\n    res, meta = api_client().schedule(\n        cgroup_path=utils.self_cgroup_device_path(),\n        task_id=task_id,\n        token=token,\n        token_version=2 if GRADIO_HANDSHAKE else 1,\n        duration_seconds=round(duration_seconds),\n        gpu_size=gpu_size,\n    )"
+  },
+  "displayed_request": {
+    "file": "spaces_0_50_2_source/spaces/zero/client.py",
+    "first_line": 144,
+    "text": "    if isinstance(res, QuotaInfos): # pragma: no cover\n        requested = duration.seconds if duration is not None else DEFAULT_SCHEDULE_DURATION\n        requested *= 2 if gpu_size == 'xlarge' else 1\n        if res.wait < timedelta(0):\n            message = (\n                f\"The requested GPU duration ({requested}s) \"\n                f\"is larger than the maximum allowed\"\n            )\n            raise error(\"ZeroGPU illegal duration\", message)\n        elif token is None:\n            message = (\n                f\"Space app has reached its GPU limit. \"\n                f\"{EXAMPLES_RETRY_MESSAGE}\"\n            )\n            raise error(\"ZeroGPU quota exceeded\", message)\n        else:\n            if res.wait == 0:\n                message = \"You have exceeded your ZeroGPU runs limit. \"\n            else:\n                gpu = \"Pro ZeroGPU\" if auth == 'pro' else (\"free ZeroGPU\" if auth == 'regular' else \"ZeroGPU\")\n                message = (\n                    f\"You have exceeded your {gpu} quota \"\n                    f\"({requested}s requested vs. {res.left}s left). \"\n                    f\"Try again in {res.wait}. \"\n                )\n            if _is_api_call(request):\n                if auth is None:\n                    message += (\n                        f\"Authenticate with a Hugging Face token for more quota - \"\n                        f\"{TOKENS_SETTINGS_URL}\"\n                    )"
+  },
+  "quota_schema": {
+    "file": "spaces_0_50_2_source/spaces/zero/api.py",
+    "first_line": 45,
+    "text": "    left: int\n    wait: timedelta\n\n\nclass QueueEvent(BaseModel):"
+  }
+}

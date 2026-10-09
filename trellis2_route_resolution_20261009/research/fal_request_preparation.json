@@ -1,0 +1,42 @@
+{
+  "status": "offline_schema_checked_not_submitted",
+  "network_calls": 0,
+  "endpoint": "fal-ai/trellis-2",
+  "request_file": "config/fal_request_prepared_NOT_SUBMITTED.json",
+  "request_sha256": "a862b2822fb7dd755e3d4eaa1b60b2069bd98ddf34f665f026a3eb7efc7b5ac6",
+  "schema_sha256": "ea2b765fceeadc060fcd6175cc73f60f821d54c85653b51121348261be020111",
+  "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "encoded_input_roundtrip_exact": true,
+  "rejects_string_resolution": true,
+  "inherited_controls": [
+    "seed",
+    "resolution",
+    "ss_guidance_strength",
+    "ss_guidance_rescale",
+    "ss_sampling_steps",
+    "ss_rescale_t",
+    "shape_slat_guidance_strength",
+    "shape_slat_guidance_rescale",
+    "shape_slat_sampling_steps",
+    "shape_slat_rescale_t",
+    "tex_slat_guidance_strength",
+    "tex_slat_guidance_rescale",
+    "tex_slat_sampling_steps",
+    "tex_slat_rescale_t",
+    "decimation_target",
+    "texture_size"
+  ],
+  "field_count": 30,
+  "advertised_cost_usd": 0.3,
+  "paid_execution_authorized": false,
+  "provenance_change": "Original JPEG preserved; fal preprocessing/model revision and export implementation are unverified; no exact Microsoft Space reproduction claim.",
+  "required_before_submission": [
+    "Explicit authorization for one paid fal request and cost ceiling",
+    "Valid securely bound FAL_KEY and sufficient balance; minimum account top-up unknown",
+    "Recheck resolution-specific price and service schema",
+    "Verify current external input/config/code checkpoint",
+    "New exclusive request directory, save request ID, never resubmit on unknown timeout",
+    "Download complete returned GLB and preserve bytes before DCC use"
+  ],
+  "limits": "Static schema checking does not validate provider execution, preprocessing, pricing charged or output quality."
+}

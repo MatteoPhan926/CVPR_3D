@@ -1,0 +1,10 @@
+{
+  "url": "https://pypi.org/pypi/spaces/0.50.2/json",
+  "method": "GET",
+  "authentication": "none explicitly supplied",
+  "status": 200,
+  "utc": "2026-10-09T10:17:41.440439+00:00",
+  "sha256": "598e31779ea64842faa9be181b07ea87b8a45782fafa6f43b1083e70d899cde5",
+  "bytes": 2762,
+  "final_url": "https://pypi.org/pypi/spaces/0.50.2/json"
+}

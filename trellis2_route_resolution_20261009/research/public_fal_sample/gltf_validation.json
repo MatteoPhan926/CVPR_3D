@@ -1,0 +1,210 @@
+{
+  "uri": "research/public_fal_sample/official_public_example.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-09T10:23:08.945Z",
+  "issues": {
+    "numErrors": 18,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 4,
+    "messages": [
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/POSITION"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "BUFFER_VIEW_TARGET_MISSING",
+        "message": "bufferView.target should be set for vertex or index data.",
+        "severity": 3,
+        "pointer": "/meshes/0/primitives/0/indices"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 625896..625898 is not of unit length: 7.888609052210118e-31.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 800805..800807 is not of unit length: 1.7333369499485123e-31.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 800820..800822 is not of unit length: 1.7333369499485123e-31.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 813432..813434 is not of unit length: 6.36327260797891e-30.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 825051..825053 is not of unit length: 1.232595164407831e-32.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 825081..825083 is not of unit length: 1.232595164407831e-32.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 825084..825086 is not of unit length: 1.232595164407831e-32.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 847380..847382 is not of unit length: 1.1124171358780674e-28.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 847392..847394 is not of unit length: 1.1124171358780674e-28.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 847398..847400 is not of unit length: 1.1124171358780674e-28.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 867336..867338 is not of unit length: 4.6619830605815186e-29.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 867339..867341 is not of unit length: 4.6619830605815186e-29.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 867357..867359 is not of unit length: 4.6619830605815186e-29.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 930603..930605 is not of unit length: 3.1554436208840472e-30.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 930621..930623 is not of unit length: 3.1554436208840472e-30.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 1073196..1073198 is not of unit length: 1.4927220479044596e-27.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 1073205..1073207 is not of unit length: 1.4927220479044596e-27.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      },
+      {
+        "code": "ACCESSOR_VECTOR3_NON_UNIT",
+        "message": "Vector3 at accessor indices 1073217..1073219 is not of unit length: 1.4927220479044596e-27.",
+        "severity": 0,
+        "pointer": "/meshes/0/primitives/0/attributes/NORMAL"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh",
+    "extensionsUsed": [
+      "EXT_texture_webp"
+    ],
+    "extensionsRequired": [
+      "EXT_texture_webp"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 19507032
+      },
+      {
+        "pointer": "/images/0",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 2048,
+          "height": 2048,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/1",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 2048,
+          "height": 2048,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 1,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": true,
+    "hasDefaultScene": true,
+    "drawCallCount": 1,
+    "totalVertexCount": 384665,
+    "totalTriangleCount": 479123,
+    "maxUVs": 1,
+    "maxInfluences": 0,
+    "maxAttributes": 3
+  },
+  "evidence": {
+    "input": "research/public_fal_sample/official_public_example.glb",
+    "sha256": "a8b528d7715ada8dfa5c7dd0ac63abe47c682752db86bfbf4625f516cc443b2a",
+    "validator_version": "2.0.0-dev.3.10",
+    "no_external_resources": true,
+    "scope": "GLB container/schema validation only; not model provenance, appearance or task success"
+  }
+}

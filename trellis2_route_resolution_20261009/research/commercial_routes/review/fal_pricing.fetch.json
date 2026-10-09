@@ -1,0 +1,10 @@
+{
+  "url": "https://fal.ai/pricing",
+  "final_url": "https://fal.ai/pricing",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 316181,
+  "sha256": "61fc0b2fa21c0452b06322e35efd250f25db1bf5b3289dcf38e2c5e8de4217ea",
+  "fetched_at_utc": "2026-10-09T10:17:58.797083+00:00",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/review/fal_pricing.html"
+}

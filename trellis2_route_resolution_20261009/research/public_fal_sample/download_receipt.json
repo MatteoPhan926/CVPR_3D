@@ -1,0 +1,13 @@
+{
+  "url": "https://v3b.fal.media/files/b/0a86b61d/DNmTkiWHUQ8k-rG6aussB_trellis2_68d6300f70f34d23b69a912b5fe60487.glb",
+  "utc": "2026-10-09T10:20:50.660009+00:00",
+  "role": "Public output example linked directly by official fal TRELLIS.2 endpoint docs; format probe only. Not generated from user car, not a new model run, not a quality comparator.",
+  "source_document": "research/commercial_routes/fal_trellis2_api.txt",
+  "authenticated": false,
+  "user_input_uploaded": false,
+  "http_status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 19508884,
+  "sha256": "a8b528d7715ada8dfa5c7dd0ac63abe47c682752db86bfbf4625f516cc443b2a",
+  "status": "downloaded"
+}

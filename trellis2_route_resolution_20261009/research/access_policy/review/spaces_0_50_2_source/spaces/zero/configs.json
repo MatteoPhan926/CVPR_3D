@@ -1,0 +1,20 @@
+[
+    {
+        "model": "NVIDIA H200",
+        "memory": 74625056768,
+        "sm_major": 9,
+        "sm_minor": 0,
+        "sm_count": 60,
+        "xlarge_threshold": null,
+        "duration_factor": 1.0
+    },
+    {
+        "model": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "memory": 101973950464,
+        "sm_major": 12,
+        "sm_minor": 0,
+        "sm_count": 188,
+        "xlarge_threshold": 45097156608,
+        "duration_factor": 1.5
+    }
+]

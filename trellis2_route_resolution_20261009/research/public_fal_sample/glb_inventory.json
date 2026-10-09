@@ -1,0 +1,101 @@
+{
+  "input": "research/public_fal_sample/official_public_example.glb",
+  "bytes": 19508884,
+  "sha256": "a8b528d7715ada8dfa5c7dd0ac63abe47c682752db86bfbf4625f516cc443b2a",
+  "container_version": 2,
+  "asset_metadata": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  "chunks": [
+    {
+      "type": "0x4e4f534a",
+      "bytes": 1824
+    },
+    {
+      "type": "0x4e4942",
+      "bytes": 19507032
+    }
+  ],
+  "extensions_used": [
+    "EXT_texture_webp"
+  ],
+  "extensions_required": [
+    "EXT_texture_webp"
+  ],
+  "meshes": 1,
+  "nodes": 2,
+  "primitives": [
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "vertices": 384665,
+      "mode": 4,
+      "triangles": 479123,
+      "attribute_accessors": {
+        "POSITION": 1,
+        "TEXCOORD_0": 2,
+        "NORMAL": 3
+      },
+      "material": 0,
+      "has_uv0": true,
+      "has_normals": true
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "roughnessFactor": 1.0,
+        "metallicFactor": 1.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "textures": [
+    {
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 0
+        }
+      }
+    },
+    {
+      "extensions": {
+        "EXT_texture_webp": {
+          "source": 1
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "mime_type": "image/webp",
+      "embedded": true,
+      "has_uri": false,
+      "bytes": 1038812
+    },
+    {
+      "index": 1,
+      "mime_type": "image/webp",
+      "embedded": true,
+      "has_uri": false,
+      "bytes": 409464
+    }
+  ],
+  "animation_count": 0,
+  "scope": "Observed container/material structure only; no attribution to user car, model revision, visual quality or authoring success."
+}

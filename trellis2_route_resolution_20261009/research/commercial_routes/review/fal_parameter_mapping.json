@@ -1,0 +1,273 @@
+{
+  "not_executed": true,
+  "purpose": "Static field mapping; input intentionally absent; no production-ready invocation claimed",
+  "mapped_payload": {
+    "image_url": "UNSET_REQUIRES_SEPARATE_AUTHORIZATION_AND_INPUT_TRANSFER",
+    "seed": 42,
+    "resolution": 1024,
+    "ss_guidance_strength": 7.5,
+    "ss_guidance_rescale": 0.7,
+    "ss_sampling_steps": 12,
+    "ss_rescale_t": 5,
+    "shape_slat_guidance_strength": 7.5,
+    "shape_slat_guidance_rescale": 0.5,
+    "shape_slat_sampling_steps": 12,
+    "shape_slat_rescale_t": 3,
+    "tex_slat_guidance_strength": 1,
+    "tex_slat_guidance_rescale": 0,
+    "tex_slat_sampling_steps": 12,
+    "tex_slat_rescale_t": 3,
+    "decimation_target": 300000,
+    "texture_size": 2048
+  },
+  "mapping": [
+    {
+      "field": "image_url",
+      "value": "UNSET_REQUIRES_SEPARATE_AUTHORIZATION_AND_INPUT_TRANSFER",
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "description": "URL of the input image to convert to 3D",
+        "type": "string",
+        "examples": [
+          "https://v3b.fal.media/files/b/0a86b60d/xkpao5B0uxmH0tmJm0HVL_2fe35ce1-fe44-475b-b582-6846a149537c.png"
+        ],
+        "title": "Image Url"
+      }
+    },
+    {
+      "field": "seed",
+      "value": 42,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "description": "Random seed for reproducibility",
+        "title": "Seed",
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    {
+      "field": "resolution",
+      "value": 1024,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "enum": [
+          512,
+          1024,
+          1536
+        ],
+        "type": "integer",
+        "description": "Output resolution; higher is slower but more detailed",
+        "default": 1024,
+        "title": "Resolution"
+      }
+    },
+    {
+      "field": "ss_guidance_strength",
+      "value": 7.5,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 10,
+        "type": "number",
+        "description": "How closely the initial 3D structure follows the input image. Higher values produce more faithful but potentially noisier results.",
+        "default": 7.5,
+        "title": "Ss Guidance Strength"
+      }
+    },
+    {
+      "field": "ss_guidance_rescale",
+      "value": 0.7,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 1,
+        "type": "number",
+        "description": "Dampens artifacts from high guidance in stage 1. Lower values allow stronger guidance effects, higher values stabilize the output.",
+        "default": 0.7,
+        "title": "Ss Guidance Rescale"
+      }
+    },
+    {
+      "field": "ss_sampling_steps",
+      "value": 12,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 50,
+        "type": "integer",
+        "description": "Number of denoising steps for the initial structure. More steps = slower but potentially higher quality.",
+        "default": 12,
+        "title": "Ss Sampling Steps"
+      }
+    },
+    {
+      "field": "ss_rescale_t",
+      "value": 5,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 6,
+        "type": "number",
+        "description": "Controls noise schedule sharpness for structure generation. Higher values produce sharper transitions.",
+        "default": 5,
+        "title": "Ss Rescale T"
+      }
+    },
+    {
+      "field": "shape_slat_guidance_strength",
+      "value": 7.5,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 10,
+        "type": "number",
+        "description": "How closely the detailed geometry follows the input image. Higher values add more detail but may introduce noise.",
+        "default": 7.5,
+        "title": "Shape Slat Guidance Strength"
+      }
+    },
+    {
+      "field": "shape_slat_guidance_rescale",
+      "value": 0.5,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 1,
+        "type": "number",
+        "description": "Dampens artifacts from high guidance in the shape stage. Increase if you see noisy geometry.",
+        "default": 0.5,
+        "title": "Shape Slat Guidance Rescale"
+      }
+    },
+    {
+      "field": "shape_slat_sampling_steps",
+      "value": 12,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 50,
+        "type": "integer",
+        "description": "Number of denoising steps for shape refinement. More steps = slower but potentially smoother geometry.",
+        "default": 12,
+        "title": "Shape Slat Sampling Steps"
+      }
+    },
+    {
+      "field": "shape_slat_rescale_t",
+      "value": 3,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 6,
+        "type": "number",
+        "description": "Controls noise schedule sharpness for shape refinement. Higher values produce sharper geometric details.",
+        "default": 3,
+        "title": "Shape Slat Rescale T"
+      }
+    },
+    {
+      "field": "tex_slat_guidance_strength",
+      "value": 1,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 10,
+        "type": "number",
+        "description": "How closely the texture follows the input image colors. Higher values produce more vivid but potentially oversaturated textures.",
+        "default": 1,
+        "title": "Tex Slat Guidance Strength"
+      }
+    },
+    {
+      "field": "tex_slat_guidance_rescale",
+      "value": 0,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 0,
+        "maximum": 1,
+        "type": "number",
+        "description": "Dampens artifacts from high guidance in the texture stage. Increase if textures look noisy or have color banding.",
+        "default": 0,
+        "title": "Tex Slat Guidance Rescale"
+      }
+    },
+    {
+      "field": "tex_slat_sampling_steps",
+      "value": 12,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 50,
+        "type": "integer",
+        "description": "Number of denoising steps for texture generation. More steps = slower but potentially cleaner textures.",
+        "default": 12,
+        "title": "Tex Slat Sampling Steps"
+      }
+    },
+    {
+      "field": "tex_slat_rescale_t",
+      "value": 3,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 1,
+        "maximum": 6,
+        "type": "number",
+        "description": "Controls noise schedule sharpness for texture generation. Higher values produce sharper texture details.",
+        "default": 3,
+        "title": "Tex Slat Rescale T"
+      }
+    },
+    {
+      "field": "decimation_target",
+      "value": 300000,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "minimum": 5000,
+        "maximum": 2000000,
+        "type": "integer",
+        "description": "Target number of vertices in the final mesh. Lower values produce smaller files but less detail. 500k is good for most uses, reduce to 20k-50k for web/mobile.",
+        "default": 500000,
+        "title": "Decimation Target"
+      }
+    },
+    {
+      "field": "texture_size",
+      "value": 2048,
+      "exposed": true,
+      "within_documented_bounds": true,
+      "schema": {
+        "enum": [
+          1024,
+          2048,
+          4096
+        ],
+        "type": "integer",
+        "description": "Resolution of the texture image baked onto the mesh. Higher values capture finer surface details but produce larger files.",
+        "default": 2048,
+        "title": "Texture Size"
+      }
+    }
+  ]
+}

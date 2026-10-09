@@ -1,0 +1,26 @@
+{
+  "kind": "local arithmetic illustration, not scheduler or account verification",
+  "rows": [
+    {
+      "hardware_config": "NVIDIA H200",
+      "duration_factor": 1.0,
+      "declared_seconds": 120,
+      "scheduled_seconds_if_this_config_selected": 120,
+      "displayed_requested_seconds": 120,
+      "176_less_than_scheduled": false,
+      "180_less_than_scheduled": false
+    },
+    {
+      "hardware_config": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "duration_factor": 1.5,
+      "declared_seconds": 120,
+      "scheduled_seconds_if_this_config_selected": 180,
+      "displayed_requested_seconds": 120,
+      "176_less_than_scheduled": true,
+      "180_less_than_scheduled": false
+    }
+  ],
+  "remote_gpu_config_known": false,
+  "remote_comparison_rule_known": false,
+  "backend_rounding_known": false
+}

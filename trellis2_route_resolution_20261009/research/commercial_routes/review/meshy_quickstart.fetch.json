@@ -1,0 +1,10 @@
+{
+  "url": "https://docs.meshy.ai/en/api/quick-start",
+  "final_url": "https://docs.meshy.ai/en/api/quick-start",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 338671,
+  "sha256": "6030114fb7665ff5197128c1b88b38749b5e9ebd57d3a4528f6a4e064b56365c",
+  "fetched_at_utc": "2026-10-09T10:17:58.174345+00:00",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/review/meshy_quickstart.html"
+}

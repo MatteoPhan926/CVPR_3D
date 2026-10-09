@@ -1,0 +1,10 @@
+{
+  "url": "https://docs.fal.ai/llms.txt",
+  "final_url": "https://fal.ai/docs/llms.txt",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 33048,
+  "sha256": "b270d7780f58e8c36a38d3affadff3759ae76730e6ef18f409994ccf458a6a85",
+  "fetched_at_utc": "2026-10-09T10:17:58.253201+00:00",
+  "path": "/workspace/CVPR_3D/trellis2_route_resolution_20261009/research/commercial_routes/review/fal_docs_index.txt"
+}
