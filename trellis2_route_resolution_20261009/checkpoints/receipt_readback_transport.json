@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-09T15:28:23.074150+00:00",
+  "receipt_commit_verified": "09cf978640e4cd30b628f6cb4e73c7deb353f553",
+  "initial_remote_head_check": {
+    "method": "git ls-remote origin refs/heads/trellis2-route-resolution-20261009",
+    "status": "transient_http503",
+    "error": "upstream connect error or disconnect/reset before headers. reset reason: remote refused stream reset"
+  },
+  "resolved_by": {
+    "method": "independent public GitHub REST branch-ref GET plus immutable raw-file downloads",
+    "http_status": 200,
+    "remote_commit_matches": true
+  },
+  "files": [
+    {
+      "path": "checkpoints/03_final_delivery.verification.json",
+      "sha256": "af1cc917163f60e03ea38eb16eb7ba57786988c49f0766e7f92a8dca1b8a3a29",
+      "matched": true
+    },
+    {
+      "path": "checkpoints/03_final_delivery.git_verification.json",
+      "sha256": "5b35a79a3bb08680ae4ba892a86892ad0e8029f72c93381df4f2385585d92efa",
+      "matched": true
+    },
+    {
+      "path": "DOWNLOADS.md",
+      "sha256": "fcccffb04cde35a5f2e948f709af3a4c413e0ac946fa810ff37ef22ac04bd438",
+      "matched": true
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "sha256": "47b71d5f72c878455d68ca0986e6d382a30de9e6869c3678666e516904f1055f",
+      "matched": true
+    },
+    {
+      "path": "SECRETARY_HANDOFF.md",
+      "sha256": "914f3a66fb0577f46576f227b2b749055611456f17612abb75cdcf461bf505c6",
+      "matched": true
+    }
+  ],
+  "original_payload_status": "173-file archive previously externally verified via HTTPS and independent Git-object fetch; unaffected by receipt-ref transport error."
+}
