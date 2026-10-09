@@ -1,0 +1,245 @@
+{
+  "name": "03_authored_baseline",
+  "utc": "2026-10-09T20:36:30.715852+00:00",
+  "archive": "03_authored_baseline.zip",
+  "archive_bytes": 52717524,
+  "archive_sha256": "c35658d2712a5332685f22e8c1212e1a3f4636f42e8640952d05e890207ab25e",
+  "payload_files": [
+    {
+      "path": "artifacts/authoring_A_v1/authoring.json",
+      "bytes": 1982,
+      "sha256": "f586a70f510c6c96fd4be25ecfad1bac9aa6d3711f28960270e0dd628a7aa428"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/car_door_authored.blend",
+      "bytes": 29721301,
+      "sha256": "075d6f74304137d1990ff94bef0a142d25520d0c2e0387039dd7f1ef449fcdbc"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/car_door_authored.glb",
+      "bytes": 10938528,
+      "sha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/cut_arrays.npz",
+      "bytes": 9254522,
+      "sha256": "3edbf4c639465176cbc21446f910321721d71463dac5b32e7ecb5f29b93afc47"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/edge_cabin_60.png",
+      "bytes": 2085114,
+      "sha256": "f510c7d1f73928728096eded10f1fdf53f0b26049b7626f2cbeeffdcf1768e25"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_00.png",
+      "bytes": 1088987,
+      "sha256": "d80c47d53445953c0e13e4a63c93ecbbd9938de7b3561f0653c548dc3c0f25b7"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_30.png",
+      "bytes": 1099036,
+      "sha256": "705d0f171485c9508df83f01d737d145997fcb99678c6d385dd7a5dde207fdaa"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_60.png",
+      "bytes": 1105672,
+      "sha256": "330da8ee2e341eafac90ea278a712c71324e7bdf169e235e08ef67ea2125bd4c"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/partition_only.blend",
+      "bytes": 27837705,
+      "sha256": "233566056a3bb2b071fcc3810316659a2abdea351d1824f3a0bcc3709fb49a95"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/partition_only_closed.png",
+      "bytes": 1088985,
+      "sha256": "cdef739c18c434d9711788f136406d929490a9d8adca80c4c5be967fb1d32bd3"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/partition_only_open60.png",
+      "bytes": 1098499,
+      "sha256": "dee3ec5894886699b3df2e3a72cea1c4fe2ffd1dbb5d225c0420a2540d02bb40"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/side_00.png",
+      "bytes": 1042774,
+      "sha256": "d61a7cc771487d38628a641a55149c33665189c078bb5f84f3280bb5ab5a6fe0"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/side_30.png",
+      "bytes": 1047633,
+      "sha256": "8634d2905ea7d531c869a3b582404a9cae6bc11fc1459f21b3f3dba707ee33a3"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/side_60.png",
+      "bytes": 1052022,
+      "sha256": "defd9b97c19d60a1227b8524ce49f173ad25fae44c8ea069bb3115be5c599935"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/control.json",
+      "bytes": 279,
+      "sha256": "2dbbc93d02fda51bec2812853b48399b4593c2d6262b1ea5b443b95b73651a1e"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/hero.png",
+      "bytes": 1089087,
+      "sha256": "98e0fda8020c72e80110ab320e46898bc06e3bf8a00f254aaf2ed966c381aa51"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/hero_exposure_minus1p5.png",
+      "bytes": 1102705,
+      "sha256": "7635121ee7c4eb4dcfc1509309af2d0463838d06dbc5360374452201bca8aa40"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/side.png",
+      "bytes": 1043598,
+      "sha256": "4819feb9249d3bc3a90913bc2ba6533ceade7f0d7d25335175b0019e6b8ef1c7"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/side_exposure_minus1p5.png",
+      "bytes": 1062364,
+      "sha256": "b88c064aaa41926b2ebda463f8ccb9a014bb9f968b0cec50e9180b4ad48454ec"
+    },
+    {
+      "path": "config/BOUNDED_INVESTIGATION.md",
+      "bytes": 1824,
+      "sha256": "bdf9f894d2f884f5d179b1e3f6b8d22be1be3956238a36118c52593b996971df"
+    },
+    {
+      "path": "config/INHERITED_AUTHORING_INTENT.md",
+      "bytes": 2678,
+      "sha256": "f33203ba0849b46407d3d124025b685ea5c1606e0b92c905f319666e35788aa3"
+    },
+    {
+      "path": "config/door_A.json",
+      "bytes": 871,
+      "sha256": "23cc3e09f7d3f80f5142650c94c96d810a140bdd81f2ae2d515af29636dbdd1b"
+    },
+    {
+      "path": "logs/authoring_A_v1.log",
+      "bytes": 59546,
+      "sha256": "3b34f7ec8147fcd5adc8be99131f0c9059ac478c34d7df676150da0c0ae3f2a0"
+    },
+    {
+      "path": "logs/inspect_A.log",
+      "bytes": 2292,
+      "sha256": "913d1f1b1992b83fa8ef8bbabb5928584ca3327111fffefce02987cb72f1a814"
+    },
+    {
+      "path": "logs/inspect_A_v2.log",
+      "bytes": 29265,
+      "sha256": "e98f1e74d0642672e5aa2c124d2263e11cfd867c41ced8f8782a4bbda40beb43"
+    },
+    {
+      "path": "logs/inspect_B_v2.log",
+      "bytes": 29276,
+      "sha256": "b49a6c66f6754dcdc93d3c3d79212833fede764bfdc80e29309cf759b4553a75"
+    },
+    {
+      "path": "logs/presentation_A.log",
+      "bytes": 26896,
+      "sha256": "d9834ba99ae8ff84b411cd46d80b8bf6681f61788e5812cb5f9a6d94dc8a54ab"
+    },
+    {
+      "path": "logs/presentation_B.log",
+      "bytes": 26782,
+      "sha256": "f0fd4addd6794b71406c09344054134fafd98a432cddc4894fec00079bd701bf"
+    },
+    {
+      "path": "logs/raw_same_camera_A.log",
+      "bytes": 21275,
+      "sha256": "b69e21fb41ea79b9f20b163f4f7e016244098738eb94c881fc8e612b78688e3d"
+    },
+    {
+      "path": "research/EXECUTION_NOTES.md",
+      "bytes": 969,
+      "sha256": "856011279faaab58f80a01d9e96fda945e33382c6a4b994af5e0ffef39da35d2"
+    },
+    {
+      "path": "research/adversarial_review/REVIEW_NOTES.md",
+      "bytes": 6426,
+      "sha256": "307e08e945aa035059e13f2690bcd814e9452cd90cb56db08cb96ccd64810bf8"
+    },
+    {
+      "path": "source/__pycache__/author_door.cpython-312.pyc",
+      "bytes": 22924,
+      "sha256": "8c63e591b2517aea834aa4210bf4356bf8fd9fb9da454dceede3e7ba1df0560e"
+    },
+    {
+      "path": "source/author_door.py",
+      "bytes": 10550,
+      "sha256": "e3088d4350e317375d1ed2ad12be58c406e1c72d834522c98fc6732a249ec53a"
+    },
+    {
+      "path": "source/checkpoint.py",
+      "bytes": 4657,
+      "sha256": "135ca60dd63d6c694ef50d05472b79bc14bad462935e9b77c783de72c2a9aa96"
+    },
+    {
+      "path": "source/inspect_render.py",
+      "bytes": 3225,
+      "sha256": "0895015ef5822efc275c9f42999494d9ba591276e84919206dd5bccea79b93da"
+    },
+    {
+      "path": "source/inspect_render_attempt001.py",
+      "bytes": 3216,
+      "sha256": "37fb446e0484cfcb8f4568defb9db9e2275555a9d1f0cb23255fc563135335ef"
+    },
+    {
+      "path": "source/presentation_controls.py",
+      "bytes": 2356,
+      "sha256": "37b9fa0af10b019cbe73ce1b2757bf448a8c84b7347e0e9395d3f820dd8fbf10"
+    },
+    {
+      "path": "source/raw_same_camera.py",
+      "bytes": 1268,
+      "sha256": "e4a6ba3e8947bfadb0235770d0adb94cc06487ab72e89ee4f6cbb08edf75d38e"
+    },
+    {
+      "path": "source/verify_authored.py",
+      "bytes": 3975,
+      "sha256": "e5ed17362544579c11b9f435b6f0046d6f5ba1bdc15fed833cf59fcd34f249bb"
+    },
+    {
+      "path": "source/viewer/README.md",
+      "bytes": 1819,
+      "sha256": "f40c191f52907b9831f3c952f60a729e458d1623d566b56866a7c7091937ed42"
+    },
+    {
+      "path": "source/viewer/build.cjs",
+      "bytes": 3095,
+      "sha256": "b52e302b1dff383e80efe8a4e7c86dae878aa598900eac80914045e216895556"
+    },
+    {
+      "path": "source/viewer/main.js",
+      "bytes": 9269,
+      "sha256": "a862aeac7d684281e91cd7832ca5650e889b93840f8980be4faa28473939072e"
+    },
+    {
+      "path": "source/viewer/template.html",
+      "bytes": 5921,
+      "sha256": "2829c39ba15fc45ed196e72db59d1ee4e94cd23ee48e153057a3d0b857295fe8"
+    },
+    {
+      "path": "source/viewer/verify_viewer.py",
+      "bytes": 7325,
+      "sha256": "5af9e3768ab163608fa544147de34aa4f1ce2e8ab3ad90e29259fb2086722dad"
+    }
+  ],
+  "included_prefixes": [
+    "artifacts/authoring_A_v1",
+    "artifacts/raw_same_camera_A",
+    "config",
+    "source",
+    "logs",
+    "research/EXECUTION_NOTES.md",
+    "research/adversarial_review"
+  ],
+  "excluded": [
+    "Paths outside included_prefixes when specified; earlier verified milestones remain separate",
+    "Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)",
+    "External installed environments/model weights",
+    "Server-held unexposed latent state"
+  ],
+  "original_evidence": "Original probe and prior research remain unchanged and separately checkpointed."
+}

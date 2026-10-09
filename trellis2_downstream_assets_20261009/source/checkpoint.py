@@ -14,6 +14,7 @@ p = argparse.ArgumentParser()
 p.add_argument('operation', choices=['pack', 'verify'])
 p.add_argument('name')
 p.add_argument('--commit')
+p.add_argument('--include-prefix', action='append', default=[], help='Optional relative file/directory prefix; snapshot only those paths')
 args = p.parse_args()
 assert re.fullmatch(r'[a-z0-9_-]+', args.name)
 cp = ROOT / 'checkpoints'
@@ -28,6 +29,8 @@ if args.operation == 'pack':
                 continue
             data = f.read_bytes()
             name = f.relative_to(ROOT).as_posix()
+            if args.include_prefix and not any(name == prefix or name.startswith(prefix.rstrip('/') + '/') for prefix in args.include_prefix):
+                continue
             z.writestr(name, data)
             assert f.read_bytes() == data, 'Source changed during snapshot: ' + name
             entries.append({'path': name, 'bytes': len(data), 'sha256': digest(data)})
@@ -35,7 +38,7 @@ if args.operation == 'pack':
     data = archive.read_bytes()
     dump(manifest_path, {'name': args.name, 'utc': datetime.now(timezone.utc).isoformat(),
          'archive': archive.name, 'archive_bytes': len(data), 'archive_sha256': digest(data),
-         'payload_files': entries, 'excluded': ['Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)', 'External installed environments/model weights', 'Server-held unexposed latent state'],
+         'payload_files': entries, 'included_prefixes': args.include_prefix or ['all phase paths except checkpoints'], 'excluded': ['Paths outside included_prefixes when specified; earlier verified milestones remain separate', 'Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)', 'External installed environments/model weights', 'Server-held unexposed latent state'],
          'original_evidence': 'Original probe and prior research remain unchanged and separately checkpointed.'})
     print(json.dumps({'archive': str(archive), 'files': len(entries), 'bytes': len(data), 'sha256': digest(data)}))
 else:

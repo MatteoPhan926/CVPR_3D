@@ -1,0 +1,59 @@
+{
+  "status": "authored_exported",
+  "source": "A",
+  "config": {
+    "asset_label": "A",
+    "coordinate_frame": "Blender import Z up, front +X, camera-facing side -Y",
+    "selection": "Convex XZ door silhouette extruded through near-side surface; visual manual specification after side render",
+    "polygon_xz": [
+      [
+        -0.07,
+        -0.1
+      ],
+      [
+        0.148,
+        -0.1
+      ],
+      [
+        0.151,
+        0.018
+      ],
+      [
+        0.115,
+        0.098
+      ],
+      [
+        0.077,
+        0.137
+      ],
+      [
+        -0.052,
+        0.136
+      ]
+    ],
+    "side_y_max": -0.1,
+    "hinge_xyz": [
+      -0.061,
+      -0.153,
+      0.0
+    ],
+    "opening_z_rotation_sign": -1,
+    "hinge_status": "Plausible rear hinge for this vehicle and outward rotation; not recovered hidden mechanical ground truth",
+    "additions": "0.006 inward Y lining/edge thickness; 0.022 aperture jamb; labelled proxy cabin floor, seat and dashboard",
+    "units": "Native normalized asset units, not metric physical dimensions",
+    "scope": "One bounded conventional preparation; no resolution/seed comparison or artist-time claim"
+  },
+  "elapsed_seconds": 191.5983137990006,
+  "original_triangles": 291603,
+  "fully_inside_source_triangles": 12995,
+  "fully_outside_source_triangles": 277231,
+  "boundary_candidate_triangles": 1377,
+  "door_triangles": 15064,
+  "fixed_triangles": 279409,
+  "original_area": 3.557456472842865,
+  "partition_area": 3.557456472842865,
+  "door_area": 0.16703676848607374,
+  "boundary_edges": 1396,
+  "material_policy": "Native exterior material and textures unchanged. New lining, edges, jamb, floor, seats and dashboard use labelled simple materials. No source exterior repaint/remesh/replacement.",
+  "limits": "Hand-authored polygon and proxy interior; no claim of artist labor, watertightness, recovered hidden geometry, or physical collision certification. Export playback and views require independent verification."
+}

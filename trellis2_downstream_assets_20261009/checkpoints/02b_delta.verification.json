@@ -1,0 +1,42 @@
+{
+  "commit": "00fb1c157b4c24d83374d92c69abd0aee0a01b8f",
+  "externally_verified": true,
+  "files": [
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/02_inspection_preparation.verification.json",
+      "sha256": "227462c47fd61da2fce30f32ce204c2136e906457d398f935a01aba144126475",
+      "bytes": 846
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/config/door_A.json",
+      "sha256": "23cc3e09f7d3f80f5142650c94c96d810a140bdd81f2ae2d515af29636dbdd1b",
+      "bytes": 871
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/brief_review/HINGE_REGION_REVIEW.md",
+      "sha256": "b8a395fdc9b6ebc57039fdbbcb943b4c8fd3c4f5e650599e51ba8e205b38a661",
+      "bytes": 6630
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/brief_review/INDEPENDENT_BRIEF_REVIEW.md",
+      "sha256": "ec28ce7d4647f677ac1b9b9051f89f26beaf6a8750638c29118b0e7f5a523f4f",
+      "bytes": 18014
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/integrity/REPORT.md",
+      "sha256": "c0f916d363a72e3d61c8126e1e0a309b7bbf948036728465c57cc827031d1f49",
+      "bytes": 6802
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/integrity/integrity_manifest.json",
+      "sha256": "34efcc1bd6855dfbf7d801172d04e1b10c8c12ba6ff58fdb3629b42c0d4b5e41",
+      "bytes": 6651
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/author_door.py",
+      "sha256": "e3088d4350e317375d1ed2ad12be58c406e1c72d834522c98fc6732a249ec53a",
+      "bytes": 10550
+    }
+  ],
+  "earlier_verification_interruption": "Local hinge review appended after prior commit; latest stable version committed before repeating readback. No expensive work proceeded."
+}
