@@ -1,0 +1,11 @@
+{
+  "externally_verified": true,
+  "checkpoint_commit": "228ef1b23df2660e3bfa36096cce4b4f12bee57e",
+  "utc": "2026-10-09T16:49:57.851783+00:00",
+  "archive_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/228ef1b23df2660e3bfa36096cce4b4f12bee57e/trellis2_downstream_assets_20261009/checkpoints/01_originals.zip",
+  "manifest_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/228ef1b23df2660e3bfa36096cce4b4f12bee57e/trellis2_downstream_assets_20261009/checkpoints/01_originals.manifest.json",
+  "archive_sha256": "dc31de48dbab7d369c4b84b7e3009b70eb1b30cf58cc2a4d2ca76ba2268909ac",
+  "verified_payload_files": 7,
+  "fresh_download_directory": "/tmp/trellis-readback-2pv14po8",
+  "verification": "Fresh immutable HTTPS downloads; archive and every member SHA-256; safe extraction and reread."
+}
