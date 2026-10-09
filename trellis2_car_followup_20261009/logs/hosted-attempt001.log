@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/CVPR_3D/trellis2_car_followup_20261009/source/hosted_followup.py", line 12, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'

@@ -3,18 +3,19 @@
 import os
 os.environ["HF_HUB_DISABLE_TELEMETRY"]="1"
 os.environ["PYTHONDONTWRITEBYTECODE"]="1"
-import base64,hashlib,json,re,shutil,sys,time,traceback
+import base64,hashlib,json,re,shutil,struct,sys,time,traceback
 from pathlib import Path
 from datetime import datetime,timezone
 from concurrent.futures import TimeoutError as FutureTimeout
 from huggingface_hub import get_token
 from gradio_client import Client,handle_file
-from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"raw/hosted-attempt001"
 OUT.mkdir(exist_ok=False)
-PLAN=json.loads((ROOT/"config/generation_plan.json").read_text())
+PLAN_BYTES=(ROOT/"config/generation_plan.json").read_bytes()
+PLAN_SHA256=hashlib.sha256(PLAN_BYTES).hexdigest()
+PLAN=json.loads(PLAN_BYTES)
 STARTED=time.monotonic()
 report={"phase":ROOT.name,"started_utc":datetime.now(timezone.utc).isoformat(),"status":"starting","events":[],"generation_requests":0,"export_requests":0,"successful_generation_returns":0,"downloaded_glbs":0}
 def sha(p):
@@ -40,6 +41,7 @@ def gate(name,required):
  for key,expected in required.items():assert value.get(key)==expected,(name,key)
  return value
 def call(api,timeout,**kwargs):
+ assert (ROOT/"config/generation_plan.json").read_bytes()==PLAN_BYTES,"Plan changed during live session"
  record("call_started",api=api,budget_seconds=timeout)
  started=time.monotonic()
  job=client.submit(api_name=api,**kwargs)
@@ -66,7 +68,7 @@ stage="initialization"
 try:
  original=ROOT/PLAN["input"]
  assert sha(original)==PLAN["input_sha256"],"Original input hash mismatch"
- gate("initial_checkpoint_verified.json",{"input_sha256":sha(original),"plan_sha256":sha(ROOT/"config/generation_plan.json")})
+ gate("initial_checkpoint_verified.json",{"input_sha256":sha(original),"plan_sha256":PLAN_SHA256})
  token=get_token()
  record("authentication",existing_hf_auth_resolves=bool(token),credential_values_logged=False)
  client=Client(PLAN["service"],token=token,download_files=str(OUT/"downloads"),verbose=False,analytics_enabled=False,httpx_kwargs={"timeout":300.0})
@@ -78,10 +80,13 @@ try:
  processed=ROOT/"inputs/hosted_preprocessed.png"
  assert not processed.exists()
  shutil.copy2(source,processed)
- with Image.open(processed) as img:info={"size":list(img.size),"mode":img.mode}
+ png=processed.read_bytes()
+ assert png[:8]==b'\x89PNG\r\n\x1a\n' and png[12:16]==b'IHDR',"Expected downloaded PNG"
+ width,height,bit_depth,color_type=struct.unpack(">IIBB",png[16:26])
+ info={"size":[width,height],"bit_depth":bit_depth,"png_color_type":color_type}
  (OUT/"preprocessing_return.json").write_text(json.dumps({"downloaded_path":str(source),"processed_sha256":sha(processed),**info},indent=2))
  stage="preprocessing_review"
- gate("generation_checkpoint_verified.json",{"input_sha256":sha(original),"processed_sha256":sha(processed),"plan_sha256":sha(ROOT/"config/generation_plan.json")})
+ gate("generation_checkpoint_verified.json",{"input_sha256":sha(original),"processed_sha256":sha(processed),"plan_sha256":PLAN_SHA256})
  review=json.loads((ROOT/"config/preprocessing_review.json").read_text())
  assert review["proceed"] is True and review["processed_sha256"]==sha(processed)
  with (OUT/"generation_requested.json").open("x") as f:json.dump({"utc":datetime.now(timezone.utc).isoformat(),"plan":PLAN,"processed_sha256":sha(processed)},f,indent=2)

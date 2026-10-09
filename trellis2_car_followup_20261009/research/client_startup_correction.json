@@ -1,0 +1,12 @@
+{
+  "status": "corrected_local_startup_failure",
+  "first_command_exit": 1,
+  "first_error": "ModuleNotFoundError: No module named PIL",
+  "first_log": "logs/hosted-attempt001.log",
+  "stage": "module import, before Client construction, before OUT creation and before any API call",
+  "network_requests": 0,
+  "generation_requests": 0,
+  "correction": "Remove unused image-decoding dependency; parse downloaded PNG IHDR with Python standard library. All script imports now pass in the intended interpreter. Freeze plan bytes/hash and reject drift before every API call.",
+  "generation_plan_changed": false,
+  "retry": "One explicitly justified corrective launch after proven pre-request local error; no model retry."
+}
