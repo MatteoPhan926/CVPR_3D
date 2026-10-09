@@ -1,0 +1,50 @@
+{
+  "name": "01_originals",
+  "utc": "2026-10-09T16:49:42.004816+00:00",
+  "archive": "01_originals.zip",
+  "archive_bytes": 14001113,
+  "archive_sha256": "dc31de48dbab7d369c4b84b7e3009b70eb1b30cf58cc2a4d2ca76ba2268909ac",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "bytes": 944,
+      "sha256": "3581236f241b7dd0eaae12aa7466a2b77f11d4b1f4c0a1d41df435800b3afbad"
+    },
+    {
+      "path": "config/INHERITED_AUTHORING_INTENT.md",
+      "bytes": 2678,
+      "sha256": "f33203ba0849b46407d3d124025b685ea5c1606e0b92c905f319666e35788aa3"
+    },
+    {
+      "path": "inputs/PROVENANCE.json",
+      "bytes": 901,
+      "sha256": "052d86ad6af84f6f11acd6b99f58adb3195f07a8c1626fbe6904a361aca5d4ac"
+    },
+    {
+      "path": "inputs/original_intended_reference.jpg",
+      "bytes": 39937,
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"
+    },
+    {
+      "path": "inputs/sample_2026-10-09T183055.354.glb",
+      "bytes": 10060500,
+      "sha256": "36c45359ff5fb8b8df0a421f1102598554b9070bc86f0a5e28eee82da3585daa"
+    },
+    {
+      "path": "inputs/sample_2026-10-09T183324.855.glb",
+      "bytes": 10297284,
+      "sha256": "945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a"
+    },
+    {
+      "path": "source/checkpoint.py",
+      "bytes": 4171,
+      "sha256": "714d611340e4072e073fc9049704cb45f0e314aaeca0d06d68030749f08fd25a"
+    }
+  ],
+  "excluded": [
+    "Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)",
+    "External installed environments/model weights",
+    "Server-held unexposed latent state"
+  ],
+  "original_evidence": "Original probe and prior research remain unchanged and separately checkpointed."
+}

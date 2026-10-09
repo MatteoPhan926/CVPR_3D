@@ -1,0 +1,24 @@
+[
+  {
+    "label": "A",
+    "path": "inputs/sample_2026-10-09T183055.354.glb",
+    "bytes": 10060500,
+    "sha256": "36c45359ff5fb8b8df0a421f1102598554b9070bc86f0a5e28eee82da3585daa",
+    "provenance": "User-uploaded GLB, reported generated with TRELLIS.2 after signing into Hugging Face",
+    "resolution": null,
+    "seed": null,
+    "export_settings": null,
+    "exact_input_linkage": "Reported project context; not independently established"
+  },
+  {
+    "label": "B",
+    "path": "inputs/sample_2026-10-09T183324.855.glb",
+    "bytes": 10297284,
+    "sha256": "945781b608e56d99842d7c403252647bf17a7c82b4697f28dcbdb712c39b345a",
+    "provenance": "User-uploaded GLB, reported generated with TRELLIS.2 after signing into Hugging Face",
+    "resolution": null,
+    "seed": null,
+    "export_settings": null,
+    "exact_input_linkage": "Reported project context; not independently established"
+  }
+]
