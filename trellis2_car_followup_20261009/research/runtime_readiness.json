@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T05:16:44.963412+00:00",
+  "python": "3.12.14",
+  "cpu_count": 5,
+  "nvidia_device_nodes": [],
+  "nvidia_smi": null,
+  "blender": "/usr/bin/blender",
+  "credential_presence": {
+    "HF_TOKEN": false,
+    "HUGGING_FACE_HUB_TOKEN": false,
+    "HUGGINGFACEHUB_API_TOKEN": false,
+    "REPLICATE_API_TOKEN": false,
+    "FAL_KEY": false
+  },
+  "source_syntax": "passed; no network or inference",
+  "existing_hf_auth_resolves": false,
+  "gradio_client": "2.0.1",
+  "huggingface_hub": "1.33.0"
+}

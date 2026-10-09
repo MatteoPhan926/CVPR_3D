@@ -1,0 +1,110 @@
+{
+  "name": "01_initial",
+  "utc": "2026-10-09T05:17:00.346353+00:00",
+  "archive": "01_initial.zip",
+  "archive_bytes": 93273,
+  "archive_sha256": "72df7d036150a84e66523d0e4159fc6331ca22f4b223cbc594d4b1fa4be53091",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "bytes": 1730,
+      "sha256": "65479925187bf0c647fce782c42865264e5d65b292d06cf30e264de3198933b7"
+    },
+    {
+      "path": "config/HISTORICAL_HOSTED_PLAN.json",
+      "bytes": 1860,
+      "sha256": "93bcd6a8d7d0277c4c91ad089c1ce987b0f4462808686f579a69d22973fe1aa7"
+    },
+    {
+      "path": "config/INHERITED_AUTHORING_INTENT.md",
+      "bytes": 2678,
+      "sha256": "f33203ba0849b46407d3d124025b685ea5c1606e0b92c905f319666e35788aa3"
+    },
+    {
+      "path": "config/generation_plan.json",
+      "bytes": 4414,
+      "sha256": "e78243af2e9eda16c70527b1b172b22e3736c38860ea43bb21c3dfdaf2b60f13"
+    },
+    {
+      "path": "config/phase_identity.json",
+      "bytes": 696,
+      "sha256": "76246efa879055e4f0fec52d02b6e0ac34782244451d7d3ca2a0d0819e093cf4"
+    },
+    {
+      "path": "inputs/original.jpg",
+      "bytes": 39937,
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"
+    },
+    {
+      "path": "research/HISTORICAL_HOSTED_ATTEMPT.json",
+      "bytes": 1176,
+      "sha256": "981981de721d2398461f1d5a6b457e3cf338fc48674ca230ae7c1ef362865078"
+    },
+    {
+      "path": "research/HISTORICAL_HOSTED_CLIENT.py",
+      "bytes": 4183,
+      "sha256": "52a7d9ced93fc576b7a1072cd46ff1ebe369e431e33c5e6294300a267df0f9ea"
+    },
+    {
+      "path": "research/current_access_receipts.json",
+      "bytes": 1462,
+      "sha256": "521d8cac6184ab7f036585507b75e104bec6203a34033c4ded039601b53c046d"
+    },
+    {
+      "path": "research/model_live.json",
+      "bytes": 4304,
+      "sha256": "c05291dd79b38fe7439971f963c6207e8ffa4e0e854599bdbcb05c3ea35e0a5c"
+    },
+    {
+      "path": "research/official_readme.md",
+      "bytes": 16212,
+      "sha256": "adc985d5a71fda0a5cb7287f58b6baa7de8db1568c4483ac210f3447b786552b"
+    },
+    {
+      "path": "research/runtime_readiness.json",
+      "bytes": 509,
+      "sha256": "e2fff3e521e5048aafeb46fb85582e64087aadaa9984c4984a3a71cdb8f63519"
+    },
+    {
+      "path": "research/space_api.json",
+      "bytes": 14118,
+      "sha256": "f5f50dbe6f7932ef9c633df4ce0dde4af26b1e9982866b33dd5dc5f5d2abdc54"
+    },
+    {
+      "path": "research/space_app_pinned.py",
+      "bytes": 23014,
+      "sha256": "97edffac5d1c78992643551cc2d7daab6d9b3d7c0f049ddb5d9640ad11cfd4c3"
+    },
+    {
+      "path": "research/space_app_receipt.json",
+      "bytes": 276,
+      "sha256": "13c47733ab5e34856b1c4b8e83db783a3f9357575eb2cca8311a9eb404935e34"
+    },
+    {
+      "path": "research/space_config.json",
+      "bytes": 88394,
+      "sha256": "784450c322bfbdf22a3cf57844b1bc494551b783fbf5966f0b84c6c57815a335"
+    },
+    {
+      "path": "research/space_live.json",
+      "bytes": 13757,
+      "sha256": "679e9b39051ddb74eaf1dae638035e903e4f29523e2654f820a543ceae8bb4c4"
+    },
+    {
+      "path": "source/checkpoint.py",
+      "bytes": 4171,
+      "sha256": "714d611340e4072e073fc9049704cb45f0e314aaeca0d06d68030749f08fd25a"
+    },
+    {
+      "path": "source/hosted_followup.py",
+      "bytes": 7190,
+      "sha256": "e91a4846fba353e858ef5bbb9449143f11196d1810ac4210641fd6444a0b3b59"
+    }
+  ],
+  "excluded": [
+    "Prior checkpoint ZIPs/manifests/receipts (retained separately in Git history)",
+    "External installed environments/model weights",
+    "Server-held unexposed latent state"
+  ],
+  "original_evidence": "Original probe and prior research remain unchanged and separately checkpointed."
+}

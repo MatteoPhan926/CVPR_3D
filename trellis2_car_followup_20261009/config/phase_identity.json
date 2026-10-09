@@ -1,0 +1,12 @@
+{
+  "phase_id": "trellis2_car_followup_20261009",
+  "created_at_utc": "2026-10-09T03:56:05.891872+00:00",
+  "date_timezone": "Asia/Bangkok",
+  "user_authorization": "Prioritize missing TRELLIS.2 experiment using existing input and authoring intent; no silent model/task substitution.",
+  "previous_delivery_commit": "57dcd5a510cd1ac10a292a8cee2ca9913f7ef375",
+  "separate_other_car_run_metadata": "unknown; this explicitly requested follow-up is isolated and does not assert its identity",
+  "revision_study": "not started",
+  "raw_input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "original_roots_read_only": true,
+  "new_expensive_operations_started": false
+}

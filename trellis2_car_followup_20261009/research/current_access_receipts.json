@@ -1,0 +1,42 @@
+[
+  {
+    "file": "space_live.json",
+    "url": "https://huggingface.co/api/spaces/microsoft/TRELLIS.2",
+    "requested_utc": "2026-10-09T03:56:36.988109+00:00",
+    "http_status": 200,
+    "bytes": 13757,
+    "sha256": "679e9b39051ddb74eaf1dae638035e903e4f29523e2654f820a543ceae8bb4c4"
+  },
+  {
+    "file": "space_config.json",
+    "url": "https://microsoft-trellis-2.hf.space/config",
+    "requested_utc": "2026-10-09T03:56:36.988903+00:00",
+    "http_status": 200,
+    "bytes": 88394,
+    "sha256": "784450c322bfbdf22a3cf57844b1bc494551b783fbf5966f0b84c6c57815a335"
+  },
+  {
+    "file": "space_api.json",
+    "url": "https://microsoft-trellis-2.hf.space/gradio_api/info",
+    "requested_utc": "2026-10-09T03:56:36.989407+00:00",
+    "http_status": 200,
+    "bytes": 14118,
+    "sha256": "f5f50dbe6f7932ef9c633df4ce0dde4af26b1e9982866b33dd5dc5f5d2abdc54"
+  },
+  {
+    "file": "model_live.json",
+    "url": "https://huggingface.co/api/models/microsoft/TRELLIS.2-4B",
+    "requested_utc": "2026-10-09T03:56:36.989849+00:00",
+    "http_status": 200,
+    "bytes": 4304,
+    "sha256": "c05291dd79b38fe7439971f963c6207e8ffa4e0e854599bdbcb05c3ea35e0a5c"
+  },
+  {
+    "file": "official_readme.md",
+    "url": "https://raw.githubusercontent.com/microsoft/TRELLIS.2/main/README.md",
+    "requested_utc": "2026-10-09T03:56:36.990310+00:00",
+    "http_status": 200,
+    "bytes": 16212,
+    "sha256": "adc985d5a71fda0a5cb7287f58b6baa7de8db1568c4483ac210f3447b786552b"
+  }
+]

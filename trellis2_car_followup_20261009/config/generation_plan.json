@@ -1,0 +1,63 @@
+{
+  "phase": "TRELLIS.2 follow-up, separate from completed TripoSR probe",
+  "date": "2026-10-09",
+  "timezone": "Asia/Bangkok",
+  "model": "microsoft/TRELLIS.2-4B",
+  "service": "https://microsoft-trellis-2.hf.space",
+  "space_commit_observed": "ebf60b20fc5a4607f90a1c11c0aab0ceeda5429d",
+  "model_repository_revision_observed": "af44b45f2e35a493886929c6d786e563ec68364d",
+  "hosted_weights_provenance": "Space code declares model ID without a revision pin. Observed model repo tip is not proof of loaded server weights.",
+  "input": "inputs/original.jpg",
+  "input_sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1",
+  "preprocessing": "Official /preprocess_image, BRIA-RMBG-2.0, square crop and black compositing; inspect actual returned image before generation. No second preprocessing of the processed PNG.",
+  "seed": 42,
+  "resolution": "1024",
+  "pipeline_type": "1024_cascade",
+  "generation_parameters": {
+    "ss_guidance_strength": 7.5,
+    "ss_guidance_rescale": 0.7,
+    "ss_sampling_steps": 12,
+    "ss_rescale_t": 5,
+    "shape_slat_guidance_strength": 7.5,
+    "shape_slat_guidance_rescale": 0.5,
+    "shape_slat_sampling_steps": 12,
+    "shape_slat_rescale_t": 3,
+    "tex_slat_guidance_strength": 1,
+    "tex_slat_guidance_rescale": 0,
+    "tex_slat_sampling_steps": 12,
+    "tex_slat_rescale_t": 3
+  },
+  "export_parameters": {
+    "decimation_target": 300000,
+    "texture_size": 2048
+  },
+  "budget": {
+    "maximum_successful_candidates": 1,
+    "automatic_generation_retries": 0,
+    "preprocessing_seconds": 180,
+    "generation_queue_and_call_seconds": 1200,
+    "export_queue_and_call_seconds": 600,
+    "checkpoint_gate_seconds": 900,
+    "free_service_only": true,
+    "paid_services": false,
+    "training": false
+  },
+  "retry_rule": "No repeated quota requests unchanged, no seed search, no fallback model. At most one separately recorded corrective reattempt can be considered only after a proven pre-inference client/API error and an independently justified fix. Unknown timeout outcome is not permission to generate again.",
+  "use_contract": "Same visible front cabin door, coherent frame/glass/handle/lining, 0/30/60 degree poses, fixed other parts, convincing recognizable car in 1440x960 hero/side views and exposed-edge/cabin close-up.",
+  "timing_clarification": "Two seconds opening plus two seconds closing, matching the actual prior demonstration; pose targets are unchanged. Historical phrase 'two-second open/close' is ambiguous and this clarification is explicit.",
+  "conventional_preparation": "Asset-specific selection/hinge; preserve UVs/textures/PBR/materials and normals; allow local remesh/material repairs and plausible interior completion. Do not reuse TripoSR vertex-color reconstruction scripts unchanged.",
+  "preparation_budget": "If a candidate is obtained, one documented preparation and at most two targeted local corrections addressing identified defects, then final review; no whole-car replacement/repainting or unlimited cosmetic campaign.",
+  "measurements": [
+    "untouched exported GLB plus native preview",
+    "GLB schema/textures/materials/coordinate inspection",
+    "import-export appearance check before substantive preparation",
+    "closed/raw same-camera comparison",
+    "0/30/60 degree plus trajectory and reversible return, fixed body",
+    "selected moving surface with completion hidden/enabled",
+    "technical visual review separate from motion validity; artist acceptance unmeasured without an artist"
+  ],
+  "checkpoint_rule": "Verify initial contract/code/input checkpoint before hosted preprocessing; verify processed image checkpoint before generation; preserve and externally checkpoint any generation preview before separate GPU export; checkpoint returned GLB before authoring.",
+  "server_latent_limit": "API exposes HTML and GLB, but not server-held gr.State shape/texture latents. Do not pretend unexposed latents are backed up. Keep the same live client for export and disclose inaccessible intermediates.",
+  "comparisons": "Prior TripoSR remains a historical same-input/task comparator, not a controlled cross-generator statistical comparison. No static-preview task substitution.",
+  "stopping": "If access/resource/export genuinely blocks the run, retain exact errors and state, distinguish inference from export, report minimum enabling requirement and no asset-quality conclusion."
+}
