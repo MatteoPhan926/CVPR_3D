@@ -1,0 +1,51 @@
+# Independent final adversarial review
+
+## Decision
+
+**Stop this bounded v1 screen with a useful technical partial result. The full declared convincing door-opening target is not met.** A retains recognizable vehicle appearance and supports an exported, reversible front-door-region motion. Its exposed moving edge/frame and cabin remain conspicuously crude in the required whole-car and close views. The fresh reopened output reproduces those defects. This is an assistant technical/visual judgment against the recorded brief, not measured human artist acceptance.
+
+The evidence does not establish a general TRELLIS.2 limitation, a resolution effect, the necessity of topology/segmentation/joint research, or a publishable method gap. The strongest unresolved alternative is that this particular depth-prism selection and simple completion recipe retains inappropriate sheets and exposes a poor contour, then duplicates that structure in its lining. Competent local conventional preparation has not been exhausted.
+
+## Evidence and review scope
+
+I read the inherited intent and bounded plan, provenance, integrity report, independent brief/hinge reviews, provisional adversarial notes, executed authoring record, and relevant authoring/reimport/selection-overlay sources. I inspected actual images using `view_image`, including the original reference; A base-color/clay controls; B base-color/clay quarter views; matched raw A; partition-only closed/open; authored 0/30/60 and edge/cabin views; all six reopened hero/side poses; reopened edge/cabin and exposure-control views; and both provenance/orientation overlays. `SEEN_IMAGES.json` enumerates the exact image files and hashes inspected by this reviewer.
+
+The final validation records read were `artifacts/reopened_A_v1/motion_verification.json` and `research/final_validation/{authored_gltf_validation,native_texture_preservation,control_measurements}.json`. These are executed probe evidence from the parent, supplemented here by independent source and image review. I did not independently run Blender, edit assets, or perform artist testing. Browser-viewer verification is outside this review; any later browser pass must be reported at its own tested scope.
+
+A was chosen by filename order; B was not authored. Both are user-reported direct Hugging Face TRELLIS.2 outputs. Per-file 512/1536 mapping, seeds, decimation/export settings, and original-versus-background-removed conditioning linkage remain unknown. The earlier failed-run screenshot supplies none of those missing facts. B's differently oriented raw views are descriptive evidence only.
+
+## Outcome against the use contract
+
+| Requirement | Finding | Evidence and limit |
+|---|---|---|
+| Recognizable supplied vehicle | Retained, with visible quality limitations | The upright cabin, narrow grille, round lamps, separate fenders and bumper are recognizable. Uneven fenders/panels, flattened tire contours and a detached piece below the cabin are visible before authoring. Recognition alone does not establish convincing CGI or a lower-demand use's acceptance. |
+| Preserve the closed exterior through the cut/export | Supported for tested views | Matched raw versus partition-only closed views are visually near-identical. Reopened closed views retain the authored appearance. Small visible changes through the front-window region follow added cabin/lining. This is not an all-surface fidelity certification. |
+| Open the intended front-door region | Broad location and rigid motion supported; semantic assembly incomplete | The region behind the windshield and ahead of the rear door visibly moves outward with its window-frame region and mirror. A coherent glass pane and distinct handle behavior are not established. A parented mesh is not proof that every selected face belongs to the intended assembly. |
+| Reversible 0–60 degree motion and fixed surrounding body | Technical pass in the tested GLB/Blender path | Reimported 121 samples follow 0→60→0 over four seconds, with monotonic opening/closing, 2.11e-5 degree maximum sampled angle error and 1.34e-8 maximum door-relative-to-hinge transform error. The body remains fixed within the probe tolerance. These checks do not certify physical clearance or human interaction quality. |
+| Believable aperture, thickness, lining and interior in required views | Fails this screen | The aperture is visible, but repeated irregular sheets and jagged strips remain along the moving frame/edge at 30 and 60 degrees. They are conspicuous in the full-car hero view, not merely in an extreme crop. The reopened close-up exposes the same layered boundary and simple box-like cabin proxies. |
+| Native appearance/material retention | Substantially supported; exact scope matters | Original texture payloads are identical in the authored GLB; native exterior UV layers/material use survive. Matched renders support appearance preservation. Exact texture bytes and UV-layer presence alone do not prove every newly interpolated cut UV value or every material evaluation. |
+| Full meaningful artist-use target | Not met by this output; human acceptance unmeasured | The visible opening-quality requirement remains unmet despite the working control/export. Neither coarse scene-blocking utility nor a passing validator substitutes for the declared door target. |
+
+The four-second timing follows the reviewed operational interpretation of two seconds opening plus two seconds closing. A Blender custom-property slider and a portable animated GLB are separate deliverables; this review's motion verdict covers the exported animation evidence, not a browser slider test.
+
+## Separate the causes
+
+**Execution and import/export.** The retained first render failure was an unavailable denoiser, an execution issue rather than asset evidence. The eventual import/render/export/reopen workflow runs. Original unmodified roundtrip controls preserve ordered positions, UVs and texture payloads, with small measured normal drift. The authored validator has zero errors and warnings, with five unused-UV informational messages. The fresh images are not broadly corrupted relative to authored images: maximum full-image RGB MAE across the six matched authored/reopened poses is about 1.74e-5 on a 0–1 scale. Broad importer/exporter loss is therefore a weak primary explanation for the visible open-door defect. Local pathological shading is not ruled out by those aggregate numbers.
+
+**Presentation.** Native studio views look substantially lighter than base-color controls. Reducing exposure darkens A while the same jagged moving edge remains visible. Presentation contributes to the pale-body impression; it does not explain away the exposed shape. Emission/base-color and exposure controls are diagnostics, not a demonstrated finished look or photometric fit to the photograph.
+
+**Source asset.** Irregular geometry and the open/sparse front-side-window region are visible in raw/clay evidence. Textures carry considerable vehicle identity. These are starting conditions that can increase preparation demands. They do not prove that a plausible detachable door cannot be prepared, or that source topology rather than the chosen operation is the decisive obstacle.
+
+**Selection and cut.** The executed policy is one manually specified convex XZ polygon with a Y-depth cutoff. It does not recover semantic membership. Partition-only open60 already shows an irregular moving edge and sheets before new lining/jamb/cabin additions, so those additions cannot be the sole cause. However, that state already includes selection and cutting; it is not untouched source evidence. In the inspected provenance overlay, orange clipped descendants trace many conspicuous silhouettes, while cyan uncut faces fill adjoining sheets. In the orientation overlay, some adjoining strips face inward. This supports a source/selection interaction, not a clean source-only attribution.
+
+The diagnostic's approximately 94.2% uncut-original door area is not an answer to the visible defect: a small cut-area fraction can dominate a silhouette, and an original face can be incorrectly included in a moving assembly. Conversely, inward/tangent faces can be legitimate frame or shell surfaces. Neither original provenance, normal sign nor depth is a sufficient semantic exclusion rule.
+
+**Completion.** Translating the entire selected surface inward duplicates its complexity rather than establishing a coherent custom inner panel. The simple edge strips, jamb and cabin boxes demonstrate a completion attempt, not the attainable quality of ordinary DCC completion. The final reopened close-up visibly remains unfinished for the brief. The recipe is a useful bounded engineering baseline, but too narrow to stand in for the strongest practical conventional competitor.
+
+## Research decision and strongest alternative
+
+Preserve and deliver the raw assets, working articulated partial result, matched controls, failed attempts and this negative visual finding. Stop authoring in this bounded phase. Further speculative repairs, regeneration, global remodeling or a learned-method search are not justified by this result alone.
+
+If the broader artist-use question continues, the next decision should first test whether a consequential cost/quality residual survives **competent local conventional preparation under the same use contract**. The strongest immediate alternative is an asset-specific correction to the moving surface/contour plus a coherent local lining/jamb/cabin completion, preserving native exterior appearance where feasible. This could resolve the observed defect; that benefit has not been demonstrated and must not be promised. Measure actual preparation effort and obtain a relevant artist's accept/reject judgment before selecting a research intervention. If ordinary preparation satisfies the target at acceptable cost, close this particular method-gap formulation as engineering. If it does not, record the consequential residual and test a specific intervention against that baseline on prospectively selected assets and operations.
+
+No controlled A/B resolution comparison, human labor saving, general generator reliability, collision certification or recovered hidden mechanics follows from this screen. An imperfection alone is not evidence of a worthwhile research opportunity.

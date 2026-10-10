@@ -1,0 +1,438 @@
+05:43:26 | INFO: Data are loaded, start creating Blender stuff
+05:43:26 | INFO: Blender create Mesh node Generated exterior - fixed
+05:43:27 | INFO: Blender create Mesh node ADDED door edge thickness
+05:43:27 | INFO: Blender create Mesh node ADDED door inner lining
+05:43:27 | INFO: Blender create Mesh node Generated front door - native UV PBR
+05:43:27 | INFO: Blender create Mesh node ADDED fixed aperture jamb
+05:43:27 | INFO: Blender create Mesh node Cube
+05:43:27 | INFO: Blender create Mesh node Cube.001
+05:43:27 | INFO: Blender create Mesh node Cube.002
+05:43:27 | INFO: Blender create Mesh node Cube.003
+05:43:27 | INFO: glTF import finished in 0.54s
+Blender 4.3.2
+Read blend: "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/raw_inspection/A_v2/native_import.blend"
+Fra:1 Mem:77.02M (Peak 77.02M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:1 Mem:77.02M (Peak 77.02M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door edge thickness
+Fra:1 Mem:79.47M (Peak 79.47M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:1 Mem:80.79M (Peak 80.79M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:1 Mem:80.97M (Peak 80.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:1 Mem:80.22M (Peak 80.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:1 Mem:80.32M (Peak 80.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:1 Mem:80.72M (Peak 81.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:1 Mem:82.42M (Peak 82.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:1 Mem:110.32M (Peak 144.70M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.28M (Peak 144.70M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:1 Mem:110.28M (Peak 144.70M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.23 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.23 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:146.59M (Peak 174.30M) | Time:00:00.25 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.33 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.33 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.34 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:215.97M (Peak 215.97M) | Time:00:01.01 | Remaining:00:20.98 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:237.06M (Peak 279.25M) | Time:00:18.41 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:237.06M (Peak 279.25M) | Time:00:18.41 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/hero_00.png'
+Time: 00:18.75 (Saving: 00:00.33)
+
+Fra:1 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:1 Mem:88.92M (Peak 88.92M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door edge thickness
+Fra:1 Mem:88.93M (Peak 88.93M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:1 Mem:90.03M (Peak 90.07M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:1 Mem:90.26M (Peak 90.26M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:1 Mem:92.11M (Peak 92.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:1 Mem:91.32M (Peak 92.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:1 Mem:91.81M (Peak 92.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:1 Mem:98.00M (Peak 98.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:1 Mem:110.32M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:1 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:146.59M (Peak 174.30M) | Time:00:00.17 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:155.82M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:215.97M (Peak 215.97M) | Time:00:00.56 | Remaining:00:10.72 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:237.06M (Peak 279.25M) | Time:00:11.45 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:237.06M (Peak 279.25M) | Time:00:11.45 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/side_00.png'
+Time: 00:11.59 (Saving: 00:00.14)
+
+Fra:31 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:31 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:31 Mem:90.03M (Peak 90.07M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:31 Mem:90.11M (Peak 90.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:31 Mem:92.07M (Peak 92.09M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:31 Mem:91.32M (Peak 92.09M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:31 Mem:96.60M (Peak 97.17M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:31 Mem:97.70M (Peak 97.70M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:31 Mem:110.32M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:31 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:31 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:31 Mem:146.59M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.20 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.20 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:31 Mem:215.97M (Peak 215.97M) | Time:00:00.60 | Remaining:00:12.05 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:31 Mem:237.06M (Peak 279.25M) | Time:00:11.89 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:31 Mem:237.06M (Peak 279.25M) | Time:00:11.89 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/hero_30.png'
+Time: 00:12.04 (Saving: 00:00.14)
+
+Fra:31 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:31 Mem:88.92M (Peak 88.92M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:31 Mem:90.03M (Peak 90.03M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:31 Mem:92.05M (Peak 92.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:31 Mem:91.07M (Peak 92.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:31 Mem:91.38M (Peak 92.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:31 Mem:96.60M (Peak 97.60M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:31 Mem:97.70M (Peak 97.70M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:31 Mem:110.32M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:31 Mem:110.28M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:31 Mem:110.28M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:31 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:31 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:31 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:31 Mem:146.59M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.20 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:31 Mem:155.82M (Peak 174.30M) | Time:00:00.20 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:31 Mem:168.49M (Peak 174.30M) | Time:00:00.21 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:31 Mem:215.97M (Peak 215.97M) | Time:00:00.56 | Remaining:00:10.76 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:31 Mem:237.06M (Peak 279.25M) | Time:00:10.57 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:31 Mem:237.06M (Peak 279.25M) | Time:00:10.57 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/side_30.png'
+Time: 00:10.72 (Saving: 00:00.15)
+
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:61 Mem:90.03M (Peak 90.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:61 Mem:90.05M (Peak 90.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:61 Mem:92.07M (Peak 92.07M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:61 Mem:92.13M (Peak 92.13M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:61 Mem:96.60M (Peak 97.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:61 Mem:97.70M (Peak 97.70M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:61 Mem:110.32M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.15 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.15 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:61 Mem:146.59M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.16 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.21 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:61 Mem:215.97M (Peak 215.97M) | Time:00:00.65 | Remaining:00:13.42 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:00:12.84 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:00:12.84 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/hero_60.png'
+Time: 00:12.99 (Saving: 00:00.14)
+
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:61 Mem:89.06M (Peak 89.06M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:61 Mem:90.05M (Peak 90.05M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:61 Mem:90.29M (Peak 90.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:61 Mem:90.58M (Peak 90.58M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:61 Mem:91.88M (Peak 92.39M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:61 Mem:97.79M (Peak 97.79M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:61 Mem:110.32M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.24 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.24 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:61 Mem:146.59M (Peak 174.30M) | Time:00:00.25 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.25 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.31 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.31 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.31 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:61 Mem:215.97M (Peak 215.97M) | Time:00:00.67 | Remaining:00:11.31 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:00:12.57 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:00:12.57 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/side_60.png'
+Time: 00:12.73 (Saving: 00:00.16)
+
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door edge thickness
+Fra:61 Mem:88.92M (Peak 88.93M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:61 Mem:90.03M (Peak 90.07M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:61 Mem:90.22M (Peak 90.22M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:61 Mem:92.08M (Peak 92.08M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:61 Mem:91.09M (Peak 92.08M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:61 Mem:96.82M (Peak 98.06M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:61 Mem:97.91M (Peak 98.06M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:61 Mem:110.32M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.10 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.16 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.16 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:61 Mem:146.59M (Peak 174.30M) | Time:00:00.17 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.17 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.22 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.22 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.22 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:61 Mem:215.97M (Peak 215.97M) | Time:00:01.71 | Remaining:00:46.33 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:61 Mem:215.97M (Peak 215.97M) | Time:00:25.50 | Remaining:00:22.30 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 17/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:01:06.30 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:61 Mem:237.06M (Peak 279.25M) | Time:01:06.30 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/edge_cabin_60.png'
+Time: 01:06.69 (Saving: 00:00.37)
+
+Fra:61 Mem:88.49M (Peak 88.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible dashboard
+Fra:61 Mem:88.52M (Peak 88.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated exterior - fixed
+Fra:61 Mem:88.56M (Peak 88.56M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door edge thickness
+Fra:61 Mem:88.97M (Peak 88.97M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat back
+Fra:61 Mem:90.05M (Peak 90.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible seat cushion
+Fra:61 Mem:90.08M (Peak 90.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED plausible cabin floor
+Fra:61 Mem:90.16M (Peak 90.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED fixed aperture jamb
+Fra:61 Mem:92.32M (Peak 92.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ADDED door inner lining
+Fra:61 Mem:92.43M (Peak 92.94M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Generated front door - native UV PBR
+Fra:61 Mem:110.32M (Peak 144.70M) | Time:00:00.35 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.35 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_1.001
+Fra:61 Mem:110.28M (Peak 144.70M) | Time:00:00.35 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Image_0.001
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.51 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Waiting for render to start
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.51 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.51 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Scene
+Fra:61 Mem:141.68M (Peak 174.30M) | Time:00:00.51 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Shaders
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Procedurals
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Background
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Camera
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects
+Fra:61 Mem:141.76M (Peak 174.30M) | Time:00:00.52 | Mem:32.00M, Peak:32.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.52 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.52 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.52 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:61 Mem:141.77M (Peak 174.30M) | Time:00:00.52 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Meshes
+Fra:61 Mem:146.59M (Peak 174.30M) | Time:00:00.54 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.55 | Mem:32.01M, Peak:32.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.55 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.55 | Mem:41.24M, Peak:41.24M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.55 | Mem:50.88M, Peak:50.88M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.64 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:61 Mem:155.82M (Peak 174.30M) | Time:00:00.64 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:61.37M, Peak:71.01M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Objects Flags
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Images
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Camera Volume
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.04M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Integrator
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Film
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.04M, Peak:74.12M | Scene, ViewLayer | Updating Lookup Tables
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Baking
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:61 Mem:168.49M (Peak 174.30M) | Time:00:00.65 | Mem:74.12M, Peak:74.12M | Scene, ViewLayer | Sample 0/32
+Fra:61 Mem:215.97M (Peak 215.97M) | Time:00:01.45 | Remaining:00:24.90 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 1/32
+Fra:61 Mem:237.07M (Peak 279.25M) | Time:00:19.46 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Sample 32/32
+Fra:61 Mem:237.07M (Peak 279.25M) | Time:00:19.46 | Mem:121.59M, Peak:121.59M | Scene, ViewLayer | Finished
+Saved: '/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/reopened_A_v1/hero_60_exposure_minus1p5.png'
+Time: 00:19.65 (Saving: 00:00.18)
+
+Info: Saved "export_reopened.blend"
+REOPENED_VERIFIED {"status": "reimport_motion_pass", "input": "artifacts/authoring_A_v1/car_door_authored.glb", "actions": [{"name": "FrontDoor_ControlAction_FrontDoor_Control", "frame_range": [1.0, 121.0], "fcurves": 4}], "duration_seconds": 4, "frame_count_checked": 121, "angle_at_0_1_2_3_4_sec": [0.0, 30.000007665015225, 59.99998800927377, 30.000007665015225, 0.0], "max_forward_reverse_matrix_error": 0.0, "fixed_body_matrix_max_error": 0, "moving_children": ["ADDED door edge thickness", "ADDED door inner lining", "Generated front door - native UV PBR"], "meshes": [{"name": "Generated exterior - fixed", "faces": 279409, "uv_layers": ["UVMap"], "parent": null, "material_names": ["Material_0.001"]}, {"name": "ADDED door edge thickness", "faces": 2792, "uv_layers": [], "parent": "FrontDoor_Control", "material_names": ["ADDED dark painted cut edges"]}, {"name": "ADDED door inner lining", "faces": 15064, "uv_layers": ["UVMap"], "parent": "FrontDoor_Control", "material_names": ["ADDED dark door lining"]}, {"name": "Generated front door - native UV PBR", "faces": 15064, "uv_layers": ["UVMap"], "parent": "FrontDoor_Control", "material_names": ["Material_0.001"]}, {"name": "ADDED fixed aperture jamb", "faces": 2792, "uv_layers": [], "parent": null, "material_names": ["ADDED dark painted cut edges"]}, {"name": "ADDED plausible cabin floor", "faces": 188, "uv_layers": ["UVMap"], "parent": null, "material_names": ["ADDED plausible interior upholstery"]}, {"name": "ADDED plausible seat cushion", "faces": 188, "uv_layers": ["UVMap"], "parent": null, "material_names": ["ADDED plausible interior upholstery"]}, {"name": "ADDED plausible seat back", "faces": 188, "uv_layers": ["UVMap"], "parent": null, "material_names": ["ADDED plausible interior upholstery"]}, {"name": "ADDED plausible dashboard", "faces": 188, "uv_layers": ["UVMap"], "parent": null, "material_names": ["ADDED dark painted cut edges"]}], "limits": "Tests exported motion and transforms; not collision certification, semantic glass existence, visual quality or human usability."}
+
+Blender quit

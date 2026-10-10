@@ -1,0 +1,46 @@
+{
+  "externally_verified": true,
+  "commit": "fc2a73cd4466660aa014a56f03feabcd9f76a03f",
+  "files": [
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/03_authored_baseline.verification.json",
+      "sha256": "2adf733d8f2da7a1161a9ac828e113d3c5c90a267abade0c78d5371e7dcde644",
+      "bytes": 836
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/logs/authored_validation.log",
+      "sha256": "b19587aeb466a49a9f69aa38c16640ed96dfce9f4beaf6b547095aa0a4637b8c",
+      "bytes": 46
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/final_validation/authored_gltf_validation.json",
+      "sha256": "385425fc32e4bf822c6329bed0e3387aebd8640ffc41458f9655494d342fc872",
+      "bytes": 2993
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/final_validation/native_texture_preservation.json",
+      "sha256": "5c1c5f8e1385fa58021a9b3aa1436aa9551f753e079fa6ee7484bad5f2ff4ee3",
+      "bytes": 814
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/selection_diagnostic/door_diagnostic_labels.npz",
+      "sha256": "a8d4ea70643dcc88ac225d7a14957827d7b2706adf6bdcd2a34486c7cb89c8ce",
+      "bytes": 352779
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/selection_diagnostic/selection_provenance.json",
+      "sha256": "9b3b993bd7bd6d0c5026329ce76a3fc13a25cafcb328f727272607d29f9b2fec",
+      "bytes": 50797
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/selection_diagnostic/summarize_selection.py",
+      "sha256": "8c85384ba31b4313623623f10caadcedd0573e7684df8e16fa7e14f5d0885ef3",
+      "bytes": 9943
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/selection_overlay.py",
+      "sha256": "d05e6efd99ba6b232be613a5dce776b57a4334ed17c25d3a1b61dc234b543d80",
+      "bytes": 2652
+    }
+  ]
+}

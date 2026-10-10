@@ -1,0 +1,5 @@
+{
+  "cut_provenance": "cyan=fully inside original source face; orange=children of a source triangle also represented in fixed surface",
+  "orientation": "cyan=outward(-Y), magenta=inward(+Y), grey=tangent, threshold .25; frame geometry may legitimately be tangent/inward",
+  "limits": "Geometric provenance diagnostic only. No faces removed or authoring output modified; cannot establish semantic correctness or general conventional-workflow limit."
+}

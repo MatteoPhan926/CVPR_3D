@@ -1,0 +1,111 @@
+{
+  "review": "Independent final adversarial review; actual existing images opened using view_image",
+  "count": 26,
+  "images": [
+    {
+      "path": "inputs/original_intended_reference.jpg",
+      "sha256": "b5b9ed4aece1359a0d291e89149634499583102e27f177aadb4c60f327e996e1"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/hero.png",
+      "sha256": "98e0fda8020c72e80110ab320e46898bc06e3bf8a00f254aaf2ed966c381aa51"
+    },
+    {
+      "path": "artifacts/raw_same_camera_A/hero_exposure_minus1p5.png",
+      "sha256": "7635121ee7c4eb4dcfc1509309af2d0463838d06dbc5360374452201bca8aa40"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/partition_only_closed.png",
+      "sha256": "cdef739c18c434d9711788f136406d929490a9d8adca80c4c5be967fb1d32bd3"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/partition_only_open60.png",
+      "sha256": "dee3ec5894886699b3df2e3a72cea1c4fe2ffd1dbb5d225c0420a2540d02bb40"
+    },
+    {
+      "path": "artifacts/presentation_controls/A/side_basecolor.png",
+      "sha256": "39f3326e23611f780419be181574d84eec7156075373c39a5e46f30eccc38fc0"
+    },
+    {
+      "path": "artifacts/presentation_controls/A/side_clay.png",
+      "sha256": "d881f77ff0ff48bd27bfd4508d2d5f4c03da50cc66b3165cdffa68221e8132ff"
+    },
+    {
+      "path": "artifacts/presentation_controls/A/q1_basecolor.png",
+      "sha256": "6e598654d939ebe87feb6b42895f4055bc50015a21113d95f396a78974155a3a"
+    },
+    {
+      "path": "artifacts/presentation_controls/A/q1_clay.png",
+      "sha256": "0094cdaeacf6947c60f17c5034a7db475d543d39d97ee3546dadc5f60c1894f1"
+    },
+    {
+      "path": "artifacts/presentation_controls/B/q1_basecolor.png",
+      "sha256": "822c95a767c4f0c2a942a9e4d1f233fad7bc900d3dd985528e904fc8faf1f0a6"
+    },
+    {
+      "path": "artifacts/presentation_controls/B/q1_clay.png",
+      "sha256": "a7a71b4bba535315e6aacf8f8042f04fa2114d5258e573fa8040cb8162c27d3b"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_00.png",
+      "sha256": "d80c47d53445953c0e13e4a63c93ecbbd9938de7b3561f0653c548dc3c0f25b7"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_30.png",
+      "sha256": "705d0f171485c9508df83f01d737d145997fcb99678c6d385dd7a5dde207fdaa"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/hero_60.png",
+      "sha256": "330da8ee2e341eafac90ea278a712c71324e7bdf169e235e08ef67ea2125bd4c"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/side_60.png",
+      "sha256": "defd9b97c19d60a1227b8524ce49f173ad25fae44c8ea069bb3115be5c599935"
+    },
+    {
+      "path": "artifacts/authoring_A_v1/edge_cabin_60.png",
+      "sha256": "f510c7d1f73928728096eded10f1fdf53f0b26049b7626f2cbeeffdcf1768e25"
+    },
+    {
+      "path": "artifacts/selection_overlay_A/cut_provenance_60.png",
+      "sha256": "d35e36c776047c17b68020037e871816db6cfa3af7f0bd7ff2666d635e6c3eab"
+    },
+    {
+      "path": "artifacts/selection_overlay_A/original_orientation_60.png",
+      "sha256": "67bc7deeeb633edd18d5eee2b6c7f72d343237ecd79f35a2035747df4234a1a9"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/hero_00.png",
+      "sha256": "1d3b3d9df8cecf27857df5919d7a7a571e3e60363ac57021ccf9680a6a84caef"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/hero_30.png",
+      "sha256": "18e50f54281cb7509e687bb7e0f9c526535fad10889440515e8ace65f141faf4"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/hero_60.png",
+      "sha256": "933db5388a94a66474fa18f315e9a7df61b195f7256eb366a9327bc570e93ed1"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/side_00.png",
+      "sha256": "07957a670a8950e4759691e34184ebb470c8e8660f92f3092d540ee1dad19717"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/side_30.png",
+      "sha256": "5ecec9aa1bcd848f071c4538b9339c7d5c78bca472e544693db4f998a1cbc2b9"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/side_60.png",
+      "sha256": "3cfe6abfdbfb780802db64237e3efadedce5248019c41179fcd6c7c2a6a839fb"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/edge_cabin_60.png",
+      "sha256": "d897af4d39b57034776adc1ae431ec23bc7e2aae261511a8d5754c22ffd68b0f"
+    },
+    {
+      "path": "artifacts/reopened_A_v1/hero_60_exposure_minus1p5.png",
+      "sha256": "f2afa57703c23ba3574402368927f738b067d81b42ff7688ecda78b96359aadb"
+    }
+  ],
+  "limits": "Image inspection and attributed executed probe review; no independent Blender rerun or artist acceptance. Browser viewer checks are separate/pending at finalization. No external backup currency claim."
+}
