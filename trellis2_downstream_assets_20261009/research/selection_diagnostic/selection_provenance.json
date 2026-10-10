@@ -1,0 +1,1616 @@
+{
+  "input_npz": "artifacts/authoring_A_v1/cut_arrays.npz",
+  "input_npz_sha256": "3edbf4c639465176cbc21446f910321721d71463dac5b32e7ecb5f29b93afc47",
+  "authoring_record_sha256": "f586a70f510c6c96fd4be25ecfad1bac9aa6d3711f28960270e0dd628a7aa428",
+  "config_from_executed_authoring_record": {
+    "asset_label": "A",
+    "coordinate_frame": "Blender import Z up, front +X, camera-facing side -Y",
+    "selection": "Convex XZ door silhouette extruded through near-side surface; visual manual specification after side render",
+    "polygon_xz": [
+      [
+        -0.07,
+        -0.1
+      ],
+      [
+        0.148,
+        -0.1
+      ],
+      [
+        0.151,
+        0.018
+      ],
+      [
+        0.115,
+        0.098
+      ],
+      [
+        0.077,
+        0.137
+      ],
+      [
+        -0.052,
+        0.136
+      ]
+    ],
+    "side_y_max": -0.1,
+    "hinge_xyz": [
+      -0.061,
+      -0.153,
+      0.0
+    ],
+    "opening_z_rotation_sign": -1,
+    "hinge_status": "Plausible rear hinge for this vehicle and outward rotation; not recovered hidden mechanical ground truth",
+    "additions": "0.006 inward Y lining/edge thickness; 0.022 aperture jamb; labelled proxy cabin floor, seat and dashboard",
+    "units": "Native normalized asset units, not metric physical dimensions",
+    "scope": "One bounded conventional preparation; no resolution/seed comparison or artist-time claim"
+  },
+  "schema": {
+    "door": {
+      "shape": [
+        15064,
+        3,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "fixed": {
+      "shape": [
+        279409,
+        3,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "door_source": {
+      "shape": [
+        15064
+      ],
+      "dtype": "int64"
+    },
+    "fixed_source": {
+      "shape": [
+        279409
+      ],
+      "dtype": "int64"
+    }
+  },
+  "definitions": {
+    "exclusive_to_door_source": "Original source triangle ID occurs only in door output; operational wholly-inside provenance. One output triangle per source supports an uncut original face, but original source coordinates were not independently reloaded.",
+    "shared_with_fixed_source": "Original source triangle ID occurs in both door and fixed output, so selected triangles are pieces from a partitioned source triangle.",
+    "normal_categories": "Area-weighted geometric face winding dot with (0,-1,0), not stored shading normals. Tangent faces can be legitimate frame/edge surfaces; inward-facing faces are not automatically defects.",
+    "depth": "Native normalized units; centroid Y is a coarse location proxy, not a reliable semantic outer-skin classifier.",
+    "boundary": "Geometry vertices welded by rounding XYZ to 7 decimals. Edge occurs once in selected output. Plane tests require both endpoints within 2e-6, matching authoring tolerance.",
+    "off_plane_boundary": "Not on an XZ polygon or depth clipping plane. Compatible with pre-existing openings or source discontinuities; this test alone does not establish origin or visual failure."
+  },
+  "all_door": {
+    "triangles": 15064,
+    "source_faces": 14360,
+    "area": 0.16703676848607374,
+    "area_fraction_of_total_door": 1.0,
+    "vertex_bounds_xyz": [
+      [
+        -0.07,
+        -0.1910291333385248,
+        -0.1
+      ],
+      [
+        0.151,
+        -0.1,
+        0.137
+      ]
+    ],
+    "area_weighted_centroid_y_quantiles": {
+      "0.0": -0.19093982564156356,
+      "0.1": -0.17751267780128627,
+      "0.25": -0.1638767891754277,
+      "0.5": -0.14770479181884877,
+      "0.75": -0.13193439809156549,
+      "0.9": -0.11994979917456496,
+      "1.0": -0.10000217606623968
+    },
+    "area_weighted_mean_geometric_normal_dot_minus_y": 0.00758627973937653,
+    "normal_categories": {
+      "faces_toward_near_side_dot_ge_0_5": {
+        "triangles": 5511,
+        "source_faces": 5266,
+        "area": 0.06947115524128619,
+        "area_fraction_of_total_door": 0.41590337187993537,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.1910291333385248,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.10695120692253113,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19093982564156356,
+          "0.1": -0.18123728025169433,
+          "0.25": -0.16912046543187031,
+          "0.5": -0.15396119250654103,
+          "0.75": -0.1391374380392993,
+          "0.9": -0.13019449085265927,
+          "1.0": -0.10713130210967965
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.9174788441368117
+      },
+      "oblique_or_tangent_abs_dot_lt_0_5": {
+        "triangles": 4091,
+        "source_faces": 3867,
+        "area": 0.029760582517893645,
+        "area_fraction_of_total_door": 0.17816785362663945,
+        "vertex_bounds_xyz": [
+          [
+            -0.06545662030752837,
+            -0.18561363220214844,
+            -0.1
+          ],
+          [
+            0.15092939448667428,
+            -0.1,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18478591740131378,
+          "0.1": -0.15738301725608578,
+          "0.25": -0.1392205813010035,
+          "0.5": -0.12397381341066346,
+          "0.75": -0.11109694869402119,
+          "0.9": -0.1046133989073043,
+          "1.0": -0.10000217606623968
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.004213269694064404
+      },
+      "faces_away_from_near_side_dot_le_minus_0_5": {
+        "triangles": 5462,
+        "source_faces": 5227,
+        "area": 0.0678050307268939,
+        "area_fraction_of_total_door": 0.4059287744934252,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.18705042831197424,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.10338717494549945,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18689828215253945,
+          "0.1": -0.17711951483181898,
+          "0.25": -0.16506979410773706,
+          "0.5": -0.149978288044641,
+          "0.75": -0.1351415150282116,
+          "0.9": -0.12593687976835144,
+          "1.0": -0.10448707427102599
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.919485435377858
+      }
+    },
+    "centroid_y_bins": [
+      {
+        "min_y_inclusive": -0.2,
+        "max_y_exclusive": -0.18,
+        "triangles": 784,
+        "source_faces": 722,
+        "area": 0.012530672776072272,
+        "area_fraction_of_total_door": 0.07501745208341351,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.1910291333385248,
+            -0.1
+          ],
+          [
+            0.11800868809223175,
+            -0.17781078815460205,
+            0.07262615859508514
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19093982564156356,
+          "0.1": -0.18826878464346264,
+          "0.25": -0.18610574437051544,
+          "0.5": -0.18384633061673278,
+          "0.75": -0.18196030846760194,
+          "0.9": -0.18080237220114798,
+          "1.0": -0.1800020933151245
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.25285426417081475
+      },
+      {
+        "min_y_inclusive": -0.18,
+        "max_y_exclusive": -0.165,
+        "triangles": 1786,
+        "source_faces": 1723,
+        "area": 0.026843773051037512,
+        "area_fraction_of_total_door": 0.16070577331167385,
+        "vertex_bounds_xyz": [
+          [
+            -0.061532532359461066,
+            -0.18223023414611816,
+            -0.1
+          ],
+          [
+            0.11864826828241348,
+            -0.162573903799057,
+            0.1362349226388177
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1799977421760559,
+          "0.1": -0.17834213128229578,
+          "0.25": -0.17607738848231086,
+          "0.5": -0.17238284143343438,
+          "0.75": -0.16878459036997173,
+          "0.9": -0.16651002929873174,
+          "1.0": -0.16500359773635864
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.004889811889795416
+      },
+      {
+        "min_y_inclusive": -0.165,
+        "max_y_exclusive": -0.15,
+        "triangles": 3208,
+        "source_faces": 3116,
+        "area": 0.03829588551779415,
+        "area_fraction_of_total_door": 0.2292662020756644,
+        "vertex_bounds_xyz": [
+          [
+            -0.06427033440678659,
+            -0.16801021993160248,
+            -0.1
+          ],
+          [
+            0.1172419935464859,
+            -0.14710180461406708,
+            0.1367325509387079
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.16499092181523642,
+          "0.1": -0.16315033825575884,
+          "0.25": -0.16049253072400899,
+          "0.5": -0.15684344268818706,
+          "0.75": -0.15359432507099235,
+          "0.9": -0.15146981866029385,
+          "1.0": -0.15000427762667337
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.04568988157859177
+      },
+      {
+        "min_y_inclusive": -0.15,
+        "max_y_exclusive": -0.13,
+        "triangles": 4692,
+        "source_faces": 4584,
+        "area": 0.052800730235729884,
+        "area_fraction_of_total_door": 0.3161024408834394,
+        "vertex_bounds_xyz": [
+          [
+            -0.06536869360628454,
+            -0.15296140313148499,
+            -0.1
+          ],
+          [
+            0.14836487892292605,
+            -0.1270708292722702,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.149997601700426,
+          "0.1": -0.14792854617456822,
+          "0.25": -0.14450731391196844,
+          "0.5": -0.13968188381657462,
+          "0.75": -0.13492661789797133,
+          "0.9": -0.13195355733235678,
+          "1.0": -0.13000416258970895
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.01456111800816959
+      },
+      {
+        "min_y_inclusive": -0.13,
+        "max_y_exclusive": -0.115,
+        "triangles": 3089,
+        "source_faces": 2938,
+        "area": 0.025426303560778202,
+        "area_fraction_of_total_door": 0.15221980041417082,
+        "vertex_bounds_xyz": [
+          [
+            -0.06545662030752837,
+            -0.1335906982421875,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.11052247881889343,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.12999407450358072,
+          "0.1": -0.1290064951040741,
+          "0.25": -0.12741524771351614,
+          "0.5": -0.12471954842052876,
+          "0.75": -0.12062993210119456,
+          "0.9": -0.1174490802039647,
+          "1.0": -0.11500210563341777
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.1431397469096957
+      },
+      {
+        "min_y_inclusive": -0.115,
+        "max_y_exclusive": -0.099999999,
+        "triangles": 1505,
+        "source_faces": 1288,
+        "area": 0.01113940334466171,
+        "area_fraction_of_total_door": 0.06668833123163795,
+        "vertex_bounds_xyz": [
+          [
+            -0.06544025079246668,
+            -0.12026846408843994,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.1,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1149998173477852,
+          "0.1": -0.11397846406693178,
+          "0.25": -0.11211599837705527,
+          "0.5": -0.10842554273664205,
+          "0.75": -0.10431239753961563,
+          "0.9": -0.101941469549437,
+          "1.0": -0.10000217606623968
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.08183246856999676
+      }
+    ]
+  },
+  "exclusive_to_door_source": {
+    "triangles": 12995,
+    "source_faces": 12995,
+    "area": 0.15735965151152742,
+    "area_fraction_of_total_door": 0.9420659471429302,
+    "vertex_bounds_xyz": [
+      [
+        -0.0673556998372078,
+        -0.1907903254032135,
+        -0.09997335076332092
+      ],
+      [
+        0.15078189969062805,
+        -0.10000652819871902,
+        0.13659091293811798
+      ]
+    ],
+    "area_weighted_centroid_y_quantiles": {
+      "0.0": -0.19034364819526672,
+      "0.1": -0.17705864699551674,
+      "0.25": -0.16353283410763747,
+      "0.5": -0.14774567366796743,
+      "0.75": -0.13243973180549862,
+      "0.9": -0.12147585550944011,
+      "1.0": -0.10157708326975505
+    },
+    "area_weighted_mean_geometric_normal_dot_minus_y": 0.007362167599822099,
+    "normal_categories": {
+      "faces_toward_near_side_dot_ge_0_5": {
+        "triangles": 4794,
+        "source_faces": 4794,
+        "area": 0.06568657459326235,
+        "area_fraction_of_total_door": 0.3932462007533318,
+        "vertex_bounds_xyz": [
+          [
+            -0.0673556998372078,
+            -0.1907903254032135,
+            -0.09993425011634827
+          ],
+          [
+            0.15077584981918335,
+            -0.10894034057855606,
+            0.1365492045879364
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19034364819526672,
+          "0.1": -0.18067236302425807,
+          "0.25": -0.16843591713294057,
+          "0.5": -0.15381321142559282,
+          "0.75": -0.13918981978931974,
+          "0.9": -0.13040883089501712,
+          "1.0": -0.11001075307528178
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.9173193898611021
+      },
+      "oblique_or_tangent_abs_dot_lt_0_5": {
+        "triangles": 3429,
+        "source_faces": 3429,
+        "area": 0.02744060007645528,
+        "area_fraction_of_total_door": 0.16427880115953672,
+        "vertex_bounds_xyz": [
+          [
+            -0.06507635116577148,
+            -0.18561363220214844,
+            -0.09953370690345764
+          ],
+          [
+            0.15078189969062805,
+            -0.10000652819871902,
+            0.12967151403427124
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18478591740131378,
+          "0.1": -0.15878873653478395,
+          "0.25": -0.14122496378551022,
+          "0.5": -0.1262251521729361,
+          "0.75": -0.11358032190637471,
+          "0.9": -0.10699655449994688,
+          "1.0": -0.10157708326975505
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.00298190646858158
+      },
+      "faces_away_from_near_side_dot_le_minus_0_5": {
+        "triangles": 4772,
+        "source_faces": 4772,
+        "area": 0.0642324768418098,
+        "area_fraction_of_total_door": 0.3845409452300618,
+        "vertex_bounds_xyz": [
+          [
+            -0.06637049466371536,
+            -0.186612069606781,
+            -0.09997335076332092
+          ],
+          [
+            0.15063634514808655,
+            -0.10829385370016098,
+            0.13659091293811798
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18620893359184265,
+          "0.1": -0.17632142088967598,
+          "0.25": -0.16431899153150056,
+          "0.5": -0.14972600202112063,
+          "0.75": -0.13512527613783742,
+          "0.9": -0.1261169473009704,
+          "1.0": -0.10896393656730652
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.9187756412157557
+      }
+    },
+    "centroid_y_bins": [
+      {
+        "min_y_inclusive": -0.2,
+        "max_y_exclusive": -0.18,
+        "triangles": 605,
+        "source_faces": 605,
+        "area": 0.010875956971604777,
+        "area_fraction_of_total_door": 0.06511115528741525,
+        "vertex_bounds_xyz": [
+          [
+            -0.0673556998372078,
+            -0.1907903254032135,
+            -0.09870723634958267
+          ],
+          [
+            0.11800868809223175,
+            -0.17781078815460205,
+            0.07262615859508514
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19034364819526672,
+          "0.1": -0.18796247083088016,
+          "0.25": -0.18572279069450098,
+          "0.5": -0.18363101985492178,
+          "0.75": -0.18175753417162419,
+          "0.9": -0.1807120710620616,
+          "1.0": -0.1800020933151245
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.28804186071861315
+      },
+      {
+        "min_y_inclusive": -0.18,
+        "max_y_exclusive": -0.165,
+        "triangles": 1602,
+        "source_faces": 1602,
+        "area": 0.0255870035490743,
+        "area_fraction_of_total_door": 0.1531818639751017,
+        "vertex_bounds_xyz": [
+          [
+            -0.05724799633026123,
+            -0.18223023414611816,
+            -0.09976419806480408
+          ],
+          [
+            0.11864826828241348,
+            -0.162573903799057,
+            0.13580083847045898
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1799977421760559,
+          "0.1": -0.17835088739767183,
+          "0.25": -0.17608338849740302,
+          "0.5": -0.1723472949828392,
+          "0.75": -0.16871016076746262,
+          "0.9": -0.1664695420443706,
+          "1.0": -0.16500359773635864
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.004574158928062321
+      },
+      {
+        "min_y_inclusive": -0.165,
+        "max_y_exclusive": -0.15,
+        "triangles": 2920,
+        "source_faces": 2920,
+        "area": 0.03659622027930745,
+        "area_fraction_of_total_door": 0.2190908062398164,
+        "vertex_bounds_xyz": [
+          [
+            -0.06254293024539948,
+            -0.16801021993160248,
+            -0.09956690669059753
+          ],
+          [
+            0.1172419935464859,
+            -0.14710180461406708,
+            0.1355501115322113
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.16499092181523642,
+          "0.1": -0.16310719270631033,
+          "0.25": -0.16045616639003593,
+          "0.5": -0.15681034913678954,
+          "0.75": -0.15358918557443244,
+          "0.9": -0.1514615446935467,
+          "1.0": -0.15000427762667337
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.042421077986850034
+      },
+      {
+        "min_y_inclusive": -0.15,
+        "max_y_exclusive": -0.13,
+        "triangles": 4372,
+        "source_faces": 4372,
+        "area": 0.051381591828372736,
+        "area_fraction_of_total_door": 0.3076064766701742,
+        "vertex_bounds_xyz": [
+          [
+            -0.06483078002929688,
+            -0.15296140313148499,
+            -0.09997335076332092
+          ],
+          [
+            0.14756770431995392,
+            -0.1270708292722702,
+            0.1365492045879364
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.14999562998612723,
+          "0.1": -0.14792826523736993,
+          "0.25": -0.14449715159467055,
+          "0.5": -0.13968286746227118,
+          "0.75": -0.13493641807152348,
+          "0.9": -0.13195355733235678,
+          "1.0": -0.13000416258970895
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.015508603325720814
+      },
+      {
+        "min_y_inclusive": -0.13,
+        "max_y_exclusive": -0.115,
+        "triangles": 2639,
+        "source_faces": 2639,
+        "area": 0.024058437132779373,
+        "area_fraction_of_total_door": 0.14403078645995945,
+        "vertex_bounds_xyz": [
+          [
+            -0.06507635116577148,
+            -0.1335906982421875,
+            -0.09974062442779541
+          ],
+          [
+            0.15078189969062805,
+            -0.11052247881889343,
+            0.1364867389202118
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.12999407450358072,
+          "0.1": -0.12902636731958705,
+          "0.25": -0.12749383770665865,
+          "0.5": -0.12484177974166435,
+          "0.75": -0.12086162360631982,
+          "0.9": -0.11754699764193433,
+          "1.0": -0.11500210563341777
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.15368703137254222
+      },
+      {
+        "min_y_inclusive": -0.115,
+        "max_y_exclusive": -0.099999999,
+        "triangles": 857,
+        "source_faces": 857,
+        "area": 0.008860441750388783,
+        "area_fraction_of_total_door": 0.053044858510463214,
+        "vertex_bounds_xyz": [
+          [
+            -0.06507635116577148,
+            -0.12026846408843994,
+            -0.09953370690345764
+          ],
+          [
+            0.14957314729690552,
+            -0.10000652819871902,
+            0.13659091293811798
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.11499155064423879,
+          "0.1": -0.11413862334455072,
+          "0.25": -0.11264994218377988,
+          "0.5": -0.10966812646880182,
+          "0.75": -0.10620043908838504,
+          "0.9": -0.10404030481974284,
+          "1.0": -0.10157708326975505
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.08386713157003503
+      }
+    ]
+  },
+  "shared_with_fixed_source": {
+    "triangles": 2069,
+    "source_faces": 1365,
+    "area": 0.009677116974546304,
+    "area_fraction_of_total_door": 0.057934052857069665,
+    "vertex_bounds_xyz": [
+      [
+        -0.07,
+        -0.1910291333385248,
+        -0.1
+      ],
+      [
+        0.151,
+        -0.1,
+        0.137
+      ]
+    ],
+    "area_weighted_centroid_y_quantiles": {
+      "0.0": -0.19093982564156356,
+      "0.1": -0.1858934693223485,
+      "0.25": -0.17126387589783135,
+      "0.5": -0.14666504048276377,
+      "0.75": -0.11647348722979883,
+      "0.9": -0.10187142274993101,
+      "1.0": -0.10000217606623968
+    },
+    "area_weighted_mean_geometric_normal_dot_minus_y": 0.011230568453933635,
+    "normal_categories": {
+      "faces_toward_near_side_dot_ge_0_5": {
+        "triangles": 717,
+        "source_faces": 472,
+        "area": 0.0037845806480238447,
+        "area_fraction_of_total_door": 0.022657171126603627,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.1910291333385248,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.10695120692253113,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19093982564156356,
+          "0.1": -0.18879527898139073,
+          "0.25": -0.17748138837184685,
+          "0.5": -0.15950655735061142,
+          "0.75": -0.1379720292787249,
+          "0.9": -0.12467586508216656,
+          "1.0": -0.10713130210967965
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.9202463912311174
+      },
+      "oblique_or_tangent_abs_dot_lt_0_5": {
+        "triangles": 662,
+        "source_faces": 438,
+        "area": 0.0023199824414383667,
+        "area_fraction_of_total_door": 0.01388905246710271,
+        "vertex_bounds_xyz": [
+          [
+            -0.06545662030752837,
+            -0.14240708947181702,
+            -0.1
+          ],
+          [
+            0.15092939448667428,
+            -0.1,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.14068668749902244,
+          "0.1": -0.11532705308860011,
+          "0.25": -0.10429757036771782,
+          "0.5": -0.10208932090852964,
+          "0.75": -0.101365793744723,
+          "0.9": -0.10074262499857951,
+          "1.0": -0.10000217606623968
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.018777753121093775
+      },
+      "faces_away_from_near_side_dot_le_minus_0_5": {
+        "triangles": 690,
+        "source_faces": 455,
+        "area": 0.0035725538850840933,
+        "area_fraction_of_total_door": 0.021387829263363328,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.18705042831197424,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.10338717494549945,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18689828215253945,
+          "0.1": -0.18577920542363943,
+          "0.25": -0.17753141389069035,
+          "0.5": -0.15846544832492832,
+          "0.75": -0.1363349185464701,
+          "0.9": -0.12105324550166953,
+          "1.0": -0.10448707427102599
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.9322471287059966
+      }
+    },
+    "centroid_y_bins": [
+      {
+        "min_y_inclusive": -0.2,
+        "max_y_exclusive": -0.18,
+        "triangles": 179,
+        "source_faces": 117,
+        "area": 0.0016547158044674932,
+        "area_fraction_of_total_door": 0.009906296795998247,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.1910291333385248,
+            -0.1
+          ],
+          [
+            -0.014306579987128499,
+            -0.1797454634238141,
+            0.04960439805165817
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19093982564156356,
+          "0.1": -0.19038564252617138,
+          "0.25": -0.1884604162115495,
+          "0.5": -0.18634305468428813,
+          "0.75": -0.1838652550554464,
+          "0.9": -0.18237292068308356,
+          "1.0": -0.18004344970141037
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.021576612168693107
+      },
+      {
+        "min_y_inclusive": -0.18,
+        "max_y_exclusive": -0.165,
+        "triangles": 184,
+        "source_faces": 121,
+        "area": 0.0012567695019632076,
+        "area_fraction_of_total_door": 0.00752390933657213,
+        "vertex_bounds_xyz": [
+          [
+            -0.061532532359461066,
+            -0.1804751753807068,
+            -0.1
+          ],
+          [
+            0.04661385342478752,
+            -0.1643948998254185,
+            0.1362349226388177
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1798972464274572,
+          "0.1": -0.17817293548877355,
+          "0.25": -0.17606837491668653,
+          "0.5": -0.17279947977803412,
+          "0.75": -0.169576041904767,
+          "0.9": -0.16739930361555497,
+          "1.0": -0.16501992145392588
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.011316299355893107
+      },
+      {
+        "min_y_inclusive": -0.165,
+        "max_y_exclusive": -0.15,
+        "triangles": 288,
+        "source_faces": 196,
+        "area": 0.0016996652384866943,
+        "area_fraction_of_total_door": 0.010175395835847959,
+        "vertex_bounds_xyz": [
+          [
+            -0.06427033440678659,
+            -0.16600805521011353,
+            -0.1
+          ],
+          [
+            0.10074492543935776,
+            -0.14853684604167938,
+            0.1367325509387079
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.16498353291495257,
+          "0.1": -0.16360106217141332,
+          "0.25": -0.1619268808991024,
+          "0.5": -0.1580328512171967,
+          "0.75": -0.1538959506229523,
+          "0.9": -0.15171046807550728,
+          "1.0": -0.1500358504415071
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.11607189186179397
+      },
+      {
+        "min_y_inclusive": -0.15,
+        "max_y_exclusive": -0.13,
+        "triangles": 320,
+        "source_faces": 212,
+        "area": 0.0014191384073571531,
+        "area_fraction_of_total_door": 0.008495964213265237,
+        "vertex_bounds_xyz": [
+          [
+            -0.06536869360628454,
+            -0.15242525935173035,
+            -0.1
+          ],
+          [
+            0.14836487892292605,
+            -0.1293574571609497,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.149997601700426,
+          "0.1": -0.1480737853065404,
+          "0.25": -0.14486540951812615,
+          "0.5": -0.13953673152244714,
+          "0.75": -0.13490977137866206,
+          "0.9": -0.13158182928878145,
+          "1.0": -0.13002560115471762
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.01974371342857225
+      },
+      {
+        "min_y_inclusive": -0.13,
+        "max_y_exclusive": -0.115,
+        "triangles": 450,
+        "source_faces": 299,
+        "area": 0.0013678664279988294,
+        "area_fraction_of_total_door": 0.008189013954211356,
+        "vertex_bounds_xyz": [
+          [
+            -0.06545662030752837,
+            -0.13111194968223572,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.11341280068842191,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.12996667136253906,
+          "0.1": -0.12763912838074812,
+          "0.25": -0.12557334908083612,
+          "0.5": -0.12174559410153049,
+          "0.75": -0.11875161491295153,
+          "0.9": -0.11643450630945139,
+          "1.0": -0.11501030686595992
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.04236899500903719
+      },
+      {
+        "min_y_inclusive": -0.115,
+        "max_y_exclusive": -0.099999999,
+        "triangles": 648,
+        "source_faces": 431,
+        "area": 0.002278961594272927,
+        "area_fraction_of_total_door": 0.013643472721174735,
+        "vertex_bounds_xyz": [
+          [
+            -0.06544025079246668,
+            -0.11713743209838867,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.1,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1149998173477852,
+          "0.1": -0.11043695729941676,
+          "0.25": -0.10402832108706896,
+          "0.5": -0.10205478972000236,
+          "0.75": -0.10136405219742317,
+          "0.9": -0.10073390007019044,
+          "1.0": -0.10000217606623968
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": -0.07392184250292524
+      }
+    ]
+  },
+  "source_face_counts": {
+    "distinct_door_source_faces": 14360,
+    "shared_source_faces": 1365,
+    "exclusive_source_faces_with_multiple_output_triangles": 0
+  },
+  "boundary": {
+    "all": {
+      "edges": 1396,
+      "length": 3.364854628980724,
+      "length_fraction_of_all_boundary": 1.0,
+      "incident_door_triangles_from_shared_source": 1396,
+      "length_incident_to_shared_source": 3.364854628980724,
+      "edge_midpoint_y_range": [
+        -0.19102755,
+        -0.1
+      ]
+    },
+    "xz_planes_only": {
+      "edges": 1086,
+      "length": 2.726905364911599,
+      "length_fraction_of_all_boundary": 0.8104080757086461,
+      "incident_door_triangles_from_shared_source": 1086,
+      "length_incident_to_shared_source": 2.726905364911599,
+      "edge_midpoint_y_range": [
+        -0.19102755,
+        -0.10006590000000001
+      ]
+    },
+    "depth_y_plane_only": {
+      "edges": 310,
+      "length": 0.6379492640691248,
+      "length_fraction_of_all_boundary": 0.18959192429135377,
+      "incident_door_triangles_from_shared_source": 310,
+      "length_incident_to_shared_source": 0.6379492640691248,
+      "edge_midpoint_y_range": [
+        -0.1,
+        -0.1
+      ]
+    },
+    "xz_and_depth_planes": {
+      "edges": 0,
+      "length": 0.0,
+      "length_fraction_of_all_boundary": 0.0,
+      "incident_door_triangles_from_shared_source": 0,
+      "length_incident_to_shared_source": 0.0,
+      "edge_midpoint_y_range": null
+    },
+    "neither_plane_family": {
+      "edges": 0,
+      "length": 0.0,
+      "length_fraction_of_all_boundary": 0.0,
+      "incident_door_triangles_from_shared_source": 0,
+      "length_incident_to_shared_source": 0.0,
+      "edge_midpoint_y_range": null
+    },
+    "by_xz_polygon_edge": [
+      {
+        "polygon_edge_index": 0,
+        "endpoints_xz": [
+          [
+            -0.07,
+            -0.1
+          ],
+          [
+            0.148,
+            -0.1
+          ]
+        ],
+        "edges": 214,
+        "length": 0.5572751266101765,
+        "length_fraction_of_all_boundary": 0.16561640488432788,
+        "incident_door_triangles_from_shared_source": 214,
+        "length_incident_to_shared_source": 0.5572751266101765,
+        "edge_midpoint_y_range": [
+          -0.18999149999999998,
+          -0.1001531
+        ]
+      },
+      {
+        "polygon_edge_index": 1,
+        "endpoints_xz": [
+          [
+            0.148,
+            -0.1
+          ],
+          [
+            0.151,
+            0.018
+          ]
+        ],
+        "edges": 131,
+        "length": 0.28911007075137896,
+        "length_fraction_of_all_boundary": 0.08592052335971366,
+        "incident_door_triangles_from_shared_source": 131,
+        "length_incident_to_shared_source": 0.28911007075137896,
+        "edge_midpoint_y_range": [
+          -0.13249615,
+          -0.11162955
+        ]
+      },
+      {
+        "polygon_edge_index": 2,
+        "endpoints_xz": [
+          [
+            0.151,
+            0.018
+          ],
+          [
+            0.115,
+            0.098
+          ]
+        ],
+        "edges": 101,
+        "length": 0.19078212773571482,
+        "length_fraction_of_all_boundary": 0.05669847549803547,
+        "incident_door_triangles_from_shared_source": 101,
+        "length_incident_to_shared_source": 0.19078212773571482,
+        "edge_midpoint_y_range": [
+          -0.13165464999999998,
+          -0.1002575
+        ]
+      },
+      {
+        "polygon_edge_index": 3,
+        "endpoints_xz": [
+          [
+            0.115,
+            0.098
+          ],
+          [
+            0.077,
+            0.137
+          ]
+        ],
+        "edges": 124,
+        "length": 0.23774558788111677,
+        "length_fraction_of_all_boundary": 0.07065553020729881,
+        "incident_door_triangles_from_shared_source": 124,
+        "length_incident_to_shared_source": 0.23774558788111677,
+        "edge_midpoint_y_range": [
+          -0.14110435,
+          -0.10016520000000001
+        ]
+      },
+      {
+        "polygon_edge_index": 4,
+        "endpoints_xz": [
+          [
+            0.077,
+            0.137
+          ],
+          [
+            -0.052,
+            0.136
+          ]
+        ],
+        "edges": 189,
+        "length": 0.5376985113347548,
+        "length_fraction_of_all_boundary": 0.15979843726492085,
+        "incident_door_triangles_from_shared_source": 189,
+        "length_incident_to_shared_source": 0.5376985113347548,
+        "edge_midpoint_y_range": [
+          -0.17137734999999998,
+          -0.1076036
+        ]
+      },
+      {
+        "polygon_edge_index": 5,
+        "endpoints_xz": [
+          [
+            -0.052,
+            0.136
+          ],
+          [
+            -0.07,
+            -0.1
+          ]
+        ],
+        "edges": 327,
+        "length": 0.9142939405984574,
+        "length_fraction_of_all_boundary": 0.2717187044943495,
+        "incident_door_triangles_from_shared_source": 327,
+        "length_incident_to_shared_source": 0.9142939405984574,
+        "edge_midpoint_y_range": [
+          -0.19102755,
+          -0.10006590000000001
+        ]
+      }
+    ],
+    "geometric_edges_with_incidence_gt_2": 14
+  },
+  "edge_connected_components": {
+    "count": 4,
+    "largest_20": [
+      {
+        "component_id": 14679,
+        "triangles": 14302,
+        "source_faces": 13598,
+        "area": 0.16393607941714677,
+        "area_fraction_of_total_door": 0.9814370865945873,
+        "vertex_bounds_xyz": [
+          [
+            -0.07,
+            -0.1910291333385248,
+            -0.1
+          ],
+          [
+            0.151,
+            -0.1,
+            0.137
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.19093982564156356,
+          "0.1": -0.17730396759323488,
+          "0.25": -0.1629365732434456,
+          "0.5": -0.14690071659697546,
+          "0.75": -0.13164592090893967,
+          "0.9": -0.11963642865190346,
+          "1.0": -0.10000217606623968
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.0077297667298263355,
+        "shared_source_area_fraction_of_component": 0.059029818261800725,
+        "normal_categories": {
+          "faces_toward_near_side_dot_ge_0_5": {
+            "triangles": 5370,
+            "source_faces": 5125,
+            "area": 0.06897172903199797,
+            "area_fraction_of_total_door": 0.41291345406833774,
+            "vertex_bounds_xyz": [
+              [
+                -0.07,
+                -0.1910291333385248,
+                -0.1
+              ],
+              [
+                0.151,
+                -0.10695120692253113,
+                0.137
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.19093982564156356,
+              "0.1": -0.18088977084417504,
+              "0.25": -0.16868550607098334,
+              "0.5": -0.1538207612112017,
+              "0.75": -0.1390444729093374,
+              "0.9": -0.13015698600798573,
+              "1.0": -0.10713130210967965
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": 0.9191794810814243
+          },
+          "oblique_or_tangent_abs_dot_lt_0_5": {
+            "triangles": 3622,
+            "source_faces": 3398,
+            "area": 0.027667376192415057,
+            "area_fraction_of_total_door": 0.16563644306086867,
+            "vertex_bounds_xyz": [
+              [
+                -0.06545662030752837,
+                -0.18266388773918152,
+                -0.1
+              ],
+              [
+                0.15092939448667428,
+                -0.1,
+                0.137
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.1824007829030355,
+              "0.1": -0.14768930123483354,
+              "0.25": -0.13496783771166856,
+              "0.5": -0.12199436022250125,
+              "0.75": -0.11041111505063607,
+              "0.9": -0.10430293708057697,
+              "1.0": -0.10000217606623968
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.005097354690077737
+          },
+          "faces_away_from_near_side_dot_le_minus_0_5": {
+            "triangles": 5310,
+            "source_faces": 5075,
+            "area": 0.06729697419273374,
+            "area_fraction_of_total_door": 0.4028871894653808,
+            "vertex_bounds_xyz": [
+              [
+                -0.07,
+                -0.18705042831197424,
+                -0.1
+              ],
+              [
+                0.151,
+                -0.10338717494549945,
+                0.137
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.18689828215253945,
+              "0.1": -0.17704989476806657,
+              "0.25": -0.16506681329511755,
+              "0.5": -0.14985049702007333,
+              "0.75": -0.13503443133419088,
+              "0.9": -0.12589413202026598,
+              "1.0": -0.10448707427102599
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.9211287842020136
+          }
+        }
+      },
+      {
+        "component_id": 12653,
+        "triangles": 480,
+        "source_faces": 480,
+        "area": 0.0021377930792253253,
+        "area_fraction_of_total_door": 0.012798338345509589,
+        "vertex_bounds_xyz": [
+          [
+            0.09662504494190216,
+            -0.1884768307209015,
+            0.051705703139305115
+          ],
+          [
+            0.11864826828241348,
+            -0.15579690039157867,
+            0.07510208338499069
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.18834985295931497,
+          "0.1": -0.18437156925425316,
+          "0.25": -0.17908539515709634,
+          "0.5": -0.1717390423283517,
+          "0.75": -0.1642196732318975,
+          "0.9": -0.15966696930565577,
+          "1.0": -0.15593927105267844
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.0,
+        "shared_source_area_fraction_of_component": 0.0,
+        "normal_categories": {
+          "faces_toward_near_side_dot_ge_0_5": {
+            "triangles": 92,
+            "source_faces": 92,
+            "area": 0.00035636518962387295,
+            "area_fraction_of_total_door": 0.0021334535674616094,
+            "vertex_bounds_xyz": [
+              [
+                0.0992913693189621,
+                -0.1884768307209015,
+                0.05318785458803177
+              ],
+              [
+                0.11800868809223175,
+                -0.17746612429618835,
+                0.07121758162975311
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.18834985295931497,
+              "0.1": -0.18748996599531545,
+              "0.25": -0.186525890028072,
+              "0.5": -0.18480142716997,
+              "0.75": -0.18249102240192144,
+              "0.9": -0.18093914994852597,
+              "1.0": -0.17837188641230264
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": 0.6732392686148979
+          },
+          "oblique_or_tangent_abs_dot_lt_0_5": {
+            "triangles": 291,
+            "source_faces": 291,
+            "area": 0.001403088576689295,
+            "area_fraction_of_total_door": 0.008399878598024206,
+            "vertex_bounds_xyz": [
+              [
+                0.09662504494190216,
+                -0.18561363220214844,
+                0.051705703139305115
+              ],
+              [
+                0.11864826828241348,
+                -0.15946908295154572,
+                0.07510208338499069
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.18478591740131378,
+              "0.1": -0.1799447469346784,
+              "0.25": -0.17652071719763113,
+              "0.5": -0.1717935032932873,
+              "0.75": -0.16701612741630134,
+              "0.9": -0.16399048636854346,
+              "1.0": -0.16039064029852548
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": 0.022914146116802304
+          },
+          "faces_away_from_near_side_dot_le_minus_0_5": {
+            "triangles": 97,
+            "source_faces": 97,
+            "area": 0.0003783393129121577,
+            "area_fraction_of_total_door": 0.002265006180023776,
+            "vertex_bounds_xyz": [
+              [
+                0.09786483645439148,
+                -0.16542503237724304,
+                0.052884504199028015
+              ],
+              [
+                0.11517918109893799,
+                -0.15579690039157867,
+                0.07327412813901901
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.16348841786384583,
+              "0.1": -0.16204417294858836,
+              "0.25": -0.160747682789685,
+              "0.5": -0.15931605471791713,
+              "0.75": -0.15773175412954835,
+              "0.9": -0.15678012255598378,
+              "1.0": -0.15593927105267844
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.7191153734172717
+          }
+        }
+      },
+      {
+        "component_id": 12763,
+        "triangles": 280,
+        "source_faces": 280,
+        "area": 0.0009612943028500234,
+        "area_fraction_of_total_door": 0.005754986231849719,
+        "vertex_bounds_xyz": [
+          [
+            0.10055841505527496,
+            -0.18385346233844757,
+            0.05564584583044052
+          ],
+          [
+            0.11471709609031677,
+            -0.16010668873786926,
+            0.07084502279758453
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.1835122952858607,
+          "0.1": -0.18040405981386137,
+          "0.25": -0.17669965154425285,
+          "0.5": -0.17129483259668982,
+          "0.75": -0.16632935440296817,
+          "0.9": -0.16298156676912004,
+          "1.0": -0.16020174324512482
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.0,
+        "shared_source_area_fraction_of_component": 0.0,
+        "normal_categories": {
+          "faces_toward_near_side_dot_ge_0_5": {
+            "triangles": 48,
+            "source_faces": 48,
+            "area": 0.00014226017623854677,
+            "area_fraction_of_total_door": 0.0008516698301093351,
+            "vertex_bounds_xyz": [
+              [
+                0.10151240229606628,
+                -0.16740143299102783,
+                0.05677233263850212
+              ],
+              [
+                0.11208346486091614,
+                -0.16010668873786926,
+                0.07084502279758453
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.1661975085735321,
+              "0.1": -0.16469286518182782,
+              "0.25": -0.16333741703064567,
+              "0.5": -0.1622049835106187,
+              "0.75": -0.1614245367941762,
+              "0.9": -0.1607233156561074,
+              "1.0": -0.16020174324512482
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": 0.7068960388156929
+          },
+          "oblique_or_tangent_abs_dot_lt_0_5": {
+            "triangles": 178,
+            "source_faces": 178,
+            "area": 0.0006901177487892926,
+            "area_fraction_of_total_door": 0.004131531967746547,
+            "vertex_bounds_xyz": [
+              [
+                0.10055841505527496,
+                -0.18303368985652924,
+                0.05564584583044052
+              ],
+              [
+                0.11471709609031677,
+                -0.161951944231987,
+                0.07084502279758453
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.18252026041348776,
+              "0.1": -0.17857845222169774,
+              "0.25": -0.1752554436433283,
+              "0.5": -0.17134844820348547,
+              "0.75": -0.16782493487786837,
+              "0.9": -0.16556387629002972,
+              "1.0": -0.1632550209760666
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.02392273969743616
+          },
+          "faces_away_from_near_side_dot_le_minus_0_5": {
+            "triangles": 54,
+            "source_faces": 54,
+            "area": 0.00012891637782218415,
+            "area_fraction_of_total_door": 0.0007717844339938379,
+            "vertex_bounds_xyz": [
+              [
+                0.10190021246671677,
+                -0.18385346233844757,
+                0.05682375654578209
+              ],
+              [
+                0.11407136917114258,
+                -0.17513751983642578,
+                0.0689152330160141
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.1835122952858607,
+              "0.1": -0.18325919989685094,
+              "0.25": -0.18233891377373684,
+              "0.5": -0.180564603725424,
+              "0.75": -0.17897984381248233,
+              "0.9": -0.1773201074877596,
+              "1.0": -0.17582593858242035
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.6520013144902376
+          }
+        }
+      },
+      {
+        "component_id": 12939,
+        "triangles": 2,
+        "source_faces": 2,
+        "area": 1.6016868516178416e-06,
+        "area_fraction_of_total_door": 9.588828053455657e-06,
+        "vertex_bounds_xyz": [
+          [
+            0.14253389835357666,
+            -0.12664635479450226,
+            -0.06690353155136108
+          ],
+          [
+            0.14342936873435974,
+            -0.12482864409685135,
+            -0.06592011451721191
+          ]
+        ],
+        "area_weighted_centroid_y_quantiles": {
+          "0.0": -0.12573565791050592,
+          "0.1": -0.12573565791050592,
+          "0.25": -0.12573565791050592,
+          "0.5": -0.12573565791050592,
+          "0.75": -0.12573565791050592,
+          "0.9": -0.12573565791050592,
+          "1.0": -0.12573565791050592
+        },
+        "area_weighted_mean_geometric_normal_dot_minus_y": 0.0,
+        "shared_source_area_fraction_of_component": 0.0,
+        "normal_categories": {
+          "faces_toward_near_side_dot_ge_0_5": {
+            "triangles": 1,
+            "source_faces": 1,
+            "area": 8.008434258089208e-07,
+            "area_fraction_of_total_door": 4.794414026727828e-06,
+            "vertex_bounds_xyz": [
+              [
+                0.14253389835357666,
+                -0.12664635479450226,
+                -0.06690353155136108
+              ],
+              [
+                0.14342936873435974,
+                -0.12482864409685135,
+                -0.06592011451721191
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.12573565791050592,
+              "0.1": -0.12573565791050592,
+              "0.25": -0.12573565791050592,
+              "0.5": -0.12573565791050592,
+              "0.75": -0.12573565791050592,
+              "0.9": -0.12573565791050592,
+              "1.0": -0.12573565791050592
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": 0.5430724699673438
+          },
+          "oblique_or_tangent_abs_dot_lt_0_5": {
+            "triangles": 0,
+            "area": 0.0,
+            "area_fraction_of_total_door": 0.0
+          },
+          "faces_away_from_near_side_dot_le_minus_0_5": {
+            "triangles": 1,
+            "source_faces": 1,
+            "area": 8.008434258089208e-07,
+            "area_fraction_of_total_door": 4.794414026727828e-06,
+            "vertex_bounds_xyz": [
+              [
+                0.14253389835357666,
+                -0.12664635479450226,
+                -0.06690353155136108
+              ],
+              [
+                0.14342936873435974,
+                -0.12482864409685135,
+                -0.06592011451721191
+              ]
+            ],
+            "area_weighted_centroid_y_quantiles": {
+              "0.0": -0.12573565791050592,
+              "0.1": -0.12573565791050592,
+              "0.25": -0.12573565791050592,
+              "0.5": -0.12573565791050592,
+              "0.75": -0.12573565791050592,
+              "0.9": -0.12573565791050592,
+              "1.0": -0.12573565791050592
+            },
+            "area_weighted_mean_geometric_normal_dot_minus_y": -0.5430724699673438
+          }
+        }
+      }
+    ]
+  },
+  "limits": [
+    "No asset modification, rendering, semantic segmentation, source-quality judgment, or collision test.",
+    "The single depth-prism selection may retain original internal/back-facing sheets. Original provenance does not make an undesired moving region an intrinsic generator failure.",
+    "Whether visible ragged regions correspond to retained original faces or cut pieces needs the parent provenance render; area dominance alone does not identify screen-space defects.",
+    "Small geometric plane/rounding thresholds affect boundary counting and connectedness; this diagnostic does not certify topology."
+  ]
+}

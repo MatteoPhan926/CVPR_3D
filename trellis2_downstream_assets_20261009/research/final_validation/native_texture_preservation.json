@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "original_images": [
+    {
+      "mime": "image/webp",
+      "sha256": "0d55b593c3a2c9635429ed65548d178cdd54994071668ac81c83fce8ee4e9331",
+      "bytes": 670284
+    },
+    {
+      "mime": "image/webp",
+      "sha256": "8ba73c1813e42f7af493a0c65427ac91acaedb538a4aeebf98cfb456491acd4b",
+      "bytes": 20500
+    }
+  ],
+  "authored_images": [
+    {
+      "mime": "image/webp",
+      "sha256": "0d55b593c3a2c9635429ed65548d178cdd54994071668ac81c83fce8ee4e9331",
+      "bytes": 670284
+    },
+    {
+      "mime": "image/webp",
+      "sha256": "8ba73c1813e42f7af493a0c65427ac91acaedb538a4aeebf98cfb456491acd4b",
+      "bytes": 20500
+    }
+  ],
+  "encoded_texture_payloads_identical": true,
+  "scope": "Exact native texture bytes; does not by itself certify every cut UV or material appearance."
+}
