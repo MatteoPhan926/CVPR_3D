@@ -1,0 +1,186 @@
+{
+  "externally_verified": true,
+  "commit": "db57d36745e207ef0dafa52775303bb814f9018c",
+  "files": [
+    {
+      "path": "trellis2_downstream_assets_20261009/FINAL_REPORT.md",
+      "sha256": "ea4adb0d7eb30251979cd20fcd62b7c15fa91d852019bacf1faf660af557bdbd",
+      "bytes": 14120
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/README.md",
+      "sha256": "4d46c7a771806a90ffe0d678fecb1f18b2baffb60c246222e1e5dc87727e673a",
+      "bytes": 2327
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/RUN_LEDGER.json",
+      "sha256": "efa649223e04ac4d267a5b0b3b6f219a9ab65287201202bd4827fa2098fc1388",
+      "bytes": 4855
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/SECRETARY_HANDOFF.md",
+      "sha256": "8c7f342d28f8f42afca924e1ded0320563206d17e4e1566feae3a0811d4b3c3a",
+      "bytes": 5047
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/artifacts/viewer/car_door_standalone.build.json",
+      "sha256": "847e2005ff5dde5d966360eee545549d07f2a66d47357d587956c972a4249c60",
+      "bytes": 1017
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/artifacts/viewer/car_door_standalone.html",
+      "sha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+      "bytes": 15193218
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/artifacts/viewer/car_door_standalone_attempt_01.build.json",
+      "sha256": "9d50b9050b282af91bdc58c30d8f1c7a1b38dc85a3ad5ffd287f083038170ff3",
+      "bytes": 1017
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/artifacts/viewer/car_door_standalone_attempt_01.html",
+      "sha256": "99262aee92f075a009451d89108769a1f0c324b96d3887e06f860c3c67bd4c01",
+      "bytes": 15193144
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/04_verified_downstream.verification.json",
+      "sha256": "3969bb7b887661984602453336129a181d17314e3166e686b742a18a51f7a6ba",
+      "bytes": 840
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/REPORT.md",
+      "sha256": "abf15c321f57de3989bad96456e9b92be75320d131574ca07d39b0c82d88c261",
+      "bytes": 4734
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/build_attempt_01.json",
+      "sha256": "25828ff26f644c98f77257111809110fde4d402ccf39c9e1f25d417226b3e6ff",
+      "bytes": 269
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/build_attempt_01.log",
+      "sha256": "62fcdfff6a301cf3b8f7744ee24d0794fa2ee40f0422c86fadd5914d81707a0a",
+      "bytes": 1018
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/build_attempt_02.json",
+      "sha256": "94c749f143c79859e857c7b2f8bc965444590a9b40cc1c18a5fb67ff7eec37e4",
+      "bytes": 341
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/build_attempt_02.log",
+      "sha256": "323568685604509d1bce564e4132710aa4d66a85f98a38a220d1bda1a5ec048c",
+      "bytes": 1018
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/completion_manifest.json",
+      "sha256": "f8ad0eaa80e506a90fbbc5671e180cf726af854a850023ae358c607aad33fccb",
+      "bytes": 5777
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/native_pbr_checks.json",
+      "sha256": "d047eb8c7245ab2e723b53e1af908ac87a530762960162e098f9a56b254096df",
+      "bytes": 1538
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/static_package_checks.json",
+      "sha256": "a8dd47a438ea4cf98cb161179caca3278ded32898a1f9f96333d3f30b796138c",
+      "bytes": 1905
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/static_package_checks_attempt_01.json",
+      "sha256": "eb1ebc26449fa68a4494ef650fddeee5a853f721133bab00c5cd124b797ae21b",
+      "bytes": 1905
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_01.log",
+      "sha256": "758818d4bab0e9290f29abff7cd0224e558bef9d1828c68a3be851118701cda2",
+      "bytes": 1884
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_01.run.json",
+      "sha256": "c55772f2dfe166039f85f8ce1fa0a8ae6042c4e104f355ed1854283e43dad7ec",
+      "bytes": 433
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_02_local_http.log",
+      "sha256": "e987567120fff3b371240393a8b5ce54a6955356fee439663896e779ea27edd2",
+      "bytes": 289
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_02_local_http.run.json",
+      "sha256": "94cafc86d3d063d338016521f512ec4d90ff4fcc8451e50bf1596fdd29b16a4b",
+      "bytes": 481
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_02_local_http/closed.png",
+      "sha256": "5b25c82138afdb26abd4960fef16e8cd486ee142034b377fef61b560392f968b",
+      "bytes": 332425
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_02_local_http/half.png",
+      "sha256": "78632963d9458c4f16c9cf7e59fc44e3a30ce18af69fb28bf7aac2321b843221",
+      "bytes": 339188
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_02_local_http/open.png",
+      "sha256": "f37fc3da4754d44ba8cd16abcaaac71581f80f7318cf6ab741fd32f200da3f59",
+      "bytes": 337753
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http.log",
+      "sha256": "adfb892e4634dab6c23e5e3f329f42c1b091719edcb54536caaeea3831791787",
+      "bytes": 1649
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http.run.json",
+      "sha256": "0b24faec16d399755edc11e226c54ba1b3057cb0147e136fb41f86d6d8b4578e",
+      "bytes": 481
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http/closed.png",
+      "sha256": "5b25c82138afdb26abd4960fef16e8cd486ee142034b377fef61b560392f968b",
+      "bytes": 332425
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http/half.png",
+      "sha256": "fd0cb3cb381029b7fd8bc783c6b57acecf99d9f6fa022209b7724b66bdd363cc",
+      "bytes": 339362
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http/open.png",
+      "sha256": "06bf75c3446615a373554c34350377ffeb7f8963bb67f6dc44616153d3e12c50",
+      "bytes": 337724
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http/open_side.png",
+      "sha256": "f61abfceb36e6c776a0892958e68e1d45d223665a76db738220bde42b0e23003",
+      "bytes": 301658
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/research/viewer/verification_attempt_03_local_http/verification.json",
+      "sha256": "ddddc90d8944e2f4516a2ce4085fce11bb80d09eeab012957b00400f777396d2",
+      "bytes": 27080
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/package_final.py",
+      "sha256": "a058de05971209c3914b0558d1c06caa504a7aa0e19403170b9cb4c0e89dfe22",
+      "bytes": 2111
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/viewer/README.md",
+      "sha256": "2b452348c4b3f00e256eec6794613d30946d509bf0e6ae850a50206a7e6fd688",
+      "bytes": 3092
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/viewer/main.js",
+      "sha256": "8667c294b0dbe9fdcc05468c492410fa9f4abf18497e8633981e68b22a6a2264",
+      "bytes": 9415
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/source/viewer/verify_viewer.py",
+      "sha256": "f7f9be5de3f0e4a333a289ae44762c6dfb485e97198afff4ba45548d2f2de06d",
+      "bytes": 8972
+    }
+  ]
+}
