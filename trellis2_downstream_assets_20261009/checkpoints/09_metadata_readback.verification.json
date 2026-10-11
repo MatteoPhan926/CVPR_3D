@@ -1,0 +1,41 @@
+{
+  "externally_verified": true,
+  "commit": "fe843c1c85abbae9928826e177f051ffa0290d24",
+  "files": [
+    {
+      "path": "trellis2_downstream_assets_20261009/DOWNLOADS.md",
+      "sha256": "251beb48267a17bf02d65981e625438237d614c1d6e9ea15d0bd14a194717d68",
+      "bytes": 5994
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/07_final_restore.log",
+      "sha256": "64a85506f9ee3be546f0aefd3c0b225242001c4f9c5bce6f3650d647139e4099",
+      "bytes": 1805
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/07_final_restore.verification.json",
+      "sha256": "2d9b36fdb6ab2bdf0da31cf419f6f6a53860e97201a295a558c063963e5e581e",
+      "bytes": 1804
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/08_existing_state_check.json",
+      "sha256": "1c3f8b87eee8431af1dc157518b0e5469dc1ac96d64d4f18edf487e6a0eb5415",
+      "bytes": 11060
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/08_restore_guard.verification.json",
+      "sha256": "6c4163af99ee3066a75e6a3caf46d52635bb66892ebfdc1f62e195d0079556d6",
+      "bytes": 665
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/09_onboarding_preflight.log",
+      "sha256": "164249b787eaf45ffb032f189eb9ae4cf48bcbe99bda592727b8c4b49d220732",
+      "bytes": 3905
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/config/onboarding_install_recovery.sh",
+      "sha256": "7ad812bcbeb58c0e03d2960b102a2c3ebf63989d904039ce90c120f9c8cc1d2b",
+      "bytes": 4706
+    }
+  ]
+}

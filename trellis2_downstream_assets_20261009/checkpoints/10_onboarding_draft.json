@@ -1,0 +1,17 @@
+{
+  "status": "saved_and_read_back",
+  "draft_id": "9a9e1390-e89c-4f99-be30-505b6d44e80a~cecfgdraft_6acb1550b9c48190b7e4faffb43a93b7",
+  "requires_publish": true,
+  "modified_fields": [
+    "start_skill",
+    "install_script"
+  ],
+  "start_skill_readback_matches": true,
+  "install_script_readback_matches": true,
+  "credential_bindings_unchanged": true,
+  "network_policy_unchanged": true,
+  "preflight_exit_code": 0,
+  "verified_payload_data_commit": "37da741a3f74f2fbb48528bc8af5e285feb7e58b",
+  "verified_restore_receipt_commit": "fe843c1c85abbae9928826e177f051ffa0290d24",
+  "limits": "Saved configuration draft only. Future publish/application is not verified; platform requires review/save/publish. No secrets changed or emitted; no experiment/install was run by preflight."
+}
