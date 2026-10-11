@@ -1,0 +1,1309 @@
+{
+  "status": "passed",
+  "html": "artifacts/viewer/car_door_standalone.html",
+  "html_sha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+  "browser": "151.0.7922.173",
+  "opened_via": "loopback HTTP",
+  "file_protocol_verified": false,
+  "allowed_initial_document_requests": [
+    "http://127.0.0.1:43535/viewer.html"
+  ],
+  "network_policy": "Only initial loopback HTML document permitted; every subsequent HTTP(S) request blocked",
+  "external_network_requests": [],
+  "javascript_errors": [],
+  "console_errors": [],
+  "controls_checked": [
+    "0/30/60-degree slider",
+    "open/close playback and reversal",
+    "pause",
+    "closed",
+    "open",
+    "reset",
+    "side camera"
+  ],
+  "measured_hinge_angles_degrees": {
+    "half": 30.000007843387397,
+    "open": 59.999996927209125
+  },
+  "moving_nodes": [
+    "FrontDoor_Control",
+    "ADDED_door_edge_thickness",
+    "ADDED_door_inner_lining",
+    "Generated_front_door_-_native_UV_PBR"
+  ],
+  "fixed_nodes": [
+    "Generated_exterior_-_fixed",
+    "ADDED_fixed_aperture_jamb",
+    "ADDED_plausible_cabin_floor",
+    "ADDED_plausible_seat_cushion",
+    "ADDED_plausible_seat_back",
+    "ADDED_plausible_dashboard"
+  ],
+  "fixed_body": "Generated_exterior_-_fixed",
+  "reset_max_matrix_delta": 0,
+  "first_cycle_observed_seconds_including_browser_calls": 23.175130126001022,
+  "opening_state": {
+    "ready": true,
+    "angle": 10.821000000044672,
+    "playing": true,
+    "direction": 1,
+    "openingSeconds": 2,
+    "animationStart": 0.03333333507180214,
+    "view": "hero",
+    "frames": 37,
+    "errors": [],
+    "animation": {
+      "name": "FrontDoor_ControlAction",
+      "duration": 4.0333333015441895,
+      "tracks": [
+        "FrontDoor_Control.quaternion"
+      ]
+    },
+    "cameraPosition": [
+      1.1644820967346583,
+      0.6397715324626946,
+      1.5164607950785953
+    ],
+    "lighting": {
+      "environment": "Three.js RoomEnvironment, procedural, PMREM blur 0.04",
+      "environmentIntensity": 0.75,
+      "hemisphere": {
+        "sky": "#e6edf2",
+        "ground": "#4a4842",
+        "intensity": 1
+      },
+      "key": {
+        "color": "#fff0df",
+        "intensity": 2.2,
+        "positionRelativeToModel": [
+          1.5,
+          2,
+          2
+        ]
+      },
+      "fill": {
+        "color": "#d8e9ff",
+        "intensity": 1,
+        "positionRelativeToModel": [
+          -1,
+          0.8,
+          -1
+        ]
+      },
+      "toneMapping": "ACESFilmic",
+      "exposure": 1,
+      "outputColorSpace": "sRGB",
+      "materialPolicy": "GLTFLoader native materials and textures; no material overrides, recoloring, or texture replacements.",
+      "shadows": false
+    },
+    "metadata": {
+      "assetFile": "car_door_authored.glb",
+      "assetBytes": 10938528,
+      "assetSha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+      "originalSource": "sample_2026-10-09T183055.354.glb",
+      "sourceAssociation": "Supplied HF-direct asset A; resolution mapping unknown",
+      "authoring": "Native exterior partition; moving door; labelled lining, edge, jamb and proxy cabin additions",
+      "threeVersion": "0.170.0",
+      "esbuildVersion": "0.24.2",
+      "buildUtc": "2026-10-10T05:47:00.410Z"
+    }
+  },
+  "closing_state": {
+    "ready": true,
+    "angle": 39.686999999955304,
+    "playing": true,
+    "direction": -1,
+    "openingSeconds": 2,
+    "animationStart": 0.03333333507180214,
+    "view": "hero",
+    "frames": 38,
+    "errors": [],
+    "animation": {
+      "name": "FrontDoor_ControlAction",
+      "duration": 4.0333333015441895,
+      "tracks": [
+        "FrontDoor_Control.quaternion"
+      ]
+    },
+    "cameraPosition": [
+      1.1644820967346583,
+      0.6397715324626946,
+      1.5164607950785953
+    ],
+    "lighting": {
+      "environment": "Three.js RoomEnvironment, procedural, PMREM blur 0.04",
+      "environmentIntensity": 0.75,
+      "hemisphere": {
+        "sky": "#e6edf2",
+        "ground": "#4a4842",
+        "intensity": 1
+      },
+      "key": {
+        "color": "#fff0df",
+        "intensity": 2.2,
+        "positionRelativeToModel": [
+          1.5,
+          2,
+          2
+        ]
+      },
+      "fill": {
+        "color": "#d8e9ff",
+        "intensity": 1,
+        "positionRelativeToModel": [
+          -1,
+          0.8,
+          -1
+        ]
+      },
+      "toneMapping": "ACESFilmic",
+      "exposure": 1,
+      "outputColorSpace": "sRGB",
+      "materialPolicy": "GLTFLoader native materials and textures; no material overrides, recoloring, or texture replacements.",
+      "shadows": false
+    },
+    "metadata": {
+      "assetFile": "car_door_authored.glb",
+      "assetBytes": 10938528,
+      "assetSha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+      "originalSource": "sample_2026-10-09T183055.354.glb",
+      "sourceAssociation": "Supplied HF-direct asset A; resolution mapping unknown",
+      "authoring": "Native exterior partition; moving door; labelled lining, edge, jamb and proxy cabin additions",
+      "threeVersion": "0.170.0",
+      "esbuildVersion": "0.24.2",
+      "buildUtc": "2026-10-10T05:47:00.410Z"
+    }
+  },
+  "materials": [
+    {
+      "name": "Material_0",
+      "type": "MeshStandardMaterial",
+      "baseColorTexture": true,
+      "roughnessTexture": true,
+      "metallicTexture": true,
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "metalness": 1,
+      "roughness": 1,
+      "baseColorSpace": "srgb",
+      "roughnessColorSpace": ""
+    },
+    {
+      "name": "ADDED dark painted cut edges",
+      "type": "MeshStandardMaterial",
+      "baseColorTexture": false,
+      "roughnessTexture": false,
+      "metallicTexture": false,
+      "color": [
+        0.012000000104308128,
+        0.017999999225139618,
+        0.020999999716877937
+      ],
+      "metalness": 0,
+      "roughness": 0.44999998807907104,
+      "baseColorSpace": null,
+      "roughnessColorSpace": null
+    },
+    {
+      "name": "ADDED dark door lining",
+      "type": "MeshStandardMaterial",
+      "baseColorTexture": false,
+      "roughnessTexture": false,
+      "metallicTexture": false,
+      "color": [
+        0.023000000044703484,
+        0.01899999938905239,
+        0.01600000075995922
+      ],
+      "metalness": 0,
+      "roughness": 0.6499999761581421,
+      "baseColorSpace": null,
+      "roughnessColorSpace": null
+    },
+    {
+      "name": "ADDED plausible interior upholstery",
+      "type": "MeshStandardMaterial",
+      "baseColorTexture": false,
+      "roughnessTexture": false,
+      "metallicTexture": false,
+      "color": [
+        0.03200000151991844,
+        0.02500000037252903,
+        0.020999999716877937
+      ],
+      "metalness": 0,
+      "roughness": 0.6499999761581421,
+      "baseColorSpace": null,
+      "roughnessColorSpace": null
+    }
+  ],
+  "initial_state": {
+    "ready": true,
+    "angle": 0,
+    "playing": false,
+    "direction": 1,
+    "openingSeconds": 2,
+    "animationStart": 0.03333333507180214,
+    "view": "hero",
+    "frames": 13,
+    "errors": [],
+    "animation": {
+      "name": "FrontDoor_ControlAction",
+      "duration": 4.0333333015441895,
+      "tracks": [
+        "FrontDoor_Control.quaternion"
+      ]
+    },
+    "cameraPosition": [
+      1.1644820967346583,
+      0.6397715324626946,
+      1.5164607950785953
+    ],
+    "lighting": {
+      "environment": "Three.js RoomEnvironment, procedural, PMREM blur 0.04",
+      "environmentIntensity": 0.75,
+      "hemisphere": {
+        "sky": "#e6edf2",
+        "ground": "#4a4842",
+        "intensity": 1
+      },
+      "key": {
+        "color": "#fff0df",
+        "intensity": 2.2,
+        "positionRelativeToModel": [
+          1.5,
+          2,
+          2
+        ]
+      },
+      "fill": {
+        "color": "#d8e9ff",
+        "intensity": 1,
+        "positionRelativeToModel": [
+          -1,
+          0.8,
+          -1
+        ]
+      },
+      "toneMapping": "ACESFilmic",
+      "exposure": 1,
+      "outputColorSpace": "sRGB",
+      "materialPolicy": "GLTFLoader native materials and textures; no material overrides, recoloring, or texture replacements.",
+      "shadows": false
+    },
+    "metadata": {
+      "assetFile": "car_door_authored.glb",
+      "assetBytes": 10938528,
+      "assetSha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+      "originalSource": "sample_2026-10-09T183055.354.glb",
+      "sourceAssociation": "Supplied HF-direct asset A; resolution mapping unknown",
+      "authoring": "Native exterior partition; moving door; labelled lining, edge, jamb and proxy cabin additions",
+      "threeVersion": "0.170.0",
+      "esbuildVersion": "0.24.2",
+      "buildUtc": "2026-10-10T05:47:00.410Z"
+    }
+  },
+  "viewport_pixels_changing_above_8_channel_levels": 27208,
+  "snapshots": {
+    "closed": {
+      "Generated_exterior_-_fixed": {
+        "name": "Generated_exterior_-_fixed",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "FrontDoor_Control": {
+        "name": "FrontDoor_Control",
+        "isMesh": false,
+        "position": [
+          -0.061000000685453415,
+          0,
+          0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.061000000685453415,
+          0,
+          0.15299999713897705,
+          1
+        ]
+      },
+      "ADDED_door_edge_thickness": {
+        "name": "ADDED_door_edge_thickness",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "ADDED_door_inner_lining": {
+        "name": "ADDED_door_inner_lining",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "Generated_front_door_-_native_UV_PBR": {
+        "name": "Generated_front_door_-_native_UV_PBR",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "ADDED_fixed_aperture_jamb": {
+        "name": "ADDED_fixed_aperture_jamb",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_cabin_floor": {
+        "name": "ADDED_plausible_cabin_floor",
+        "isMesh": true,
+        "position": [
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_cushion": {
+        "name": "ADDED_plausible_seat_cushion",
+        "isMesh": true,
+        "position": [
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_back": {
+        "name": "ADDED_plausible_seat_back",
+        "isMesh": true,
+        "position": [
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_dashboard": {
+        "name": "ADDED_plausible_dashboard",
+        "isMesh": true,
+        "position": [
+          0.11500000208616257,
+          0.029999999329447746,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.11500000208616257,
+          0.029999999329447746,
+          0,
+          1
+        ]
+      }
+    },
+    "half": {
+      "Generated_exterior_-_fixed": {
+        "name": "Generated_exterior_-_fixed",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "FrontDoor_Control": {
+        "name": "FrontDoor_Control",
+        "isMesh": false,
+        "position": [
+          -0.061000000685453415,
+          0,
+          0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          -0.2588191117193137,
+          -0.0,
+          0.9659258104494816
+        ],
+        "matrixWorld": [
+          0.8660253348176508,
+          0,
+          0.500000120494586,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.500000120494586,
+          0,
+          0.8660253348176508,
+          0,
+          -0.061000000685453415,
+          0,
+          0.15299999713897705,
+          1
+        ]
+      },
+      "ADDED_door_edge_thickness": {
+        "name": "ADDED_door_edge_thickness",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.8660253348176508,
+          0,
+          0.500000120494586,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.500000120494586,
+          0,
+          0.8660253348176508,
+          0,
+          0.06832756233720313,
+          0,
+          0.05099813108249138,
+          1
+        ]
+      },
+      "ADDED_door_inner_lining": {
+        "name": "ADDED_door_inner_lining",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.8660253348176508,
+          0,
+          0.500000120494586,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.500000120494586,
+          0,
+          0.8660253348176508,
+          0,
+          0.06832756233720313,
+          0,
+          0.05099813108249138,
+          1
+        ]
+      },
+      "Generated_front_door_-_native_UV_PBR": {
+        "name": "Generated_front_door_-_native_UV_PBR",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.8660253348176508,
+          0,
+          0.500000120494586,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.500000120494586,
+          0,
+          0.8660253348176508,
+          0,
+          0.06832756233720313,
+          0,
+          0.05099813108249138,
+          1
+        ]
+      },
+      "ADDED_fixed_aperture_jamb": {
+        "name": "ADDED_fixed_aperture_jamb",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_cabin_floor": {
+        "name": "ADDED_plausible_cabin_floor",
+        "isMesh": true,
+        "position": [
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_cushion": {
+        "name": "ADDED_plausible_seat_cushion",
+        "isMesh": true,
+        "position": [
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_back": {
+        "name": "ADDED_plausible_seat_back",
+        "isMesh": true,
+        "position": [
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_dashboard": {
+        "name": "ADDED_plausible_dashboard",
+        "isMesh": true,
+        "position": [
+          0.11500000208616257,
+          0.029999999329447746,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.11500000208616257,
+          0.029999999329447746,
+          0,
+          1
+        ]
+      }
+    },
+    "open": {
+      "Generated_exterior_-_fixed": {
+        "name": "Generated_exterior_-_fixed",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "FrontDoor_Control": {
+        "name": "FrontDoor_Control",
+        "isMesh": false,
+        "position": [
+          -0.061000000685453415,
+          0,
+          0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          -0.49999996259625296,
+          -0.0,
+          0.8660253926295647
+        ],
+        "matrixWorld": [
+          0.5000000748074913,
+          0,
+          0.8660253278443752,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.8660253278443752,
+          0,
+          0.5000000748074913,
+          0,
+          -0.061000000685453415,
+          0,
+          0.15299999713897705,
+          1
+        ]
+      },
+      "ADDED_door_edge_thickness": {
+        "name": "ADDED_door_edge_thickness",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.5000000748074913,
+          0,
+          0.8660253278443752,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.8660253278443752,
+          0,
+          0.5000000748074913,
+          0,
+          0.10200187690300139,
+          0,
+          0.12932753271606948,
+          1
+        ]
+      },
+      "ADDED_door_inner_lining": {
+        "name": "ADDED_door_inner_lining",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.5000000748074913,
+          0,
+          0.8660253278443752,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.8660253278443752,
+          0,
+          0.5000000748074913,
+          0,
+          0.10200187690300139,
+          0,
+          0.12932753271606948,
+          1
+        ]
+      },
+      "Generated_front_door_-_native_UV_PBR": {
+        "name": "Generated_front_door_-_native_UV_PBR",
+        "isMesh": true,
+        "position": [
+          0.061000000685453415,
+          0,
+          -0.15299999713897705
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          0.5000000748074913,
+          0,
+          0.8660253278443752,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -0.8660253278443752,
+          0,
+          0.5000000748074913,
+          0,
+          0.10200187690300139,
+          0,
+          0.12932753271606948,
+          1
+        ]
+      },
+      "ADDED_fixed_aperture_jamb": {
+        "name": "ADDED_fixed_aperture_jamb",
+        "isMesh": true,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_cabin_floor": {
+        "name": "ADDED_plausible_cabin_floor",
+        "isMesh": true,
+        "position": [
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.054999999701976776,
+          -0.1120000034570694,
+          0,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_cushion": {
+        "name": "ADDED_plausible_seat_cushion",
+        "isMesh": true,
+        "position": [
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.01600000075995922,
+          -0.06199999898672104,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_seat_back": {
+        "name": "ADDED_plausible_seat_back",
+        "isMesh": true,
+        "position": [
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.0820000022649765,
+          -0.014000000432133675,
+          0.03500000014901161,
+          1
+        ]
+      },
+      "ADDED_plausible_dashboard": {
+        "name": "ADDED_plausible_dashboard",
+        "isMesh": true,
+        "position": [
+          0.11500000208616257,
+          0.029999999329447746,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "matrixWorld": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.11500000208616257,
+          0.029999999329447746,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "scope": "Functional viewer, transform, texture/material binding and screenshot checks. File-protocol/offline launch is established only when file_protocol_verified is true. Not artist acceptance or mechanical certification."
+}

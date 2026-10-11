@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "utc": "2026-10-10T05:45:45.756015+00:00",
+  "asset": "artifacts/authoring_A_v1/car_door_authored.glb",
+  "asset_sha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+  "embedded_glb_is_byte_identical": true,
+  "html_sha256": "99262aee92f075a009451d89108769a1f0c324b96d3887e06f860c3c67bd4c01",
+  "html_bytes": 15193144,
+  "animation_count": 1,
+  "animation_names": [
+    "FrontDoor_ControlAction"
+  ],
+  "embedded_image_count": 2,
+  "external_buffer_or_image_uris": [],
+  "materials": [
+    {
+      "name": "Material_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ADDED dark painted cut edges",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.012000000104308128,
+          0.017999999225139618,
+          0.020999999716877937,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.44999998807907104
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ADDED dark door lining",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.023000000044703484,
+          0.01899999938905239,
+          0.01600000075995922,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ADDED plausible interior upholstery",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03200000151991844,
+          0.02500000037252903,
+          0.020999999716877937,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      }
+    }
+  ],
+  "scope": "Static package and source identity checks; does not establish file-protocol browser behavior."
+}

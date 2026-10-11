@@ -8,7 +8,7 @@ const metadata = JSON.parse($('assetMetadata').textContent);
 const viewport = $('viewport');
 const errors = [];
 let model, mixer, action, clip, angle = 0, playing = false, direction = 1, ready = false;
-let openingSeconds = 2, frames = 0, view = 'hero';
+let openingSeconds = 2, animationStart = 0, frames = 0, view = 'hero';
 let playbackStarted = 0, playbackOffset = 0;
 const center = new THREE.Vector3(), size = new THREE.Vector3(), bounds = new THREE.Box3();
 const scene = new THREE.Scene();
@@ -81,7 +81,7 @@ function setAngle(value) {
   if (action) {
     action.enabled = true;
     action.paused = true;
-    action.time = angle / 60 * openingSeconds;
+    action.time = animationStart + angle / 60 * openingSeconds;
     mixer.update(0);
     model.updateMatrixWorld(true);
   }
@@ -118,7 +118,7 @@ function getTransforms() {
   return result;
 }
 function getState() {
-  return { ready, angle, playing, direction, openingSeconds, view, frames, errors: [...errors],
+  return { ready, angle, playing, direction, openingSeconds, animationStart, view, frames, errors: [...errors],
     animation: clip ? { name: clip.name, duration: clip.duration, tracks: clip.tracks.map(t => t.name) } : null,
     cameraPosition: camera.position.toArray(), lighting, metadata };
 }
@@ -170,7 +170,8 @@ async function load() {
     mixer = new THREE.AnimationMixer(model);
     action = mixer.clipAction(clip);
     action.play(); action.paused = true;
-    openingSeconds = Math.min(2, clip.duration);
+    animationStart = Math.min(...clip.tracks.map(track => track.times[0]));
+    openingSeconds = Math.min(2, clip.duration - animationStart);
   }
   ready = true;
   document.querySelectorAll('[data-motion]').forEach(element => element.disabled = !clip);

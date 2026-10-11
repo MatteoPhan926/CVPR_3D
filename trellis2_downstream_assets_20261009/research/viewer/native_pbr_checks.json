@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "utc": "2026-10-10T05:49:42.116436+00:00",
+  "asset_sha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+  "html_sha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+  "materials_checked": [
+    {
+      "name": "Material_0",
+      "type": "MeshStandardMaterial",
+      "base_color_factor_matches": true,
+      "metallic_factor_matches": true,
+      "roughness_factor_matches": true,
+      "texture_bindings_match": true
+    },
+    {
+      "name": "ADDED dark painted cut edges",
+      "type": "MeshStandardMaterial",
+      "base_color_factor_matches": true,
+      "metallic_factor_matches": true,
+      "roughness_factor_matches": true,
+      "texture_bindings_match": true
+    },
+    {
+      "name": "ADDED dark door lining",
+      "type": "MeshStandardMaterial",
+      "base_color_factor_matches": true,
+      "metallic_factor_matches": true,
+      "roughness_factor_matches": true,
+      "texture_bindings_match": true
+    },
+    {
+      "name": "ADDED plausible interior upholstery",
+      "type": "MeshStandardMaterial",
+      "base_color_factor_matches": true,
+      "metallic_factor_matches": true,
+      "roughness_factor_matches": true,
+      "texture_bindings_match": true
+    }
+  ],
+  "scope": "Native GLB PBR factors and texture-binding presence match browser-loaded materials. Texture byte identity follows from embedded GLB byte identity. Lighting and tone mapping are separately recorded; rendered pixels are not claimed identical across engines."
+}

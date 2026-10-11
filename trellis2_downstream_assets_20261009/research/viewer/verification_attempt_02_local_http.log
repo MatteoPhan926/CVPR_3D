@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/source/viewer/verify_viewer.py", line 69, in <module>
+    assert abs(measured-expected)<.01,(label,measured)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('half', 29.00000073557121)

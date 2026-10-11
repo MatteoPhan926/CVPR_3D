@@ -1,17 +1,34 @@
 #!/usr/bin/env python3
-"""Verify a standalone HTML opened directly by Chromium, with network access blocked."""
-import argparse, hashlib, json, math, time
+"""Verify standalone HTML in Chromium; local HTTP fallback is explicitly distinguished."""
+import argparse, hashlib, json, math, time, threading
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import numpy as np
 from PIL import Image
 from playwright.sync_api import sync_playwright
 
 p=argparse.ArgumentParser();p.add_argument('--html',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+p.add_argument('--transport',choices=['file','local-http'],default='file',help='Use local-http only when managed browser policy blocks file://; this does not validate file:// behavior.')
 p.add_argument('--chromium',default='/usr/bin/chromium');args=p.parse_args()
 assert args.html.is_file()
 args.output.mkdir(parents=True,exist_ok=False)
 errors=[];requests=[];console_errors=[];snapshots={};states={}
 html_hash=hashlib.sha256(args.html.read_bytes()).hexdigest()
+allowed_documents=[]
+target=args.html.resolve().as_uri()
+server=None
+if args.transport=='local-http':
+    html_bytes=args.html.read_bytes()
+    class Handler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            if self.path!='/viewer.html':
+                self.send_error(404);return
+            self.send_response(200);self.send_header('Content-Type','text/html; charset=utf-8')
+            self.send_header('Content-Length',str(len(html_bytes)));self.end_headers();self.wfile.write(html_bytes)
+        def log_message(self,*args):pass
+    server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+    threading.Thread(target=server.serve_forever,daemon=True).start()
+    target=f'http://127.0.0.1:{server.server_port}/viewer.html'
 def maximum_matrix_delta(a,b):
     return max(abs(x-y) for x,y in zip(a['matrixWorld'],b['matrixWorld']))
 def index(rows):return {r['name']:r for r in rows}
@@ -24,11 +41,13 @@ with sync_playwright() as playwright:
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.on('console',lambda e:console_errors.append(e.text) if e.type=='error' else None)
     def route(request):
+        if args.transport=='local-http' and request.request.url==target and request.request.resource_type=='document' and not allowed_documents:
+            allowed_documents.append(target);request.continue_();return
         if request.request.url.startswith(('http:','https:')):
             requests.append(request.request.url);request.abort()
         else:request.continue_()
     page.route('**/*',route)
-    page.goto(args.html.resolve().as_uri(),wait_until='load',timeout=90000)
+    page.goto(target,wait_until='load',timeout=90000)
     page.wait_for_function('window.assetViewer && assetViewer.getState().ready',timeout=90000)
     assert not page.locator('#doorSlider').is_disabled()
     for angle,label in [(0,'closed'),(30,'half'),(60,'open')]:
@@ -82,14 +101,18 @@ with sync_playwright() as playwright:
     changed_pixels=int(changed.sum());assert changed_pixels>300,'No meaningful visual response to the door slider'
     assert len(np.unique(closed.reshape(-1,3),axis=0))>200,'Viewport appears blank'
     report={'status':'passed','html':str(args.html),'html_sha256':html_hash,'browser':browser.version,
-      'opened_via':'file://','external_network_requests':requests,'javascript_errors':errors,'console_errors':console_errors,
+      'opened_via':'file://' if args.transport=='file' else 'loopback HTTP',
+      'file_protocol_verified':args.transport=='file','allowed_initial_document_requests':allowed_documents,
+      'network_policy':'All HTTP(S) blocked' if args.transport=='file' else 'Only initial loopback HTML document permitted; every subsequent HTTP(S) request blocked',
+      'external_network_requests':requests,'javascript_errors':errors,'console_errors':console_errors,
       'controls_checked':['0/30/60-degree slider','open/close playback and reversal','pause','closed','open','reset','side camera'],
       'measured_hinge_angles_degrees':angles,'moving_nodes':moving,'fixed_nodes':fixed,'fixed_body':body,
       'reset_max_matrix_delta':reset_delta,'first_cycle_observed_seconds_including_browser_calls':cycle_seconds,
       'opening_state':opening,'closing_state':closing,'materials':materials,'initial_state':initial,
       'viewport_pixels_changing_above_8_channel_levels':changed_pixels,'snapshots':snapshots,
-      'scope':'Functional local-file viewer, transform, texture/material binding, screenshot and offline checks. Not artist acceptance or mechanical certification.'}
+      'scope':'Functional viewer, transform, texture/material binding and screenshot checks. File-protocol/offline launch is established only when file_protocol_verified is true. Not artist acceptance or mechanical certification.'}
     assert hashlib.sha256(args.html.read_bytes()).hexdigest()==html_hash
     (args.output/'verification.json').write_text(json.dumps(report,indent=2))
     print(json.dumps({k:v for k,v in report.items() if k not in ['snapshots','initial_state','opening_state','closing_state','materials']},indent=2))
     browser.close()
+if server:server.shutdown();server.server_close()

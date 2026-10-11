@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "source/viewer/build.cjs",
+    "--input",
+    "artifacts/authoring_A_v1/car_door_authored.glb",
+    "--output",
+    "artifacts/viewer/car_door_standalone.html"
+  ],
+  "utc": "2026-10-10T05:47:00.947071+00:00",
+  "exit_code": 0,
+  "reason": "Include first native animation-key timestamp in slider sampling."
+}

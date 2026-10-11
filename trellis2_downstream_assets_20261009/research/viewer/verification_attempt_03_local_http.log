@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "html": "artifacts/viewer/car_door_standalone.html",
+  "html_sha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+  "browser": "151.0.7922.173",
+  "opened_via": "loopback HTTP",
+  "file_protocol_verified": false,
+  "allowed_initial_document_requests": [
+    "http://127.0.0.1:43535/viewer.html"
+  ],
+  "network_policy": "Only initial loopback HTML document permitted; every subsequent HTTP(S) request blocked",
+  "external_network_requests": [],
+  "javascript_errors": [],
+  "console_errors": [],
+  "controls_checked": [
+    "0/30/60-degree slider",
+    "open/close playback and reversal",
+    "pause",
+    "closed",
+    "open",
+    "reset",
+    "side camera"
+  ],
+  "measured_hinge_angles_degrees": {
+    "half": 30.000007843387397,
+    "open": 59.999996927209125
+  },
+  "moving_nodes": [
+    "FrontDoor_Control",
+    "ADDED_door_edge_thickness",
+    "ADDED_door_inner_lining",
+    "Generated_front_door_-_native_UV_PBR"
+  ],
+  "fixed_nodes": [
+    "Generated_exterior_-_fixed",
+    "ADDED_fixed_aperture_jamb",
+    "ADDED_plausible_cabin_floor",
+    "ADDED_plausible_seat_cushion",
+    "ADDED_plausible_seat_back",
+    "ADDED_plausible_dashboard"
+  ],
+  "fixed_body": "Generated_exterior_-_fixed",
+  "reset_max_matrix_delta": 0,
+  "first_cycle_observed_seconds_including_browser_calls": 23.175130126001022,
+  "viewport_pixels_changing_above_8_channel_levels": 27208,
+  "scope": "Functional viewer, transform, texture/material binding and screenshot checks. File-protocol/offline launch is established only when file_protocol_verified is true. Not artist acceptance or mechanical certification."
+}

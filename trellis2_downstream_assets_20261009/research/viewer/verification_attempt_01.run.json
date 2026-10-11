@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "source/viewer/verify_viewer.py",
+    "--html",
+    "artifacts/viewer/car_door_standalone.html",
+    "--output",
+    "research/viewer/verification_attempt_01",
+    "--chromium",
+    "/usr/bin/chromium"
+  ],
+  "started_utc": "2026-10-10T05:43:50.863766+00:00",
+  "exit_code": 1,
+  "finished_utc": "2026-10-10T05:43:54.799530+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "assetFile": "car_door_authored.glb",
+  "assetBytes": 10938528,
+  "assetSha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+  "originalSource": "sample_2026-10-09T183055.354.glb",
+  "sourceAssociation": "Supplied HF-direct asset A; resolution mapping unknown",
+  "authoring": "Native exterior partition; moving door; labelled lining, edge, jamb and proxy cabin additions",
+  "threeVersion": "0.170.0",
+  "esbuildVersion": "0.24.2",
+  "buildUtc": "2026-10-10T05:47:00.410Z",
+  "input": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/authoring_A_v1/car_door_authored.glb",
+  "output": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/artifacts/viewer/car_door_standalone.html",
+  "outputBytes": 15193218,
+  "outputSha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+  "bundleBytes": 601107,
+  "externalResourcesRequired": false,
+  "scope": "Built artifact only. Browser operation, material appearance and animation require verification."
+}

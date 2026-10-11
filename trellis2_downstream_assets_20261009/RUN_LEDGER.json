@@ -1,0 +1,116 @@
+{
+  "phase": "trellis2_downstream_assets_20261009",
+  "completed_local_date": "2026-10-10 Asia/Bangkok",
+  "branch": "trellis2-downstream-assets-20261009",
+  "objective": "2D input -> generated 3D -> meaningful artist use; bounded downstream screen on supplied outputs",
+  "new_generation_requests": 0,
+  "paid_requests": 0,
+  "model_training": false,
+  "executed": [
+    {
+      "activity": "Original upload preservation and external readback",
+      "status": "pass",
+      "evidence": "checkpoints/01_originals.verification.json"
+    },
+    {
+      "activity": "A and B GLB validation, geometry/material inventory, Blender import/export/fresh reimport",
+      "status": "pass_with_measured_small_normal_drift",
+      "evidence": "research/integrity/REPORT.md"
+    },
+    {
+      "activity": "Initial native render",
+      "status": "failed_renderer_build_missing_OpenImageDenoise",
+      "evidence": "logs/inspect_A.log"
+    },
+    {
+      "activity": "Native rendering with denoising disabled; PBR/basecolor/clay and exposure controls",
+      "status": "complete",
+      "evidence": "artifacts/raw_inspection/ and artifacts/presentation_controls/ and artifacts/raw_same_camera_A/"
+    },
+    {
+      "activity": "One conventional UV/PBR-preserving frontdoor preparation on A",
+      "status": "technical_partial_visual_target_not_met",
+      "evidence": "artifacts/authoring_A_v1/authoring.json"
+    },
+    {
+      "activity": "Reopen authored GLB, 121 motion samples and 1440x960 hero/side0/30/60 and edge close-up",
+      "status": "motion_and_preservation_pass_visual_opening_failure",
+      "evidence": "artifacts/reopened_A_v1/motion_verification.json"
+    },
+    {
+      "activity": "Native texture byte preservation and schema validation",
+      "status": "pass_0_errors_0_warnings_5_unused_UV_infos",
+      "evidence": "research/final_validation/"
+    },
+    {
+      "activity": "Same-camera differences and trajectory-derived checks",
+      "status": "complete",
+      "evidence": "research/final_validation/control_measurements.json"
+    },
+    {
+      "activity": "Source-face selection arithmetic and provenance/orientation renders",
+      "status": "complete_selection_source_confounded",
+      "evidence": "research/selection_diagnostic/FINDINGS.md"
+    },
+    {
+      "activity": "Independent early reviews and final adversarial review",
+      "status": "complete",
+      "evidence": "research/final_adversarial_review/FINAL_REVIEW.md"
+    },
+    {
+      "activity": "Direct file:// viewer navigation",
+      "status": "blocked_by_managed_Chromium_policy_not_bypassed",
+      "evidence": "research/viewer/verification_attempt_01.log"
+    },
+    {
+      "activity": "First localHTTP viewer functional test",
+      "status": "failed_actual_one_frame_timing_offset",
+      "evidence": "research/viewer/verification_attempt_02_local_http.log"
+    },
+    {
+      "activity": "Corrected viewer localHTTP verification with subsequent HTTP(S) blocked",
+      "status": "pass_no_FPS_or_file_protocol_claim",
+      "evidence": "research/viewer/verification_attempt_03_local_http/verification.json"
+    }
+  ],
+  "primary_deliverables": [
+    {
+      "path": "artifacts/authoring_A_v1/car_door_authored.glb",
+      "sha256": "7884da938b8461c0edb0638efc12d5e1c47c1192ea6da2a0d7f225417f21c03c",
+      "bytes": 10938528
+    },
+    {
+      "path": "artifacts/authoring_A_v1/car_door_authored.blend",
+      "sha256": "075d6f74304137d1990ff94bef0a142d25520d0c2e0387039dd7f1ef449fcdbc",
+      "bytes": 29721301
+    },
+    {
+      "path": "artifacts/viewer/car_door_standalone.html",
+      "sha256": "2130623ce41a1412785ed053e26b14b38a337a1ed63f29ae35af81f7c2b703ed",
+      "bytes": 15193218
+    }
+  ],
+  "unknown": [
+    "Per-file resolution mapping; user reports512/1536 trials",
+    "Seeds and decimation",
+    "Exact uploaded conditioning bytes/original-vs-background-removed",
+    "Pinned generating model/code revision",
+    "Separate car experiment identity",
+    "Artist acceptance and active preparation labor",
+    "Collision-free motion",
+    "Whether expert conventional local preparation resolves residual at acceptable cost"
+  ],
+  "not_executed": [
+    "Generation rerun",
+    "Paid/current commercial comparator",
+    "Second A cut or B authoring",
+    "Alternative local completion after diagnostic",
+    "Glass-pane reconstruction",
+    "Controlled resolution/seed ablation",
+    "Human artist study",
+    "Non-car revision study",
+    "Learned method or training"
+  ],
+  "decision": "Stop bounded repair screen. Establish competent conventional local preparation and actual artist acceptance/cost before selecting any method. No contribution demonstrated.",
+  "missing_artifacts": "No returned latent or generator config supplied. All locally created payloads are retained; final manifests/checkpoints document external verification."
+}
