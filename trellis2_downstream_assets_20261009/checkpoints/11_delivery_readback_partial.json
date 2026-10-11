@@ -1,0 +1,70 @@
+{
+  "externally_verified": false,
+  "commit": "2cdf1512b4c3505c38d3536e37993069afc47144",
+  "files": [
+    {
+      "path": "trellis2_downstream_assets_20261009/DOWNLOADS.md",
+      "sha256": "251beb48267a17bf02d65981e625438237d614c1d6e9ea15d0bd14a194717d68",
+      "bytes": 5994,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/FINAL_REPORT.md",
+      "sha256": "ea4adb0d7eb30251979cd20fcd62b7c15fa91d852019bacf1faf660af557bdbd",
+      "bytes": 14120,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/README.md",
+      "verified": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/RUN_LEDGER.json",
+      "sha256": "efa649223e04ac4d267a5b0b3b6f219a9ab65287201202bd4827fa2098fc1388",
+      "bytes": 4855,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/SECRETARY_HANDOFF.md",
+      "sha256": "8c7f342d28f8f42afca924e1ded0320563206d17e4e1566feae3a0811d4b3c3a",
+      "bytes": 5047,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/05_final_delivery.manifest.json",
+      "sha256": "ba0c02a886f3011aedacf24d542b19af3e906db230c2fc1e02fbd7a85e2bd5da",
+      "bytes": 30428,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/06_supporting_evidence.manifest.json",
+      "sha256": "a885bca06ea01bc13ba7a5a47000a765aa166631e33f506fd90cf22682706ebc",
+      "bytes": 11888,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/09_metadata_readback.verification.json",
+      "sha256": "ae3d0808efaa9147d1fb1acc74aff4fd3efac4ea93a6ae12308134fb1889bec5",
+      "bytes": 1555,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/checkpoints/10_onboarding_draft.json",
+      "sha256": "249a9a09269295b6ac0413804b19c3cc0a3e7ecfbb437adc714e7fefccd42514",
+      "bytes": 784,
+      "verified": true
+    },
+    {
+      "path": "trellis2_downstream_assets_20261009/config/ONBOARDING_CURRENT_PHASE.md",
+      "sha256": "e5d6a29b87f3321ce2b15305418ce3e322f184748c6fbf77c427d1582309fcc9",
+      "bytes": 6590,
+      "verified": true
+    }
+  ],
+  "payload_archives_already_verified_at": "37da741a3f74f2fbb48528bc8af5e285feb7e58b",
+  "all_new_research_payloads_external": true,
+  "known_unavailable": "Generator-side latents/configs/exact conditioning upload never supplied",
+  "onboarding": "Draft saved/readback verified; publication/application not verified",
+  "retained_readback_issue": "Earlier batch overlapped an in-progress metadata push and returned HTTP404. Failing path was not captured. This batch starts after push completion; no experiments or payload regeneration retried."
+}
