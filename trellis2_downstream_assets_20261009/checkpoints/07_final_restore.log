@@ -1,0 +1,32 @@
+{
+  "operation": "restore_into_new_directory",
+  "commit": "37da741a3f74f2fbb48528bc8af5e285feb7e58b",
+  "utc": "2026-10-11T04:44:33.058243+00:00",
+  "externally_downloaded_archives_verified": true,
+  "archives": [
+    {
+      "name": "05_final_delivery",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/37da741a3f74f2fbb48528bc8af5e285feb7e58b/trellis2_downstream_assets_20261009/checkpoints/05_final_delivery.zip",
+      "manifest_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/37da741a3f74f2fbb48528bc8af5e285feb7e58b/trellis2_downstream_assets_20261009/checkpoints/05_final_delivery.manifest.json",
+      "sha256": "e6533629189ffb715ae65595c312762e0ed9d50a41ed46829998bbbe60418625",
+      "bytes": 67498434,
+      "payload_files": 127
+    },
+    {
+      "name": "06_supporting_evidence",
+      "url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/37da741a3f74f2fbb48528bc8af5e285feb7e58b/trellis2_downstream_assets_20261009/checkpoints/06_supporting_evidence.zip",
+      "manifest_url": "https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/37da741a3f74f2fbb48528bc8af5e285feb7e58b/trellis2_downstream_assets_20261009/checkpoints/06_supporting_evidence.manifest.json",
+      "sha256": "fb78f8b69b41ccc8ff6589f16d40d78dc5ac08bd4d2b4d523f7a5a5d644bbcce",
+      "bytes": 86007085,
+      "payload_files": 48
+    }
+  ],
+  "payload_files": 175,
+  "matched_files": 175,
+  "missing_files": [],
+  "changed_or_unsafe_files": [],
+  "destination": "/tmp/trellis2_final_restore_37da741",
+  "fresh_download_directory": "/tmp/trellis-final-restore-znnt9m2f",
+  "existing_work_overwritten": false,
+  "limits": "Excludes historical checkpoint archives and later delivery/configuration receipts. Generator metadata and unexposed server latents remain unavailable."
+}

@@ -1,0 +1,26 @@
+RECOVERY-ONLY PREFLIGHT: no setup/build/experiment will run.
+{"cwd": "/workspace/CVPR_3D"}
+{"path": "/workspace/research_decision_20261008", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/image_to_usable_car_probe_20261007", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/generated3d_authoring_clean_20261006", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/IMAGE_TO_USABLE_CAR_PROBE_20261007_evidence.zip", "state": "present", "type": "file", "file_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/CVPR_3D", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009", "state": "present", "type": "directory", "directory_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"path": "/workspace/CVPR_3D/trellis2_downstream_assets_20261009/FINAL_REPORT.md", "state": "present", "type": "file", "file_read": "ok", "meaning": "Presence/readability only; content and external backup NOT verified."}
+{"read_only_git_command": ["rev-parse", "--verify", "HEAD^{commit}"], "returncode": 0, "stdout": "37da741a3f74f2fbb48528bc8af5e285feb7e58b\n", "stderr": ""}
+{"read_only_git_command": ["status", "--porcelain=v1", "--untracked-files=all"], "returncode": 0, "stdout": " M trellis2_downstream_assets_20261009/DOWNLOADS.md\n?? trellis2_downstream_assets_20261009/checkpoints/07_final_restore.log\n?? trellis2_downstream_assets_20261009/checkpoints/07_final_restore.verification.json\n?? trellis2_downstream_assets_20261009/checkpoints/08_existing_state_check.json\n?? trellis2_downstream_assets_20261009/checkpoints/08_restore_guard.verification.json\n?? trellis2_downstream_assets_20261009/checkpoints/09_onboarding_preflight.log\n?? trellis2_downstream_assets_20261009/config/onboarding_install_recovery.sh\n", "stderr": ""}
+{"read_only_git_command": ["remote"], "returncode": 0, "stdout": "origin\n", "stderr": ""}
+LATEST VERIFIED DOWNSTREAM PAYLOAD: 175 files, supplied TRELLIS.2 assets, authored result, controls and viewer.
+Data commit: 37da741a3f74f2fbb48528bc8af5e285feb7e58b
+Final ZIPs: trellis2_downstream_assets_20261009/checkpoints/05_final_delivery.zip and 06_supporting_evidence.zip
+Restore only into a NEW/empty directory with source/restore_verified_checkpoint.py and this exact commit; --check-existing reports missing/changed files without replacement.
+Supplied outputs supersede old access blockage. No generation, paid call, authoring or repair is authorized by startup.
+OLDER SEPARATE VERIFIED RECOVERY CHECKPOINT: research and supporting evidence, 813 payload files.
+Data commit: 42dc0ea31f75e8783bf1f208b8fb83d523ab076c
+Receipt commit: 8df00f1481b2e75741eb01e6c076315f9d60f6bb
+Receipt URL: https://raw.githubusercontent.com/MatteoPhan926/CVPR_3D/8df00f1481b2e75741eb01e6c076315f9d60f6bb/recovery_checkpoint_20261008/EXTERNAL_VERIFICATION.json
+All 401 research files and all three latents are covered at snapshot time; later changes need another checkpoint.
+Installed packages, downloaded model weights, credentials, VM state and live processes are excluded.
+Do not treat this preflight, saved configuration, a local archive, or a local commit as backup.
+NEXT: follow recovery-first start_skill; protect existing artifacts externally before any setup/build/re-run.
+Recovery status remains UNVERIFIED until external upload and independent read-back are checked.

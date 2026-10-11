@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "exact_remote_local_payload_matches": 175,
+  "default_restore_refused_nonempty_directory": true,
+  "existing_sentinel_unchanged": true,
+  "check_existing_reports_missing": 174,
+  "check_existing_reports_changed": [
+    "README.md"
+  ],
+  "restore_script_sha256": "ee3927879ca4fc29f07a3efcfecb37d92d97f0f8a6cb1bfa13e216f01840619a",
+  "default_refusal_message": "Destination is not empty. Existing work is preserved. Use --check-existing to report differences or choose a NEW destination.",
+  "scope": "Temporary fixture only; no existing research artifact changed; verifies refusal and reporting, not arbitrary concurrent filesystem races."
+}
